@@ -9,8 +9,9 @@ weight = 23
     parent = "setup"
 +++
 
-<<<<<<< Updated upstream
-=======
+&#x3000;無事にインストールできたかテストしてみます。  
+　Windowsのスタートメニューから潜って、「TeXWorks Editor」を起動させます。
+
 {{< figure src="/img/23test/start.png" alt="スタートメニュー" class="" >}}
 {{< figure src="/img/23test/works.png" alt="TeXWorks開始画面" class="" >}}
 
@@ -61,4 +62,3 @@ Hello World!
 
 #### 参考
 https://texwiki.texjp.org/?LaTeX%20%E3%81%AE%E3%82%A8%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%83%E3%82%BB%E3%83%BC%E3%82%B8#p4b7362a
->>>>>>> Stashed changes
