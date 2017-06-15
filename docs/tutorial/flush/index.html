@@ -1,0 +1,393 @@
+<!doctype html>
+<html class="no-js" lang="ja" prefix="og: http://ogp.me/ns#">
+<head>
+    <meta charset="utf-8">
+    <title>カスタム字下げ・地寄せ | あがきながら覚えるTeX</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="白屋書房">
+<meta name="description" content="" />
+
+    
+<meta property="og:locale" content="ja">
+<meta property="og:title" content="カスタム字下げ・地寄せ" />
+<meta property="og:description" content="" />
+<meta property="og:site_name" content="あがきながら覚えるTeX" />
+<meta property="og:url" content="https://hakuoku.github.io/agakuTeX/tutorial/flush/" />
+
+
+
+
+<meta property="og:type" content="article" />
+<meta property="article:section" content="tutorial" />
+<meta property="article:published_time" content="2017-04-27" />
+<meta property="article:modified_time" content="2017-04-27" />
+
+    
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="カスタム字下げ・地寄せ" />
+<meta name="twitter:description" content="" />
+<meta name="twitter:url" content="https://hakuoku.github.io/agakuTeX/tutorial/flush/" />
+<meta name="twitter:image:src" content="https://hakuoku.github.io/agakuTeX//media/twitter-card.jpg">
+<meta name="twitter:domain" content="https://hakuoku.github.io/agakuTeX/">
+<meta name="twitter:site" content="@isaribi_saitoh" />
+<meta name="twitter:creator" content="@isaribi_saitoh" />
+
+    <base href="https://hakuoku.github.io/agakuTeX/">
+    <meta name="generator" content="Hugo 0.19" />
+    <link rel="canonical" href="https://hakuoku.github.io/agakuTeX/tutorial/flush/">
+    
+    <link rel="stylesheet" href="https://hakuoku.github.io/agakuTeX/css/style.css">
+
+    <link rel="stylesheet" href="https://hakuoku.github.io/agakuTeX/css/prism.css">
+
+    <link rel="stylesheet" href="https://hakuoku.github.io/agakuTeX/css/drawer.css">
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://hakuoku.github.io/agakuTeX/img/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://hakuoku.github.io/agakuTeX/img/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://hakuoku.github.io/agakuTeX/img/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://hakuoku.github.io/agakuTeX/manifest.json">
+<link rel="mask-icon" href="https://hakuoku.github.io/agakuTeX/img/safari-pinned-tab.svg" color="#636363">
+<meta name="apple-mobile-web-app-title" content="あがきながら覚えるTeX">
+<meta name="application-name" content="あがきながら覚えるTeX">
+<meta name="theme-color" content="#333333">
+
+</head>
+
+
+<body class="template template--post drawer drawer--right">
+    <section class="header-wrapper">
+        <header class="headline" role="banner">
+    
+        <a class="headline__title" href="https://hakuoku.github.io/agakuTeX/"><img src="https://hakuoku.github.io/agakuTeX/img/logo.png" alt="Home"></a>
+    
+</header>
+
+        <nav class="menu" role="navigation" id="main-menu">
+    <ul class="menu__items">
+        
+        
+        <li class="blog">
+            <a href="http://hakuoku.hatenablog.com/" title="Blog"><img src="https://hakuoku.github.io/agakuTeX/img/hb.png" alt="Blog"></a>
+        </li>
+        
+        
+        <li class="twitter">
+            <a href="https://twitter.com/isaribi_saitoh" title="Follow me"><img src="https://hakuoku.github.io/agakuTeX/img/tw.png" alt="Follow me"></a>
+        </li>
+        
+        
+        <li class="github">
+            <a href="https://github.com/hakuoku" title="Fork me"><img src="https://hakuoku.github.io/agakuTeX/img/gh.png" alt="Fork me"></a>
+        </li>
+        
+        
+    </ul>
+</nav>
+
+        
+<gcse:searchbox-only></gcse:searchbox-only>
+
+<button type="button" class="drawer-toggle drawer-hamburger">
+  <span class="sr-only">toggle navigation</span>
+  <span class="drawer-hamburger-icon"><img src="https://hakuoku.github.io/agakuTeX/img/toc.png" alt="TOC"></span>
+</button>
+ 
+<nav id="side-menu" class="drawer-nav">
+  <ul class="drawer-menu">
+    
+    <li><a href="https://hakuoku.github.io/agakuTeX/">TOP</a></li>
+    
+    
+        
+        <li class = "sub-menu">
+        前説
+            <ul class = "sub">
+                
+                <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/beginning/">発端</a></li>
+                
+                <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/whatstex/">TeXとは</a></li>
+                
+                <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/usage/">このサイトの使い方</a></li>
+                
+            </ul>
+            </li>
+        
+    
+        
+        <li class = "sub-menu">
+        導入
+            <ul class = "sub">
+                
+                <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/prepare/">準備</a></li>
+                
+                <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/install/">インストール</a></li>
+                
+                <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/test/">テスト</a></li>
+                
+            </ul>
+            </li>
+        
+    
+        
+        <li class = "sub-menu">
+        ファイル作成
+            <ul class = "sub">
+                
+                <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/stuff/">いるもの</a></li>
+                
+                <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/settings/">設定</a></li>
+                
+                <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/escape/">ファイル作成とエスケープ</a></li>
+                
+                <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/documentclass/">ドキュメントクラスの設定</a></li>
+                
+            </ul>
+            </li>
+        
+    
+        
+        <li class = "sub-menu active">
+        本文の編集
+            <ul class = "sub">
+                
+                <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/linebreak/">改行・段落</a></li>
+                
+                <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/indent/">インデント（字下げ）・空白</a></li>
+                
+                <li class="active"><a href="https://hakuoku.github.io/agakuTeX/tutorial/flush/">カスタム字下げ・地寄せ</a></li>
+                
+            </ul>
+            </li>
+        
+    
+        
+        <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/reference/">主要参考文献</a></li>
+        
+    
+        
+        <li><a href="https://hakuoku.github.io/agakuTeX/topics/">索引</a></li>
+        
+    
+  </ul>
+</nav>
+
+    </section>
+    <main class="content" role="main" id="main-content" itemscope itemtype="http://schema.org/Article">
+        <article class="post">
+            <header>
+                <h1 class="post__title" itemprop="name">カスタム字下げ・地寄せ</h1>
+            </header>
+            <section class="post__content" itemprop="articleBody">
+                
+
+<p>&#x3000;ここまでで、日本語の縦書き小説に絶対必要な最低限の要素は組めたと思います。これ以降は原稿に出てくる時にだけ使うオプショナルなコマンドが主ですが、体系的に覚えたい人・エラーが連発する人は原稿の中身に関わらず順番に読んでいって下さい。</p>
+
+<p>　さてデフォルトの1字下げはできましたが、文中にはあえてもっと字下げしてあるところや、下げるというかむしろページの一番下まで付けてある行なんかもあります。ノンシャラン道中記の手紙のパートは、青空形式ではこんな風に表されています。</p>
+
+<pre><code>［＃ここから１字下げ、折り返して２字下げ］
+長男のジャック　――巴里大学の法科に入学させてくだされたく、行すえは弁護士。
+二女のジャックリイヌ　――伯爵の継嗣《あととり》にお嫁《かたづ》け下さい。
+三男のアンリ　――海軍士官学校へ。
+四女のイレーヌ　――オペラの技芸学校へ。
+五男のポオル　――マチスとか申す画描きのところに弟子入りさせて下さい。
+六女のマリイ　――この子に学問はいりません。
+七男のルイ　――安南のＰ・Ｍ・Ｄ木綿会社へ見習いにやって下さい。
+八女のソフィ　――実のところ、わたくしも、この子の処置についてはまだ考えてはおりません。しかし、大実業家、又は相当の家柄から養女に望まれましたらば、そこへお遣《つかわ》し下さる様。
+［＃ここで字下げ終わり］
+［＃地から１字上げ］信実なるＡ・ジェルメエヌ。
+</code></pre>
+
+<p>　字下げには<code>\leftskip</code>コマンドを使います。</p>
+
+<pre><code class="language-latex">\leftskip = ○zw%
+本文
+\leftskip = 0zw%
+</code></pre>
+
+<p>　と囲ってやります。○のところには、下げたい字数を入れてください。この場合は1ですね。zwというのは長さの単位でzenkaku widthの略です。つまり1zwで日本語1文字分の幅のことになります。<br />
+　上げ下げするんだから幅じゃなくて高さだろう、と思うかもしれませんが、基本的に横書きシステムであるTeXにおいて、縦書き文書の中では<strong>全てがタテヨコ反転します</strong>。このコマンドも本来は横書きにおける行頭、つまり <em>左端</em> の空きを制御するものです。それを90°回転させて縦書きに適用すると、天の方向にある行頭を制御できることになります。レイアウトの時特に注意が必要になるので覚えておいてください。</p>
+
+<p>　［折り返して2字下げ］とは？という感じですが、例えば箇条書きや戯曲形式など、文がびっちり上まで入って欲しくない時に、折り返した行をある高さまで押し込むことがあります。これをぶら下げインデントといい、<code>\hangindent</code>コマンドで対応します。</p>
+
+
+<figure >
+    
+        <img src="https://hakuoku.github.io/agakuTeX/img/43/play.png" alt="戯曲の例" />
+    
+    
+    <figcaption>
+        <p>
+        例（岡本綺堂『人狼』）
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+
+
+<pre><code class="language-latex">\hangindent = ●zw
+</code></pre>
+
+<p>　ぶら下げたい行頭の <em>全て</em> にこれをつけます（コマンドと本文の間は半角スペースで空ける）。●には押し込みたい字数を入れますが、冒頭の例では1字下げと組み合わさっているので、2字からleftskipの1字分を引いた1が入ります。改行ごとにリセットされるコマンドなので<sup class="footnote-ref" id="fnref:1"><a rel="footnote" href="#fn:1">1</a></sup>、範囲の行頭全てに入れてください。</p>
+
+<p>　1、2行ならこれでいいですが、使いたい箇所が多かったり、台本など本文全体にハングインデントが入る場合はいちいち行頭に書かずに挟み込みで済ませたいですよね。そういう時には、自分で\begin{}～\end{}の環境を作ってしまいます。プリアンブルに以下を入れた後、</p>
+
+<pre><code class="language-latex">\newenvironment{hangall}[1]{\everypar{\hangindent = #1zw}}{}
+</code></pre>
+
+<p>ぶら下げしたい範囲を以下で囲います。●が押し込む字数になります。</p>
+
+<pre><code class="language-latex">\begin{hangall}{●}\hangindent= ●zw%
+本文
+\end{hangall}%
+</code></pre>
+
+<p>　環境の定義は覚えると大変便利なんですが、ここでは詳しくやりません。筆者もよく分かってないので、上の\begin{hangall}の後に余計な\hangindentを入れざるを得ませんでした（これがないと一行目がおかしくなる）。マスターできたら改良して、解説記事を立てたいと思います。</p>
+
+<h4 id="地寄せ-地付き">地寄せ・地付き</h4>
+
+<p>　地寄せの方は一行か複数行かでコマンドが変わります。一行だけ、またはある行の中の一部分だけ寄せたい時は<code>\hfill</code>、複数行の時は<code>\raggedleft</code>で対応します。</p>
+
+<pre><code class="language-latex">二人はそれぎり黙って風呂へはいった。{\hfill \rightskip = ☆zw （掲載誌不詳、『十番随筆』所収）\par}%
+
+{\raggedleft \rightskip = ☆zw%
+昭和十八年四月二十四日稿了
+　　同　　四月二十九日清書
+}%
+</code></pre>
+
+<p>　｛｝の中にコマンドと寄せたい箇所が入ります。☆は下端からの距離で、冒頭の例なら1ですね。完全な地付きの場合は\rightskipごと割愛してOKです。<br />
+　hfillはhorizontal fillの略で、水平方向（＝文字送り方向。縦書きなので垂直方向）に伸縮するグルー（穴埋め余白）を入れてくれるコマンドです。そもそも<code>\hspace{長さ}</code>という余白を出力するコマンドがあって、これは数値を手動で指定して入れるものですが、hfillはその自動伸び縮み版というイメージです。</p>
+
+
+<figure >
+    
+        <img src="https://hakuoku.github.io/agakuTeX/img/43/hfill.png" alt="hfillの図示" />
+    
+    
+    <figcaption>
+        <p>
+        これを90°回転させて考えます
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+
+
+<p>　raggedleftの方は横書きで言ったら右寄せに当たるのになんで「left」かとなりますが、［左側に揃えない、左側がガタガタの］って意味だからいいんだそうです。raggedrightというコマンドもあるので混同しないようにしてください。<sup class="footnote-ref" id="fnref:2"><a rel="footnote" href="#fn:2">2</a></sup></p>
+
+<p>　これらを組み合わせることで、大概の字下げ地寄せには対応できると思います。最終的なソースと出力は以下のようになりました。<br />
+　コマンドの後ろにいちいち%がついていますが、これは改行マクロの副作用を打ち消すためのおまじないなので<strong>消さないでください</strong>。以降コマンドしかない行の最後には必ず%がつくことになります。<sup class="footnote-ref" id="fnref:3"><a rel="footnote" href="#fn:3">3</a></sup>その後ろの日本語コメント部分は消しても大丈夫です。</p>
+
+<pre><code class="language-latex">\newenvironment{hangall}[1]{\everypar{\hangindent = #1zw}}{}
+%%%%%%%%%%%%%%%プリアンブルここまで%%%%%%%%%%%%%%%%%
+\begin{document}
+︙
+\leftskip = 1zw%  1字下げ
+\begin{hangall}{1}\hangindent= 1zw%  ぶら下げインデント
+長男のジャック　――巴里大学の法科に入学させてくだされたく、行すえは弁護士。
+二女のジャックリイヌ　――伯爵の継嗣《あととり》にお嫁《かたづ》け下さい。
+三男のアンリ　――海軍士官学校へ。
+四女のイレーヌ　――オペラの技芸学校へ。
+五男のポオル　――マチスとか申す画描きのところに弟子入りさせて下さい。
+六女のマリイ　――この子に学問はいりません。
+七男のルイ　――安南のＰ・Ｍ・Ｄ木綿会社へ見習いにやって下さい。
+八女のソフィ　――実のところ、わたくしも、この子の処置についてはまだ考えてはおりません。しかし、大実業家、又は相当の家柄から養女に望まれましたらば、そこへお遣《つかわ》し下さる様。
+\end{hangall}%
+\leftskip = 0zw%
+{\hfill \rightskip = 1zw 信実なるＡ・ジェルメエヌ。\par}%  地から1字上げ
+</code></pre>
+
+
+<figure >
+    
+        <img src="https://hakuoku.github.io/agakuTeX/img/43/hangindent.png" alt="ぶら下げ・地寄せの実装" />
+    
+    
+</figure>
+
+
+<p>　出力は大分すっきりしてきましたがソースの方がごちゃごちゃしてきました。いろいろコマンドが出てきましたが、面倒だったらもう全部全角スペースを手で入れる方式でもいいと思います。紙の大きさが分かっていて変わる可能性がなく、かつ特殊字下げの量が少ないなら、ページレイアウトまで終わった時点でPDFの出力と見比べつつ手でポチポチ入れましょう。本来はやっちゃいけないけど通常字下げを全角スペースでやってる時点でもう怖いものなしです。</p>
+
+<h4 id="参考">参考</h4>
+
+<ul>
+<li><a href="http://www.aozora.gr.jp/annotation/layout_2.html#ototsu">凹凸の複雑な字下げ</a></li>
+<li><a href="https://tex.stackexchange.com/questions/208898/how-to-align-text-to-right-without-adding-additional-vertical-spacing">horizontal alignment - How to align text to right without adding additional vertical spacing? - TeX - LaTeX Stack Exchange</a></li>
+<li><a href="https://tex.stackexchange.com/questions/60613/set-hanging-indent-for-more-than-one-paragraph-at-a-time">indentation - set hanging indent for more than one paragraph at a time - TeX - LaTeX Stack Exchange</a></li>
+<li><a href="http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/length.html">Length: LaTeX</a></li>
+</ul>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:1">正確には段落ごとにリセットされるものです。改行マクロのために「全ての行はことごとく段落に」なっています。
+ <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
+<li id="fn:2">flushrightコマンドの方が直感的なんですが、出力してみると前後の段落との間に隙間が空いてしまうので、ここではraggedleftを使います。
+ <a class="footnote-return" href="#fnref:2"><sup>[return]</sup></a></li>
+<li id="fn:3">こうすることで「改行文字をコメントアウト」しています。これをやらないとコマンドだけの行は「コマンド（組版結果には表示されない）＋改行一つ分」と解釈されるので、余計な行が空いてしまいます。逆に本文とコマンドが混在した行の最後に%をつけてしまうと次の行との間が改行されないことになります。ただし\parとの絡みもあってケースバイケースなので、出力がおかしくなる時は%のつけ方、改行のしかたをガン見してみてください。
+ <a class="footnote-return" href="#fnref:3"><sup>[return]</sup></a></li>
+</ol>
+</div>
+
+            </section>
+            <section class="post__comment">
+                <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'hakuoku';
+    var disqus_identifier = 'https:\/\/hakuoku.github.io\/agakuTeX\/tutorial\/flush\/';
+    var disqus_title = 'カスタム字下げ・地寄せ';
+    var disqus_url = 'https:\/\/hakuoku.github.io\/agakuTeX\/tutorial\/flush\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+            </section>
+        </article>
+    </main>
+    <nav class = "pager" >
+    <ul class = "pager-list">
+        
+            <li class = "pager-prev"><a href = "https://hakuoku.github.io/agakuTeX/tutorial/indent/">←インデント（字下げ）・空白</a></li>
+        
+        
+            <li class = "pager-next"><a href = "https://hakuoku.github.io/agakuTeX/tutorial/reference/">主要参考文献→</a></li>
+        
+
+
+    </ul>
+</nav>
+
+    <footer class="legal" role="contentinfo">
+    <p>&copy; 2017 Hakuoku Shobo Some Rights Reserved. Performed by <a href="//gohugo.io" title="Hugo :: A fast and modern static website engine">Hugo</a> .</p>
+
+
+</footer>
+
+    
+<script type="text/javascript" src="https://hakuoku.github.io/agakuTeX/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="https://hakuoku.github.io/agakuTeX/js/prism.js"></script>
+<script type="text/javascript" src="https://hakuoku.github.io/agakuTeX/js/iscroll.js"></script>
+<script type="text/javascript" src="https://hakuoku.github.io/agakuTeX/js/drawer.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+      $(".drawer").drawer();
+    });
+</script>
+
+</body>
+</html>

@@ -5,7 +5,9 @@ languageCode = "ja"
 DefaultContentLanguage = "ja"
 hasCJKLanguage = true
 preserveTaxonomyNames = true
+canonifyurls = true
 publishDir = "docs"
+
 
 [params]
     author = "白屋書房"

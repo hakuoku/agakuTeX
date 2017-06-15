@@ -1,0 +1,442 @@
+<!doctype html>
+<html class="no-js" lang="ja" prefix="og: http://ogp.me/ns#">
+<head>
+    <meta charset="utf-8">
+    <title>ファイル作成とエスケープ | あがきながら覚えるTeX</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="白屋書房">
+<meta name="description" content="" />
+
+    
+<meta property="og:locale" content="ja">
+<meta property="og:title" content="ファイル作成とエスケープ" />
+<meta property="og:description" content="" />
+<meta property="og:site_name" content="あがきながら覚えるTeX" />
+<meta property="og:url" content="https://hakuoku.github.io/agakuTeX/tutorial/escape/" />
+
+
+
+
+<meta property="og:type" content="article" />
+<meta property="article:section" content="tutorial" />
+<meta property="article:published_time" content="2017-04-19" />
+<meta property="article:modified_time" content="2017-04-19" />
+
+    
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="ファイル作成とエスケープ" />
+<meta name="twitter:description" content="" />
+<meta name="twitter:url" content="https://hakuoku.github.io/agakuTeX/tutorial/escape/" />
+<meta name="twitter:image:src" content="https://hakuoku.github.io/agakuTeX//media/twitter-card.jpg">
+<meta name="twitter:domain" content="https://hakuoku.github.io/agakuTeX/">
+<meta name="twitter:site" content="@isaribi_saitoh" />
+<meta name="twitter:creator" content="@isaribi_saitoh" />
+
+    <base href="https://hakuoku.github.io/agakuTeX/">
+    <meta name="generator" content="Hugo 0.19" />
+    <link rel="canonical" href="https://hakuoku.github.io/agakuTeX/tutorial/escape/">
+    
+    <link rel="stylesheet" href="https://hakuoku.github.io/agakuTeX/css/style.css">
+
+    <link rel="stylesheet" href="https://hakuoku.github.io/agakuTeX/css/prism.css">
+
+    <link rel="stylesheet" href="https://hakuoku.github.io/agakuTeX/css/drawer.css">
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://hakuoku.github.io/agakuTeX/img/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://hakuoku.github.io/agakuTeX/img/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://hakuoku.github.io/agakuTeX/img/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://hakuoku.github.io/agakuTeX/manifest.json">
+<link rel="mask-icon" href="https://hakuoku.github.io/agakuTeX/img/safari-pinned-tab.svg" color="#636363">
+<meta name="apple-mobile-web-app-title" content="あがきながら覚えるTeX">
+<meta name="application-name" content="あがきながら覚えるTeX">
+<meta name="theme-color" content="#333333">
+
+</head>
+
+
+<body class="template template--post drawer drawer--right">
+    <section class="header-wrapper">
+        <header class="headline" role="banner">
+    
+        <a class="headline__title" href="https://hakuoku.github.io/agakuTeX/"><img src="https://hakuoku.github.io/agakuTeX/img/logo.png" alt="Home"></a>
+    
+</header>
+
+        <nav class="menu" role="navigation" id="main-menu">
+    <ul class="menu__items">
+        
+        
+        <li class="blog">
+            <a href="http://hakuoku.hatenablog.com/" title="Blog"><img src="https://hakuoku.github.io/agakuTeX/img/hb.png" alt="Blog"></a>
+        </li>
+        
+        
+        <li class="twitter">
+            <a href="https://twitter.com/isaribi_saitoh" title="Follow me"><img src="https://hakuoku.github.io/agakuTeX/img/tw.png" alt="Follow me"></a>
+        </li>
+        
+        
+        <li class="github">
+            <a href="https://github.com/hakuoku" title="Fork me"><img src="https://hakuoku.github.io/agakuTeX/img/gh.png" alt="Fork me"></a>
+        </li>
+        
+        
+    </ul>
+</nav>
+
+        
+<gcse:searchbox-only></gcse:searchbox-only>
+
+<button type="button" class="drawer-toggle drawer-hamburger">
+  <span class="sr-only">toggle navigation</span>
+  <span class="drawer-hamburger-icon"><img src="https://hakuoku.github.io/agakuTeX/img/toc.png" alt="TOC"></span>
+</button>
+ 
+<nav id="side-menu" class="drawer-nav">
+  <ul class="drawer-menu">
+    
+    <li><a href="https://hakuoku.github.io/agakuTeX/">TOP</a></li>
+    
+    
+        
+        <li class = "sub-menu">
+        前説
+            <ul class = "sub">
+                
+                <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/beginning/">発端</a></li>
+                
+                <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/whatstex/">TeXとは</a></li>
+                
+                <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/usage/">このサイトの使い方</a></li>
+                
+            </ul>
+            </li>
+        
+    
+        
+        <li class = "sub-menu">
+        導入
+            <ul class = "sub">
+                
+                <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/prepare/">準備</a></li>
+                
+                <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/install/">インストール</a></li>
+                
+                <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/test/">テスト</a></li>
+                
+            </ul>
+            </li>
+        
+    
+        
+        <li class = "sub-menu active">
+        ファイル作成
+            <ul class = "sub">
+                
+                <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/stuff/">いるもの</a></li>
+                
+                <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/settings/">設定</a></li>
+                
+                <li class="active"><a href="https://hakuoku.github.io/agakuTeX/tutorial/escape/">ファイル作成とエスケープ</a></li>
+                
+                <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/documentclass/">ドキュメントクラスの設定</a></li>
+                
+            </ul>
+            </li>
+        
+    
+        
+        <li class = "sub-menu">
+        本文の編集
+            <ul class = "sub">
+                
+                <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/linebreak/">改行・段落</a></li>
+                
+                <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/indent/">インデント（字下げ）・空白</a></li>
+                
+                <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/flush/">カスタム字下げ・地寄せ</a></li>
+                
+            </ul>
+            </li>
+        
+    
+        
+        <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/reference/">主要参考文献</a></li>
+        
+    
+        
+        <li><a href="https://hakuoku.github.io/agakuTeX/topics/">索引</a></li>
+        
+    
+  </ul>
+</nav>
+
+    </section>
+    <main class="content" role="main" id="main-content" itemscope itemtype="http://schema.org/Article">
+        <article class="post">
+            <header>
+                <h1 class="post__title" itemprop="name">ファイル作成とエスケープ</h1>
+            </header>
+            <section class="post__content" itemprop="articleBody">
+                
+
+<p>&#x3000;いよいよ本チャンの原稿作りに入ります。TeX文法と機能を一つずつ組んで一喜一憂しながら解説します。</p>
+
+<p>　まずは新しくファイルを作り、テストと同じように、最低限の4行を書いてやります。ここでは「chapter01」と名前をつけ（好きな名前でOK。ただしスペースは避け半角英数のみにする）、拡張子を.texにしてUTF-8で保存します。</p>
+
+<p>　あるいは既存の原稿に上書きすることもできます。その場合「ここに～」のところに小説本文が来るように書き込んでください（ただし長編全部は扱いづらいので、長い話はひとまずキリのいいところまでカットするのが吉）。<br />
+　実は拡張子は.txtのままでもTeXWorksに通せます。なのでファイルの保存場所を変えたくない人や、原稿がまだ未完成でこれからも加筆するだろうという人は上書き方式の方がいいと思います。特にスマホで編集したい場合は、texファイルは読み込めないことが多いので.txtのままにしておきましょう。あとは組版だけとなった決定稿の時点で.texにするのが無難かと思います。</p>
+
+<pre><code class="language-latex">\documentclass{article}
+\begin{document}
+ここに本文が来ます
+\end{document}
+</code></pre>
+
+<p>　基本的にTeXは、<strong><code>\</code></strong> （バックスラッシュ。環境によって円マークに見えたり斜め線に見えたりしますが同じものです）を頭につけた<strong>コマンド</strong>という文字列で指示をします。\指示の種類{指示の中身}って感じです。<br />
+　<code>\begin</code>と<code>\end</code>は「これこれこういうフィールドが始まります／終わります」という宣言です。この場合は<strong>document</strong>という一番基本のフィールドをこしらえています。これがないとTeX文書になりません。字が植え込まれるこのフィールドのことを「<strong>環境</strong>」と呼びます。「版面」だと思っちゃってもいいです。</p>
+
+<p>　青空文庫の人も同様、新しいtexファイルに本文を入れ込むか元のファイルにコマンドを書きこんで、beginとendで本文を挟みます。原理的にはもうそれで組版できるはずなんですが、私はこんなエラーが出ました。</p>
+
+<pre><code>! You can't use `macro parameter character #' in horizontal mode.
+l.89 ...なので、五番目のポオルは fa#
+だというわけ。そこ
+?
+</code></pre>
+
+<p>　どういうことかというと、「ノンシャラン道中記」の本文に、TeXで使っちゃいけない#の字が入っているんですね。ちなみにオルガンごっこをするというシーンで、ファのシャープです。<br />
+　こういう「TeX側がコマンドとして使うから人間は使っちゃいけない記号」はけっこうあって、選んだテキストによっては文字は違えどこれと同じエラーが出るかもしれません。そのため<strong>エスケープ</strong>というものをして、特殊文字が表示されるようにします。<br />
+　使い方は簡単で、特殊文字の前にバックスラッシュをつけるだけです。その方式じゃない字もありますが、その場合は以下の表を参考に正しいコマンドに置き換えます。ちなみに全て半角です。全角文字は全て字として描画されるので、違和感がなければただ全角に置き換えるのでもいいと思います。</p>
+
+<table>
+<thead>
+<tr>
+<th align="center">記号</th>
+<th align="left">原稿中の働き</th>
+<th align="left">置き換え</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">#</td>
+<td align="left">命令や環境の引数</td>
+<td align="left"><code>\#</code></td>
+</tr>
+
+<tr>
+<td align="center">$</td>
+<td align="left">数式モードへ移行</td>
+<td align="left"><code>\$</code></td>
+</tr>
+
+<tr>
+<td align="center">%</td>
+<td align="left">以降をコメントアウト</td>
+<td align="left"><code>\%</code></td>
+</tr>
+
+<tr>
+<td align="center">&amp;</td>
+<td align="left">表のセルの区切り</td>
+<td align="left"><code>\&amp;</code></td>
+</tr>
+
+<tr>
+<td align="center">_</td>
+<td align="left">下付きの添字</td>
+<td align="left"><code>\_</code></td>
+</tr>
+
+<tr>
+<td align="center">{</td>
+<td align="left">グループ化の開始</td>
+<td align="left"><code>\{</code></td>
+</tr>
+
+<tr>
+<td align="center">}</td>
+<td align="left">グループ化の終了</td>
+<td align="left"><code>\}</code></td>
+</tr>
+
+<tr>
+<td align="center">&lt;</td>
+<td align="left">（モードにより出力が異なる ）</td>
+<td align="left"><code>\textless</code> または \verb|&lt;|</td>
+</tr>
+
+<tr>
+<td align="center">&gt;</td>
+<td align="left">（同上）</td>
+<td align="left"><code>\textgreater</code> または \verb|&gt;|</td>
+</tr>
+
+<tr>
+<td align="center">\</td>
+<td align="left">コマンドのためのエスケープ文字</td>
+<td align="left"><code>\textbackslash</code></td>
+</tr>
+
+<tr>
+<td align="center">|</td>
+<td align="left">表の縦の罫線</td>
+<td align="left"><code>\textbar</code></td>
+</tr>
+
+<tr>
+<td align="center">^</td>
+<td align="left">上付きの添字</td>
+<td align="left"><code>\textasciicircum</code></td>
+</tr>
+
+<tr>
+<td align="center">~</td>
+<td align="left">改行を抑制して単語間の空白を空ける</td>
+<td align="left"><code>\textasciitilde</code></td>
+</tr>
+</tbody>
+</table>
+
+<p>　\textなんちゃらというのも、「なんちゃらという文字を出力せよ」という一種のコマンドになります。バックスラッシュの後が記号だけのコマンドはいいんですが、アルファベットが続くコマンドは<code>ポオルは\textlessfa\textgreaterと</code>というように、本文とそのまま続けて書くことはできません（「\textlessfa」という文字列だと認識されてしまう）。<br />
+　本文との間に半角スペースを空けるか、<code>{\textless}fa</code>のようにコマンドを中括弧で囲みます。半角スペースを入れるとぴったりくっつけて出力したい記号と本文の間に空白ができてしまう場合があるので、随時括弧と使い分けて下さい。</p>
+
+<p>　<code>\verb</code>というのはverbatim［逐語的に／一字一句変えずに］の略で、記号（縦棒じゃなくてもいい。<code>\verb!fa#!</code>とかでもいい）で挟んだ部分を文字通り出力できるコマンドです。これは本文とくっつけて書いても大丈夫です。<br />
+　じゃあ全部それの内側に書けばいいじゃんって話になるかもしれませんが、それをやってしまうと今度は逆に組版に支障が出るので控えます。小説ではさほど多用することにはならないと思いますが、URLなど特殊文字があまりにたくさん出てくる箇所に使うといいでしょう。</p>
+
+<p>　以上を踏まえた上で曲者なのが&lt;と&gt;です。文中に使う人も多いと思うんですが、これは実は「TeXで使えない」わけではありません。なので置き換えないままでもエラーを吐かずに組版されます。しかし出てきたPDFを見てみると<code>?!</code>みたいな表示になっていたりします。全角にしても向きがおかしくなる上、置き換えコマンドの書き方やフォントによっても多少出力が変わったりして非常に厄介です。<br />
+　こうした記号（特に括弧類）の細かい出力制御は後ほど行います。今はひとまずエラーが出ないところまで置き換えればOKとしておきましょう。<br />
+　ちなみにエスケープ文字に限らずエラーが出た時は、停止ボタンを押すと下のコンソールエリアに「errors, warnings, badboxes」タブが現れます。中のリンクを押すと上のエディタで該当箇所に飛びますので、これを使ってチェックしてください。</p>
+
+
+<figure >
+    
+        <img src="https://hakuoku.github.io/agakuTeX/img/33makefile/errortab.png" alt="エラータブ" />
+    
+    
+</figure>
+
+
+<p>　多すぎて手で書き換えられないという時は、エディタの<strong>検索・置換機能</strong>を使うと一括で編集することができます。<br />
+　以下をコピペして、 <em>「正規表現」のところにチェックを入れてから<strong>上から順に</strong></em> 「すべて置換」してください。</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">検索する文字列</th>
+<th align="left">置換後の文字列</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><code>&#092;&#092;</code></td>
+<td align="center"><code>{&#092;&#092;textbackslash}</code></td>
+</tr>
+<tr>
+<td align="center"><code>([&#35;&#36;&#37;&amp;&#95;&#123;&#125;])</code></td>
+<td align="center"><code>&#092;&#092;$1</code></td>
+</tr>
+<tr>
+<td align="center"><code>&#092;|</code></td>
+<td align="center"><code>{&#092;&#092;textbar}</code></td>
+</tr>
+<tr>
+<td align="center"><code>&#092;&lt;</code></td>
+<td align="center"><code>&#092;&#092;verb|&lt;|</code></td>
+</tr>
+<tr>
+<td align="center"><code>&#092;&gt;</code></td>
+<td align="center"><code>&#092;&#092;verb|&gt;|</code></td>
+</tr>
+<tr>
+<td align="center"><code>&#092;&#94;</code></td>
+<td align="center"><code>{&#092;&#092;textasciicircum}</code></td>
+</tr>
+<tr>
+<td align="center"><code>~</code></td>
+<td align="center"><code>{&#092;&#092;textasciitilde}</code></td>
+</tr>
+<tr>
+<td align="center"><code>&#092;&#092;{&#092;&#092;textbackslash&#092;&#092;}</code></td>
+<td align="center"><code>{&#092;&#092;textbackslash}</code></td>
+</tr>
+</tbody>
+</table>
+
+<p>　さて#を<code>\#</code>にしてやって、TeXWorksで開いてボタンを押すと、</p>
+
+
+<figure >
+    
+        <img src="https://hakuoku.github.io/agakuTeX/img/33makefile/first.png" alt="最初の組版結果" />
+    
+    
+</figure>
+
+
+<p>　無事に組版できました。だいぶごちゃごちゃしてますが、これからちゃんとした本になっていきますよ。</p>
+
+<h4 id="参考">参考</h4>
+
+<ul>
+<li><a href="https://texwiki.texjp.org/?TeX%20%E3%81%AE%E3%82%A8%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%83%E3%82%BB%E3%83%BC%E3%82%B8#cf1b15c8">https://texwiki.texjp.org/?TeX%20%E3%81%AE%E3%82%A8%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%83%E3%82%BB%E3%83%BC%E3%82%B8#cf1b15c8</a></li>
+<li><a href="http://osksn2.hep.sci.osaka-u.ac.jp/~naga/miscellaneous/tex/tex-tips6.html">Tex tips - ６．特殊文字</a></li>
+<li><a href="https://medemanabu.net/latex/special-character/">LaTeXコマンド - そのまま出力できる文字と特殊文字</a></li>
+<li><a href="https://medemanabu.net/latex/verb-verbatim/">LaTeXコマンド - テキストを入力通りにそのまま出力（verb、verbatim)</a></li>
+</ul>
+
+            </section>
+            <section class="post__comment">
+                <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'hakuoku';
+    var disqus_identifier = 'https:\/\/hakuoku.github.io\/agakuTeX\/tutorial\/escape\/';
+    var disqus_title = 'ファイル作成とエスケープ';
+    var disqus_url = 'https:\/\/hakuoku.github.io\/agakuTeX\/tutorial\/escape\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+            </section>
+        </article>
+    </main>
+    <nav class = "pager" >
+    <ul class = "pager-list">
+        
+            <li class = "pager-prev"><a href = "https://hakuoku.github.io/agakuTeX/tutorial/settings/">←設定</a></li>
+        
+        
+            <li class = "pager-next"><a href = "https://hakuoku.github.io/agakuTeX/tutorial/documentclass/">ドキュメントクラスの設定→</a></li>
+        
+
+
+    </ul>
+</nav>
+
+    <footer class="legal" role="contentinfo">
+    <p>&copy; 2017 Hakuoku Shobo Some Rights Reserved. Performed by <a href="//gohugo.io" title="Hugo :: A fast and modern static website engine">Hugo</a> .</p>
+
+
+</footer>
+
+    
+<script type="text/javascript" src="https://hakuoku.github.io/agakuTeX/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="https://hakuoku.github.io/agakuTeX/js/prism.js"></script>
+<script type="text/javascript" src="https://hakuoku.github.io/agakuTeX/js/iscroll.js"></script>
+<script type="text/javascript" src="https://hakuoku.github.io/agakuTeX/js/drawer.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+      $(".drawer").drawer();
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,294 @@
+<!doctype html>
+<html class="no-js" lang="ja" prefix="og: http://ogp.me/ns#">
+<head>
+    <meta charset="utf-8">
+    <title>TeXとは | あがきながら覚えるTeX</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="白屋書房">
+<meta name="description" content="" />
+
+    
+<meta property="og:locale" content="ja">
+<meta property="og:title" content="TeXとは" />
+<meta property="og:description" content="" />
+<meta property="og:site_name" content="あがきながら覚えるTeX" />
+<meta property="og:url" content="https://hakuoku.github.io/agakuTeX/tutorial/whatstex/" />
+
+
+
+
+<meta property="og:type" content="article" />
+<meta property="article:section" content="tutorial" />
+<meta property="article:published_time" content="2016-12-19" />
+<meta property="article:modified_time" content="2016-12-19" />
+
+    
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="TeXとは" />
+<meta name="twitter:description" content="" />
+<meta name="twitter:url" content="https://hakuoku.github.io/agakuTeX/tutorial/whatstex/" />
+<meta name="twitter:image:src" content="https://hakuoku.github.io/agakuTeX//media/twitter-card.jpg">
+<meta name="twitter:domain" content="https://hakuoku.github.io/agakuTeX/">
+<meta name="twitter:site" content="@isaribi_saitoh" />
+<meta name="twitter:creator" content="@isaribi_saitoh" />
+
+    <base href="https://hakuoku.github.io/agakuTeX/">
+    <meta name="generator" content="Hugo 0.19" />
+    <link rel="canonical" href="https://hakuoku.github.io/agakuTeX/tutorial/whatstex/">
+    
+    <link rel="stylesheet" href="https://hakuoku.github.io/agakuTeX/css/style.css">
+
+    <link rel="stylesheet" href="https://hakuoku.github.io/agakuTeX/css/prism.css">
+
+    <link rel="stylesheet" href="https://hakuoku.github.io/agakuTeX/css/drawer.css">
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://hakuoku.github.io/agakuTeX/img/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://hakuoku.github.io/agakuTeX/img/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://hakuoku.github.io/agakuTeX/img/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://hakuoku.github.io/agakuTeX/manifest.json">
+<link rel="mask-icon" href="https://hakuoku.github.io/agakuTeX/img/safari-pinned-tab.svg" color="#636363">
+<meta name="apple-mobile-web-app-title" content="あがきながら覚えるTeX">
+<meta name="application-name" content="あがきながら覚えるTeX">
+<meta name="theme-color" content="#333333">
+
+</head>
+
+
+<body class="template template--post drawer drawer--right">
+    <section class="header-wrapper">
+        <header class="headline" role="banner">
+    
+        <a class="headline__title" href="https://hakuoku.github.io/agakuTeX/"><img src="https://hakuoku.github.io/agakuTeX/img/logo.png" alt="Home"></a>
+    
+</header>
+
+        <nav class="menu" role="navigation" id="main-menu">
+    <ul class="menu__items">
+        
+        
+        <li class="blog">
+            <a href="http://hakuoku.hatenablog.com/" title="Blog"><img src="https://hakuoku.github.io/agakuTeX/img/hb.png" alt="Blog"></a>
+        </li>
+        
+        
+        <li class="twitter">
+            <a href="https://twitter.com/isaribi_saitoh" title="Follow me"><img src="https://hakuoku.github.io/agakuTeX/img/tw.png" alt="Follow me"></a>
+        </li>
+        
+        
+        <li class="github">
+            <a href="https://github.com/hakuoku" title="Fork me"><img src="https://hakuoku.github.io/agakuTeX/img/gh.png" alt="Fork me"></a>
+        </li>
+        
+        
+    </ul>
+</nav>
+
+        
+<gcse:searchbox-only></gcse:searchbox-only>
+
+<button type="button" class="drawer-toggle drawer-hamburger">
+  <span class="sr-only">toggle navigation</span>
+  <span class="drawer-hamburger-icon"><img src="https://hakuoku.github.io/agakuTeX/img/toc.png" alt="TOC"></span>
+</button>
+ 
+<nav id="side-menu" class="drawer-nav">
+  <ul class="drawer-menu">
+    
+    <li><a href="https://hakuoku.github.io/agakuTeX/">TOP</a></li>
+    
+    
+        
+        <li class = "sub-menu active">
+        前説
+            <ul class = "sub">
+                
+                <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/beginning/">発端</a></li>
+                
+                <li class="active"><a href="https://hakuoku.github.io/agakuTeX/tutorial/whatstex/">TeXとは</a></li>
+                
+                <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/usage/">このサイトの使い方</a></li>
+                
+            </ul>
+            </li>
+        
+    
+        
+        <li class = "sub-menu">
+        導入
+            <ul class = "sub">
+                
+                <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/prepare/">準備</a></li>
+                
+                <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/install/">インストール</a></li>
+                
+                <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/test/">テスト</a></li>
+                
+            </ul>
+            </li>
+        
+    
+        
+        <li class = "sub-menu">
+        ファイル作成
+            <ul class = "sub">
+                
+                <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/stuff/">いるもの</a></li>
+                
+                <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/settings/">設定</a></li>
+                
+                <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/escape/">ファイル作成とエスケープ</a></li>
+                
+                <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/documentclass/">ドキュメントクラスの設定</a></li>
+                
+            </ul>
+            </li>
+        
+    
+        
+        <li class = "sub-menu">
+        本文の編集
+            <ul class = "sub">
+                
+                <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/linebreak/">改行・段落</a></li>
+                
+                <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/indent/">インデント（字下げ）・空白</a></li>
+                
+                <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/flush/">カスタム字下げ・地寄せ</a></li>
+                
+            </ul>
+            </li>
+        
+    
+        
+        <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/reference/">主要参考文献</a></li>
+        
+    
+        
+        <li><a href="https://hakuoku.github.io/agakuTeX/topics/">索引</a></li>
+        
+    
+  </ul>
+</nav>
+
+    </section>
+    <main class="content" role="main" id="main-content" itemscope itemtype="http://schema.org/Article">
+        <article class="post">
+            <header>
+                <h1 class="post__title" itemprop="name">TeXとは</h1>
+            </header>
+            <section class="post__content" itemprop="articleBody">
+                <blockquote>
+<p>TeX（TeX; テック、テフ）はアメリカの数学者・計算機科学者であるドナルド・クヌース (Donald E. Knuth) により開発されている組版処理システムである。<br />
+……ドナルド・クヌースが1976年、自身の著書 The Art of Computer Programming の改訂版の準備中に、旧版の鉛版による組版の職人仕事による美しさが当時の写植では再現できていないことに憤慨し、自分自身が心ゆくまで組版を制御するために開発を決意した。<br />
+クヌースはまず、伝統的な組版およびその関連技術に対する広範囲にわたる調査を行い、その調査結果を取り入れることで、商業品質の組版ができる、柔軟で強力な組版システムを開発した。それは技術と同時に芸術をも意味する言葉である、ギリシア語: τέχνη（テクネ）から採られ“TeX”と名付けられた。from <a href="https://ja.wikipedia.org/wiki/TeX">Wikipedia</a></p>
+</blockquote>
+
+<p>　とまあ要するに、心ゆくまでカスタマイズできて、お店で売ってるような本が作れるシステムですよ、ということらしい。<br />
+　ちなみにこのクヌース教授という方はいろいろすごい人のようで、TeX開発の件のように「今あるやつ気に入らないから俺が作る！」という衝動に駆られることを『クヌース病』と呼ぶそうな。<br />
+　数学者が作っただけあって、基本は“英語の論文”を書くためのシステムです。日本ではアスキーがpTeX、pLaTeXという日本語対応版を出しています。これがないと日本語が書けない。<br />
+（ちなみにここで挙げるプログラムは原則としてすべてフリーウェア、無料です。ありがたや）</p>
+
+<p>　ここでちょっと補足ですが、これまでTeXTeXと呼んできたものは正しい呼び方ではありません。TeXというのは大分慣用的な表現で、あれです、おばあちゃんに言わせると全部「ファミコン」になる的なそういうやつです。オリジナルのファミコンだろうがwiiだろうがDSだろうが全部ファミコンと呼ぶみたいな用法です。<br />
+　厳密には『TeX』というのはクヌース教授が自分のために作った素のままのプログラムのことで、それだと扱いづらいので普段はみんなそこにいろいろ機能を足した『LaTeX』というのを使っています。普通にTeXと言えばだいたいLaTeXのことを指しているくらいです。<br />
+　そしてここまでが英語圏の話です。日本では先述のpTeX、pLaTeXを使う場合が多く、日本人がただTeXと言えばpLaTeXを指していることもままあります。筆者の用法はこれです。さらに厳密に言うと今はe-pTeXらしく、さらにさらに私が使うのはUnicodeなので最終的にe-upTeXらしいけどもう知らんがな。とりあえず <em>このサイトで『TeX』と言った時には、正確には『<strong>e-upTeX</strong>』のことを指している</em> 、ということだけ覚えておいてください。<br />
+（TeXという言葉が何を意味するのかは、ワトソン氏によるこちらの記事が詳しいです： <a href="https://blog.wtsnjp.com/2016/12/19/tex-and-latex/">TeX と LaTeX の違い | ラング・ラグー</a>）</p>
+
+<p>　閑話休題。じゃあ具体的にはどんなソフトなの？Wordっぽいの？となりますが、超要約すると「 <em>TeX文法に則った文章を読み込ませると、文法で指定した通りの組み方でPDFを吐き出してくれるエンジン</em> 」ってことになるんだと思います。<br />
+　要するにHTMLとかMarkdownとか青空文庫形式みたいなものです。(マークアップ言語といいます。伊藤計劃の『ハーモニー』に出てきたアレです） 小説本文の間あいだに、特殊な記法で「ここで改ページ」とか「これは見出しだよ」とか「太字で」とか指示を書き込んでやると、TeXエンジンが読み取ってその通りPDFにしてくれるんですね。あとは自分で公開するなり印刷所に入稿するなり好きにしやがれというシステムです。</p>
+
+
+<figure >
+    
+        <img src="https://hakuoku.github.io/agakuTeX/img/12whatstex/rare.png" alt="TeXで原稿をマークアップしたところ" />
+    
+    
+    <figcaption>
+        <p>
+        ビフォー
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+
+
+<p>　上の図のように小説本文の間に余計な文字列が入ることになるので、この表示にひどい違和感を覚える人や、原稿ファイルは本文のみであるべきだと考える人にはTeXの使用をおすすめできません。WYSIWYG（見たまんま）で編集できるInDesignやワープロソフトを使いましょう。<br />
+　この表示が嫌じゃない人や、見たままよりはむしろ効率化や論理性を重視したいと思う人には、TeXの使用自体はそんなに難しくありません。ただし日本語組版はわりと地獄です。英語話者が数学論文のために作ったプログラムで日本語縦書き文書を組むという、ある意味すごく不自然なことをやってるのでめんどくさくなるのもむべなるかなです。<br />
+　しかしですね、あまたの困難を乗り越えて組みあがった文書は、ユーザーの誰もが言うように本当に美しいです。初めて理想の文書を印刷できたときは思わず「おお……」と唸りました。向いてないはずの処理を素人がやってもここまで綺麗にできるというのがTeXの底力だと思います。</p>
+
+
+<figure >
+    
+        <img src="https://hakuoku.github.io/agakuTeX/img/12whatstex/rarepolished.png" alt="組版結果" />
+    
+    
+    <figcaption>
+        <p>
+        アフター
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+
+
+            </section>
+            <section class="post__comment">
+                <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'hakuoku';
+    var disqus_identifier = 'https:\/\/hakuoku.github.io\/agakuTeX\/tutorial\/whatstex\/';
+    var disqus_title = 'TeXとは';
+    var disqus_url = 'https:\/\/hakuoku.github.io\/agakuTeX\/tutorial\/whatstex\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+            </section>
+        </article>
+    </main>
+    <nav class = "pager" >
+    <ul class = "pager-list">
+        
+            <li class = "pager-prev"><a href = "https://hakuoku.github.io/agakuTeX/tutorial/beginning/">←発端</a></li>
+        
+        
+            <li class = "pager-next"><a href = "https://hakuoku.github.io/agakuTeX/tutorial/usage/">このサイトの使い方→</a></li>
+        
+
+
+    </ul>
+</nav>
+
+    <footer class="legal" role="contentinfo">
+    <p>&copy; 2017 Hakuoku Shobo Some Rights Reserved. Performed by <a href="//gohugo.io" title="Hugo :: A fast and modern static website engine">Hugo</a> .</p>
+
+
+</footer>
+
+    
+<script type="text/javascript" src="https://hakuoku.github.io/agakuTeX/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="https://hakuoku.github.io/agakuTeX/js/prism.js"></script>
+<script type="text/javascript" src="https://hakuoku.github.io/agakuTeX/js/iscroll.js"></script>
+<script type="text/javascript" src="https://hakuoku.github.io/agakuTeX/js/drawer.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+      $(".drawer").drawer();
+    });
+</script>
+
+</body>
+</html>
