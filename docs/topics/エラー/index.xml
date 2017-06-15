@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>エラー on あがきながら覚えるTeX</title>
+    <link>https://hakuoku.github.io/agakuTeX/topics/%E3%82%A8%E3%83%A9%E3%83%BC/index.xml</link>
+    <description>Recent content in エラー on あがきながら覚えるTeX</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <atom:link href="https://hakuoku.github.io/agakuTeX/topics/%E3%82%A8%E3%83%A9%E3%83%BC/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>ファイル作成とエスケープ</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/escape/</link>
+      <pubDate>Wed, 19 Apr 2017 13:03:39 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/escape/</guid>
+      <description>
+
+&lt;p&gt;&amp;#x3000;いよいよ本チャンの原稿作りに入ります。TeX文法と機能を一つずつ組んで一喜一憂しながら解説します。&lt;/p&gt;
+
+&lt;p&gt;　まずは新しくファイルを作り、テストと同じように、最低限の4行を書いてやります。ここでは「chapter01」と名前をつけ（好きな名前でOK。ただしスペースは避け半角英数のみにする）、拡張子を.texにしてUTF-8で保存します。&lt;/p&gt;
+
+&lt;p&gt;　あるいは既存の原稿に上書きすることもできます。その場合「ここに～」のところに小説本文が来るように書き込んでください（ただし長編全部は扱いづらいので、長い話はひとまずキリのいいところまでカットするのが吉）。&lt;br /&gt;
+　実は拡張子は.txtのままでもTeXWorksに通せます。なのでファイルの保存場所を変えたくない人や、原稿がまだ未完成でこれからも加筆するだろうという人は上書き方式の方がいいと思います。特にスマホで編集したい場合は、texファイルは読み込めないことが多いので.txtのままにしておきましょう。あとは組版だけとなった決定稿の時点で.texにするのが無難かと思います。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\documentclass{article}
+\begin{document}
+ここに本文が来ます
+\end{document}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;　基本的にTeXは、&lt;strong&gt;&lt;code&gt;\&lt;/code&gt;&lt;/strong&gt; （バックスラッシュ。環境によって円マークに見えたり斜め線に見えたりしますが同じものです）を頭につけた&lt;strong&gt;コマンド&lt;/strong&gt;という文字列で指示をします。\指示の種類{指示の中身}って感じです。&lt;br /&gt;
+　&lt;code&gt;\begin&lt;/code&gt;と&lt;code&gt;\end&lt;/code&gt;は「これこれこういうフィールドが始まります／終わります」という宣言です。この場合は&lt;strong&gt;document&lt;/strong&gt;という一番基本のフィールドをこしらえています。これがないとTeX文書になりません。字が植え込まれるこのフィールドのことを「&lt;strong&gt;環境&lt;/strong&gt;」と呼びます。「版面」だと思っちゃってもいいです。&lt;/p&gt;
+
+&lt;p&gt;　青空文庫の人も同様、新しいtexファイルに本文を入れ込むか元のファイルにコマンドを書きこんで、beginとendで本文を挟みます。原理的にはもうそれで組版できるはずなんですが、私はこんなエラーが出ました。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;! You can&#39;t use `macro parameter character #&#39; in horizontal mode.
+l.89 ...なので、五番目のポオルは fa#
+だというわけ。そこ
+?
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;　どういうことかというと、「ノンシャラン道中記」の本文に、TeXで使っちゃいけない#の字が入っているんですね。ちなみにオルガンごっこをするというシーンで、ファのシャープです。&lt;br /&gt;
+　こういう「TeX側がコマンドとして使うから人間は使っちゃいけない記号」はけっこうあって、選んだテキストによっては文字は違えどこれと同じエラーが出るかもしれません。そのため&lt;strong&gt;エスケープ&lt;/strong&gt;というものをして、特殊文字が表示されるようにします。&lt;br /&gt;
+　使い方は簡単で、特殊文字の前にバックスラッシュをつけるだけです。その方式じゃない字もありますが、その場合は以下の表を参考に正しいコマンドに置き換えます。ちなみに全て半角です。全角文字は全て字として描画されるので、違和感がなければただ全角に置き換えるのでもいいと思います。&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;記号&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;原稿中の働き&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;置き換え&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;#&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;命令や環境の引数&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;\#&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;$&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;数式モードへ移行&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;\$&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;%&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;以降をコメントアウト&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;\%&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;&amp;amp;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;表のセルの区切り&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;\&amp;amp;&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;_&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;下付きの添字&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;\_&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;{&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;グループ化の開始&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;\{&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;}&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;グループ化の終了&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;\}&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;&amp;lt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;（モードにより出力が異なる ）&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;\textless&lt;/code&gt; または \verb|&amp;lt;|&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;&amp;gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;（同上）&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;\textgreater&lt;/code&gt; または \verb|&amp;gt;|&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;\&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;コマンドのためのエスケープ文字&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;\textbackslash&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;|&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;表の縦の罫線&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;\textbar&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;^&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;上付きの添字&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;\textasciicircum&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;~&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;改行を抑制して単語間の空白を空ける&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;\textasciitilde&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;　\textなんちゃらというのも、「なんちゃらという文字を出力せよ」という一種のコマンドになります。バックスラッシュの後が記号だけのコマンドはいいんですが、アルファベットが続くコマンドは&lt;code&gt;ポオルは\textlessfa\textgreaterと&lt;/code&gt;というように、本文とそのまま続けて書くことはできません（「\textlessfa」という文字列だと認識されてしまう）。&lt;br /&gt;
+　本文との間に半角スペースを空けるか、&lt;code&gt;{\textless}fa&lt;/code&gt;のようにコマンドを中括弧で囲みます。半角スペースを入れるとぴったりくっつけて出力したい記号と本文の間に空白ができてしまう場合があるので、随時括弧と使い分けて下さい。&lt;/p&gt;
+
+&lt;p&gt;　&lt;code&gt;\verb&lt;/code&gt;というのはverbatim［逐語的に／一字一句変えずに］の略で、記号（縦棒じゃなくてもいい。&lt;code&gt;\verb!fa#!&lt;/code&gt;とかでもいい）で挟んだ部分を文字通り出力できるコマンドです。これは本文とくっつけて書いても大丈夫です。&lt;br /&gt;
+　じゃあ全部それの内側に書けばいいじゃんって話になるかもしれませんが、それをやってしまうと今度は逆に組版に支障が出るので控えます。小説ではさほど多用することにはならないと思いますが、URLなど特殊文字があまりにたくさん出てくる箇所に使うといいでしょう。&lt;/p&gt;
+
+&lt;p&gt;　以上を踏まえた上で曲者なのが&amp;lt;と&amp;gt;です。文中に使う人も多いと思うんですが、これは実は「TeXで使えない」わけではありません。なので置き換えないままでもエラーを吐かずに組版されます。しかし出てきたPDFを見てみると&lt;code&gt;?!&lt;/code&gt;みたいな表示になっていたりします。全角にしても向きがおかしくなる上、置き換えコマンドの書き方やフォントによっても多少出力が変わったりして非常に厄介です。&lt;br /&gt;
+　こうした記号（特に括弧類）の細かい出力制御は後ほど行います。今はひとまずエラーが出ないところまで置き換えればOKとしておきましょう。&lt;br /&gt;
+　ちなみにエスケープ文字に限らずエラーが出た時は、停止ボタンを押すと下のコンソールエリアに「errors, warnings, badboxes」タブが現れます。中のリンクを押すと上のエディタで該当箇所に飛びますので、これを使ってチェックしてください。&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://hakuoku.github.io/agakuTeX/img/33makefile/errortab.png&#34; alt=&#34;エラータブ&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;　多すぎて手で書き換えられないという時は、エディタの&lt;strong&gt;検索・置換機能&lt;/strong&gt;を使うと一括で編集することができます。&lt;br /&gt;
+　以下をコピペして、 &lt;em&gt;「正規表現」のところにチェックを入れてから&lt;strong&gt;上から順に&lt;/strong&gt;&lt;/em&gt; 「すべて置換」してください。&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;検索する文字列&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;置換後の文字列&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;&amp;#092;&amp;#092;&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;{&amp;#092;&amp;#092;textbackslash}&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;([&amp;#35;&amp;#36;&amp;#37;&amp;amp;&amp;#95;&amp;#123;&amp;#125;])&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;&amp;#092;&amp;#092;$1&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;&amp;#092;|&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;{&amp;#092;&amp;#092;textbar}&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;&amp;#092;&amp;lt;&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;&amp;#092;&amp;#092;verb|&amp;lt;|&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;&amp;#092;&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;&amp;#092;&amp;#092;verb|&amp;gt;|&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;&amp;#092;&amp;#94;&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;{&amp;#092;&amp;#092;textasciicircum}&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;~&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;{&amp;#092;&amp;#092;textasciitilde}&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;&amp;#092;&amp;#092;{&amp;#092;&amp;#092;textbackslash&amp;#092;&amp;#092;}&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;{&amp;#092;&amp;#092;textbackslash}&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;　さて#を&lt;code&gt;\#&lt;/code&gt;にしてやって、TeXWorksで開いてボタンを押すと、&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://hakuoku.github.io/agakuTeX/img/33makefile/first.png&#34; alt=&#34;最初の組版結果&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;　無事に組版できました。だいぶごちゃごちゃしてますが、これからちゃんとした本になっていきますよ。&lt;/p&gt;
+
+&lt;h4 id=&#34;参考&#34;&gt;参考&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://texwiki.texjp.org/?TeX%20%E3%81%AE%E3%82%A8%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%83%E3%82%BB%E3%83%BC%E3%82%B8#cf1b15c8&#34;&gt;https://texwiki.texjp.org/?TeX%20%E3%81%AE%E3%82%A8%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%83%E3%82%BB%E3%83%BC%E3%82%B8#cf1b15c8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://osksn2.hep.sci.osaka-u.ac.jp/~naga/miscellaneous/tex/tex-tips6.html&#34;&gt;Tex tips - ６．特殊文字&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://medemanabu.net/latex/special-character/&#34;&gt;LaTeXコマンド - そのまま出力できる文字と特殊文字&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://medemanabu.net/latex/verb-verbatim/&#34;&gt;LaTeXコマンド - テキストを入力通りにそのまま出力（verb、verbatim)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
