@@ -1,0 +1,7 @@
+<header class="headline" role="banner">
+    {{ if .IsHome }}
+        {{ with .Site.Params.headline }}<span class="headline__title"><img src="/img/logo.png" alt="Home"></span>{{ end }}
+    {{ else }}
+        {{ if .Site.Params.headline }}<a class="headline__title" href="{{ .Site.BaseURL }}"><img src="/img/logo.png" alt="Home"></a>{{ end }}
+    {{ end }}
+</header>

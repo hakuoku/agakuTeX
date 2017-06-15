@@ -1,0 +1,39 @@
+<!--<script>
+  (function() {
+    var cx = '015571841863644017950:qenmrqoplxm';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>-->
+<gcse:searchbox-only></gcse:searchbox-only>
+<!-- ハンバーガーボタン -->
+<button type="button" class="drawer-toggle drawer-hamburger">
+  <span class="sr-only">toggle navigation</span>
+  <span class="drawer-hamburger-icon"><img src="/img/toc.png" alt="TOC"></span>
+</button>
+ 
+<nav id="side-menu" class="drawer-nav">
+  <ul class="drawer-menu">
+    <!-- ドロワーメニューの中身 -->
+    <li><a href="{{ .Site.BaseURL }}">TOP</a></li>
+    {{ $currentNode := . }}
+    {{ range .Site.Menus.toc }}
+        {{ if .HasChildren}}
+        <li class = "sub-menu{{if $currentNode.HasMenuCurrent "toc" . }} active{{end}}">
+        {{.Name}}
+            <ul class = "sub">
+                {{ range .Children }}
+                <li{{if $currentNode.IsMenuCurrent "toc" . }} class="active"{{end}}><a href="{{.URL}}">{{ .Name }}</a></li>
+                {{end}}
+            </ul>
+            </li>
+        {{ else }}
+        <li><a href="{{.URL}}">{{ .Name }}</a></li>
+        {{ end }}
+    {{ end }}
+  </ul>
+</nav>

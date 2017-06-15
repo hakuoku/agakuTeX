@@ -1,0 +1,63 @@
+{{ partial "head" . }}
+
+<body class="template template--home drawer drawer--right">
+    <section class="header-wrapper">
+        {{ partial "header" . }}
+        {{ partial "navigation" . }}
+        {{ partial "side" . }}
+    </section>
+    <main class="content" role="main" id="main-content">
+        {{ range where .Data.Pages "Section" "about" }}
+            <article class="about">
+                <header>
+                    <h1 class="post__title" itemprop="name">{{ .Title }}</h1>
+                </header>
+                <section class="post__content" itemprop="articleBody">
+                    {{ .Content }}
+                </section>
+                <footer class="post__meta">
+                    <ul class="post__meta__infos">
+<!--
+                        <li class="post-meta__date"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006.1.02" }}</time></li>
+                        {{ with .Site.Params.pseudo }}<li class="post-meta__author" itemprop="author">{{ . }}</li>{{ end }}
+-->
+                        <li class="post-meta__lastmod"><time datetime="{{ .Site.LastChange.Format "2006-01-02" }}">{{ .Site.LastChange.Format "Last modified in  2006.1.02" }}</time></li>
+                    </ul>
+                </footer>
+            </article>
+        {{ end }}
+            <article class="index">
+                <header>
+                    <h3 class="post__title" itemprop="name">もくじ</h3>
+                </header>
+                <section class="post__content" itemprop="articleBody">
+                    {{ partial "toc" . }}
+                </section>
+            </article>
+
+<!--
+        {{ $paginator := .Paginate (where .Data.Pages.ByDate.Reverse "Section" "tutorial") 3 }}
+        {{ range $paginator.Pages }}
+        <article class="post post--preview">
+            <header>
+                <h2 class="post__title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+            </header>
+            <footer class="post__meta">
+                <ul class="post__meta__infos">
+                    <li class="post-meta__date"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "02 January 2006" }}</time></li>
+                </ul>
+                {{ partial "post-taxonomies" . }}
+            </footer>
+            <section class="post__excerpt">
+                <p>{{ .Summary }}&hellip;</p>
+                {{ if .Truncated }}
+                <p class="readmore"><a href="{{ .Permalink }}">Read More…</a></p>
+                {{ end }}
+            </section>
+        </article>
+        {{ end }} -->
+    </main>
+    {{ partial "footer" . }}
+    {{ partial "js" . }}
+</body>
+</html>

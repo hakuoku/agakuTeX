@@ -1,0 +1,28 @@
+{{ partial "head" . }}
+<body class="template template--list drawer drawer--right">
+    <section class="header-wrapper">
+        {{ partial "header" . }}
+        {{ partial "navigation" . }}
+        {{ partial "side" . }}
+    </section>
+    <main class="content" role="main" id="main-content">
+        <h2>{{ .Title }}</h2>
+
+        {{ $data := .Data }}
+        <ul class="taxonomy__lists">
+        {{ range $key,$value := .Data.Terms.ByCount }}
+            <li>{{ $value.Name }}
+                <ul class="taxonomy__contents">
+                {{ range $value.Pages.ByDate }}
+                  <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+                {{ end }}
+                </ul>
+            </li>
+        {{ end }}
+        </ul>
+
+    </main>
+    {{ partial "footer" . }}
+    {{ partial "js" . }}
+</body>
+</html>

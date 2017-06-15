@@ -1,0 +1,29 @@
+<nav class="menu" role="navigation" id="main-menu">
+    <ul class="menu__items">
+        {{ if .Site.Menus.main }}
+        {{ range .Site.Menus.main }}
+        <li><a href="{{.URL}}" title="{{ .Name }}">{{ .Name }}</a></li>
+        {{ end }}
+        {{ end }}
+        {{ with .Site.Params.blog }}
+        <li class="blog">
+            <a href="{{ . }}" title="Blog"><img src="/img/hb.png" alt="Blog"></a>
+        </li>
+        {{ end }}
+        {{ with .Site.Params.twitter }}
+        <li class="twitter">
+            <a href="https://twitter.com/{{ . }}" title="Follow me"><img src="/img/tw.png" alt="Follow me"></a>
+        </li>
+        {{ end }}
+        {{ with .Site.Params.github }}
+        <li class="github">
+            <a href="https://github.com/{{ . }}" title="Fork me"><img src="/img/gh.png" alt="Fork me"></a>
+        </li>
+        {{ end }}
+        {{ with .Site.Params.linkedin }}
+        <li class="linkedin">
+            <a href="https://fr.linkedin.com/in/{{ . }}" title="About me">LinkedIn</a>
+        </li>
+        {{ end }}
+    </ul>
+</nav>

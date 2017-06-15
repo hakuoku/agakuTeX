@@ -1,0 +1,15 @@
+<nav class = "pager" >
+    <ul class = "pager-list">
+        {{ if .NextInSection }}
+            <li class = "pager-prev"><a href = "{{ .NextInSection.Permalink }}">←{{ .NextInSection.Title }}</a></li>
+        {{end}}
+        {{ if .PrevInSection }}
+            <li class = "pager-next"><a href = "{{ .PrevInSection.Permalink }}">{{ .PrevInSection.Title }}→</a></li>
+        {{end}}
+
+<!--
+<a href="{{ (.Site.Pages.ByWeight.Prev .).Permalink }}">Prev</a>
+<a href="{{ (.Site.Pages.ByWeight.Next .).Permalink }}">Next</a>
+-->
+    </ul>
+</nav>
