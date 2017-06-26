@@ -1,11 +1,14 @@
-baseurl = "https://hakuoku.github.io/agakuTeX/"
+開発用configだよ
+
+
+
+baseurl = "http://replace-this-with-your-hugo-site.com/"
 title = "あがきながら覚えるTeX"
 theme = "hugo-frais"
 languageCode = "ja"
 DefaultContentLanguage = "ja"
 hasCJKLanguage = true
 preserveTaxonomyNames = true
-canonifyurls = true
 publishDir = "docs"
 
 
@@ -15,7 +18,6 @@ publishDir = "docs"
     twitter = "isaribi_saitoh"
     github = "hakuoku"
     blog = "http://hakuoku.hatenablog.com/"
-    disqusShortname = "hakuoku"
     headline = "TeX"
     custom_css = ["css/prism.css", "css/drawer.css"]
 [taxonomies]
