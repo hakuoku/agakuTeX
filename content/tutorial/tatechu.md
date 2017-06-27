@@ -2,7 +2,6 @@
 topics = ["連数字", "アクセント分解"]
 description = ""
 title = "全角と半角・縦中横・記号の制御"
-weight = 44
 slug = "tatechu"
 date = "2017-05-07T08:54:46+09:00"
 lastmod = "2017-06-26T18:36:43+09:00"

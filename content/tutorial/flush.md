@@ -3,7 +3,6 @@ topics = ["垂直方向と水平方向", "環境の定義", "newenvironment", "h
 description = ""
 title = "カスタム字下げ・地寄せ"
 date = "2017-04-27T07:52:54+09:00"
-weight = 43
 slug = "flush"
 [menu.toc]
     parent = "edit"
