@@ -1,7 +1,7 @@
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 html {
     font-family: Corbel,"Lucida Grande","Lucida Sans Unicode","Lucida Sans","DejaVu Sans","Bitstream Vera Sans","Liberation Sans",Verdana,"Verdana Ref", "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN", "HiraKakuProN-W3", "Meiryo", "ＭＳ Ｐゴシック", sans-serif;
-    line-height: 2;
+    line-height: 1.9;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
 }
@@ -271,6 +271,19 @@ table th, table td {
     border: 1px solid #aaa;
     padding: 8px;
 }
+sup.footnote-ref {
+    margin-right: 2px;
+}
+.footnotes {
+    margin-top: 3em;
+    font-size: 0.9em;
+}
+hr {
+    border-width: 1px 0px 0px 0px;
+    border-style: solid;
+    border-color: silver;
+}
+
 html {
     background-color: #fff;
 }
@@ -535,8 +548,4 @@ ul.taxonomy__contents {
     list-style-position: inside;
 }
 
-.footnotes {
-    margin-top: 3em;
-    font-size: 0.9em;
-}
 /*# sourceMappingURL=style.css.map */
