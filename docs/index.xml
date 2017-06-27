@@ -64,11 +64,7 @@
 
 &lt;p&gt;　ここでちょっと補足ですが、これまでTeXTeXと呼んできたものは正しい呼び方ではありません。TeXというのは大分慣用的な表現で、あれです、おばあちゃんに言わせると全部「ファミコン」になる的なそういうやつです。オリジナルのファミコンだろうがwiiだろうがDSだろうが全部ファミコンと呼ぶみたいな用法です。&lt;br /&gt;
 　厳密には『TeX』というのはクヌース教授が自分のために作った素のままのプログラムのことで、それだと扱いづらいので普段はみんなそこにいろいろ機能を足した『LaTeX』というのを使っています。普通にTeXと言えばだいたいLaTeXのことを指しているくらいです。&lt;br /&gt;
-<<<<<<< HEAD
-　そしてここまでが英語圏の話です。日本では先述のpTeX、pLaTeXを使う場合が多く、日本人がただTeXと言えばpLaTeXを指していることもままあります。筆者の用法はこれです。さらに厳密に言うと今はe-pTeXらしく、さらにさらに私が使うのはUnicodeなので最終的にe-upTeXらしいけどもう知らんがな。とりあえず &lt;em&gt;このサイトで『TeX』と言った時には、正確には『&lt;strong&gt;e-upTeX&lt;/strong&gt;』のことを指している&lt;/em&gt; 、ということだけ覚えておいてください。&lt;br /&gt;
-=======
 　そしてここまでが英語圏の話です。日本では先述のpTeX、pLaTeXを使う場合が多く、日本人がただTeXと言えばpLaTeXを指していることもままあります。筆者の用法はこれです。さらに厳密に言うと今はe-pTeXらしく、さらにさらに私が使うのはUnicodeなので最終的にe-upTeXらしいけどもう知らんがな。とりあえず &lt;em&gt;このサイトで『TeX』と言った時には、正確には『&lt;strong&gt;upLaTeX（≒e-upTeX）&lt;/strong&gt;』のことを指している&lt;/em&gt; 、ということだけ覚えておいてください。&lt;br /&gt;
->>>>>>> release
 （TeXという言葉が何を意味するのかは、ワトソン氏によるこちらの記事が詳しいです： &lt;a href=&#34;https://blog.wtsnjp.com/2016/12/19/tex-and-latex/&#34;&gt;TeX と LaTeX の違い | ラング・ラグー&lt;/a&gt;）&lt;/p&gt;
 
 &lt;p&gt;　閑話休題。じゃあ具体的にはどんなソフトなの？Wordっぽいの？となりますが、超要約すると「 &lt;em&gt;TeX文法に則った文章を読み込ませると、文法で指定した通りの組み方でPDFを吐き出してくれるエンジン&lt;/em&gt; 」ってことになるんだと思います。&lt;br /&gt;
@@ -92,11 +88,7 @@
 &lt;/figure&gt;
 
 
-<<<<<<< HEAD
-&lt;p&gt;　上の図のように小説本文の間に余計な文字列が入ることになるので、この表示にひどい違和感を覚える人や、原稿ファイルは本文のみであるべきだと考える人にはTeXの使用をおすすめできません。WYSIWYG（見たまんま）で編集できるInDesignやワープロソフトを使いましょう。&lt;br /&gt;
-=======
 &lt;p&gt;　上の図のように小説本文の間に余計な文字列が入ることになるので、この表示にひどい違和感を覚える人や、原稿ファイルは本文のみであるべきだと考える人にはTeXの使用をおすすめできません。WYSIWYG（見たまんま）で編集できるInDesignやワープロソフトを使いましょう。個人的には一太郎が本当に素晴らしいと思います。&lt;br /&gt;
->>>>>>> release
 　この表示が嫌じゃない人や、見たままよりはむしろ効率化や論理性を重視したいと思う人には、TeXの使用自体はそんなに難しくありません。ただし日本語組版はわりと地獄です。英語話者が数学論文のために作ったプログラムで日本語縦書き文書を組むという、ある意味すごく不自然なことをやってるのでめんどくさくなるのもむべなるかなです。&lt;br /&gt;
 　しかしですね、あまたの困難を乗り越えて組みあがった文書は、ユーザーの誰もが言うように本当に美しいです。初めて理想の文書を印刷できたときは思わず「おお……」と唸りました。向いてないはずの処理を素人がやってもここまで綺麗にできるというのがTeXの底力だと思います。&lt;/p&gt;
 
@@ -481,22 +473,13 @@ Hello World!
 &lt;li&gt;テキストエディタ&lt;/li&gt;
 &lt;/ul&gt;
 
-<<<<<<< HEAD
-&lt;p&gt;　テキストエディタというのはプレーンテキストを編集するためのソフトで、原理は「メモ帳」と一緒です。付加情報がない質素なやつ。ただし情報を持ってないのはあくまで“文書そのもの”なので、編集する時にはソフト側のフィルター次第で本文と注記を分けたり見やすくできたりします。テストや上の画像で字に色がついて見えるのもこれのおかげです。TeXに限らず、自分に合ったエディタをひとつ持っておくと何かと便利です。&lt;br /&gt;
-　テストで使ったTeXWorksはTeX専用の統合開発環境ですが、テキストエディタであるとも言えます。どのエディタで書いても結局最後はTeXWorksに通すので、初めからこれで書くのもいいと思います。&lt;br /&gt;
-=======
 &lt;p&gt;　テキストエディタというのはプレーンテキストを編集するためのソフトで、原理は「メモ帳」と一緒です。付加情報がない質素なやつ。ただし情報を持ってないのはあくまで“文書そのもの”なので、編集する時にはソフト側のフィルター次第で本文と注記を分けたり見やすくできたりします。テストや上の画像で字に色がついて見えたのもこれのおかげです。TeXに限らず、自分に合ったエディタをひとつ持っておくと何かと便利です。&lt;br /&gt;
 　テストで使ったTeXWorksはTeX専用の統合開発環境ですが、テキストエディタであるとも言えます。どのエディタで書いても結局最後はTeXWorksに通すので、初めからこれで書くのもいいと思います。（ただし使い勝手はあまりよくない）&lt;br /&gt;
->>>>>>> release
 　既に好みのものがあるなら勿論そちらを使ってください。基本的に既存の.txtファイルにコマンドを書き込んでいくだけなので、わざわざTeXのために執筆環境を変える必要はありません。&lt;/p&gt;
 
 &lt;p&gt;　ちなみに筆者は「&lt;a href=&#34;http://www.haijin-boys.com/wiki/%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9A%E3%83%BC%E3%82%B8&#34;&gt;Mery&lt;/a&gt;」というエディタを溺愛しています。純国産、シンプルでキュートで軽快でとにかくひたすら使いやすい！色分け以外にも置換やマクロなどの強力な機能があり、細かい動作までカスタマイズできます。作者のkuro様に&lt;a href=&#34;http://www.haijin-boys.com/11.html&#34;&gt;感謝&lt;/a&gt;です。&lt;br /&gt;
 　最近ではGitHub製の「&lt;a href=&#34;https://atom.io/&#34;&gt;Atom&lt;/a&gt;」がクールだとの評判で、使っている人も多いです。いちいち長いコマンドを打ち込まずに済む自動補完機能などを備えた、プログラミング用の高機能で先進的なエディタです。ただし便利な分複雑で、ヘルプも全て英語なので体力のある人が挑戦するといいでしょう。&lt;br /&gt;
-<<<<<<< HEAD
-　ここではMeryを使って解説します。組版結果を見るためのスクリーンショットにはTeXWorksと標準のPDFプレビューが登場します。&lt;/p&gt;
-=======
 　ここではMeryを使って解説します。どれがいいのかわからない時はとりあえずMeryにしときましょう。組版結果を見るためのスクリーンショットにはTeXWorksと標準のPDFプレビューが登場します。&lt;/p&gt;
->>>>>>> release
 
 &lt;h4 id=&#34;あると便利なもの&#34;&gt;あると便利なもの&lt;/h4&gt;
 
@@ -601,11 +584,7 @@ Hello World!
 &lt;p&gt;　まずは新しくファイルを作り、テストと同じように、最低限の4行を書いてやります。ここでは「chapter01」と名前をつけ（好きな名前でOK。ただしスペースは避け半角英数のみにする）、拡張子を.texにしてUTF-8で保存します。&lt;/p&gt;
 
 &lt;p&gt;　あるいは既存の原稿に上書きすることもできます。その場合「ここに～」のところに小説本文が来るように書き込んでください（ただし長編全部は扱いづらいので、長い話はひとまずキリのいいところまでカットするのが吉）。&lt;br /&gt;
-<<<<<<< HEAD
-　実は拡張子は.txtのままでもTeXWorksに通せます。なのでファイルの保存場所を変えたくない人や、原稿がまだ未完成でこれからも加筆するだろうという人は上書き方式の方がいいと思います。特にスマホで編集したい場合は、texファイルは読み込めないことが多いので.txtのままにしておきましょう。あとは組版だけとなった決定稿の時点で.texにするのが無難かと思います。&lt;/p&gt;
-=======
 　実は拡張子は.txtのままでもTeXWorksに通せます。なのでファイルの保存方式を変えたくない人や、原稿がまだ未完成でこれからも加筆するだろうという人は上書き方式の方がいいと思います。特にスマホで編集したい場合は、texファイルは読み込めないことが多いので.txtのままにしておきましょう。あとは組版だけとなった決定稿の時点で.texにするのが無難かと思います。&lt;/p&gt;
->>>>>>> release
 
 &lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\documentclass{article}
 \begin{document}
@@ -632,11 +611,7 @@ l.89 ...なので、五番目のポオルは fa#
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th align=&#34;center&#34;&gt;記号&lt;/th&gt;
-<<<<<<< HEAD
-&lt;th align=&#34;left&#34;&gt;原稿中の働き&lt;/th&gt;
-=======
 &lt;th align=&#34;left&#34;&gt;TeXにとっての働き&lt;/th&gt;
->>>>>>> release
 &lt;th align=&#34;left&#34;&gt;置き換え&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
@@ -725,20 +700,11 @@ l.89 ...なので、五番目のポオルは fa#
 &lt;p&gt;　\textなんちゃらというのも、「なんちゃらという文字を出力せよ」という一種のコマンドになります。バックスラッシュの後が記号だけのコマンドはいいんですが、アルファベットが続くコマンドは&lt;code&gt;ポオルは\textlessfa\textgreaterと&lt;/code&gt;というように、本文とそのまま続けて書くことはできません（「\textlessfa」という文字列だと認識されてしまう）。&lt;br /&gt;
 　本文との間に半角スペースを空けるか、&lt;code&gt;{\textless}fa&lt;/code&gt;のようにコマンドを中括弧で囲みます。半角スペースを入れるとぴったりくっつけて出力したい記号と本文の間に空白ができてしまう場合があるので、随時括弧と使い分けて下さい。&lt;/p&gt;
 
-<<<<<<< HEAD
-&lt;p&gt;　&lt;code&gt;\verb&lt;/code&gt;というのはverbatim［逐語的に／一字一句変えずに］の略で、記号（縦棒じゃなくてもいい。&lt;code&gt;\verb!fa#!&lt;/code&gt;とかでもいい）で挟んだ部分を文字通り出力できるコマンドです。これは本文とくっつけて書いても大丈夫です。&lt;br /&gt;
-　じゃあ全部それの内側に書けばいいじゃんって話になるかもしれませんが、それをやってしまうと今度は逆に組版に支障が出るので控えます。小説ではさほど多用することにはならないと思いますが、URLなど特殊文字があまりにたくさん出てくる箇所に使うといいでしょう。&lt;/p&gt;
-
-&lt;p&gt;　以上を踏まえた上で曲者なのが&amp;lt;と&amp;gt;です。文中に使う人も多いと思うんですが、これは実は「TeXで使えない」わけではありません。なので置き換えないままでもエラーを吐かずに組版されます。しかし出てきたPDFを見てみると&lt;code&gt;?!&lt;/code&gt;みたいな表示になっていたりします。全角にしても向きがおかしくなる上、置き換えコマンドの書き方やフォントによっても多少出力が変わったりして非常に厄介です。&lt;br /&gt;
-　こうした記号（特に括弧類）の細かい出力制御は後ほど行います。今はひとまずエラーが出ないところまで置き換えればOKとしておきましょう。&lt;br /&gt;
-　ちなみにエスケープ文字に限らずエラーが出た時は、停止ボタンを押すと下のコンソールエリアに「errors, warnings, badboxes」タブが現れます。中のリンクを押すと上のエディタで該当箇所に飛びますので、これを使ってチェックしてください。&lt;/p&gt;
-=======
 &lt;p&gt;　&lt;code&gt;\verb&lt;/code&gt;というのはverbatim［逐語的に／一字一句変えずに］の略で、記号で挟んだ部分（縦棒じゃなくてもいい。&lt;code&gt;\verb!fa#!&lt;/code&gt;とかでもいい）を文字通り出力できるコマンドです。これは本文とくっつけて書いても大丈夫です。&lt;br /&gt;
 　じゃあ全部それの内側に書けばいいじゃんって話になるかもしれませんが、それをやってしまうと今度は逆に組版に支障が出るので控えます。小説ではさほど多用することにはならないと思いますが、URLなど特殊文字があまりにたくさん出てくる箇所に使うといいでしょう。&lt;/p&gt;
 
 &lt;p&gt;　ちなみにエスケープ文字に限らずエラーが出た時は、停止ボタンを押すと下のコンソールエリアに「errors, warnings, badboxes」タブが現れます。中のリンクを押すと上のエディタで該当箇所に飛びますので、これを使ってチェックしてください。エラー文のGoogle検索も役に立ちます。&lt;br /&gt;
 　修正しても組版結果が思ったようなデザインにならないかもしれませんが、こうした記号の細かい出力制御は後ほど行います。今はひとまずエラーが出ないところまで置き換えればOKとしておきましょう。&lt;/p&gt;
->>>>>>> release
 
 
 &lt;figure &gt;
@@ -750,12 +716,8 @@ l.89 ...なので、五番目のポオルは fa#
 
 
 &lt;p&gt;　多すぎて手で書き換えられないという時は、エディタの&lt;strong&gt;検索・置換機能&lt;/strong&gt;を使うと一括で編集することができます。&lt;br /&gt;
-<<<<<<< HEAD
-　以下をコピペして、 &lt;em&gt;「正規表現」のところにチェックを入れてから&lt;strong&gt;上から順に&lt;/strong&gt;&lt;/em&gt; 「すべて置換」してください。&lt;/p&gt;
-=======
 　まず本文のところのみを範囲選択します。次に置換ウィンドウを開き、「 &lt;em&gt;選択した範囲のみ&lt;/em&gt; 」と「 &lt;em&gt;正規表現を使用&lt;/em&gt; 」のところにチェックを入れます（これをやらないとコマンドのところまで認識されて大変なことになる）。&lt;br /&gt;
 　そうしたら以下の表を&lt;strong&gt;上から順に&lt;/strong&gt;1段ずつコピペして、「すべて置換」してください。&lt;/p&gt;
->>>>>>> release
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -833,11 +795,7 @@ l.89 ...なので、五番目のポオルは fa#
       <description>
 
 &lt;p&gt;&amp;#x3000;組めたはいいけど横書きだし余白めっちゃあるし何なん？って感じですね。これは一番最初の文である&lt;code&gt;\documentclass{article}&lt;/code&gt;に問題があります。&lt;br /&gt;
-<<<<<<< HEAD
-　この文は「どの&lt;strong&gt;ドキュメントクラス&lt;/strong&gt;を使うか」ということを宣言しています。今はarticleです。ドキュメントクラスとは拡張子.clsのファイルのことで、デザイン情報が書かれたスタイルシートのようなものです。文書をどんな設定、どんなレイアウト、どんなデザインにするかは全てこれが握っています。全く同一の本文でも、クラスを取り替えることでガラッと違うレイアウトにできたりします。&lt;/p&gt;
-=======
 　この文は「どの&lt;strong&gt;ドキュメントクラス&lt;/strong&gt;を使うか」ということを宣言しています。今はarticleです。ドキュメントクラスとは拡張子.clsのファイルのことで、デザイン情報が書かれたスタイルシートのようなものです（TeX Liveインストールフォルダの奥深くに存在している）。文書をどんな設定、どんなレイアウト、どんなデザインにするかは全てこれが握っています。全く同一の本文でも、クラスを取り替えることでガラッと違うレイアウトにできたりします。&lt;/p&gt;
->>>>>>> release
 
 &lt;p&gt;　「article」は超基本的な、英語の記事や小論のためのクラスです。テストで使ったjsarticleはTeX界の巨人・&lt;a href=&#34;https://oku.edu.mie-u.ac.jp/~okumura/&#34;&gt;奥村先生&lt;/a&gt;の作った、日本語横書き版articleクラスです。文章の規模が増えると「report」、「book」というように使うクラスも大きくしていきます。&lt;br /&gt;
 　他にもTeX Liveには山のようなクラスが収録されていて、中には編み物の編み図を描くためのknittingクラスとか、正方形のCDジャケットを作れるcdcoverクラスとかぶっ飛んだものもあります。誰がいつ使うんだろう。&lt;br /&gt;
@@ -888,11 +846,7 @@ l.89 ...なので、五番目のポオルは fa#
 
 &lt;figure &gt;
     
-<<<<<<< HEAD
-        &lt;img src=&#34;https://hakuoku.github.io/agakuTeX/img/41/kuugyou.png&#34; alt=&#34;新しい段落&#34; /&gt;
-=======
         &lt;img src=&#34;https://hakuoku.github.io/agakuTeX/img/41linebreak/kuugyou.png&#34; alt=&#34;新しい段落&#34; /&gt;
->>>>>>> release
     
     
 &lt;/figure&gt;
@@ -903,11 +857,7 @@ l.89 ...なので、五番目のポオルは fa#
 
 &lt;figure &gt;
     
-<<<<<<< HEAD
-        &lt;img src=&#34;https://hakuoku.github.io/agakuTeX/img/41/rampo.png&#34; alt=&#34;行間の空きすぎた乱歩&#34; /&gt;
-=======
         &lt;img src=&#34;https://hakuoku.github.io/agakuTeX/img/41linebreak/rampo.png&#34; alt=&#34;行間の空きすぎた乱歩&#34; /&gt;
->>>>>>> release
     
     
 &lt;/figure&gt;
@@ -920,51 +870,32 @@ l.89 ...なので、五番目のポオルは fa#
 　この改行・段落問題はMarkdownなどとも共通で、個人的にはかなり根深い問題だと思っています。単なる英語と日本語の壁かと思ったんですが、機械にとっての解析のしやすさや伝統的な組版ルールとの絡みなどもあり、また英語圏でも空行派vs反対派議論は存在するようです。&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;br /&gt;
 　というわけでここでは正しい文法を模索するよりも、.texファイルの扱いやすさおよび表現としての柔軟さを重視します。たとえ段落と強制改行を使い分けてきちんと整形した正しいTeX文書でも、エディタでファイルを開いた時に行の間がスカスカだと腹が立ってくるからです。編集作業は楽しくやりたい。&lt;/p&gt;
 
-<<<<<<< HEAD
-&lt;p&gt;　そのためにはあらかじめこちら側で、「全部の行を見たまま改行する」的なコマンドを指定しなければなりません。TeXにはもともと&lt;code&gt;\obeylines&lt;/code&gt;というコマンドがあって、これを指定すると大体望む動作になります。&lt;br /&gt;
-　前述の記号の表示のような部分的なコマンドではない、文書全体に関わるコマンドは本文が始まる前、&lt;code&gt;\documentclass&lt;/code&gt;と&lt;code&gt;\begin&lt;/code&gt;の間で指定します。ここの間のことを&lt;strong&gt;プリアンブル&lt;/strong&gt;といいます。以降のコード例ではプリアンブルの部分のみを示していることがよくあります。&lt;br /&gt;
-=======
 &lt;p&gt;　そのためにはあらかじめこちら側で、「全部の行を見たまま改行する」的なコマンドを指定しなければなりません。TeXにはもともと&lt;code&gt;\obeylines&lt;/code&gt;というコマンドがあって、これを書いてやると大体望む動作になります。&lt;br /&gt;
 　エスケープの時のような部分的なコマンドではない、文書全体に関わるコマンドは本文が始まる前、&lt;code&gt;\documentclass&lt;/code&gt;と&lt;code&gt;\begin&lt;/code&gt;の間で指定します。ここの間のことを&lt;strong&gt;プリアンブル&lt;/strong&gt;といいます。以降のコード例ではプリアンブルの部分のみを示していることがあります。&lt;br /&gt;
->>>>>>> release
 　これでちゃんと改行できたかのように見えるんですが、実はまだ落とし穴があります。&lt;/p&gt;
 
 
 &lt;figure &gt;
     
-<<<<<<< HEAD
-        &lt;img src=&#34;https://hakuoku.github.io/agakuTeX/img/41/obeylines.png&#34; alt=&#34;空行が反映されない&#34; /&gt;
-=======
         &lt;img src=&#34;https://hakuoku.github.io/agakuTeX/img/41linebreak/obeylines.png&#34; alt=&#34;空行が反映されない&#34; /&gt;
->>>>>>> release
     
     
 &lt;/figure&gt;
 
 
 &lt;p&gt;　&lt;strong&gt;空きが反映されてない。&lt;/strong&gt;実はobeylinesは、「 &lt;em&gt;文字のない空白だけの行は無視する&lt;/em&gt; 」というTeX本来の動作に従います。なので一行アキや二行アキを入れたくて何回改行しても無視されます。&lt;br /&gt;
-<<<<<<< HEAD
-　空行の制御には\vspaceコマンドなどがあるんですが、本文が読みづらくなるのであまり使いたくありません。どうしたもんかと悩んでいたところ、&lt;a href=&#34;https://xscey.github.io/&#34;&gt;xsceyさん&lt;/a&gt;が解決法を教えて下さいました。&lt;br /&gt;
-　\obeylinesを消して、以下をプリアンブルにペーストしてやります。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-LaTeX&#34;&gt;%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-=======
 　空行の制御には\vspaceコマンドなどがあるんですが、本文が読みづらくなるのであまり使いたくありません。どうしたもんかと悩んでいたところ、&lt;a href=&#34;https://xscey.github.io/&#34;&gt;xsceyさん&lt;/a&gt;が解決法を教えて下さいました。（ありがとうございます！）&lt;br /&gt;
 　\obeylinesは使わず、以下のようにしてやります。&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-LaTeX&#34;&gt;\documentclass{utbook}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
->>>>>>> release
 {\catcode`\^^M=\active%
 \gdef\xobeylines{\catcode`\^^M\active \def^^M{\par\leavevmode}}%
 \global\def^^M{\par\leavevmode}}
 \AtBeginDocument{\xobeylines}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-<<<<<<< HEAD
-=======
 \begin{document}
 ︙
->>>>>>> release
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;　何やら恐ろしげな呪文ですが、意味は分からなくても大丈夫です。（詳しい技術的な解説は&lt;a href=&#34;http://hakuoku.hatenablog.com/entry/2016/12/14/222246&#34;&gt;ブログ&lt;/a&gt;の方にあります） こういうTeXへの命令を組み合わせた一種のプログラムを&lt;strong&gt;マクロ&lt;/strong&gt;と呼ぶことだけ覚えておいてください。&lt;br /&gt;
@@ -975,11 +906,7 @@ l.89 ...なので、五番目のポオルは fa#
 
 &lt;figure &gt;
     
-<<<<<<< HEAD
-        &lt;img src=&#34;https://hakuoku.github.io/agakuTeX/img/41/exobeylines.png&#34; alt=&#34;exobeylines適用後&#34; /&gt;
-=======
         &lt;img src=&#34;https://hakuoku.github.io/agakuTeX/img/41linebreak/exobeylines.png&#34; alt=&#34;exobeylines適用後&#34; /&gt;
->>>>>>> release
     
     
 &lt;/figure&gt;
@@ -1017,17 +944,10 @@ l.89 ...なので、五番目のポオルは fa#
 　段落のインデント量を指定するコマンドは\parindent。プリアンブルに&lt;code&gt;\parindent = 0pt&lt;/code&gt;と書き込みます。&lt;br /&gt;
 　自作原稿を1字下げしていなくて、PDFでも下げたくない人は同じようにしてください。逆に出力の時だけ下げたい人は何もしなくてOKです。&lt;/p&gt;
 
-<<<<<<< HEAD
-&lt;h5 id=&#34;言い訳&#34;&gt;言い訳&lt;/h5&gt;
-
-&lt;p&gt;　ぶっちゃけて言うとこれはやっちゃいけないバッドノウハウです。TeXやプログラミング界隈では基本的に全角スペースは避けるものとされていて、場合によってはエラー潰しに死ぬほど時間がかかったりするのは有名な話です。（筆者も2時間ハマったことがある）&lt;br /&gt;
-　それでもTeXは活字を組むシステムですから、例えば「シャネル　№5」みたいに文中の単語として全角スペースを使いたい時は使っても許されます。問題は行頭の字下げで、これは全文に渉って必ず適用されるものですから、人間がいちいち手で打つのではなくレイアウトの一要素として機械に任せるべきだ、という考え方が徹底されています。なのでクラスファイルに「括弧で始まる行以外は何ポイント下げる」というような指定があらかじめ書かれています。これと衝突しないように、原稿は字下げせずに書くのがセオリーです。&lt;br /&gt;
-=======
 &lt;h5 id=&#34;言いわけ&#34;&gt;言いわけ&lt;/h5&gt;
 
 &lt;p&gt;　ぶっちゃけて言うとこれはやっちゃいけないバッドノウハウです。TeXやプログラミング界隈では基本的に全角スペースは避けるものとされていて、場合によってはエラー潰しに死ぬほど時間がかかったりするのは有名な話です。（筆者も2時間ハマったことがある）&lt;br /&gt;
 　それでもTeXは活字を組むシステムですから、例えば「ロリータ　レンピカ」みたいに文中の単語として全角スペースを使いたい時は使っても許されます。問題は行頭の字下げで、これは全文に渉って必ず適用されるものですから、人間がいちいち手で打つのではなくレイアウトの一要素として機械に任せるべきだ、という考え方が徹底されています。なのでクラスファイルに「括弧で始まる行以外は何ポイント下げる」というような指定があらかじめ書かれています。これと衝突しないように、原稿は字下げせずに書くのがセオリーです。&lt;br /&gt;
->>>>>>> release
 　しかしですね、正直、&lt;strong&gt;書いてる間字下げしたくならないですか？&lt;/strong&gt;&lt;br /&gt;
 　別にしたくならない人はそれで全然OKだと思います。むしろTeX的にはそっちの方がいいです。でも私は字下げしたい。執筆段階で、未完成の文やいまいち納得していないところは字下げせずに書いて、大体いいなと思ったら全角スペースで下げています。字下げしてあるとなんとなく&amp;rdquo;ちゃんとした文&amp;rdquo;に見えるものです。&lt;/p&gt;
 
@@ -1072,43 +992,6 @@ All mimsy were the borogoves,
     </item>
     
     <item>
-<<<<<<< HEAD
-      <title>カスタム字下げ・地寄せ</title>
-      <link>https://hakuoku.github.io/agakuTeX/tutorial/flush/</link>
-      <pubDate>Thu, 27 Apr 2017 07:52:54 +0900</pubDate>
-      
-      <guid>https://hakuoku.github.io/agakuTeX/tutorial/flush/</guid>
-      <description>
-
-&lt;p&gt;&amp;#x3000;ここまでで、日本語の縦書き小説に絶対必要な最低限の要素は組めたと思います。これ以降は原稿に出てくる時にだけ使うオプショナルなコマンドが主ですが、体系的に覚えたい人・エラーが連発する人は原稿の中身に関わらず順番に読んでいって下さい。&lt;/p&gt;
-
-&lt;p&gt;　さてデフォルトの1字下げはできましたが、文中にはあえてもっと字下げしてあるところや、下げるというかむしろページの一番下まで付けてある行なんかもあります。ノンシャラン道中記の手紙のパートは、青空形式ではこんな風に表されています。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;［＃ここから１字下げ、折り返して２字下げ］
-長男のジャック　――巴里大学の法科に入学させてくだされたく、行すえは弁護士。
-二女のジャックリイヌ　――伯爵の継嗣《あととり》にお嫁《かたづ》け下さい。
-三男のアンリ　――海軍士官学校へ。
-四女のイレーヌ　――オペラの技芸学校へ。
-五男のポオル　――マチスとか申す画描きのところに弟子入りさせて下さい。
-六女のマリイ　――この子に学問はいりません。
-七男のルイ　――安南のＰ・Ｍ・Ｄ木綿会社へ見習いにやって下さい。
-八女のソフィ　――実のところ、わたくしも、この子の処置についてはまだ考えてはおりません。しかし、大実業家、又は相当の家柄から養女に望まれましたらば、そこへお遣《つかわ》し下さる様。
-［＃ここで字下げ終わり］
-［＃地から１字上げ］信実なるＡ・ジェルメエヌ。
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;　字下げには&lt;code&gt;\leftskip&lt;/code&gt;コマンドを使います。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\leftskip = ○zw%
-本文
-\leftskip = 0zw%
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;　と囲ってやります。○のところには、下げたい字数を入れてください。この場合は1ですね。zwというのは長さの単位でzenkaku widthの略です。つまり1zwで日本語1文字分の幅のことになります。&lt;br /&gt;
-　上げ下げするんだから幅じゃなくて高さだろう、と思うかもしれませんが、基本的に横書きシステムであるTeXにおいて、縦書き文書の中では&lt;strong&gt;全てがタテヨコ反転します&lt;/strong&gt;。このコマンドも本来は横書きにおける行頭、つまり &lt;em&gt;左端&lt;/em&gt; の空きを制御するものです。それを90°回転させて縦書きに適用すると、天の方向にある行頭を制御できることになります。レイアウトの時特に注意が必要になるので覚えておいてください。&lt;/p&gt;
-
-&lt;p&gt;　［折り返して2字下げ］とは？という感じですが、例えば箇条書きや戯曲形式など、文がびっちり上まで入って欲しくない時に、折り返した行をある高さまで押し込むことがあります。これをぶら下げインデントといい、&lt;code&gt;\hangindent&lt;/code&gt;コマンドで対応します。&lt;/p&gt;
-=======
       <title>全角と半角・縦中横</title>
       <link>https://hakuoku.github.io/agakuTeX/tutorial/rensuji/</link>
       <pubDate>Tue, 27 Jun 2017 11:19:16 +0900</pubDate>
@@ -1120,152 +1003,29 @@ All mimsy were the borogoves,
 
 &lt;p&gt;　十蘭の小説にはフランス語が山ほど出てきます。青空文庫ではデフォルトで、横倒しにして欧文として表示したい箇所は半角、横倒しにせずカナと同じように縦向きで表示したいアルファベットは全角で書かれています。&lt;br /&gt;
 　TeXでもこれは全く同じです。なので縦向きで組みたい英数字は全角にしておきます。&lt;/p&gt;
->>>>>>> release
 
 
 &lt;figure &gt;
     
-<<<<<<< HEAD
-        &lt;img src=&#34;https://hakuoku.github.io/agakuTeX/img/43/play.png&#34; alt=&#34;戯曲の例&#34; /&gt;
-    
-    
-    &lt;figcaption&gt;
-        &lt;p&gt;
-        例（岡本綺堂『人狼』）
-        
-            
-        
-        &lt;/p&gt; 
-    &lt;/figcaption&gt;
-=======
         &lt;img src=&#34;https://hakuoku.github.io/agakuTeX/img/43/zenkaku.jpg&#34; alt=&#34;全角で縦向き&#34; /&gt;
     
->>>>>>> release
     
 &lt;/figure&gt;
 
 
-<<<<<<< HEAD
-&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\hangindent = ●zw
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;　ぶら下げたい行頭の &lt;em&gt;全て&lt;/em&gt; にこれをつけます（コマンドと本文の間は半角スペースで空ける）。●には押し込みたい字数を入れますが、冒頭の例では1字下げと組み合わさっているので、2字からleftskipの1字分を引いた1が入ります。改行ごとにリセットされるコマンドなので&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;、範囲の行頭全てに入れてください。&lt;/p&gt;
-
-&lt;p&gt;　1、2行ならこれでいいですが、使いたい箇所が多かったり、台本など本文全体にハングインデントが入る場合はいちいち行頭に書かずに挟み込みで済ませたいですよね。そういう時には、自分で\begin{}～\end{}の環境を作ってしまいます。プリアンブルに以下を入れた後、&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\newenvironment{hangall}[1]{\everypar{\hangindent = #1zw}}{}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;ぶら下げしたい範囲を以下で囲います。●が押し込む字数になります。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\begin{hangall}{●}\hangindent= ●zw%
-本文
-\end{hangall}%
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;　環境の定義は覚えると大変便利なんですが、ここでは詳しくやりません。筆者もよく分かってないので、上の\begin{hangall}の後に余計な\hangindentを入れざるを得ませんでした（これがないと一行目がおかしくなる）。マスターできたら改良して、解説記事を立てたいと思います。&lt;/p&gt;
-
-&lt;h4 id=&#34;地寄せ-地付き&#34;&gt;地寄せ・地付き&lt;/h4&gt;
-
-&lt;p&gt;　地寄せの方は一行か複数行かでコマンドが変わります。一行だけ、またはある行の中の一部分だけ寄せたい時は&lt;code&gt;\hfill&lt;/code&gt;、複数行の時は&lt;code&gt;\raggedleft&lt;/code&gt;で対応します。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;二人はそれぎり黙って風呂へはいった。{\hfill \rightskip = ☆zw （掲載誌不詳、『十番随筆』所収）\par}%
-
-{\raggedleft \rightskip = ☆zw%
-昭和十八年四月二十四日稿了
-　　同　　四月二十九日清書
-}%
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;　｛｝の中にコマンドと寄せたい箇所が入ります。☆は下端からの距離で、冒頭の例なら1ですね。完全な地付きの場合は\rightskipごと割愛してOKです。&lt;br /&gt;
-　hfillはhorizontal fillの略で、水平方向（＝文字送り方向。縦書きなので垂直方向）に伸縮するグルー（穴埋め余白）を入れてくれるコマンドです。そもそも&lt;code&gt;\hspace{長さ}&lt;/code&gt;という余白を出力するコマンドがあって、これは数値を手動で指定して入れるものですが、hfillはその自動伸び縮み版というイメージです。&lt;/p&gt;
-=======
 &lt;p&gt;　ただし全角フォントが気に入らなかったり表示がおかしくなったりする場合があります。それから2つ以上の英数を1字分のスペースに押し込んで縦向きにしたい時もよくあります。青空文庫なら&lt;code&gt;39［＃「39」は縦中横］&lt;/code&gt;となっている部分です。&lt;br /&gt;
 　そんな時は&lt;strong&gt;rensuji&lt;/strong&gt;コマンドを使います。半角文字を半角のまま、いわば「全角一文字分の高さのスペースにおける横書き」にしてくれます。&lt;br /&gt;
 　実際に見た方が早いです。&lt;code class=&#34;language-latex&#34;&gt;一様に&amp;#092;rensuji{39}度の一夜を&lt;/code&gt;のように書いてやるとこうなります。&lt;/p&gt;
->>>>>>> release
 
 
 &lt;figure &gt;
     
-<<<<<<< HEAD
-        &lt;img src=&#34;https://hakuoku.github.io/agakuTeX/img/43/hfill.png&#34; alt=&#34;hfillの図示&#34; /&gt;
-    
-    
-    &lt;figcaption&gt;
-        &lt;p&gt;
-        これを90°回転させて考えます
-        
-            
-        
-        &lt;/p&gt; 
-    &lt;/figcaption&gt;
-=======
         &lt;img src=&#34;https://hakuoku.github.io/agakuTeX/img/43/rensuji.jpg&#34; alt=&#34;連数字&#34; /&gt;
     
->>>>>>> release
     
 &lt;/figure&gt;
 
 
-<<<<<<< HEAD
-&lt;p&gt;　raggedleftの方は横書きで言ったら右寄せに当たるのになんで「left」かとなりますが、［左側に揃えない、左側がガタガタの］って意味だからいいんだそうです。raggedrightというコマンドもあるので混同しないようにしてください。&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:2&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;p&gt;　これらを組み合わせることで、大概の字下げ地寄せには対応できると思います。最終的なソースと出力は以下のようになりました。&lt;br /&gt;
-　コマンドの後ろにいちいち%がついていますが、これは改行マクロの副作用を打ち消すためのおまじないなので&lt;strong&gt;消さないでください&lt;/strong&gt;。以降コマンドしかない行の最後には必ず%がつくことになります。&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:3&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:3&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;その後ろの日本語コメント部分は消しても大丈夫です。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\newenvironment{hangall}[1]{\everypar{\hangindent = #1zw}}{}
-%%%%%%%%%%%%%%%プリアンブルここまで%%%%%%%%%%%%%%%%%
-\begin{document}
-︙
-\leftskip = 1zw%  1字下げ
-\begin{hangall}{1}\hangindent= 1zw%  ぶら下げインデント
-長男のジャック　――巴里大学の法科に入学させてくだされたく、行すえは弁護士。
-二女のジャックリイヌ　――伯爵の継嗣《あととり》にお嫁《かたづ》け下さい。
-三男のアンリ　――海軍士官学校へ。
-四女のイレーヌ　――オペラの技芸学校へ。
-五男のポオル　――マチスとか申す画描きのところに弟子入りさせて下さい。
-六女のマリイ　――この子に学問はいりません。
-七男のルイ　――安南のＰ・Ｍ・Ｄ木綿会社へ見習いにやって下さい。
-八女のソフィ　――実のところ、わたくしも、この子の処置についてはまだ考えてはおりません。しかし、大実業家、又は相当の家柄から養女に望まれましたらば、そこへお遣《つかわ》し下さる様。
-\end{hangall}%
-\leftskip = 0zw%
-{\hfill \rightskip = 1zw 信実なるＡ・ジェルメエヌ。\par}%  地から1字上げ
-&lt;/code&gt;&lt;/pre&gt;
-
-
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://hakuoku.github.io/agakuTeX/img/43/hangindent.png&#34; alt=&#34;ぶら下げ・地寄せの実装&#34; /&gt;
-    
-    
-&lt;/figure&gt;
-
-
-&lt;p&gt;　出力は大分すっきりしてきましたがソースの方がごちゃごちゃしてきました。いろいろコマンドが出てきましたが、面倒だったらもう全部全角スペースを手で入れる方式でもいいと思います。紙の大きさが分かっていて変わる可能性がなく、かつ特殊字下げの量が少ないなら、ページレイアウトまで終わった時点でPDFの出力と見比べつつ手でポチポチ入れましょう。本来はやっちゃいけないけど通常字下げを全角スペースでやってる時点でもう怖いものなしです。&lt;/p&gt;
-
-&lt;h4 id=&#34;参考&#34;&gt;参考&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.aozora.gr.jp/annotation/layout_2.html#ototsu&#34;&gt;凹凸の複雑な字下げ&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://tex.stackexchange.com/questions/208898/how-to-align-text-to-right-without-adding-additional-vertical-spacing&#34;&gt;horizontal alignment - How to align text to right without adding additional vertical spacing? - TeX - LaTeX Stack Exchange&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://tex.stackexchange.com/questions/60613/set-hanging-indent-for-more-than-one-paragraph-at-a-time&#34;&gt;indentation - set hanging indent for more than one paragraph at a time - TeX - LaTeX Stack Exchange&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/length.html&#34;&gt;Length: LaTeX&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;footnotes&#34;&gt;
-
-&lt;hr /&gt;
-
-&lt;ol&gt;
-&lt;li id=&#34;fn:1&#34;&gt;正確には段落ごとにリセットされるものです。改行マクロのために「全ての行はことごとく段落に」なっています。
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li id=&#34;fn:2&#34;&gt;flushrightコマンドの方が直感的なんですが、出力してみると前後の段落との間に隙間が空いてしまうので、ここではraggedleftを使います。
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:2&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li id=&#34;fn:3&#34;&gt;こうすることで「改行文字をコメントアウト」しています。これをやらないとコマンドだけの行は「コマンド（組版結果には表示されない）＋改行一つ分」と解釈されるので、余計な行が空いてしまいます。逆に本文とコマンドが混在した行の最後に%をつけてしまうと次の行との間が改行されないことになります。ただし\parとの絡みもあってケースバイケースなので、出力がおかしくなる時は%のつけ方、改行のしかたをガン見してみてください。
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:3&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-=======
 &lt;p&gt;　面倒なのが !! や !? の扱いです。全角で書くと縦に二つ、半角で書くと横倒しで二つ表示されてしまうので、二重の感嘆符も\rensuji{}に入れるようにしましょう。&lt;br /&gt;
 　ごちゃごちゃするのが嫌なら、コマンドを使わずに“二重感嘆符記号そのもの”を原稿に直書きしちゃう手もあります。&lt;code&gt;‼・⁉・⁈・⁇&lt;/code&gt;←これをコピペしてもいいし、iPhone（androidも？）からなら普通に予測変換で入力できます。三重以上だとコマンド使わざるを得ないですが。&lt;/p&gt;
 
@@ -1286,7 +1046,6 @@ All mimsy were the borogoves,
 　それでもなおかなり文脈によるところが大きいので、「すべて置換」はせずに一回ずつ「次を検索」＆「置換」を押すか、置換はせずに検索だけを使って手で書き換えるのが安全です。&lt;/p&gt;
 
 &lt;p&gt;　そしてこの方法だと、英数字以外の記号が入るケースなどは検索できません。そのあたりのことを含め、次項ではちょっと寄り道して、ちょいちょい出てきた謎の呪文「&lt;strong&gt;正規表現&lt;/strong&gt;」について解説したいと思います。&lt;/p&gt;
->>>>>>> release
 </description>
     </item>
     
@@ -1309,24 +1068,6 @@ All mimsy were the borogoves,
     </item>
     
     <item>
-<<<<<<< HEAD
-      <title>あがきながら覚えるTeX</title>
-      <link>https://hakuoku.github.io/agakuTeX/about/about/</link>
-      <pubDate>Fri, 16 Dec 2016 23:45:42 +0900</pubDate>
-      
-      <guid>https://hakuoku.github.io/agakuTeX/about/about/</guid>
-      <description>&lt;p&gt;&amp;#x3000;DTP知識ゼロ・プログラミング経験ほぼなしの文系人間が、「それでも綺麗に&lt;ruby&gt;小説&lt;rp&gt;（&lt;/rp&gt;&lt;rt&gt;・・&lt;/rt&gt;&lt;rp&gt;）&lt;/rp&gt;&lt;/ruby&gt;を組版したい！」と思いつめた末にTeXの魔道に落ち、悪戦苦闘しながらどうにか体裁を整えるところまでは来た過程を、テキトーな文章で記した実録風チュートリアルです。&lt;/p&gt;
-
-&lt;p&gt;　自分の備忘録兼、日本語の文書を作る時、初心者が参考できるような場所が欲しいと思って書きました。&lt;br /&gt;
-　とにかくTeXのての字も知らなかった人間が書いてるので、きちんとしたリファレンスや手順をお求めの方にはまったく役に立ちません。筆者と同じレベルの、本当に初歩の初歩の入門編を探している方向けです。「インストールすらうまくいかない」「文法の意味もわからない」という方は、これを読めば少しは前進できるかもしれません。&lt;br /&gt;
-　また小説および縦組みの日本語を組版する、というのが大前提ですので、論文その他&amp;rdquo;正しい&amp;rdquo;TeXの使い方をお探しの方のお役にも立てないと思います。論文の組み方については熟練の使い手さんたちがネット上に充実したドキュメントを上げておられますので、どうぞそちらをご参照ください。&lt;/p&gt;
-
-&lt;p&gt;　こんなポンコツが書いてますがフィードバック、質問はいつでも大歓迎です。なにぶんポンコツなので私に訊いてもたぶん問題は解決しませんが、初歩的な「ここで詰まった」を一緒に考えていけるようなサイトにできればと思っております。逆にお詳しい方はお叱り、ご意見を頂ければ大変助かります。&lt;/p&gt;
-
-&lt;p&gt;　免責事項：あくまでド素人によるガイドですので、もし失敗して何か損害が発生しましても保証は致しかねます。心配な方はちゃんと紙の教科書を読んだほうが無難です。&lt;/p&gt;
-
-&lt;p&gt;　Then, Happy T&lt;span style = &#34;line-height: 0; text-transform: uppercase;margin-left: -0.140em; margin-right: -0.102em;vertical-align: -0.161em; &#34;&gt;e&lt;/span&gt;Xing!&lt;/p&gt;
-=======
       <title>全角と半角・縦中横・記号の制御</title>
       <link>https://hakuoku.github.io/agakuTeX/tutorial/tatechu/</link>
       <pubDate>Sun, 07 May 2017 08:54:46 +0900</pubDate>
@@ -1408,7 +1149,6 @@ All mimsy were the borogoves,
 &lt;li&gt;&lt;a href=&#34;http://id.fnshr.info/2017/05/20/my-latex-templates-201705/#toc12&#34;&gt;私家版日本語 LaTeX テンプレート（2017年5月版）｜Colorless Green Ideas&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://zrbabbler.sp.land.to/uplatex.html&#34;&gt;upLaTeXを使おう [電脳世界の奥底にて]&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
->>>>>>> release
 </description>
     </item>
     
