@@ -157,7 +157,11 @@
                 
                 <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/indent/">インデント（字下げ）・空白</a></li>
                 
+                <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/rensuji/">全角と半角・縦中横</a></li>
+                
                 <li class="active"><a href="https://hakuoku.github.io/agakuTeX/tutorial/flush/">カスタム字下げ・地寄せ</a></li>
+                
+                <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/tatechu/">全角と半角・縦中横・記号の制御</a></li>
                 
             </ul>
             </li>
@@ -237,17 +241,17 @@
 
 <p>　1、2行ならこれでいいですが、使いたい箇所が多かったり、台本など本文全体にハングインデントが入る場合はいちいち行頭に書かずに挟み込みで済ませたいですよね。そういう時には、自分で\begin{}～\end{}の環境を作ってしまいます。プリアンブルに以下を入れた後、</p>
 
-<pre><code class="language-latex">\newenvironment{hangall}[1]{\everypar{\hangindent = #1zw}}{}
+<pre><code class="language-latex">\newenvironment{hangall}[1]{\hangindent = #1zw\everypar{\hangindent = #1zw}}{}
 </code></pre>
 
 <p>ぶら下げしたい範囲を以下で囲います。●が押し込む字数になります。</p>
 
-<pre><code class="language-latex">\begin{hangall}{●}\hangindent= ●zw%
+<pre><code class="language-latex">\begin{hangall}{●}%
 本文
 \end{hangall}%
 </code></pre>
 
-<p>　環境の定義は覚えると大変便利なんですが、ここでは詳しくやりません。筆者もよく分かってないので、上の\begin{hangall}の後に余計な\hangindentを入れざるを得ませんでした（これがないと一行目がおかしくなる）。マスターできたら改良して、解説記事を立てたいと思います。</p>
+<p>　環境の定義は覚えると大変便利なんですが、ここでは詳しくやりません。筆者もよく分かってないので、いつかマスターできたら解説記事を立てたいです。</p>
 
 <h4 id="地寄せ-地付き">地寄せ・地付き</h4>
 
@@ -287,12 +291,12 @@
 <p>　これらを組み合わせることで、大概の字下げ地寄せには対応できると思います。最終的なソースと出力は以下のようになりました。<br />
 　コマンドの後ろにいちいち%がついていますが、これは改行マクロの副作用を打ち消すためのおまじないなので<strong>消さないでください</strong>。以降コマンドしかない行の最後には必ず%がつくことになります。<sup class="footnote-ref" id="fnref:3"><a rel="footnote" href="#fn:3">3</a></sup>その後ろの日本語コメント部分は消しても大丈夫です。</p>
 
-<pre><code class="language-latex">\newenvironment{hangall}[1]{\everypar{\hangindent = #1zw}}{}
+<pre><code class="language-latex">\newenvironment{hangall}[1]{\hangindent = #1zw\everypar{\hangindent = #1zw}}{}
 %%%%%%%%%%%%%%%プリアンブルここまで%%%%%%%%%%%%%%%%%
 \begin{document}
 ︙
 \leftskip = 1zw%  1字下げ
-\begin{hangall}{1}\hangindent= 1zw%  ぶら下げインデント
+\begin{hangall}{1}%  ぶら下げインデント
 長男のジャック　――巴里大学の法科に入学させてくだされたく、行すえは弁護士。
 二女のジャックリイヌ　――伯爵の継嗣《あととり》にお嫁《かたづ》け下さい。
 三男のアンリ　――海軍士官学校へ。
@@ -340,8 +344,22 @@
 </div>
 
             </section>
-            <section class="post__comment">
-                <div id="disqus_thread"></div>
+            <nav class = "pager" >
+    <ul class = "pager-list">
+        
+            <li class = "pager-prev"><a href = "https://hakuoku.github.io/agakuTeX/tutorial/tatechu/">←全角と半角・縦中横・記号の制御</a></li>
+        
+        
+            <li class = "pager-next"><a href = "https://hakuoku.github.io/agakuTeX/tutorial/beginning/">発端→</a></li>
+        
+
+
+    </ul>
+</nav>
+
+        </article>
+        <section class="post__comment">
+            <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'hakuoku';
     var disqus_identifier = 'https:\/\/hakuoku.github.io\/agakuTeX\/tutorial\/flush\/';
@@ -356,22 +374,8 @@
 </script>
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-            </section>
-        </article>
+        </section>
     </main>
-    <nav class = "pager" >
-    <ul class = "pager-list">
-        
-            <li class = "pager-prev"><a href = "https://hakuoku.github.io/agakuTeX/tutorial/indent/">←インデント（字下げ）・空白</a></li>
-        
-        
-            <li class = "pager-next"><a href = "https://hakuoku.github.io/agakuTeX/tutorial/reference/">主要参考文献→</a></li>
-        
-
-
-    </ul>
-</nav>
-
     <footer class="legal" role="contentinfo">
     <p>&copy; 2017 Hakuoku Shobo Some Rights Reserved. Performed by <a href="//gohugo.io" title="Hugo :: A fast and modern static website engine">Hugo</a> .</p>
 

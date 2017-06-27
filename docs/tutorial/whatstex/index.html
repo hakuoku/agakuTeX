@@ -157,7 +157,11 @@
                 
                 <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/indent/">インデント（字下げ）・空白</a></li>
                 
+                <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/rensuji/">全角と半角・縦中横</a></li>
+                
                 <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/flush/">カスタム字下げ・地寄せ</a></li>
+                
+                <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/tatechu/">全角と半角・縦中横・記号の制御</a></li>
                 
             </ul>
             </li>
@@ -194,7 +198,7 @@
 
 <p>　ここでちょっと補足ですが、これまでTeXTeXと呼んできたものは正しい呼び方ではありません。TeXというのは大分慣用的な表現で、あれです、おばあちゃんに言わせると全部「ファミコン」になる的なそういうやつです。オリジナルのファミコンだろうがwiiだろうがDSだろうが全部ファミコンと呼ぶみたいな用法です。<br />
 　厳密には『TeX』というのはクヌース教授が自分のために作った素のままのプログラムのことで、それだと扱いづらいので普段はみんなそこにいろいろ機能を足した『LaTeX』というのを使っています。普通にTeXと言えばだいたいLaTeXのことを指しているくらいです。<br />
-　そしてここまでが英語圏の話です。日本では先述のpTeX、pLaTeXを使う場合が多く、日本人がただTeXと言えばpLaTeXを指していることもままあります。筆者の用法はこれです。さらに厳密に言うと今はe-pTeXらしく、さらにさらに私が使うのはUnicodeなので最終的にe-upTeXらしいけどもう知らんがな。とりあえず <em>このサイトで『TeX』と言った時には、正確には『<strong>e-upTeX</strong>』のことを指している</em> 、ということだけ覚えておいてください。<br />
+　そしてここまでが英語圏の話です。日本では先述のpTeX、pLaTeXを使う場合が多く、日本人がただTeXと言えばpLaTeXを指していることもままあります。筆者の用法はこれです。さらに厳密に言うと今はe-pTeXらしく、さらにさらに私が使うのはUnicodeなので最終的にe-upTeXらしいけどもう知らんがな。とりあえず <em>このサイトで『TeX』と言った時には、正確には『<strong>upLaTeX（≒e-upTeX）</strong>』のことを指している</em> 、ということだけ覚えておいてください。<br />
 （TeXという言葉が何を意味するのかは、ワトソン氏によるこちらの記事が詳しいです： <a href="https://blog.wtsnjp.com/2016/12/19/tex-and-latex/">TeX と LaTeX の違い | ラング・ラグー</a>）</p>
 
 <p>　閑話休題。じゃあ具体的にはどんなソフトなの？Wordっぽいの？となりますが、超要約すると「 <em>TeX文法に則った文章を読み込ませると、文法で指定した通りの組み方でPDFを吐き出してくれるエンジン</em> 」ってことになるんだと思います。<br />
@@ -218,7 +222,7 @@
 </figure>
 
 
-<p>　上の図のように小説本文の間に余計な文字列が入ることになるので、この表示にひどい違和感を覚える人や、原稿ファイルは本文のみであるべきだと考える人にはTeXの使用をおすすめできません。WYSIWYG（見たまんま）で編集できるInDesignやワープロソフトを使いましょう。<br />
+<p>　上の図のように小説本文の間に余計な文字列が入ることになるので、この表示にひどい違和感を覚える人や、原稿ファイルは本文のみであるべきだと考える人にはTeXの使用をおすすめできません。WYSIWYG（見たまんま）で編集できるInDesignやワープロソフトを使いましょう。個人的には一太郎が本当に素晴らしいと思います。<br />
 　この表示が嫌じゃない人や、見たままよりはむしろ効率化や論理性を重視したいと思う人には、TeXの使用自体はそんなに難しくありません。ただし日本語組版はわりと地獄です。英語話者が数学論文のために作ったプログラムで日本語縦書き文書を組むという、ある意味すごく不自然なことをやってるのでめんどくさくなるのもむべなるかなです。<br />
 　しかしですね、あまたの困難を乗り越えて組みあがった文書は、ユーザーの誰もが言うように本当に美しいです。初めて理想の文書を印刷できたときは思わず「おお……」と唸りました。向いてないはずの処理を素人がやってもここまで綺麗にできるというのがTeXの底力だと思います。</p>
 
@@ -241,8 +245,22 @@
 
 
             </section>
-            <section class="post__comment">
-                <div id="disqus_thread"></div>
+            <nav class = "pager" >
+    <ul class = "pager-list">
+        
+            <li class = "pager-prev"><a href = "https://hakuoku.github.io/agakuTeX/tutorial/beginning/">←発端</a></li>
+        
+        
+            <li class = "pager-next"><a href = "https://hakuoku.github.io/agakuTeX/tutorial/usage/">このサイトの使い方→</a></li>
+        
+
+
+    </ul>
+</nav>
+
+        </article>
+        <section class="post__comment">
+            <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'hakuoku';
     var disqus_identifier = 'https:\/\/hakuoku.github.io\/agakuTeX\/tutorial\/whatstex\/';
@@ -257,22 +275,8 @@
 </script>
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-            </section>
-        </article>
+        </section>
     </main>
-    <nav class = "pager" >
-    <ul class = "pager-list">
-        
-            <li class = "pager-prev"><a href = "https://hakuoku.github.io/agakuTeX/tutorial/beginning/">←発端</a></li>
-        
-        
-            <li class = "pager-next"><a href = "https://hakuoku.github.io/agakuTeX/tutorial/usage/">このサイトの使い方→</a></li>
-        
-
-
-    </ul>
-</nav>
-
     <footer class="legal" role="contentinfo">
     <p>&copy; 2017 Hakuoku Shobo Some Rights Reserved. Performed by <a href="//gohugo.io" title="Hugo :: A fast and modern static website engine">Hugo</a> .</p>
 

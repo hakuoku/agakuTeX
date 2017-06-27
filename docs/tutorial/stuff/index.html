@@ -157,7 +157,11 @@
                 
                 <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/indent/">インデント（字下げ）・空白</a></li>
                 
+                <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/rensuji/">全角と半角・縦中横</a></li>
+                
                 <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/flush/">カスタム字下げ・地寄せ</a></li>
+                
+                <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/tatechu/">全角と半角・縦中横・記号の制御</a></li>
                 
             </ul>
             </li>
@@ -231,13 +235,13 @@
 <li>テキストエディタ</li>
 </ul>
 
-<p>　テキストエディタというのはプレーンテキストを編集するためのソフトで、原理は「メモ帳」と一緒です。付加情報がない質素なやつ。ただし情報を持ってないのはあくまで“文書そのもの”なので、編集する時にはソフト側のフィルター次第で本文と注記を分けたり見やすくできたりします。テストや上の画像で字に色がついて見えるのもこれのおかげです。TeXに限らず、自分に合ったエディタをひとつ持っておくと何かと便利です。<br />
-　テストで使ったTeXWorksはTeX専用の統合開発環境ですが、テキストエディタであるとも言えます。どのエディタで書いても結局最後はTeXWorksに通すので、初めからこれで書くのもいいと思います。<br />
+<p>　テキストエディタというのはプレーンテキストを編集するためのソフトで、原理は「メモ帳」と一緒です。付加情報がない質素なやつ。ただし情報を持ってないのはあくまで“文書そのもの”なので、編集する時にはソフト側のフィルター次第で本文と注記を分けたり見やすくできたりします。テストや上の画像で字に色がついて見えたのもこれのおかげです。TeXに限らず、自分に合ったエディタをひとつ持っておくと何かと便利です。<br />
+　テストで使ったTeXWorksはTeX専用の統合開発環境ですが、テキストエディタであるとも言えます。どのエディタで書いても結局最後はTeXWorksに通すので、初めからこれで書くのもいいと思います。（ただし使い勝手はあまりよくない）<br />
 　既に好みのものがあるなら勿論そちらを使ってください。基本的に既存の.txtファイルにコマンドを書き込んでいくだけなので、わざわざTeXのために執筆環境を変える必要はありません。</p>
 
 <p>　ちなみに筆者は「<a href="http://www.haijin-boys.com/wiki/%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9A%E3%83%BC%E3%82%B8">Mery</a>」というエディタを溺愛しています。純国産、シンプルでキュートで軽快でとにかくひたすら使いやすい！色分け以外にも置換やマクロなどの強力な機能があり、細かい動作までカスタマイズできます。作者のkuro様に<a href="http://www.haijin-boys.com/11.html">感謝</a>です。<br />
 　最近ではGitHub製の「<a href="https://atom.io/">Atom</a>」がクールだとの評判で、使っている人も多いです。いちいち長いコマンドを打ち込まずに済む自動補完機能などを備えた、プログラミング用の高機能で先進的なエディタです。ただし便利な分複雑で、ヘルプも全て英語なので体力のある人が挑戦するといいでしょう。<br />
-　ここではMeryを使って解説します。組版結果を見るためのスクリーンショットにはTeXWorksと標準のPDFプレビューが登場します。</p>
+　ここではMeryを使って解説します。どれがいいのかわからない時はとりあえずMeryにしときましょう。組版結果を見るためのスクリーンショットにはTeXWorksと標準のPDFプレビューが登場します。</p>
 
 <h4 id="あると便利なもの">あると便利なもの</h4>
 
@@ -263,8 +267,22 @@
 </ul>
 
             </section>
-            <section class="post__comment">
-                <div id="disqus_thread"></div>
+            <nav class = "pager" >
+    <ul class = "pager-list">
+        
+            <li class = "pager-prev"><a href = "https://hakuoku.github.io/agakuTeX/tutorial/test/">←テスト</a></li>
+        
+        
+            <li class = "pager-next"><a href = "https://hakuoku.github.io/agakuTeX/tutorial/settings/">設定→</a></li>
+        
+
+
+    </ul>
+</nav>
+
+        </article>
+        <section class="post__comment">
+            <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'hakuoku';
     var disqus_identifier = 'https:\/\/hakuoku.github.io\/agakuTeX\/tutorial\/stuff\/';
@@ -279,22 +297,8 @@
 </script>
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-            </section>
-        </article>
+        </section>
     </main>
-    <nav class = "pager" >
-    <ul class = "pager-list">
-        
-            <li class = "pager-prev"><a href = "https://hakuoku.github.io/agakuTeX/tutorial/test/">←テスト</a></li>
-        
-        
-            <li class = "pager-next"><a href = "https://hakuoku.github.io/agakuTeX/tutorial/settings/">設定→</a></li>
-        
-
-
-    </ul>
-</nav>
-
     <footer class="legal" role="contentinfo">
     <p>&copy; 2017 Hakuoku Shobo Some Rights Reserved. Performed by <a href="//gohugo.io" title="Hugo :: A fast and modern static website engine">Hugo</a> .</p>
 
