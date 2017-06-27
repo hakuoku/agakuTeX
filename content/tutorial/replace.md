@@ -1,6 +1,5 @@
 +++
 date = "2017-05-07T17:50:02+09:00"
-weight = 90
 slug = "replace"
 topics = [""]
 description = ""
