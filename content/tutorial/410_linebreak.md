@@ -4,18 +4,18 @@ date = "2017-04-22T19:24:51+09:00"
 description = ""
 topics = ["プリアンブル", "マクロ", "コメント"]
 slug = "linebreak"
-weight = 41
+weight = 410
 [menu.toc]
     parent = "edit"
 +++
 &#x3000;それにしても読みづらいですね。改行が全然なくて一面に字が植えてある。**面倒なことにTeXは、いわゆる普通の改行を感知しません。**  
 　いやさすがに語弊があるな。正しくは下のように、間に空行を入れることで改行、つまり新たな段落が製造されます。
 
-{{< figure src="/img/41/kuugyou.png" caption="" alt="新しい段落" class="" >}}
+{{< figure src="/img/41linebreak/kuugyou.png" caption="" alt="新しい段落" class="" >}}
 
 　じゃあ改行したいところに空行を入れていけばいいのかとなると、そうとも言い切れない。だってこうなるんだよ。（十蘭は改行少ないんで乱歩で）
 
-{{< figure src="/img/41/rampo.png" caption="" alt="行間の空きすぎた乱歩" class="" >}}
+{{< figure src="/img/41linebreak/rampo.png" caption="" alt="行間の空きすぎた乱歩" class="" >}}
 
 　いやだ！こんなの乱歩じゃない！なにより面倒くさい。いちいち空きを入れてくなんてミスも増えそうだし。  
 　間が開かない段落内強制改行のやり方は、[一般的](http://www.latex-cmd.com/struct/space.html)には行末に\\か\newlineを入れることです。ただこれも、面倒くささとミスのしやすさでは大して変わりません。
@@ -24,23 +24,26 @@ weight = 41
 　この改行・段落問題はMarkdownなどとも共通で、個人的にはかなり根深い問題だと思っています。単なる英語と日本語の壁かと思ったんですが、機械にとっての解析のしやすさや伝統的な組版ルールとの絡みなどもあり、また英語圏でも空行派vs反対派議論は存在するようです。[^1]  
 　というわけでここでは正しい文法を模索するよりも、.texファイルの扱いやすさおよび表現としての柔軟さを重視します。たとえ段落と強制改行を使い分けてきちんと整形した正しいTeX文書でも、エディタでファイルを開いた時に行の間がスカスカだと腹が立ってくるからです。編集作業は楽しくやりたい。
 
-　そのためにはあらかじめこちら側で、「全部の行を見たまま改行する」的なコマンドを指定しなければなりません。TeXにはもともと`\obeylines`というコマンドがあって、これを指定すると大体望む動作になります。  
-　前述の記号の表示のような部分的なコマンドではない、文書全体に関わるコマンドは本文が始まる前、`\documentclass`と`\begin`の間で指定します。ここの間のことを**プリアンブル**といいます。以降のコード例ではプリアンブルの部分のみを示していることがよくあります。  
+　そのためにはあらかじめこちら側で、「全部の行を見たまま改行する」的なコマンドを指定しなければなりません。TeXにはもともと`\obeylines`というコマンドがあって、これを書いてやると大体望む動作になります。  
+　エスケープの時のような部分的なコマンドではない、文書全体に関わるコマンドは本文が始まる前、`\documentclass`と`\begin`の間で指定します。ここの間のことを**プリアンブル**といいます。以降のコード例ではプリアンブルの部分のみを示していることがあります。  
 　これでちゃんと改行できたかのように見えるんですが、実はまだ落とし穴があります。
 
-{{< figure src="/img/41/obeylines.png" caption="" alt="空行が反映されない" class="" >}}
+{{< figure src="/img/41linebreak/obeylines.png" caption="" alt="空行が反映されない" class="" >}}
 
 　**空きが反映されてない。**実はobeylinesは、「 _文字のない空白だけの行は無視する_ 」というTeX本来の動作に従います。なので一行アキや二行アキを入れたくて何回改行しても無視されます。  
-　空行の制御には\vspaceコマンドなどがあるんですが、本文が読みづらくなるのであまり使いたくありません。どうしたもんかと悩んでいたところ、[xsceyさん](https://xscey.github.io/)が解決法を教えて下さいました。  
-　\obeylinesを消して、以下をプリアンブルにペーストしてやります。
+　空行の制御には\vspaceコマンドなどがあるんですが、本文が読みづらくなるのであまり使いたくありません。どうしたもんかと悩んでいたところ、[xsceyさん](https://xscey.github.io/)が解決法を教えて下さいました。（ありがとうございます！）  
+　\obeylinesは使わず、以下のようにしてやります。
 
 ```LaTeX
+\documentclass{utbook}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 {\catcode`\^^M=\active%
 \gdef\xobeylines{\catcode`\^^M\active \def^^M{\par\leavevmode}}%
 \global\def^^M{\par\leavevmode}}
 \AtBeginDocument{\xobeylines}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+︙
 ```
 
 　何やら恐ろしげな呪文ですが、意味は分からなくても大丈夫です。（詳しい技術的な解説は[ブログ](http://hakuoku.hatenablog.com/entry/2016/12/14/222246)の方にあります） こういうTeXへの命令を組み合わせた一種のプログラムを**マクロ**と呼ぶことだけ覚えておいてください。  
@@ -48,7 +51,7 @@ weight = 41
 
 　これで、本文通りの改行になりました。
 
-{{< figure src="/img/41/exobeylines.png" caption="" alt="exobeylines適用後" class="" >}}
+{{< figure src="/img/41linebreak/exobeylines.png" caption="" alt="exobeylines適用後" class="" >}}
 
 [^1]: [Should the markdown renderer treat a single line break as br? - Meta Stack Exchange](https://meta.stackexchange.com/questions/26011/should-the-markdown-renderer-treat-a-single-line-break-as-br)<br>また[でんでんマークダウン](http://conv.denshochan.com/markdown)では、デフォルトでこの問題をクリアしています。
 

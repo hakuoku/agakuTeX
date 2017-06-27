@@ -4,7 +4,7 @@ description = ""
 date = "2016-12-31T20:04:25+09:00"
 lastmod = "2017-01-02"
 slug = "prepare"
-weight = 21
+weight = 210
 [menu.toc]
     parent = "setup"
 +++
