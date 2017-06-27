@@ -14,12 +14,12 @@
             <section class="post__content" itemprop="articleBody">
                 {{ .Content }}
             </section>
-            <section class="post__comment">
-                {{ template "_internal/disqus.html" . }}
-            </section>
+            {{ partial "pager" . }}
         </article>
+        <section class="post__comment">
+            {{ template "_internal/disqus.html" . }}
+        </section>
     </main>
-    {{ partial "pager" . }}
     {{ partial "footer" . }}
     {{ partial "js" . }}
 </body>

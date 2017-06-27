@@ -70,17 +70,17 @@
 
 &lt;p&gt;　1、2行ならこれでいいですが、使いたい箇所が多かったり、台本など本文全体にハングインデントが入る場合はいちいち行頭に書かずに挟み込みで済ませたいですよね。そういう時には、自分で\begin{}～\end{}の環境を作ってしまいます。プリアンブルに以下を入れた後、&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\newenvironment{hangall}[1]{\everypar{\hangindent = #1zw}}{}
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\newenvironment{hangall}[1]{\hangindent = #1zw\everypar{\hangindent = #1zw}}{}
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;ぶら下げしたい範囲を以下で囲います。●が押し込む字数になります。&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\begin{hangall}{●}\hangindent= ●zw%
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\begin{hangall}{●}%
 本文
 \end{hangall}%
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;　環境の定義は覚えると大変便利なんですが、ここでは詳しくやりません。筆者もよく分かってないので、上の\begin{hangall}の後に余計な\hangindentを入れざるを得ませんでした（これがないと一行目がおかしくなる）。マスターできたら改良して、解説記事を立てたいと思います。&lt;/p&gt;
+&lt;p&gt;　環境の定義は覚えると大変便利なんですが、ここでは詳しくやりません。筆者もよく分かってないので、いつかマスターできたら解説記事を立てたいです。&lt;/p&gt;
 
 &lt;h4 id=&#34;地寄せ-地付き&#34;&gt;地寄せ・地付き&lt;/h4&gt;
 
@@ -120,12 +120,12 @@
 &lt;p&gt;　これらを組み合わせることで、大概の字下げ地寄せには対応できると思います。最終的なソースと出力は以下のようになりました。&lt;br /&gt;
 　コマンドの後ろにいちいち%がついていますが、これは改行マクロの副作用を打ち消すためのおまじないなので&lt;strong&gt;消さないでください&lt;/strong&gt;。以降コマンドしかない行の最後には必ず%がつくことになります。&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:3&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:3&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;その後ろの日本語コメント部分は消しても大丈夫です。&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\newenvironment{hangall}[1]{\everypar{\hangindent = #1zw}}{}
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\newenvironment{hangall}[1]{\hangindent = #1zw\everypar{\hangindent = #1zw}}{}
 %%%%%%%%%%%%%%%プリアンブルここまで%%%%%%%%%%%%%%%%%
 \begin{document}
 ︙
 \leftskip = 1zw%  1字下げ
-\begin{hangall}{1}\hangindent= 1zw%  ぶら下げインデント
+\begin{hangall}{1}%  ぶら下げインデント
 長男のジャック　――巴里大学の法科に入学させてくだされたく、行すえは弁護士。
 二女のジャックリイヌ　――伯爵の継嗣《あととり》にお嫁《かたづ》け下さい。
 三男のアンリ　――海軍士官学校へ。

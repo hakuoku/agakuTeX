@@ -157,7 +157,11 @@
                 
                 <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/indent/">インデント（字下げ）・空白</a></li>
                 
+                <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/rensuji/">全角と半角・縦中横</a></li>
+                
                 <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/flush/">カスタム字下げ・地寄せ</a></li>
+                
+                <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/tatechu/">全角と半角・縦中横・記号の制御</a></li>
                 
             </ul>
             </li>
@@ -188,7 +192,7 @@
 <p>　まずは新しくファイルを作り、テストと同じように、最低限の4行を書いてやります。ここでは「chapter01」と名前をつけ（好きな名前でOK。ただしスペースは避け半角英数のみにする）、拡張子を.texにしてUTF-8で保存します。</p>
 
 <p>　あるいは既存の原稿に上書きすることもできます。その場合「ここに～」のところに小説本文が来るように書き込んでください（ただし長編全部は扱いづらいので、長い話はひとまずキリのいいところまでカットするのが吉）。<br />
-　実は拡張子は.txtのままでもTeXWorksに通せます。なのでファイルの保存場所を変えたくない人や、原稿がまだ未完成でこれからも加筆するだろうという人は上書き方式の方がいいと思います。特にスマホで編集したい場合は、texファイルは読み込めないことが多いので.txtのままにしておきましょう。あとは組版だけとなった決定稿の時点で.texにするのが無難かと思います。</p>
+　実は拡張子は.txtのままでもTeXWorksに通せます。なのでファイルの保存方式を変えたくない人や、原稿がまだ未完成でこれからも加筆するだろうという人は上書き方式の方がいいと思います。特にスマホで編集したい場合は、texファイルは読み込めないことが多いので.txtのままにしておきましょう。あとは組版だけとなった決定稿の時点で.texにするのが無難かと思います。</p>
 
 <pre><code class="language-latex">\documentclass{article}
 \begin{document}
@@ -215,7 +219,7 @@ l.89 ...なので、五番目のポオルは fa#
 <thead>
 <tr>
 <th align="center">記号</th>
-<th align="left">原稿中の働き</th>
+<th align="left">TeXにとっての働き</th>
 <th align="left">置き換え</th>
 </tr>
 </thead>
@@ -304,12 +308,11 @@ l.89 ...なので、五番目のポオルは fa#
 <p>　\textなんちゃらというのも、「なんちゃらという文字を出力せよ」という一種のコマンドになります。バックスラッシュの後が記号だけのコマンドはいいんですが、アルファベットが続くコマンドは<code>ポオルは\textlessfa\textgreaterと</code>というように、本文とそのまま続けて書くことはできません（「\textlessfa」という文字列だと認識されてしまう）。<br />
 　本文との間に半角スペースを空けるか、<code>{\textless}fa</code>のようにコマンドを中括弧で囲みます。半角スペースを入れるとぴったりくっつけて出力したい記号と本文の間に空白ができてしまう場合があるので、随時括弧と使い分けて下さい。</p>
 
-<p>　<code>\verb</code>というのはverbatim［逐語的に／一字一句変えずに］の略で、記号（縦棒じゃなくてもいい。<code>\verb!fa#!</code>とかでもいい）で挟んだ部分を文字通り出力できるコマンドです。これは本文とくっつけて書いても大丈夫です。<br />
+<p>　<code>\verb</code>というのはverbatim［逐語的に／一字一句変えずに］の略で、記号で挟んだ部分（縦棒じゃなくてもいい。<code>\verb!fa#!</code>とかでもいい）を文字通り出力できるコマンドです。これは本文とくっつけて書いても大丈夫です。<br />
 　じゃあ全部それの内側に書けばいいじゃんって話になるかもしれませんが、それをやってしまうと今度は逆に組版に支障が出るので控えます。小説ではさほど多用することにはならないと思いますが、URLなど特殊文字があまりにたくさん出てくる箇所に使うといいでしょう。</p>
 
-<p>　以上を踏まえた上で曲者なのが&lt;と&gt;です。文中に使う人も多いと思うんですが、これは実は「TeXで使えない」わけではありません。なので置き換えないままでもエラーを吐かずに組版されます。しかし出てきたPDFを見てみると<code>?!</code>みたいな表示になっていたりします。全角にしても向きがおかしくなる上、置き換えコマンドの書き方やフォントによっても多少出力が変わったりして非常に厄介です。<br />
-　こうした記号（特に括弧類）の細かい出力制御は後ほど行います。今はひとまずエラーが出ないところまで置き換えればOKとしておきましょう。<br />
-　ちなみにエスケープ文字に限らずエラーが出た時は、停止ボタンを押すと下のコンソールエリアに「errors, warnings, badboxes」タブが現れます。中のリンクを押すと上のエディタで該当箇所に飛びますので、これを使ってチェックしてください。</p>
+<p>　ちなみにエスケープ文字に限らずエラーが出た時は、停止ボタンを押すと下のコンソールエリアに「errors, warnings, badboxes」タブが現れます。中のリンクを押すと上のエディタで該当箇所に飛びますので、これを使ってチェックしてください。エラー文のGoogle検索も役に立ちます。<br />
+　修正しても組版結果が思ったようなデザインにならないかもしれませんが、こうした記号の細かい出力制御は後ほど行います。今はひとまずエラーが出ないところまで置き換えればOKとしておきましょう。</p>
 
 
 <figure >
@@ -321,7 +324,8 @@ l.89 ...なので、五番目のポオルは fa#
 
 
 <p>　多すぎて手で書き換えられないという時は、エディタの<strong>検索・置換機能</strong>を使うと一括で編集することができます。<br />
-　以下をコピペして、 <em>「正規表現」のところにチェックを入れてから<strong>上から順に</strong></em> 「すべて置換」してください。</p>
+　まず本文のところのみを範囲選択します。次に置換ウィンドウを開き、「 <em>選択した範囲のみ</em> 」と「 <em>正規表現を使用</em> 」のところにチェックを入れます（これをやらないとコマンドのところまで認識されて大変なことになる）。<br />
+　そうしたら以下の表を<strong>上から順に</strong>1段ずつコピペして、「すべて置換」してください。</p>
 
 <table>
 <thead>
@@ -389,8 +393,22 @@ l.89 ...なので、五番目のポオルは fa#
 </ul>
 
             </section>
-            <section class="post__comment">
-                <div id="disqus_thread"></div>
+            <nav class = "pager" >
+    <ul class = "pager-list">
+        
+            <li class = "pager-prev"><a href = "https://hakuoku.github.io/agakuTeX/tutorial/settings/">←設定</a></li>
+        
+        
+            <li class = "pager-next"><a href = "https://hakuoku.github.io/agakuTeX/tutorial/documentclass/">ドキュメントクラスの設定→</a></li>
+        
+
+
+    </ul>
+</nav>
+
+        </article>
+        <section class="post__comment">
+            <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'hakuoku';
     var disqus_identifier = 'https:\/\/hakuoku.github.io\/agakuTeX\/tutorial\/escape\/';
@@ -405,22 +423,8 @@ l.89 ...なので、五番目のポオルは fa#
 </script>
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-            </section>
-        </article>
+        </section>
     </main>
-    <nav class = "pager" >
-    <ul class = "pager-list">
-        
-            <li class = "pager-prev"><a href = "https://hakuoku.github.io/agakuTeX/tutorial/settings/">←設定</a></li>
-        
-        
-            <li class = "pager-next"><a href = "https://hakuoku.github.io/agakuTeX/tutorial/documentclass/">ドキュメントクラスの設定→</a></li>
-        
-
-
-    </ul>
-</nav>
-
     <footer class="legal" role="contentinfo">
     <p>&copy; 2017 Hakuoku Shobo Some Rights Reserved. Performed by <a href="//gohugo.io" title="Hugo :: A fast and modern static website engine">Hugo</a> .</p>
 

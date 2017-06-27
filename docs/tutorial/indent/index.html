@@ -157,7 +157,11 @@
                 
                 <li class="active"><a href="https://hakuoku.github.io/agakuTeX/tutorial/indent/">インデント（字下げ）・空白</a></li>
                 
+                <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/rensuji/">全角と半角・縦中横</a></li>
+                
                 <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/flush/">カスタム字下げ・地寄せ</a></li>
+                
+                <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/tatechu/">全角と半角・縦中横・記号の制御</a></li>
                 
             </ul>
             </li>
@@ -188,10 +192,10 @@
 　段落のインデント量を指定するコマンドは\parindent。プリアンブルに<code>\parindent = 0pt</code>と書き込みます。<br />
 　自作原稿を1字下げしていなくて、PDFでも下げたくない人は同じようにしてください。逆に出力の時だけ下げたい人は何もしなくてOKです。</p>
 
-<h5 id="言い訳">言い訳</h5>
+<h5 id="言いわけ">言いわけ</h5>
 
 <p>　ぶっちゃけて言うとこれはやっちゃいけないバッドノウハウです。TeXやプログラミング界隈では基本的に全角スペースは避けるものとされていて、場合によってはエラー潰しに死ぬほど時間がかかったりするのは有名な話です。（筆者も2時間ハマったことがある）<br />
-　それでもTeXは活字を組むシステムですから、例えば「シャネル　№5」みたいに文中の単語として全角スペースを使いたい時は使っても許されます。問題は行頭の字下げで、これは全文に渉って必ず適用されるものですから、人間がいちいち手で打つのではなくレイアウトの一要素として機械に任せるべきだ、という考え方が徹底されています。なのでクラスファイルに「括弧で始まる行以外は何ポイント下げる」というような指定があらかじめ書かれています。これと衝突しないように、原稿は字下げせずに書くのがセオリーです。<br />
+　それでもTeXは活字を組むシステムですから、例えば「ロリータ　レンピカ」みたいに文中の単語として全角スペースを使いたい時は使っても許されます。問題は行頭の字下げで、これは全文に渉って必ず適用されるものですから、人間がいちいち手で打つのではなくレイアウトの一要素として機械に任せるべきだ、という考え方が徹底されています。なのでクラスファイルに「括弧で始まる行以外は何ポイント下げる」というような指定があらかじめ書かれています。これと衝突しないように、原稿は字下げせずに書くのがセオリーです。<br />
 　しかしですね、正直、<strong>書いてる間字下げしたくならないですか？</strong><br />
 　別にしたくならない人はそれで全然OKだと思います。むしろTeX的にはそっちの方がいいです。でも私は字下げしたい。執筆段階で、未完成の文やいまいち納得していないところは字下げせずに書いて、大体いいなと思ったら全角スペースで下げています。字下げしてあるとなんとなく&rdquo;ちゃんとした文&rdquo;に見えるものです。</p>
 
@@ -234,8 +238,22 @@ All mimsy were the borogoves,
 </ul>
 
             </section>
-            <section class="post__comment">
-                <div id="disqus_thread"></div>
+            <nav class = "pager" >
+    <ul class = "pager-list">
+        
+            <li class = "pager-prev"><a href = "https://hakuoku.github.io/agakuTeX/tutorial/linebreak/">←改行・段落</a></li>
+        
+        
+            <li class = "pager-next"><a href = "https://hakuoku.github.io/agakuTeX/tutorial/rensuji/">全角と半角・縦中横→</a></li>
+        
+
+
+    </ul>
+</nav>
+
+        </article>
+        <section class="post__comment">
+            <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'hakuoku';
     var disqus_identifier = 'https:\/\/hakuoku.github.io\/agakuTeX\/tutorial\/indent\/';
@@ -250,22 +268,8 @@ All mimsy were the borogoves,
 </script>
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-            </section>
-        </article>
+        </section>
     </main>
-    <nav class = "pager" >
-    <ul class = "pager-list">
-        
-            <li class = "pager-prev"><a href = "https://hakuoku.github.io/agakuTeX/tutorial/linebreak/">←改行・段落</a></li>
-        
-        
-            <li class = "pager-next"><a href = "https://hakuoku.github.io/agakuTeX/tutorial/flush/">カスタム字下げ・地寄せ→</a></li>
-        
-
-
-    </ul>
-</nav>
-
     <footer class="legal" role="contentinfo">
     <p>&copy; 2017 Hakuoku Shobo Some Rights Reserved. Performed by <a href="//gohugo.io" title="Hugo :: A fast and modern static website engine">Hugo</a> .</p>
 
