@@ -157,7 +157,11 @@
                 
                 <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/indent/">インデント（字下げ）・空白</a></li>
                 
+                <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/rensuji/">全角と半角・縦中横</a></li>
+                
                 <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/flush/">カスタム字下げ・地寄せ</a></li>
+                
+                <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/tatechu/">全角と半角・縦中横・記号の制御</a></li>
                 
             </ul>
             </li>
@@ -184,7 +188,7 @@
                 
 
 <p>&#x3000;組めたはいいけど横書きだし余白めっちゃあるし何なん？って感じですね。これは一番最初の文である<code>\documentclass{article}</code>に問題があります。<br />
-　この文は「どの<strong>ドキュメントクラス</strong>を使うか」ということを宣言しています。今はarticleです。ドキュメントクラスとは拡張子.clsのファイルのことで、デザイン情報が書かれたスタイルシートのようなものです。文書をどんな設定、どんなレイアウト、どんなデザインにするかは全てこれが握っています。全く同一の本文でも、クラスを取り替えることでガラッと違うレイアウトにできたりします。</p>
+　この文は「どの<strong>ドキュメントクラス</strong>を使うか」ということを宣言しています。今はarticleです。ドキュメントクラスとは拡張子.clsのファイルのことで、デザイン情報が書かれたスタイルシートのようなものです（TeX Liveインストールフォルダの奥深くに存在している）。文書をどんな設定、どんなレイアウト、どんなデザインにするかは全てこれが握っています。全く同一の本文でも、クラスを取り替えることでガラッと違うレイアウトにできたりします。</p>
 
 <p>　「article」は超基本的な、英語の記事や小論のためのクラスです。テストで使ったjsarticleはTeX界の巨人・<a href="https://oku.edu.mie-u.ac.jp/~okumura/">奥村先生</a>の作った、日本語横書き版articleクラスです。文章の規模が増えると「report」、「book」というように使うクラスも大きくしていきます。<br />
 　他にもTeX Liveには山のようなクラスが収録されていて、中には編み物の編み図を描くためのknittingクラスとか、正方形のCDジャケットを作れるcdcoverクラスとかぶっ飛んだものもあります。誰がいつ使うんだろう。<br />
@@ -220,8 +224,22 @@
 </ul>
 
             </section>
-            <section class="post__comment">
-                <div id="disqus_thread"></div>
+            <nav class = "pager" >
+    <ul class = "pager-list">
+        
+            <li class = "pager-prev"><a href = "https://hakuoku.github.io/agakuTeX/tutorial/escape/">←ファイル作成とエスケープ</a></li>
+        
+        
+            <li class = "pager-next"><a href = "https://hakuoku.github.io/agakuTeX/tutorial/linebreak/">改行・段落→</a></li>
+        
+
+
+    </ul>
+</nav>
+
+        </article>
+        <section class="post__comment">
+            <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'hakuoku';
     var disqus_identifier = 'https:\/\/hakuoku.github.io\/agakuTeX\/tutorial\/documentclass\/';
@@ -236,22 +254,8 @@
 </script>
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-            </section>
-        </article>
+        </section>
     </main>
-    <nav class = "pager" >
-    <ul class = "pager-list">
-        
-            <li class = "pager-prev"><a href = "https://hakuoku.github.io/agakuTeX/tutorial/escape/">←ファイル作成とエスケープ</a></li>
-        
-        
-            <li class = "pager-next"><a href = "https://hakuoku.github.io/agakuTeX/tutorial/linebreak/">改行・段落→</a></li>
-        
-
-
-    </ul>
-</nav>
-
     <footer class="legal" role="contentinfo">
     <p>&copy; 2017 Hakuoku Shobo Some Rights Reserved. Performed by <a href="//gohugo.io" title="Hugo :: A fast and modern static website engine">Hugo</a> .</p>
 

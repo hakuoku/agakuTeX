@@ -22,7 +22,7 @@
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;https://hakuoku.github.io/agakuTeX/img/41/kuugyou.png&#34; alt=&#34;新しい段落&#34; /&gt;
+        &lt;img src=&#34;https://hakuoku.github.io/agakuTeX/img/41linebreak/kuugyou.png&#34; alt=&#34;新しい段落&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -33,7 +33,7 @@
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;https://hakuoku.github.io/agakuTeX/img/41/rampo.png&#34; alt=&#34;行間の空きすぎた乱歩&#34; /&gt;
+        &lt;img src=&#34;https://hakuoku.github.io/agakuTeX/img/41linebreak/rampo.png&#34; alt=&#34;行間の空きすぎた乱歩&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -46,29 +46,32 @@
 　この改行・段落問題はMarkdownなどとも共通で、個人的にはかなり根深い問題だと思っています。単なる英語と日本語の壁かと思ったんですが、機械にとっての解析のしやすさや伝統的な組版ルールとの絡みなどもあり、また英語圏でも空行派vs反対派議論は存在するようです。&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;br /&gt;
 　というわけでここでは正しい文法を模索するよりも、.texファイルの扱いやすさおよび表現としての柔軟さを重視します。たとえ段落と強制改行を使い分けてきちんと整形した正しいTeX文書でも、エディタでファイルを開いた時に行の間がスカスカだと腹が立ってくるからです。編集作業は楽しくやりたい。&lt;/p&gt;
 
-&lt;p&gt;　そのためにはあらかじめこちら側で、「全部の行を見たまま改行する」的なコマンドを指定しなければなりません。TeXにはもともと&lt;code&gt;\obeylines&lt;/code&gt;というコマンドがあって、これを指定すると大体望む動作になります。&lt;br /&gt;
-　前述の記号の表示のような部分的なコマンドではない、文書全体に関わるコマンドは本文が始まる前、&lt;code&gt;\documentclass&lt;/code&gt;と&lt;code&gt;\begin&lt;/code&gt;の間で指定します。ここの間のことを&lt;strong&gt;プリアンブル&lt;/strong&gt;といいます。以降のコード例ではプリアンブルの部分のみを示していることがよくあります。&lt;br /&gt;
+&lt;p&gt;　そのためにはあらかじめこちら側で、「全部の行を見たまま改行する」的なコマンドを指定しなければなりません。TeXにはもともと&lt;code&gt;\obeylines&lt;/code&gt;というコマンドがあって、これを書いてやると大体望む動作になります。&lt;br /&gt;
+　エスケープの時のような部分的なコマンドではない、文書全体に関わるコマンドは本文が始まる前、&lt;code&gt;\documentclass&lt;/code&gt;と&lt;code&gt;\begin&lt;/code&gt;の間で指定します。ここの間のことを&lt;strong&gt;プリアンブル&lt;/strong&gt;といいます。以降のコード例ではプリアンブルの部分のみを示していることがあります。&lt;br /&gt;
 　これでちゃんと改行できたかのように見えるんですが、実はまだ落とし穴があります。&lt;/p&gt;
 
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;https://hakuoku.github.io/agakuTeX/img/41/obeylines.png&#34; alt=&#34;空行が反映されない&#34; /&gt;
+        &lt;img src=&#34;https://hakuoku.github.io/agakuTeX/img/41linebreak/obeylines.png&#34; alt=&#34;空行が反映されない&#34; /&gt;
     
     
 &lt;/figure&gt;
 
 
 &lt;p&gt;　&lt;strong&gt;空きが反映されてない。&lt;/strong&gt;実はobeylinesは、「 &lt;em&gt;文字のない空白だけの行は無視する&lt;/em&gt; 」というTeX本来の動作に従います。なので一行アキや二行アキを入れたくて何回改行しても無視されます。&lt;br /&gt;
-　空行の制御には\vspaceコマンドなどがあるんですが、本文が読みづらくなるのであまり使いたくありません。どうしたもんかと悩んでいたところ、&lt;a href=&#34;https://xscey.github.io/&#34;&gt;xsceyさん&lt;/a&gt;が解決法を教えて下さいました。&lt;br /&gt;
-　\obeylinesを消して、以下をプリアンブルにペーストしてやります。&lt;/p&gt;
+　空行の制御には\vspaceコマンドなどがあるんですが、本文が読みづらくなるのであまり使いたくありません。どうしたもんかと悩んでいたところ、&lt;a href=&#34;https://xscey.github.io/&#34;&gt;xsceyさん&lt;/a&gt;が解決法を教えて下さいました。（ありがとうございます！）&lt;br /&gt;
+　\obeylinesは使わず、以下のようにしてやります。&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-LaTeX&#34;&gt;%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+&lt;pre&gt;&lt;code class=&#34;language-LaTeX&#34;&gt;\documentclass{utbook}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 {\catcode`\^^M=\active%
 \gdef\xobeylines{\catcode`\^^M\active \def^^M{\par\leavevmode}}%
 \global\def^^M{\par\leavevmode}}
 \AtBeginDocument{\xobeylines}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+︙
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;　何やら恐ろしげな呪文ですが、意味は分からなくても大丈夫です。（詳しい技術的な解説は&lt;a href=&#34;http://hakuoku.hatenablog.com/entry/2016/12/14/222246&#34;&gt;ブログ&lt;/a&gt;の方にあります） こういうTeXへの命令を組み合わせた一種のプログラムを&lt;strong&gt;マクロ&lt;/strong&gt;と呼ぶことだけ覚えておいてください。&lt;br /&gt;
@@ -79,7 +82,7 @@
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;https://hakuoku.github.io/agakuTeX/img/41/exobeylines.png&#34; alt=&#34;exobeylines適用後&#34; /&gt;
+        &lt;img src=&#34;https://hakuoku.github.io/agakuTeX/img/41linebreak/exobeylines.png&#34; alt=&#34;exobeylines適用後&#34; /&gt;
     
     
 &lt;/figure&gt;
