@@ -27,7 +27,18 @@
         {{.Name}}
             <ul class = "sub">
                 {{ range .Children }}
-                <li{{if $currentNode.IsMenuCurrent "toc" . }} class="active"{{end}}><a href="{{.URL}}">{{ .Name }}</a></li>
+                    {{ if .HasChildren}}
+                    <li class = "sub-menu{{if $currentNode.HasMenuCurrent "toc" . }} active{{end}}">
+                    {{.Name}}
+                        <ul class = "sub">
+                            {{ range .Children }}
+                            <li{{if $currentNode.IsMenuCurrent "toc" . }} class="active"{{end}}><a href="{{.URL}}">{{ .Name }}</a></li>
+                            {{end}}
+                        </ul>
+                    </li>
+                    {{ else }}
+                    <li><a href="{{.URL}}">{{ .Name }}</a></li>
+                    {{ end }}
                 {{end}}
             </ul>
             </li>

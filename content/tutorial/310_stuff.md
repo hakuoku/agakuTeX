@@ -5,7 +5,7 @@ date = "2017-04-02T14:41:40+09:00"
 lastmod = "2017-04-18T17:58:20+09:00"
 slug = "stuff"
 weight = 310
-topics = ["青空文庫形式"]
+topics = ["青空文庫形式", "テキストエディタ"]
 [menu.toc]
     parent = "generate"
 +++

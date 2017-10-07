@@ -3,7 +3,7 @@ title = "主要参考文献"
 description = ""
 date = "2016-12-31T20:21:48+09:00"
 slug = "reference"
-weight = 710
+weight = 910
 [menu.toc]
 +++
 - [はじめての方へ - TeX Wiki](https://texwiki.texjp.org/?%E3%81%AF%E3%81%98%E3%82%81%E3%81%A6%E3%81%AE%E6%96%B9%E3%81%B8)

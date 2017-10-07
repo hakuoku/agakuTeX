@@ -38,6 +38,11 @@ canonifyURLs = true
     name = "本文の編集"
     identifier = "edit"
     weight = 400
+    [[menu.toc]]
+        name = "全角と半角――縦横の制御"
+        identifier = "tateyoko"
+        weight = 430
+        parent = "edit"
 [[menu.toc]]
     name = "索引"
     URL = "/topics/"
