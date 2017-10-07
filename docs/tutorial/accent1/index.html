@@ -1,0 +1,427 @@
+<!doctype html>
+<html class="no-js" lang="ja" prefix="og: http://ogp.me/ns#">
+<head>
+    <meta charset="utf-8">
+    <title>アクセントと特殊記号 前編 | あがきながら覚えるTeX</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="白屋書房">
+<meta name="description" content="" />
+
+    
+<meta property="og:locale" content="ja">
+<meta property="og:title" content="アクセントと特殊記号 前編" />
+<meta property="og:description" content="" />
+<meta property="og:site_name" content="あがきながら覚えるTeX" />
+<meta property="og:url" content="https://hakuoku.github.io/agakuTeX/tutorial/accent1/" />
+
+
+
+
+<meta property="og:type" content="article" />
+<meta property="article:section" content="tutorial" />
+<meta property="article:published_time" content="2017-06-28" />
+<meta property="article:modified_time" content="2017-06-28" />
+
+    
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="アクセントと特殊記号 前編" />
+<meta name="twitter:description" content="" />
+<meta name="twitter:url" content="https://hakuoku.github.io/agakuTeX/tutorial/accent1/" />
+<meta name="twitter:image:src" content="https://hakuoku.github.io/agakuTeX//media/twitter-card.jpg">
+<meta name="twitter:domain" content="https://hakuoku.github.io/agakuTeX/">
+<meta name="twitter:site" content="@isaribi_saitoh" />
+<meta name="twitter:creator" content="@isaribi_saitoh" />
+
+    <base href="https://hakuoku.github.io/agakuTeX/">
+    <meta name="generator" content="Hugo 0.25.1" />
+    <link rel="canonical" href="https://hakuoku.github.io/agakuTeX/tutorial/accent1/">
+    
+    
+    <link rel="stylesheet" href="https://hakuoku.github.io/agakuTeX/css/prism.css">
+
+    <link rel="stylesheet" href="https://hakuoku.github.io/agakuTeX/css/drawer.css">
+
+<link rel="stylesheet" href="https://hakuoku.github.io/agakuTeX/css/style.css">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://hakuoku.github.io/agakuTeX/img/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://hakuoku.github.io/agakuTeX/img/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://hakuoku.github.io/agakuTeX/img/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://hakuoku.github.io/agakuTeX/manifest.json">
+<link rel="mask-icon" href="https://hakuoku.github.io/agakuTeX/img/safari-pinned-tab.svg" color="#636363">
+<meta name="apple-mobile-web-app-title" content="あがきながら覚えるTeX">
+<meta name="application-name" content="あがきながら覚えるTeX">
+<meta name="theme-color" content="#333333">
+
+</head>
+
+
+<body class="template template--post drawer drawer--right">
+    <section class="header-wrapper">
+        <header class="headline" role="banner">
+    
+        <a class="headline__title" href="https://hakuoku.github.io/agakuTeX/"><img src="https://hakuoku.github.io/agakuTeX/img/logo.png" alt="Home"></a>
+    
+</header>
+
+        <nav class="menu" role="navigation" id="main-menu">
+    <ul class="menu__items">
+        
+        
+        <li class="blog">
+            <a href="http://hakuoku.hatenablog.com/" title="Blog"><img src="https://hakuoku.github.io/agakuTeX/img/hb.png" alt="Blog"></a>
+        </li>
+        
+        
+        <li class="twitter">
+            <a href="https://twitter.com/isaribi_saitoh" title="Follow me"><img src="https://hakuoku.github.io/agakuTeX/img/tw.png" alt="Follow me"></a>
+        </li>
+        
+        
+        <li class="github">
+            <a href="https://github.com/hakuoku" title="Fork me"><img src="https://hakuoku.github.io/agakuTeX/img/gh.png" alt="Fork me"></a>
+        </li>
+        
+        
+    </ul>
+</nav>
+
+        
+<gcse:searchbox-only></gcse:searchbox-only>
+
+<button type="button" class="drawer-toggle drawer-hamburger">
+  <span class="sr-only">toggle navigation</span>
+  <span class="drawer-hamburger-icon"><img src="https://hakuoku.github.io/agakuTeX/img/toc.png" alt="TOC"></span>
+</button>
+ 
+<nav id="side-menu" class="drawer-nav">
+  <ul class="drawer-menu">
+    
+    <li><a href="https://hakuoku.github.io/agakuTeX/">TOP</a></li>
+    
+    
+        
+        <li class = "sub-menu">
+        前説
+            <ul class = "sub">
+                
+                    
+                    <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/beginning/">発端</a></li>
+                    
+                
+                    
+                    <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/whatstex/">TeXとは</a></li>
+                    
+                
+                    
+                    <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/usage/">このサイトの使い方</a></li>
+                    
+                
+            </ul>
+            </li>
+        
+    
+        
+        <li class = "sub-menu">
+        導入
+            <ul class = "sub">
+                
+                    
+                    <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/prepare/">準備</a></li>
+                    
+                
+                    
+                    <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/install/">インストール</a></li>
+                    
+                
+                    
+                    <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/test/">テスト</a></li>
+                    
+                
+            </ul>
+            </li>
+        
+    
+        
+        <li class = "sub-menu">
+        ファイル作成
+            <ul class = "sub">
+                
+                    
+                    <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/stuff/">いるもの</a></li>
+                    
+                
+                    
+                    <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/settings/">設定</a></li>
+                    
+                
+                    
+                    <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/escape/">ファイル作成とエスケープ</a></li>
+                    
+                
+                    
+                    <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/documentclass/">ドキュメントクラスの設定</a></li>
+                    
+                
+            </ul>
+            </li>
+        
+    
+        
+        <li class = "sub-menu active">
+        本文の編集
+            <ul class = "sub">
+                
+                    
+                    <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/linebreak/">改行・段落</a></li>
+                    
+                
+                    
+                    <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/indent/">インデント（字下げ）・空白</a></li>
+                    
+                
+                    
+                    <li class = "sub-menu active">
+                    全角と半角――縦横の制御
+                        <ul class = "sub">
+                            
+                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/rensuji/">縦中横</a></li>
+                            
+                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/regex/">note：検索・置換と正規表現</a></li>
+                            
+                            <li class="active"><a href="https://hakuoku.github.io/agakuTeX/tutorial/accent1/">アクセントと特殊記号 前編</a></li>
+                            
+                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/accent2/">アクセントと特殊記号 後編</a></li>
+                            
+                        </ul>
+                    </li>
+                    
+                
+                    
+                    <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/unicode/">note：Unicodeを知ろう！</a></li>
+                    
+                
+            </ul>
+            </li>
+        
+    
+        
+        <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/replace/">青空文庫からの置換一覧</a></li>
+        
+    
+        
+        <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/reference/">主要参考文献</a></li>
+        
+    
+        
+        <li><a href="https://hakuoku.github.io/agakuTeX/topics/">索引</a></li>
+        
+    
+  </ul>
+</nav>
+
+    </section>
+    <main class="content" role="main" id="main-content" itemscope itemtype="http://schema.org/Article">
+        <article class="post">
+            <header>
+                <h1 class="post__title" itemprop="name">アクセントと特殊記号 前編</h1>
+            </header>
+            <section class="post__content" itemprop="articleBody">
+                
+
+<p>&#x3000;縦向きにしたい英数字の処理はできました。横倒しにしたい欧文は普通に半角で書いておけばいいんですが、ここに英語以外の外国語使いにとっての罠があります。本文中にé（アキュートアクセントつきe。よく出る）などが含まれていると、結果はこういうことになります。</p>
+
+
+<figure >
+    
+        <img src="img/43accent1/accent.jpg" alt="eだけが縦書きになった仏文" />
+    
+    
+    <figcaption>
+        <p>
+        悪夢
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+
+
+<p>　例え半角幅のアルファベットでも、upLaTeXのデフォルトでは“英語に含まれていない字”はカナや漢字と同じ全角文字のくくりに入るので、和文のように縦に組まれてしまうんです。<br />
+　フランス語とか使わないし、という人でも要注意です。£や†といった、一見普通の半角っぽい記号でも同じ現象が起こります。記号がミソの暗号ミステリ、『黄金虫』とかやってみるとひどいことになります。</p>
+
+
+<figure >
+    
+        <img src="img/43accent1/GoldBug.jpg" alt="記号の一部だけが縦組みになっている" />
+    
+    
+    <figcaption>
+        <p>
+        縦横ごっちゃ
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+
+
+<p>　こうしてはいられないので対策を取るんですが、その前に重要な機能である「<strong>パッケージ</strong>」について説明しちゃいます。記号の表示が全然問題ない人もここだけは覚えていってください。</p>
+
+<p>　<strong>パッケージ</strong>とは要するにTeXの拡張機能のことで、素のままのTeXにはできない様々な機能を提供してくれるものです。ブラウザのアドオンとかに似てますね。<br />
+　これの実体はTeXへの命令が書かれた.styファイルで、ドキュメントクラスと同様膨大な数がTeX Liveの奥深くに収録されています。TeX文書のプリアンブルで、必要なものを呼び出してやって使います。</p>
+
+<p>　実際にやってみましょう。プリアンブルの、今まで書いたマクロなどの前の行に以下を入れます。</p>
+
+<pre><code class="language-LaTeX">\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+</code></pre>
+
+<p>　<code>\usepackage[オプション]{パッケージ名}</code>という形になります。1行目はfontencパッケージによりT1エンコーディングを選択、２行目はtextcompパッケージを読み込んでいます。<br />
+　この二つのパッケージの機能とか意味は分からなくてもOKです。とりあえずおまじない＆パッケージ呼び出しの基礎として書いておいてください。</p>
+
+<p>　さてこれを踏まえた上で、横組みの対策をします。</p>
+
+<h4 id="古典的な方法">古典的な方法</h4>
+
+<p>　そんなに英語以外の外国語や記号を使わない人、自前のキーボードから特殊記号を入力できなくて毎回コピペで取って来てる人、そもそも最初から直書きをせずにアクセント分解を使っている人はこの方法を取ります。エスケープの時と同様、コマンドで記号を入れるやり方です。</p>
+
+<p>　以下の表を見て文中にコマンドを書き込んでください。<a href="http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/accent.html">アクセント記号: LaTeX</a>のページや、<a href="https://wtsnjp.com/pdf/platexsheet.pdf">チートシート</a>1ページ目も参照。</p>
+
+<table>
+    <tbody>
+        <tr><td>¡</td><td><code>!`</code></td><td>¿</td><td><code>?`</code><td>à</td><td><code>\`a</code></td>
+<td>á</td><td><code>\'a</code></td></td></tr>
+        <tr><td>ã</td><td><code>\~a</code></td><td>â</td><td><code>\^a</code></td><td>ä</td><td><code>\"a</code></td><td>ā</td><td><code>\=a</code></td></tr>
+        <tr><td>ė</td><td><code>\.{e}</code></td><td>ç</td><td><code>\c{c}</code></td><td>å</td><td><code>\r{a}</code></td><td>ă</td><td><code>\u{a}</code></td></tr>
+        <tr><td>ě</td><td><code>\v{e}</code></td><td>ő</td><td><code>\H{o}</code></td><td>oȏ</td><td><code>\t{oo}</code></td><td>ẹ</td><td><code>\d{e}</code></td></tr>
+        <tr><td>ṉ</td><td><code>\b{n}</code></td><td>ß</td><td><code>{\ss}</code></td><td>æ</td><td><code>{\ae}</code></td><td>Æ</td><td><code>{\AE}</code></td></tr>
+        <tr><td>œ</td><td><code>{\oe}</code></td><td>Œ</td><td><code>{\OE}</code></td><td>ø</td><td><code>{\o}</code></td><td>Ø</td><td><code>{\O}</code></td></tr>
+        <tr><td>ł</td><td><code>{\l}</code></td><td>Ł</td><td><code>{\L}</code></td><td>ı</td><td><code>{\i}</code></td><td>ȷ</td><td><code>{\j}</code></td></tr>
+    </tbody>
+</table>
+
+<p>　<code>\アクセントコマンド{つけたい文字}</code>のようになっており、組み合わせを変えればどんな字にでもアクセントつけられます。かなや漢字もOK。</p>
+
+<!-- 　[標準的なアクセント分解](http://cosmoshouse.com/tools/acc-conv-j.htm)イコール青空文庫の形式を使っている場合は置換ができます。 -->
+
+<p>　記号はこちら。</p>
+
+<table>
+    <tbody>
+        <tr>
+            <td>&amp;</td><td><code>\&amp;</code></td>
+            <td>†</td><td><code>\dag</code></td>
+            <td>~</td><td><code>\textasciitilde</code></td>
+            <td>\</td><td><code>\textbackslash</code></td>
+        </tr>
+        <tr>
+            <td>%</td><td><code>\%</code></td>
+            <td>‡</td><td><code>\ddag</code></td>
+            <td>~</td><td><code>\textasciicircum</code></td>
+            <td>|</td><td><code>\textbar</code></td>
+        </tr>
+        <tr>
+            <td>#</td><td><code>\#</code></td>
+            <td>…</td><td><code>\dots</code></td>
+            <td>™</td><td><code>\texttrademark</code></td>
+            <td>‖</td><td><code>\textbardbl</code></td>
+        </tr>
+        <tr>
+            <td>_</td><td><code>\_</code></td>
+            <td>©</td><td><code>\copyright</code></td>
+            <td>®</td><td><code>\textregistered</code></td>
+            <td>•</td><td><code>\textbullet</code></td>
+        </tr>
+        <tr>
+            <td>$</td><td><code>\$</code></td>
+            <td>£</td><td><code>\pounds</code></td>
+            <td>ª</td><td><code>\textordfeminine</code></td>
+            <td><</td><td><code>\textless</code></td>
+        </tr>
+        <tr>
+            <td>¶</td><td><code>\P</code></td>
+            <td>§</td><td><code>\S</code></td>
+            <td>º</td><td><code>\textordmasculine</code></td>
+            <td>></td><td><code>\textgreater</code></td>
+        </tr>
+    </tbody>
+</table>
+
+<p>　大体エスケープのところでやったのとかぶってますね。まあほぼほぼ「縦向きでいい記号は全角直打ち、横向きにしたい記号はコマンドで入れる」って覚えておけば適切に使い分けられると思います。こんな感じ。</p>
+
+<pre><code class="language-LaTeX">チャゲ＆飛鳥　%これは全角のアンド
+DEAN \&amp; DELUCA　%こっちは半角のアンド（コマンド）
+
+インテル® 入ってる？　%直接書いた登録商標マーク
+intel{\textregistered} inside.　%コマンドの登録商標マーク
+</code></pre>
+
+
+<figure >
+    
+        <img src="https://hakuoku.github.io/agakuTeX/img/43accent1/marks.png" alt="同じ記号の組方向による使い分け" />
+    
+    
+</figure>
+
+
+<p>　ちなみに上の表のコマンド群はTeXのネイティブ命令なんですが、冒頭でtextcompパッケージを読み込んでいるので、その拡張コマンドを使って入れられる記号の種類が増えてます。<a href="http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/textcomp.html">textcomp.sty: LaTeX パッケージ</a> のページに使える記号とコマンドが載っていますので、必要な人は見てみてください。葉っぱのマークとかあるよ。</p>
+
+            </section>
+            <nav class = "pager" >
+    <ul class = "pager-list">
+        
+            <li class = "pager-prev"><a href = "https://hakuoku.github.io/agakuTeX/tutorial/regex/">←note：検索・置換と正規表現</a></li>
+        
+        
+            <li class = "pager-next"><a href = "https://hakuoku.github.io/agakuTeX/tutorial/accent2/">アクセントと特殊記号 後編→</a></li>
+        
+    </ul>
+</nav>
+
+        </article>
+        <section class="post__comment">
+            <div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'hakuoku';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </section>
+    </main>
+    <footer class="legal" role="contentinfo">
+    <p>&copy; 2017 Hakuoku Shobo Some Rights Reserved. Performed by <a href="//gohugo.io" title="Hugo :: A fast and modern static website engine">Hugo</a> .</p>
+
+
+</footer>
+
+    
+<script type="text/javascript" src="https://hakuoku.github.io/agakuTeX/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="https://hakuoku.github.io/agakuTeX/js/prism.js"></script>
+<script type="text/javascript" src="https://hakuoku.github.io/agakuTeX/js/iscroll.js"></script>
+<script type="text/javascript" src="https://hakuoku.github.io/agakuTeX/js/drawer.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+      $(".drawer").drawer();
+    });
+</script>
+
+</body>
+</html>

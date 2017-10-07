@@ -1,0 +1,311 @@
+<!doctype html>
+<html class="no-js" lang="ja" prefix="og: http://ogp.me/ns#">
+<head>
+    <meta charset="utf-8">
+    <title>note：検索・置換と正規表現 | あがきながら覚えるTeX</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="白屋書房">
+<meta name="description" content="" />
+
+    
+<meta property="og:locale" content="ja">
+<meta property="og:title" content="note：検索・置換と正規表現" />
+<meta property="og:description" content="" />
+<meta property="og:site_name" content="あがきながら覚えるTeX" />
+<meta property="og:url" content="https://hakuoku.github.io/agakuTeX/tutorial/regex/" />
+
+
+
+
+<meta property="og:type" content="article" />
+<meta property="article:section" content="tutorial" />
+<meta property="article:published_time" content="2017-06-28" />
+<meta property="article:modified_time" content="2017-06-28" />
+
+    
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="note：検索・置換と正規表現" />
+<meta name="twitter:description" content="" />
+<meta name="twitter:url" content="https://hakuoku.github.io/agakuTeX/tutorial/regex/" />
+<meta name="twitter:image:src" content="https://hakuoku.github.io/agakuTeX//media/twitter-card.jpg">
+<meta name="twitter:domain" content="https://hakuoku.github.io/agakuTeX/">
+<meta name="twitter:site" content="@isaribi_saitoh" />
+<meta name="twitter:creator" content="@isaribi_saitoh" />
+
+    <base href="https://hakuoku.github.io/agakuTeX/">
+    <meta name="generator" content="Hugo 0.25.1" />
+    <link rel="canonical" href="https://hakuoku.github.io/agakuTeX/tutorial/regex/">
+    
+    
+    <link rel="stylesheet" href="https://hakuoku.github.io/agakuTeX/css/prism.css">
+
+    <link rel="stylesheet" href="https://hakuoku.github.io/agakuTeX/css/drawer.css">
+
+<link rel="stylesheet" href="https://hakuoku.github.io/agakuTeX/css/style.css">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://hakuoku.github.io/agakuTeX/img/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://hakuoku.github.io/agakuTeX/img/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://hakuoku.github.io/agakuTeX/img/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://hakuoku.github.io/agakuTeX/manifest.json">
+<link rel="mask-icon" href="https://hakuoku.github.io/agakuTeX/img/safari-pinned-tab.svg" color="#636363">
+<meta name="apple-mobile-web-app-title" content="あがきながら覚えるTeX">
+<meta name="application-name" content="あがきながら覚えるTeX">
+<meta name="theme-color" content="#333333">
+
+</head>
+
+
+<body class="template template--post drawer drawer--right">
+    <section class="header-wrapper">
+        <header class="headline" role="banner">
+    
+        <a class="headline__title" href="https://hakuoku.github.io/agakuTeX/"><img src="https://hakuoku.github.io/agakuTeX/img/logo.png" alt="Home"></a>
+    
+</header>
+
+        <nav class="menu" role="navigation" id="main-menu">
+    <ul class="menu__items">
+        
+        
+        <li class="blog">
+            <a href="http://hakuoku.hatenablog.com/" title="Blog"><img src="https://hakuoku.github.io/agakuTeX/img/hb.png" alt="Blog"></a>
+        </li>
+        
+        
+        <li class="twitter">
+            <a href="https://twitter.com/isaribi_saitoh" title="Follow me"><img src="https://hakuoku.github.io/agakuTeX/img/tw.png" alt="Follow me"></a>
+        </li>
+        
+        
+        <li class="github">
+            <a href="https://github.com/hakuoku" title="Fork me"><img src="https://hakuoku.github.io/agakuTeX/img/gh.png" alt="Fork me"></a>
+        </li>
+        
+        
+    </ul>
+</nav>
+
+        
+<gcse:searchbox-only></gcse:searchbox-only>
+
+<button type="button" class="drawer-toggle drawer-hamburger">
+  <span class="sr-only">toggle navigation</span>
+  <span class="drawer-hamburger-icon"><img src="https://hakuoku.github.io/agakuTeX/img/toc.png" alt="TOC"></span>
+</button>
+ 
+<nav id="side-menu" class="drawer-nav">
+  <ul class="drawer-menu">
+    
+    <li><a href="https://hakuoku.github.io/agakuTeX/">TOP</a></li>
+    
+    
+        
+        <li class = "sub-menu">
+        前説
+            <ul class = "sub">
+                
+                    
+                    <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/beginning/">発端</a></li>
+                    
+                
+                    
+                    <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/whatstex/">TeXとは</a></li>
+                    
+                
+                    
+                    <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/usage/">このサイトの使い方</a></li>
+                    
+                
+            </ul>
+            </li>
+        
+    
+        
+        <li class = "sub-menu">
+        導入
+            <ul class = "sub">
+                
+                    
+                    <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/prepare/">準備</a></li>
+                    
+                
+                    
+                    <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/install/">インストール</a></li>
+                    
+                
+                    
+                    <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/test/">テスト</a></li>
+                    
+                
+            </ul>
+            </li>
+        
+    
+        
+        <li class = "sub-menu">
+        ファイル作成
+            <ul class = "sub">
+                
+                    
+                    <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/stuff/">いるもの</a></li>
+                    
+                
+                    
+                    <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/settings/">設定</a></li>
+                    
+                
+                    
+                    <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/escape/">ファイル作成とエスケープ</a></li>
+                    
+                
+                    
+                    <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/documentclass/">ドキュメントクラスの設定</a></li>
+                    
+                
+            </ul>
+            </li>
+        
+    
+        
+        <li class = "sub-menu active">
+        本文の編集
+            <ul class = "sub">
+                
+                    
+                    <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/linebreak/">改行・段落</a></li>
+                    
+                
+                    
+                    <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/indent/">インデント（字下げ）・空白</a></li>
+                    
+                
+                    
+                    <li class = "sub-menu active">
+                    全角と半角――縦横の制御
+                        <ul class = "sub">
+                            
+                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/rensuji/">縦中横</a></li>
+                            
+                            <li class="active"><a href="https://hakuoku.github.io/agakuTeX/tutorial/regex/">note：検索・置換と正規表現</a></li>
+                            
+                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/accent1/">アクセントと特殊記号 前編</a></li>
+                            
+                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/accent2/">アクセントと特殊記号 後編</a></li>
+                            
+                        </ul>
+                    </li>
+                    
+                
+                    
+                    <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/unicode/">note：Unicodeを知ろう！</a></li>
+                    
+                
+            </ul>
+            </li>
+        
+    
+        
+        <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/replace/">青空文庫からの置換一覧</a></li>
+        
+    
+        
+        <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/reference/">主要参考文献</a></li>
+        
+    
+        
+        <li><a href="https://hakuoku.github.io/agakuTeX/topics/">索引</a></li>
+        
+    
+  </ul>
+</nav>
+
+    </section>
+    <main class="content" role="main" id="main-content" itemscope itemtype="http://schema.org/Article">
+        <article class="post">
+            <header>
+                <h1 class="post__title" itemprop="name">note：検索・置換と正規表現</h1>
+            </header>
+            <section class="post__content" itemprop="articleBody">
+                
+
+<p>&#x3000;これまで検索・置換する時に出てきた謎の記号たちは<strong>正規表現</strong>［regular expression］といい、簡単に言うと「表記ゆれを含めて検索するための一種の言語」です。</p>
+
+<p>　例えば前項で解説した !! は、これしか使っていないなら普通に検索すればいいんですが、!?も使ってたりところによって半角だったり全角だったりするとその度に条件を変えて検索し直さなきゃなりません。<code>[!?！？]{2,3}</code>は、それらを一気に全部ヒットさせるように正規表現を使って書いたものです。書き方を変えることでもっと複雑な条件でも自在に検索・置換できるようになります。</p>
+
+<p>　正直これはこれでまた別の新たなる魔道でして、TeX同様極めるには時間がかかります。なので、自分の原稿のどこに何が書かれてるか把握していてわざわざ検索する必要がない人、元々執筆ルールが決まっていて表記ゆれが少ない人、覚えることを最小限にするためなら手で書き換えることも厭わない人は、使わなくてもなんとかなります。TeXコマンドだけを覚えて、該当する箇所に目視で書き込むようにしてください。</p>
+
+<p>　しかし大長編や徹夜で朦朧とした時に書いた原稿、他人の原稿などではそうはいきません。目視検索＆手書き置換では限界があるので、エディタの機能と正規表現を使うわけです。</p>
+
+<p>　正規表現の踏み込んだ文法解説はこのサイトの範囲を超えるので行いません。小説組版の用途だけなら、当サイトからのコピペのみで大丈夫だと思います。（不具合があったら教えてください）<br />
+　興味が湧いた方は、4回連載の「<a href="http://qiita.com/jnchito/items/893c887fbf19e17d3ff9">初心者歓迎！手と目で覚える正規表現入門</a>」などで勉強してみてください。小説や組版に限らず、使いこなせるとめっちゃ便利です。</p>
+
+<h4 id="コピペ時の注意">コピペ時の注意</h4>
+
+<p>　結論から言いますと、これ以降の記事に出てくる正規表現は<strong>TeXWorks含む古いテキストエディタでは動きません</strong>。検索・置換作業は<strong>新仕様に対応したエディタを使うことを強くおすすめします</strong>。<br />
+　対応しているエディタは<a href="http://www.haijin-boys.com/wiki/%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9A%E3%83%BC%E3%82%B8">Mery</a>、<a href="https://www.sublimetext.com/">Sublime Text</a>（試用期間つきシェアウェア）、<a href="https://atom.io/">Atom</a>（戻り読みのみ非対応）。オンラインで使えるツールには<a href="http://seikihyougenn.com/seikimaster.html">正規表現M@STER</a>、<a href="https://regex101.com/">Online regex tester and debugger</a>があります。<br />
+　贔屓のテキストエディタで使えるかどうかは、「Unicode文字プロパティ」と「戻り読み（後読み）」対応かを調べてみてください。RubyかPerl（PCRE）処理系、または鬼車／鬼雲エンジン搭載だと安心です。</p>
+
+<p>　好きなエディタで書けるのがTeXのいいところと言い切ったにも関わらずこんなことになってしまうのは筆者の力不足と、あと拡張性・将来性のことがあってです。<br />
+　例えば全ての漢字にヒットさせるには、幅広いエディタで使える古い文法では<code>[一-龠]</code>、対応エディタでしか使えない新しい文法では<code>[\p{Han}]</code>と書きます。ところが古い書き方では洩れる漢字が出てきます。JIS第三水準くらいまでならいけるはずですが、それでも人名や地名などでどんな難しい漢字を使うとも限りません。小説ということで、凝った文体を使いたい人も多いでしょう。<br />
+　漢字以外の例でも、新文法の方が正確・柔軟に検索できるので、ここでは新しい文法の方を採用することにしました。</p>
+
+<p>　本文編集と組版を行ったり来たりしてるとだんだん疲れてきてもう全部TeXWorksでやりたくなってくるんですが、旧式の正規表現と文字列処理系の難しさに諦めました。そんなわけでしばらく2エディタ（場合によっては3エディタ）体制にお付き合いください。すみません。</p>
+
+<h4 id="青空文庫形式を使っている人へ">青空文庫形式を使っている人へ</h4>
+
+<p>　青空文庫式の注記を使っている場合、検索・置換のパターンがそうでない場合と大きく変わります。TeXコマンド解説と分けるため、詳しい置換パターンは青空文庫からの置換にまとめました。各記事のリンクから飛んで、該当の注記をTeXコマンドに置換してください。</p>
+
+            </section>
+            <nav class = "pager" >
+    <ul class = "pager-list">
+        
+            <li class = "pager-prev"><a href = "https://hakuoku.github.io/agakuTeX/tutorial/rensuji/">←縦中横</a></li>
+        
+        
+            <li class = "pager-next"><a href = "https://hakuoku.github.io/agakuTeX/tutorial/accent1/">アクセントと特殊記号 前編→</a></li>
+        
+    </ul>
+</nav>
+
+        </article>
+        <section class="post__comment">
+            <div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'hakuoku';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </section>
+    </main>
+    <footer class="legal" role="contentinfo">
+    <p>&copy; 2017 Hakuoku Shobo Some Rights Reserved. Performed by <a href="//gohugo.io" title="Hugo :: A fast and modern static website engine">Hugo</a> .</p>
+
+
+</footer>
+
+    
+<script type="text/javascript" src="https://hakuoku.github.io/agakuTeX/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="https://hakuoku.github.io/agakuTeX/js/prism.js"></script>
+<script type="text/javascript" src="https://hakuoku.github.io/agakuTeX/js/iscroll.js"></script>
+<script type="text/javascript" src="https://hakuoku.github.io/agakuTeX/js/drawer.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+      $(".drawer").drawer();
+    });
+</script>
+
+</body>
+</html>

@@ -2,11 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>マクロ on あがきながら覚えるTeX</title>
-    <link>https://hakuoku.github.io/agakuTeX/topics/%E3%83%9E%E3%82%AF%E3%83%AD/index.xml</link>
+    <link>https://hakuoku.github.io/agakuTeX/topics/%E3%83%9E%E3%82%AF%E3%83%AD/</link>
     <description>Recent content in マクロ on あがきながら覚えるTeX</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <atom:link href="https://hakuoku.github.io/agakuTeX/topics/%E3%83%9E%E3%82%AF%E3%83%AD/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 22 Apr 2017 19:24:51 +0900</lastBuildDate>
+    
+	<atom:link href="https://hakuoku.github.io/agakuTeX/topics/%E3%83%9E%E3%82%AF%E3%83%AD/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>改行・段落</title>
@@ -14,97 +17,7 @@
       <pubDate>Sat, 22 Apr 2017 19:24:51 +0900</pubDate>
       
       <guid>https://hakuoku.github.io/agakuTeX/tutorial/linebreak/</guid>
-      <description>
-
-&lt;p&gt;&amp;#x3000;それにしても読みづらいですね。改行が全然なくて一面に字が植えてある。&lt;strong&gt;面倒なことにTeXは、いわゆる普通の改行を感知しません。&lt;/strong&gt;&lt;br /&gt;
-　いやさすがに語弊があるな。正しくは下のように、間に空行を入れることで改行、つまり新たな段落が製造されます。&lt;/p&gt;
-
-
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://hakuoku.github.io/agakuTeX/img/41linebreak/kuugyou.png&#34; alt=&#34;新しい段落&#34; /&gt;
-    
-    
-&lt;/figure&gt;
-
-
-&lt;p&gt;　じゃあ改行したいところに空行を入れていけばいいのかとなると、そうとも言い切れない。だってこうなるんだよ。（十蘭は改行少ないんで乱歩で）&lt;/p&gt;
-
-
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://hakuoku.github.io/agakuTeX/img/41linebreak/rampo.png&#34; alt=&#34;行間の空きすぎた乱歩&#34; /&gt;
-    
-    
-&lt;/figure&gt;
-
-
-&lt;p&gt;　いやだ！こんなの乱歩じゃない！なにより面倒くさい。いちいち空きを入れてくなんてミスも増えそうだし。&lt;br /&gt;
-　間が開かない段落内強制改行のやり方は、&lt;a href=&#34;http://www.latex-cmd.com/struct/space.html&#34;&gt;一般的&lt;/a&gt;には行末に\か\newlineを入れることです。ただこれも、面倒くささとミスのしやすさでは大して変わりません。&lt;/p&gt;
-
-&lt;p&gt;　もともと英語の特に論文では、新しい行＝新しい段落という認識なので、空行方式で破綻なく書いて組版できます。でも小説でいうと、改行って必ずしも新しい段落に移るわけじゃないですよね。特にセリフがそうで、会話になると改行のオンパレードだけど段落は全部一緒です。&lt;br /&gt;
-　この改行・段落問題はMarkdownなどとも共通で、個人的にはかなり根深い問題だと思っています。単なる英語と日本語の壁かと思ったんですが、機械にとっての解析のしやすさや伝統的な組版ルールとの絡みなどもあり、また英語圏でも空行派vs反対派議論は存在するようです。&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;br /&gt;
-　というわけでここでは正しい文法を模索するよりも、.texファイルの扱いやすさおよび表現としての柔軟さを重視します。たとえ段落と強制改行を使い分けてきちんと整形した正しいTeX文書でも、エディタでファイルを開いた時に行の間がスカスカだと腹が立ってくるからです。編集作業は楽しくやりたい。&lt;/p&gt;
-
-&lt;p&gt;　そのためにはあらかじめこちら側で、「全部の行を見たまま改行する」的なコマンドを指定しなければなりません。TeXにはもともと&lt;code&gt;\obeylines&lt;/code&gt;というコマンドがあって、これを書いてやると大体望む動作になります。&lt;br /&gt;
-　エスケープの時のような部分的なコマンドではない、文書全体に関わるコマンドは本文が始まる前、&lt;code&gt;\documentclass&lt;/code&gt;と&lt;code&gt;\begin&lt;/code&gt;の間で指定します。ここの間のことを&lt;strong&gt;プリアンブル&lt;/strong&gt;といいます。以降のコード例ではプリアンブルの部分のみを示していることがあります。&lt;br /&gt;
-　これでちゃんと改行できたかのように見えるんですが、実はまだ落とし穴があります。&lt;/p&gt;
-
-
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://hakuoku.github.io/agakuTeX/img/41linebreak/obeylines.png&#34; alt=&#34;空行が反映されない&#34; /&gt;
-    
-    
-&lt;/figure&gt;
-
-
-&lt;p&gt;　&lt;strong&gt;空きが反映されてない。&lt;/strong&gt;実はobeylinesは、「 &lt;em&gt;文字のない空白だけの行は無視する&lt;/em&gt; 」というTeX本来の動作に従います。なので一行アキや二行アキを入れたくて何回改行しても無視されます。&lt;br /&gt;
-　空行の制御には\vspaceコマンドなどがあるんですが、本文が読みづらくなるのであまり使いたくありません。どうしたもんかと悩んでいたところ、&lt;a href=&#34;https://xscey.github.io/&#34;&gt;xsceyさん&lt;/a&gt;が解決法を教えて下さいました。（ありがとうございます！）&lt;br /&gt;
-　\obeylinesは使わず、以下のようにしてやります。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-LaTeX&#34;&gt;\documentclass{utbook}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-{\catcode`\^^M=\active%
-\gdef\xobeylines{\catcode`\^^M\active \def^^M{\par\leavevmode}}%
-\global\def^^M{\par\leavevmode}}
-\AtBeginDocument{\xobeylines}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{document}
-︙
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;　何やら恐ろしげな呪文ですが、意味は分からなくても大丈夫です。（詳しい技術的な解説は&lt;a href=&#34;http://hakuoku.hatenablog.com/entry/2016/12/14/222246&#34;&gt;ブログ&lt;/a&gt;の方にあります） こういうTeXへの命令を組み合わせた一種のプログラムを&lt;strong&gt;マクロ&lt;/strong&gt;と呼ぶことだけ覚えておいてください。&lt;br /&gt;
-　それから%の羅列はただの区切りで、意味はありません。TeXでは頭に半角の&lt;code&gt;%&lt;/code&gt;をつけた文は本文にも組版にも影響を与えない&lt;strong&gt;コメント&lt;/strong&gt;として扱われるので、それを利用してプリアンブル部分を挟んでみました。以降はプリアンブルでの命令はこの区切り線の内側に書いていきます。うるさかったら省いてもOKです。（ただしマクロ行末の％は消さないで！）&lt;/p&gt;
-
-&lt;p&gt;　これで、本文通りの改行になりました。&lt;/p&gt;
-
-
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://hakuoku.github.io/agakuTeX/img/41linebreak/exobeylines.png&#34; alt=&#34;exobeylines適用後&#34; /&gt;
-    
-    
-&lt;/figure&gt;
-
-
-&lt;h4 id=&#34;参考&#34;&gt;参考&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://books.google.com/books/about/A_Beginner_s_Book_of_TEX.html?hl=ja&amp;amp;id=72wKBwAAQBAJ&#34;&gt;A Beginner’s Book of TEX - Raymond Seroul&lt;/a&gt;
-　6.4 obeying lines&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://books.google.co.jp/books/about/TEX_in_Practice.html?hl=ja&amp;amp;id=xWvgBwAAQBAJ&#34;&gt;TEX in Practice: Volume III: Tokens, Macros - Stephan v. Bechtolsheim&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;footnotes&#34;&gt;
-
-&lt;hr /&gt;
-
-&lt;ol&gt;
-&lt;li id=&#34;fn:1&#34;&gt;&lt;a href=&#34;https://meta.stackexchange.com/questions/26011/should-the-markdown-renderer-treat-a-single-line-break-as-br&#34;&gt;Should the markdown renderer treat a single line break as br? - Meta Stack Exchange&lt;/a&gt;&lt;br&gt;また&lt;a href=&#34;http://conv.denshochan.com/markdown&#34;&gt;でんでんマークダウン&lt;/a&gt;では、デフォルトでこの問題をクリアしています。
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-</description>
+      <description>&amp;#x3000;それにしても読みづらいですね。改行が全然なくて一面に字が植えてある。面倒なことにTeXは、いわゆる普通の改行を感知しません。</description>
     </item>
     
   </channel>

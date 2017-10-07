@@ -2,12 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Abouts on あがきながら覚えるTeX</title>
-    <link>https://hakuoku.github.io/agakuTeX/about/index.xml</link>
+    <link>https://hakuoku.github.io/agakuTeX/about/</link>
     <description>Recent content in Abouts on あがきながら覚えるTeX</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Fri, 16 Dec 2016 23:45:42 +0900</lastBuildDate>
-    <atom:link href="https://hakuoku.github.io/agakuTeX/about/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://hakuoku.github.io/agakuTeX/about/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>あがきながら覚えるTeX</title>
@@ -15,18 +17,7 @@
       <pubDate>Fri, 16 Dec 2016 23:45:42 +0900</pubDate>
       
       <guid>https://hakuoku.github.io/agakuTeX/about/about/</guid>
-      <description>&lt;p&gt;&amp;#x3000;DTP知識ゼロ・プログラミング経験ほぼなしの文系人間が、「それでも綺麗に&lt;ruby&gt;小説&lt;rp&gt;（&lt;/rp&gt;&lt;rt&gt;・・&lt;/rt&gt;&lt;rp&gt;）&lt;/rp&gt;&lt;/ruby&gt;を組版したい！」と思いつめた末にTeXの魔道に落ち、悪戦苦闘しながらどうにか体裁を整えるところまでは来た過程を、テキトーな文章で記した実録風チュートリアルです。&lt;/p&gt;
-
-&lt;p&gt;　自分の備忘録兼、日本語の文書を作る時、初心者が参考できるような場所が欲しいと思って書きました。&lt;br /&gt;
-　とにかくTeXのての字も知らなかった人間が書いてるので、きちんとしたリファレンスや手順をお求めの方にはまったく役に立ちません。筆者と同じレベルの、本当に初歩の初歩の入門編を探している方向けです。「インストールすらうまくいかない」「文法の意味もわからない」という方は、これを読めば少しは前進できるかもしれません。&lt;br /&gt;
-　また小説および縦組みの日本語を組版する、というのが大前提ですので、論文その他&amp;rdquo;正しい&amp;rdquo;TeXの使い方をお探しの方のお役にも立てないと思います。論文の組み方については熟練の使い手さんたちがネット上に充実したドキュメントを上げておられますので、どうぞそちらをご参照ください。&lt;/p&gt;
-
-&lt;p&gt;　こんなポンコツが書いてますがフィードバック、質問はいつでも大歓迎です。なにぶんポンコツなので私に訊いてもたぶん問題は解決しませんが、初歩的な「ここで詰まった」を一緒に考えていけるようなサイトにできればと思っております。逆にお詳しい方はお叱り、ご意見を頂ければ大変助かります。&lt;/p&gt;
-
-&lt;p&gt;　免責事項：あくまでド素人によるガイドですので、もし失敗して何か損害が発生しましても保証は致しかねます。心配な方はちゃんと紙の教科書を読んだほうが無難です。&lt;/p&gt;
-
-&lt;p&gt;　Then, Happy T&lt;span style = &#34;line-height: 0; text-transform: uppercase;margin-left: -0.140em; margin-right: -0.102em;vertical-align: -0.161em; &#34;&gt;e&lt;/span&gt;Xing!&lt;/p&gt;
-</description>
+      <description>&amp;#x3000;DTP知識ゼロ・プログラミング経験ほぼなしの文系人間が、「それでも綺麗に小説（・・）を組版したい！」と思いつめた末にTeXの</description>
     </item>
     
   </channel>

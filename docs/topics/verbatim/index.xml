@@ -2,11 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Verbatim on あがきながら覚えるTeX</title>
-    <link>https://hakuoku.github.io/agakuTeX/topics/verbatim/index.xml</link>
+    <link>https://hakuoku.github.io/agakuTeX/topics/verbatim/</link>
     <description>Recent content in Verbatim on あがきながら覚えるTeX</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <atom:link href="https://hakuoku.github.io/agakuTeX/topics/verbatim/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 26 Apr 2017 23:07:39 +0900</lastBuildDate>
+    
+	<atom:link href="https://hakuoku.github.io/agakuTeX/topics/verbatim/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>インデント（字下げ）・空白</title>
@@ -14,58 +17,7 @@
       <pubDate>Wed, 26 Apr 2017 23:07:39 +0900</pubDate>
       
       <guid>https://hakuoku.github.io/agakuTeX/tutorial/indent/</guid>
-      <description>
-
-&lt;p&gt;&amp;#x3000;改行はできたものの、行頭の字下げがなんかおかしい。まるまる2字分空いてますね。&lt;br /&gt;
-　これは青空文庫の本文行頭にもともとあった全角スペース（自作原稿でも、行頭を一字下げにしてる人は多いと思います）と、ドキュメントクラスutbookのデフォルトである1字下げが合わさって2文字分になっているからです。筆者も執筆の時に必ず全角スペースで字下げをするので、この癖は変えたくありません。utbookのほうに変わってもらいましょう。&lt;br /&gt;
-　段落のインデント量を指定するコマンドは\parindent。プリアンブルに&lt;code&gt;\parindent = 0pt&lt;/code&gt;と書き込みます。&lt;br /&gt;
-　自作原稿を1字下げしていなくて、PDFでも下げたくない人は同じようにしてください。逆に出力の時だけ下げたい人は何もしなくてOKです。&lt;/p&gt;
-
-&lt;h5 id=&#34;言いわけ&#34;&gt;言いわけ&lt;/h5&gt;
-
-&lt;p&gt;　ぶっちゃけて言うとこれはやっちゃいけないバッドノウハウです。TeXやプログラミング界隈では基本的に全角スペースは避けるものとされていて、場合によってはエラー潰しに死ぬほど時間がかかったりするのは有名な話です。（筆者も2時間ハマったことがある）&lt;br /&gt;
-　それでもTeXは活字を組むシステムですから、例えば「ロリータ　レンピカ」みたいに文中の単語として全角スペースを使いたい時は使っても許されます。問題は行頭の字下げで、これは全文に渉って必ず適用されるものですから、人間がいちいち手で打つのではなくレイアウトの一要素として機械に任せるべきだ、という考え方が徹底されています。なのでクラスファイルに「括弧で始まる行以外は何ポイント下げる」というような指定があらかじめ書かれています。これと衝突しないように、原稿は字下げせずに書くのがセオリーです。&lt;br /&gt;
-　しかしですね、正直、&lt;strong&gt;書いてる間字下げしたくならないですか？&lt;/strong&gt;&lt;br /&gt;
-　別にしたくならない人はそれで全然OKだと思います。むしろTeX的にはそっちの方がいいです。でも私は字下げしたい。執筆段階で、未完成の文やいまいち納得していないところは字下げせずに書いて、大体いいなと思ったら全角スペースで下げています。字下げしてあるとなんとなく&amp;rdquo;ちゃんとした文&amp;rdquo;に見えるものです。&lt;/p&gt;
-
-&lt;p&gt;　ということで、ここでは完全にフィーリングと私利私欲でインデント抑制をしています。そこまで我欲が強くない人は、行頭のスペースは消してしまってクラスのインデント設定に任せた方がいいでしょう。&lt;br /&gt;
-　これもエディタの検索・置換で一括編集できます。「正規表現」のところにチェックを入れてから「すべて置換」してください。&lt;/p&gt;
-
-&lt;p&gt;検索する文字列：&lt;code&gt;^　&lt;/code&gt;（半角キャレットの後に全角スペース）　→　置換する文字列：（何も入力しない）&lt;/p&gt;
-
-&lt;h4 id=&#34;空白の扱い&#34;&gt;空白の扱い&lt;/h4&gt;
-
-&lt;p&gt;　インデントに限らず、TeXでは空白・空間は人間ではなく主に機械が担うべき領域とされています。1行アキが出力されなかったのもそのせいです。いくら改行しても無駄だったのと同じように、半角スペースをいくつ入れても一つの空白として出力されます。（全角スペースは&amp;rdquo;空間&amp;rdquo;ではなく&amp;rdquo;文字&amp;rdquo;扱いなので、入れた分出力できます）&lt;br /&gt;
-　強制的に複数出力したい時は&lt;code&gt;\␣&lt;/code&gt;（␣は半角スペース）か&lt;code&gt;~&lt;/code&gt;を使います。~~を使うと、その位置では改行が起こりません。下の例の括弧内のように、次の行にかかるとおかしくなる所には~を使います。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;（~~~~）の\␣\␣『吾輩は（~~）である』
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;　英詩やプログラムのソースコードなど、あまりにもたくさん半角スペースが出て来るところは、全てを見たまま出力する&lt;strong&gt;verbatim環境&lt;/strong&gt;の中に入れてやることで対応できます。エスケープのところで出てきた&lt;code&gt;\verb|ナントカ|&lt;/code&gt;はこれの短縮形です（一行で収まる時に使う）。&lt;br /&gt;
-　begin／endがついていますが、これはそのまま本文中、&lt;code&gt;\begin{document}～\end{document}&lt;/code&gt;の間に書き込みます。documentという環境の中に、verbatimという環境を入れ込んでいます。\verbとverbatim環境のように、単一行用と複数行用がセットになっているコマンドはよくあります。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-LaTeX&#34;&gt;\begin{verbatim}
-&#39;Twas brillig, and the slithy toves
-   Did gyre and gimble in the wabe;  %半角スペース3個で字下げされている
-All mimsy were the borogoves,
-   And the mome raths outgrabe.
-            ――ルイス・キャロル『ジャバウォックの詩』
-\end{verbatim}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;　上の例だと、改行マクロを入れていなくても改行が見たまま出力され、さらに%で始まるコメントまで原稿に出力されてしまいます。本当にガチで見たままで細かい制御ができず、思ったのとは違う出力が出がちなので、できればverbatimの多用は控えた方が楽かと思います。&lt;/p&gt;
-
-&lt;p&gt;　一文字単位ではない、もっと広い空間の制御にもコマンドが要ります。一覧は&lt;a href=&#34;http://osksn2.hep.sci.osaka-u.ac.jp/~naga/miscellaneous/tex/tex-tips7.html&#34;&gt;こちら&lt;/a&gt;のページを参照してください。詳しい使い方は後述します。&lt;/p&gt;
-
-&lt;h4 id=&#34;参考&#34;&gt;参考&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://hooktail.org/computer/index.php?%CA%B8%BD%F1%A4%CE%C0%DF%C4%EA&#34;&gt;文書の設定 - [物理のかぎしっぽ]&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://texwiki.texjp.org/?%E8%8B%B1%E8%AA%9E%E6%96%87%E3%81%AE%E4%BD%93%E8%A3%81&#34;&gt;英語文の体裁 - TeX Wiki&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://osksn2.hep.sci.osaka-u.ac.jp/~naga/miscellaneous/tex/tex-tips7.html&#34;&gt;Tex tips - ７　空白のコントロール&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.serc.titech.ac.jp/~kannolab/kanno/tex/tex05.html&#34;&gt;□□TeXnique : Vol.5□□&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description>&amp;#x3000;改行はできたものの、行頭の字下げがなんかおかしい。まるまる2字分空いてますね。 これは青空文庫の本文行頭にもともとあった全角ス</description>
     </item>
     
   </channel>

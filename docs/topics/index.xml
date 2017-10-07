@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Topics on あがきながら覚えるTeX</title>
+    <link>https://hakuoku.github.io/agakuTeX/topics/</link>
+    <description>Recent content in Topics on あがきながら覚えるTeX</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Thu, 20 Jul 2017 23:05:21 +0900</lastBuildDate>
+    
+	<atom:link href="https://hakuoku.github.io/agakuTeX/topics/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://hakuoku.github.io/agakuTeX/topics/</link>
+      <pubDate>Thu, 20 Jul 2017 23:05:21 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/topics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Verb</title>
+      <link>https://hakuoku.github.io/agakuTeX/topics/verb/</link>
+      <pubDate>Wed, 19 Apr 2017 13:03:39 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/topics/verb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Verbatim</title>
+      <link>https://hakuoku.github.io/agakuTeX/topics/verbatim/</link>
+      <pubDate>Wed, 26 Apr 2017 23:07:39 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/topics/verbatim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>インラインコマンドの書き方</title>
+      <link>https://hakuoku.github.io/agakuTeX/topics/%E3%82%A4%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%B3%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%81%AE%E6%9B%B8%E3%81%8D%E6%96%B9/</link>
+      <pubDate>Wed, 19 Apr 2017 13:03:39 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/topics/%E3%82%A4%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%B3%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%81%AE%E6%9B%B8%E3%81%8D%E6%96%B9/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>エラー</title>
+      <link>https://hakuoku.github.io/agakuTeX/topics/%E3%82%A8%E3%83%A9%E3%83%BC/</link>
+      <pubDate>Wed, 19 Apr 2017 13:03:39 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/topics/%E3%82%A8%E3%83%A9%E3%83%BC/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>エンコード</title>
+      <link>https://hakuoku.github.io/agakuTeX/topics/%E3%82%A8%E3%83%B3%E3%82%B3%E3%83%BC%E3%83%89/</link>
+      <pubDate>Tue, 18 Apr 2017 18:13:32 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/topics/%E3%82%A8%E3%83%B3%E3%82%B3%E3%83%BC%E3%83%89/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>コメント</title>
+      <link>https://hakuoku.github.io/agakuTeX/topics/%E3%82%B3%E3%83%A1%E3%83%B3%E3%83%88/</link>
+      <pubDate>Sat, 22 Apr 2017 19:24:51 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/topics/%E3%82%B3%E3%83%A1%E3%83%B3%E3%83%88/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>シンタックスハイライト</title>
+      <link>https://hakuoku.github.io/agakuTeX/topics/%E3%82%B7%E3%83%B3%E3%82%BF%E3%83%83%E3%82%AF%E3%82%B9%E3%83%8F%E3%82%A4%E3%83%A9%E3%82%A4%E3%83%88/</link>
+      <pubDate>Tue, 18 Apr 2017 18:13:32 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/topics/%E3%82%B7%E3%83%B3%E3%82%BF%E3%83%83%E3%82%AF%E3%82%B9%E3%83%8F%E3%82%A4%E3%83%A9%E3%82%A4%E3%83%88/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>テキストエディタ</title>
+      <link>https://hakuoku.github.io/agakuTeX/topics/%E3%83%86%E3%82%AD%E3%82%B9%E3%83%88%E3%82%A8%E3%83%87%E3%82%A3%E3%82%BF/</link>
+      <pubDate>Sun, 02 Apr 2017 14:41:40 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/topics/%E3%83%86%E3%82%AD%E3%82%B9%E3%83%88%E3%82%A8%E3%83%87%E3%82%A3%E3%82%BF/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>パッケージ</title>
+      <link>https://hakuoku.github.io/agakuTeX/topics/%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8/</link>
+      <pubDate>Wed, 28 Jun 2017 20:18:41 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/topics/%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>プリアンブル</title>
+      <link>https://hakuoku.github.io/agakuTeX/topics/%E3%83%97%E3%83%AA%E3%82%A2%E3%83%B3%E3%83%96%E3%83%AB/</link>
+      <pubDate>Sat, 22 Apr 2017 19:24:51 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/topics/%E3%83%97%E3%83%AA%E3%82%A2%E3%83%B3%E3%83%96%E3%83%AB/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>マクロ</title>
+      <link>https://hakuoku.github.io/agakuTeX/topics/%E3%83%9E%E3%82%AF%E3%83%AD/</link>
+      <pubDate>Sat, 22 Apr 2017 19:24:51 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/topics/%E3%83%9E%E3%82%AF%E3%83%AD/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>拡張子の設定</title>
+      <link>https://hakuoku.github.io/agakuTeX/topics/%E6%8B%A1%E5%BC%B5%E5%AD%90%E3%81%AE%E8%A8%AD%E5%AE%9A/</link>
+      <pubDate>Wed, 19 Apr 2017 13:03:39 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/topics/%E6%8B%A1%E5%BC%B5%E5%AD%90%E3%81%AE%E8%A8%AD%E5%AE%9A/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>検索・置換</title>
+      <link>https://hakuoku.github.io/agakuTeX/topics/%E6%A4%9C%E7%B4%A2%E7%BD%AE%E6%8F%9B/</link>
+      <pubDate>Wed, 19 Apr 2017 13:03:39 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/topics/%E6%A4%9C%E7%B4%A2%E7%BD%AE%E6%8F%9B/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>環境</title>
+      <link>https://hakuoku.github.io/agakuTeX/topics/%E7%92%B0%E5%A2%83/</link>
+      <pubDate>Wed, 26 Apr 2017 23:07:39 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/topics/%E7%92%B0%E5%A2%83/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>連数字</title>
+      <link>https://hakuoku.github.io/agakuTeX/topics/%E9%80%A3%E6%95%B0%E5%AD%97/</link>
+      <pubDate>Tue, 27 Jun 2017 11:19:16 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/topics/%E9%80%A3%E6%95%B0%E5%AD%97/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>青空文庫形式</title>
+      <link>https://hakuoku.github.io/agakuTeX/topics/%E9%9D%92%E7%A9%BA%E6%96%87%E5%BA%AB%E5%BD%A2%E5%BC%8F/</link>
+      <pubDate>Sun, 02 Apr 2017 14:41:40 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/topics/%E9%9D%92%E7%A9%BA%E6%96%87%E5%BA%AB%E5%BD%A2%E5%BC%8F/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

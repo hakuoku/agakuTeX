@@ -2,11 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>シンタックスハイライト on あがきながら覚えるTeX</title>
-    <link>https://hakuoku.github.io/agakuTeX/topics/%E3%82%B7%E3%83%B3%E3%82%BF%E3%83%83%E3%82%AF%E3%82%B9%E3%83%8F%E3%82%A4%E3%83%A9%E3%82%A4%E3%83%88/index.xml</link>
+    <link>https://hakuoku.github.io/agakuTeX/topics/%E3%82%B7%E3%83%B3%E3%82%BF%E3%83%83%E3%82%AF%E3%82%B9%E3%83%8F%E3%82%A4%E3%83%A9%E3%82%A4%E3%83%88/</link>
     <description>Recent content in シンタックスハイライト on あがきながら覚えるTeX</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <atom:link href="https://hakuoku.github.io/agakuTeX/topics/%E3%82%B7%E3%83%B3%E3%82%BF%E3%83%83%E3%82%AF%E3%82%B9%E3%83%8F%E3%82%A4%E3%83%A9%E3%82%A4%E3%83%88/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 18 Apr 2017 18:13:32 +0900</lastBuildDate>
+    
+	<atom:link href="https://hakuoku.github.io/agakuTeX/topics/%E3%82%B7%E3%83%B3%E3%82%BF%E3%83%83%E3%82%AF%E3%82%B9%E3%83%8F%E3%82%A4%E3%83%A9%E3%82%A4%E3%83%88/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>設定</title>
@@ -14,63 +17,7 @@
       <pubDate>Tue, 18 Apr 2017 18:13:32 +0900</pubDate>
       
       <guid>https://hakuoku.github.io/agakuTeX/tutorial/settings/</guid>
-      <description>
-
-&lt;p&gt;&amp;#x3000;ここが最初の泣きどころです。テストの時にもあったように、TeXは設定を間違えると動きません。エラーメッセージもなんか暗号みたいなので一度落とし穴にハマるとなかなか抜けられません。何度辛酸を舐めたことか。&lt;br /&gt;
-　ここでは実際に組版ボタンを押すまでに必要な設定を書いていきます。&lt;/p&gt;
-
-&lt;h4 id=&#34;エンコード&#34;&gt;エンコード&lt;/h4&gt;
-
-&lt;p&gt;　説明する自信がない。のでとにかく何も聞かずにこれだけやってくれ、ということだけ書きます。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;テストに出てきたTeXWorksの「pdfLaTeX」のところを「&lt;strong&gt;upLaTeX(ptex2pdf)&lt;/strong&gt;」にします。「編集 &amp;gt; 設定 &amp;gt; タイプセット」の中の「デフォルト」をupLaTeXにしておくと、以降の手間が省けます。&lt;/li&gt;
-&lt;li&gt;イチからテキストを書こうという人はテキストエディタのエンコード設定を「&lt;strong&gt;UTF-8&lt;/strong&gt;」もしくは「Unicode」にします。Meryだと下のステータスバーのとこに「UTF-8」って書いてあれば大丈夫です。「ShiftJIS」とか他の言葉が表示されてたら、ダブルクリックして変更します。&lt;/li&gt;
-&lt;li&gt;青空文庫、またはすでに書き上げた原稿から組もうという人はファイル自体をUTF-8に変換してやります。エディタでテキストを開き、「名前をつけて保存」をします。その時ダイアログの中にある「エンコード」の欄からUTF-8を選びます。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;　これでいいはず。一応説明を試みますが読み飛ばしても構いません。&lt;/p&gt;
-
-&lt;p&gt;　そもそもエンコード（正確には文字コード）とは何ぞや、というと、要は“暗号体系”のようなものです。コンピュータは本来0と1の2進数しか知らないはずで、そいつが多様な文字を描き出すための仕組みです。&lt;br /&gt;
-　例えばaは0001、bは0010、cは0011、dは0100と決めておきます。ただ送り手のマシンがそのつもりでも、受け取り手のマシンに違う対応表がインストールされてると混乱します。向こうで0001をz、0010をy、0011をx、0100をwと決めてあったら、「bad」は「yzw」として受け取られます。&lt;br /&gt;
-　モールス信号でもいいですね。SOSは「・・・　ーーー　・・・」ですが、受け手がイロハ式の表を使っていた場合これは「ラレラ」と読まれます。&lt;br /&gt;
-　こんなふうに記号と文字の対応表を一致させておかないと物事は回りません。UTFとかShiftJISというのは、何が何番っていう対応表の名前です。世の中にはこれがたくさんあってそれぞれ好き勝手なのを使ってるんだ。だから世界は平和にならないんだ。&lt;/p&gt;
-
-&lt;p&gt;　我々はこれ以降、必ず「UTF-8」というエンコードを使います。使うったら使うんです。詳しくは下のリンクを参照してください。&lt;br /&gt;
-　ここで使いたいのはUTFなんですが、青空文庫はShiftJISを使っています。そのままTeXに読ませようとするといわゆる文字化けを起こすので、こちらで変換してやるわけですね。幸いエディタで保存するだけでいいので説明の割には簡単です。&lt;/p&gt;
-
-&lt;h5 id=&#34;参考&#34;&gt;参考&lt;/h5&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://e-words.jp/w/%E6%96%87%E5%AD%97%E3%82%B3%E3%83%BC%E3%83%89.html&#34;&gt;文字コードとは｜IT用語辞典&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.kanzaki.com/docs/jcode.html&#34;&gt;日本語と文字コード&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&#34;エディタの設定&#34;&gt;エディタの設定&lt;/h4&gt;
-
-&lt;p&gt;　これまでカラフルな文書の画像がよく出てきましたが、前述の通りこれはエディタに「青空形式やTeXの特殊指示は本文と分けて色で表示してね」と頼んだ結果です。この機能を&lt;strong&gt;シンタックスハイライト&lt;/strong&gt;といいます。やらなくてもプログラムは動くけどやったほうが人間にとって編集しやすいという設定です。このサイト上でもサンプルコードのところに使っています。&lt;/p&gt;
-
-&lt;p&gt;　TeXWorksは白地に青や緑や赤の字という質素なデフォルトしかないんですが、Mery（や他のモダンなエディタ）にはいろんなカラースキームが収録されてて好みに合わせて選べたりします。「ツール &amp;gt; オプション &amp;gt; 表示」の中の「テーマ」メニューから切り替えられます。&lt;br /&gt;
-　個人的にエディタの外観はとても重要だと思っています。ステキな文房具があれば作業も楽しくなるというもの。テーマ以外にもフォントやツールバーなど、気が済むまでいじりましょう。&lt;/p&gt;
-
-&lt;p&gt;　実用的には、「表示 &amp;gt; 記号」から制御記号の表示をオンにしておくと予期せぬエラーの予防になります。特に半角空白と全角空白の区別は重要です。執筆中は邪魔に感じるかもしれないので、原稿中はオフにして組版中は全部オンにする、常に半角空白だけはオンにするなど、ご自身の好みに合わせて設定してください。&lt;/p&gt;
-
-&lt;p&gt;　TeX専用でない汎用エディタは多様な言語をハイライトできます。基本的に青空文庫形式に対応しているエディタは無いんですが、Meryでは有志の方が作ったカスタム文法ファイルを読み込んでやることで色分けできるようになります。&lt;/p&gt;
-
-&lt;p&gt;　MeryWikiの「&lt;a href=&#34;http://www.haijin-boys.com/wiki/%E6%A7%8B%E6%96%87%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB&#34;&gt;構文ファイル&lt;/a&gt;」ページからAozoraを選び、zipをダウンロードします。適当に展開してやった後、Meryのメニューの「表示 &amp;gt; 編集モード &amp;gt; 編集モードの設定」を選び、「新規作成」、できた「新しい編集モード」の名前を「Aozora（もしくは好きな名前）」に変更します。その後「プロパティ」を押します。ダイアログが出たら「インポート」を押してさっきの展開フォルダの中の「aozora.msy」を選び、設定を取り込みます。その後「関連付け」タブで拡張子にtxtを追加してやります。これで青空形式が自動で色分けされるようになりました。&lt;br /&gt;
-　日常的に青空形式を使わない場合は、関連付けは飛ばしてください。使いたい時だけ「表示 &amp;gt; 編集モード」か、下のステータスバーの言語名のところから「Aozora」を選ぶようにします。&lt;/p&gt;
-
-
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://hakuoku.github.io/agakuTeX/img/32settings/mery.png&#34; alt=&#34;Meryの言語モード拡張&#34; /&gt;
-    
-    
-&lt;/figure&gt;
-
-
-&lt;p&gt;　逆に伝統のTeX文法はたいがいどれでも対応してます。拡張子.texのファイルを開けば自動で色分けされるはずなので、ここでは特になにもしません。.txtファイルのままでTeX文書として編集したい時などは、手動で編集モードをTeXに切り替えます。&lt;/p&gt;
-</description>
+      <description>&amp;#x3000;ここが最初の泣きどころです。テストの時にもあったように、TeXは設定を間違えると動きません。エラーメッセージもなんか暗号みた</description>
     </item>
     
   </channel>

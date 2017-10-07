@@ -2,12 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>あがきながら覚えるTeX</title>
-    <link>https://hakuoku.github.io/agakuTeX/index.xml</link>
+    <link>https://hakuoku.github.io/agakuTeX/</link>
     <description>Recent content on あがきながら覚えるTeX</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Sat, 17 Dec 2016 21:32:59 +0900</lastBuildDate>
-    <atom:link href="https://hakuoku.github.io/agakuTeX/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://hakuoku.github.io/agakuTeX/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>発端</title>
@@ -15,34 +17,7 @@
       <pubDate>Sat, 17 Dec 2016 21:32:59 +0900</pubDate>
       
       <guid>https://hakuoku.github.io/agakuTeX/tutorial/beginning/</guid>
-      <description>&lt;p&gt;&amp;#x3000;私はWordが苦手です。&lt;strong&gt;私はWordが苦手です。&lt;/strong&gt;&lt;br /&gt;
-　というところが筆者がTeXに手を出した理由です。&lt;br /&gt;
-　もうどれくらいワープロソフト使ってないんだろ。だってイライラしませんか……重いしフォントパッと変えてくれないし変な改段とかツッコミ入れるし日本語の扱い方下手だし行間とかマージンとか全然思い通りにならないし……。&lt;br /&gt;
-　いやわかってるんですよ、今日びそれでも随分改善されてきてて、プロでもない人間が文章を整形して刷るにはWordが一番早くて楽だってことぐらいは。&lt;br /&gt;
-　特に今はPDFとして出力してくれる機能があるので、共同編集ナシで成果物だけを渡すとなると多分Word最強です。たとえ誰かと一緒に編集する時でも、今はGoogleドキュメントもWord OnlineもLibreOfficeもあるんだし。&lt;br /&gt;
-　あるいはたとえWordに頼らないとしても、今はテキストから直にPDFが作れるエンジンが各印刷所や有志から公開されてるので、なにも要らん苦労をする必要はないわけです。（特に個人開発のフリーウェア・「&lt;a href=&#34;http://tokimi.sylphid.jp/?FrontPage&#34;&gt;威沙&lt;/a&gt;」はすごいです。やりたいことがほぼ何でもできます。プレーンテキスト派の人はまずはここを使いましょう。）&lt;br /&gt;
-　というわけでこれから多大な時間と労力を使いたくない方は、多少の使いづらさは諦めて他の道を模索してください。それぐらいTeXは古くてめんどくさいです。&lt;/p&gt;
-
-&lt;p&gt;　ではなぜ数々の困難を圧してまでTeXを使うのか？　&lt;strong&gt;だって綺麗なんだもん。&lt;/strong&gt;&lt;br /&gt;
-　綺麗というのはもちろん組版の仕上がりのこともですが、その前段階、原稿から印刷の指示まですべてシンプルなテキストファイルでできるというところをも指しています。&lt;/p&gt;
-
-&lt;p&gt;　テキストファイル（プレーンテキスト）というのは文字通り、「文字情報だけ」のファイルです。ほぼどんなマシンでも前準備なしで開けます。Windowsのメモ帳、Macのテキストエディットで開く質素なアレです。文章の中身だけで書体情報がないので、中央寄せとかしたくてもできないし、文字の大きさなんかも指定できません。&lt;br /&gt;
-　ご存じの方も多いでしょうが、Wordをはじめとするいわゆるワープロソフトというのは、文章そのものにフォントとか色とか位置とかページサイズとか、いろんな情報をくっつけた上でファイルに仕立ててくれます。だから送ってもらったWordファイルを開けば、送り主の作った通りの文書がそのまま出てきます。&lt;br /&gt;
-　ただしそれは、“送り主と同じバージョンのWordが入ったパソコンで開けば”の話です。バージョンが違うとデザインがガッタガタに崩れたりするし、そもそもWordがないマシンでは開けません。ちょっと前（2000年代初めくらい？）まではわりと全国「Wordが入ってない？どういうこと？」な状況だったような気がしますが、PCの買い方の多様化が進み、オフィスソフトを入れずに値段を抑えたマシンなどもポピュラーになりました。iPhoneの普及でMacユーザーも爆発的に増えました。いきなりWordファイルを送られても読めない端末が増えたということです。時代はクロスプラットフォームだぜ。&lt;/p&gt;
-
-&lt;p&gt;　TeXや、その他のテキストファイルを軸とした体系を使う理由はこの、「どこにでも送れてどこででも読める」ということに尽きると思います。&lt;br /&gt;
-　もちろんどんなワープロファイルも自分でソフトを入れれば普通に開けるようになるし、大学のレポートくらいなら私もそれで充分間に合わせてました。しかしやはり単純さという点ではプレーンテキストに優るものはありません。&lt;br /&gt;
-　多分一番わかりやすいのが、ファイルを開くときの立ち上がりの軽さです。Wordを開くのってめちゃくちゃ重くないですか？スペック低いマシンだと10秒とかもっととかかかる。あとスマホで編集するのは無理がある。テキストファイルなら、好みのアプリからいつでも閲覧・編集できます。&lt;br /&gt;
-　他にもプレーンテキストでできることはいろいろあって、筆者はそんなプレーンテキスト至上主義者であるがゆえにTeXに手を出しました。&lt;/p&gt;
-
-&lt;p&gt;　あとはフリーというのも大きいです。そもそも本当に商業品質の組版をしたいなら、プロが使う&lt;a href=&#34;http://www.adobe.com/jp/products/indesign.html&#34;&gt;Adobe InDesign&lt;/a&gt;を使えば済むことです。以前は10万円くらいする高価なソフトでしたが、今はCreative Cloudがあるので月額2180円からお手軽に借りられます。&lt;br /&gt;
-　しかしそれでも無料と有料の差は大きいです。筆者は組版のプロでもなんでもなく、たまに同人誌を作ってごく少部数刷るだけです。たかが趣味の雑文書きに正直お金はあまりかけられません。&lt;br /&gt;
-　TeXは完全に無償の上、権利的にもフリーです。厳密な意味でのパブリックドメインではないようですが、プログラムは広く公開され世界中の有志がさまざまな機能やバリエーションを開発しています。市販の電子書籍アプリなんかも活字の内部処理にはTeXを使っていたりします。一つの会社に依存することなく、一度覚えたら広範囲に使い回したりカスタマイズしたりできるというのは本当にありがたいです。&lt;/p&gt;
-
-&lt;p&gt;　さて、しかしシンプルということは低機能の裏返しでもあります。前述の通りテキストファイルはフォントの指定も整形も何もできません。Wordが重いのはある意味当たり前で、ソフト側で頑張って書体情報を処理して文書を組み立ててくれているからなんですね。メモ帳はそもそもそんなことしないから軽い。&lt;br /&gt;
-　当然縦書き小説を刷るなんてこともできません。だからこそ、TeXという組版システムが必要になります。&lt;br /&gt;
-　「なんか結局シンプルでもなんでもなくね？」と思ったあなたは正しいです。そんなわけで、どうしてもWordは嫌だ！なんとしても俺は理想の縦書き文書を組みたいんだ！と思う方のみ、ここからTeXの魔道に踏み込んで参りましょう。&lt;/p&gt;
-</description>
+      <description>&amp;#x3000;私はWordが苦手です。私はWordが苦手です。 というところが筆者がTeXに手を出した理由です。 もうどれくらいワープロソフト</description>
     </item>
     
     <item>
@@ -51,65 +26,7 @@
       <pubDate>Mon, 19 Dec 2016 00:02:26 +0900</pubDate>
       
       <guid>https://hakuoku.github.io/agakuTeX/tutorial/whatstex/</guid>
-      <description>&lt;blockquote&gt;
-&lt;p&gt;TeX（TeX; テック、テフ）はアメリカの数学者・計算機科学者であるドナルド・クヌース (Donald E. Knuth) により開発されている組版処理システムである。&lt;br /&gt;
-……ドナルド・クヌースが1976年、自身の著書 The Art of Computer Programming の改訂版の準備中に、旧版の鉛版による組版の職人仕事による美しさが当時の写植では再現できていないことに憤慨し、自分自身が心ゆくまで組版を制御するために開発を決意した。&lt;br /&gt;
-クヌースはまず、伝統的な組版およびその関連技術に対する広範囲にわたる調査を行い、その調査結果を取り入れることで、商業品質の組版ができる、柔軟で強力な組版システムを開発した。それは技術と同時に芸術をも意味する言葉である、ギリシア語: τέχνη（テクネ）から採られ“TeX”と名付けられた。from &lt;a href=&#34;https://ja.wikipedia.org/wiki/TeX&#34;&gt;Wikipedia&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;　とまあ要するに、心ゆくまでカスタマイズできて、お店で売ってるような本が作れるシステムですよ、ということらしい。&lt;br /&gt;
-　ちなみにこのクヌース教授という方はいろいろすごい人のようで、TeX開発の件のように「今あるやつ気に入らないから俺が作る！」という衝動に駆られることを『クヌース病』と呼ぶそうな。&lt;br /&gt;
-　数学者が作っただけあって、基本は“英語の論文”を書くためのシステムです。日本ではアスキーがpTeX、pLaTeXという日本語対応版を出しています。これがないと日本語が書けない。&lt;br /&gt;
-（ちなみにここで挙げるプログラムは原則としてすべてフリーウェア、無料です。ありがたや）&lt;/p&gt;
-
-&lt;p&gt;　ここでちょっと補足ですが、これまでTeXTeXと呼んできたものは正しい呼び方ではありません。TeXというのは大分慣用的な表現で、あれです、おばあちゃんに言わせると全部「ファミコン」になる的なそういうやつです。オリジナルのファミコンだろうがwiiだろうがDSだろうが全部ファミコンと呼ぶみたいな用法です。&lt;br /&gt;
-　厳密には『TeX』というのはクヌース教授が自分のために作った素のままのプログラムのことで、それだと扱いづらいので普段はみんなそこにいろいろ機能を足した『LaTeX』というのを使っています。普通にTeXと言えばだいたいLaTeXのことを指しているくらいです。&lt;br /&gt;
-　そしてここまでが英語圏の話です。日本では先述のpTeX、pLaTeXを使う場合が多く、日本人がただTeXと言えばpLaTeXを指していることもままあります。筆者の用法はこれです。さらに厳密に言うと今はe-pTeXらしく、さらにさらに私が使うのはUnicodeなので最終的にe-upTeXらしいけどもう知らんがな。とりあえず &lt;em&gt;このサイトで『TeX』と言った時には、正確には『&lt;strong&gt;upLaTeX（≒e-upTeX）&lt;/strong&gt;』のことを指している&lt;/em&gt; 、ということだけ覚えておいてください。&lt;br /&gt;
-（TeXという言葉が何を意味するのかは、ワトソン氏によるこちらの記事が詳しいです： &lt;a href=&#34;https://blog.wtsnjp.com/2016/12/19/tex-and-latex/&#34;&gt;TeX と LaTeX の違い | ラング・ラグー&lt;/a&gt;）&lt;/p&gt;
-
-&lt;p&gt;　閑話休題。じゃあ具体的にはどんなソフトなの？Wordっぽいの？となりますが、超要約すると「 &lt;em&gt;TeX文法に則った文章を読み込ませると、文法で指定した通りの組み方でPDFを吐き出してくれるエンジン&lt;/em&gt; 」ってことになるんだと思います。&lt;br /&gt;
-　要するにHTMLとかMarkdownとか青空文庫形式みたいなものです。(マークアップ言語といいます。伊藤計劃の『ハーモニー』に出てきたアレです） 小説本文の間あいだに、特殊な記法で「ここで改ページ」とか「これは見出しだよ」とか「太字で」とか指示を書き込んでやると、TeXエンジンが読み取ってその通りPDFにしてくれるんですね。あとは自分で公開するなり印刷所に入稿するなり好きにしやがれというシステムです。&lt;/p&gt;
-
-
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://hakuoku.github.io/agakuTeX/img/12whatstex/rare.png&#34; alt=&#34;TeXで原稿をマークアップしたところ&#34; /&gt;
-    
-    
-    &lt;figcaption&gt;
-        &lt;p&gt;
-        ビフォー
-        
-            
-        
-        &lt;/p&gt; 
-    &lt;/figcaption&gt;
-    
-&lt;/figure&gt;
-
-
-&lt;p&gt;　上の図のように小説本文の間に余計な文字列が入ることになるので、この表示にひどい違和感を覚える人や、原稿ファイルは本文のみであるべきだと考える人にはTeXの使用をおすすめできません。WYSIWYG（見たまんま）で編集できるInDesignやワープロソフトを使いましょう。個人的には一太郎が本当に素晴らしいと思います。&lt;br /&gt;
-　この表示が嫌じゃない人や、見たままよりはむしろ効率化や論理性を重視したいと思う人には、TeXの使用自体はそんなに難しくありません。ただし日本語組版はわりと地獄です。英語話者が数学論文のために作ったプログラムで日本語縦書き文書を組むという、ある意味すごく不自然なことをやってるのでめんどくさくなるのもむべなるかなです。&lt;br /&gt;
-　しかしですね、あまたの困難を乗り越えて組みあがった文書は、ユーザーの誰もが言うように本当に美しいです。初めて理想の文書を印刷できたときは思わず「おお……」と唸りました。向いてないはずの処理を素人がやってもここまで綺麗にできるというのがTeXの底力だと思います。&lt;/p&gt;
-
-
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://hakuoku.github.io/agakuTeX/img/12whatstex/rarepolished.png&#34; alt=&#34;組版結果&#34; /&gt;
-    
-    
-    &lt;figcaption&gt;
-        &lt;p&gt;
-        アフター
-        
-            
-        
-        &lt;/p&gt; 
-    &lt;/figcaption&gt;
-    
-&lt;/figure&gt;
-
-</description>
+      <description>TeX（TeX; テック、テフ）はアメリカの数学者・計算機科学者であるドナルド・クヌース (Donald E. Knuth) により開発されている組版処理システムである。 ……</description>
     </item>
     
     <item>
@@ -118,28 +35,7 @@
       <pubDate>Sun, 02 Apr 2017 09:43:23 +0900</pubDate>
       
       <guid>https://hakuoku.github.io/agakuTeX/tutorial/usage/</guid>
-      <description>
-
-&lt;p&gt;&amp;#x3000;このサイトはチュートリアル形式でゼロから一冊の本を組みながら、その場その場で必要になった知識を解説していくという泥縄式になります。一応&lt;a href=&#34;https://hakuoku.github.io/agakuTeX/topics/&#34;&gt;索引&lt;/a&gt;を作ってみましたので、サイト内検索と併せて活用してください。&lt;/p&gt;
-
-&lt;p&gt;　手を動かしながら覚えたい人はこのまま順番に記事を読んでもらって大丈夫ですが、事前に最低限の知識が欲しいという人は、電気通信大学・佐藤研究室内の&lt;a href=&#34;http://hs.hc.uec.ac.jp/index.php?plugin=attach&amp;refer=Tex&amp;openfile=TeX%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB.pdf&#34; target=&#34;_blank&#34;&gt;TeXマニュアル&lt;/a&gt;(PDF)の第一章を読んでおくと以降の理解がスムーズです。入門に必要な知識が大変簡潔にまとめられています。データは古いものなんですが体系的かつコンパクトで、泥縄でない予習・復習におすすめです。&lt;/p&gt;
-
-&lt;p&gt;　復習にはワトソンさん作の&lt;a href=&#34;https://blog.wtsnjp.com/2017/01/13/platexcheat/&#34;&gt;『pLaTeX2e チートシート』&lt;/a&gt;も必携です。よく使うコマンドが２ページにまとめられているので、印刷して手元に置いておくこともできます。またこちらは2017年作の最新版です。&lt;/p&gt;
-
-&lt;h4 id=&#34;スペック&#34;&gt;スペック&lt;/h4&gt;
-
-&lt;p&gt;　参考として筆者の動作環境です。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;プログラミング初心者。初めてTeXを使った時にはプログラミングすらやったことがなかったので、以降もこのサイトは素人の目線で書いて行きたいと思います。&lt;/li&gt;
-&lt;li&gt;組版知識はゼロ。編集やDTPの現場で使うような専門知識はまったくありません。&lt;/li&gt;
-&lt;li&gt;ヘボ短歌や同人誌などを書く過程で組版への欲が生まれたが、つまり理論的裏付けがなく全部フィーリングに頼っている。&lt;/li&gt;
-&lt;li&gt;今まで文章は装飾一切なしのプレーンテキストで、ルビが必要な時のみ青空文庫形式で書いていた。一太郎を使ってた時もある。&lt;/li&gt;
-&lt;li&gt;PCはWindows10、メモリ4GBの貧弱ノート。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;　ここでの解説はすべてWindows（7以降）、TeX Live 2016、Unicodeを用いたものになります。条件違いの方、Macの方すみません（そもそもMacならTeXに頼らんでもわりと綺麗な文章組めるよなと思ったり思わなかったり）。OS・ディストリビューションによって異なるのは主にインストールの方法で、組版の段階では調整が効きますので、自分の環境に合ったやり方でTeXをインストールした上チュートリアルを活用してください。&lt;/p&gt;
-</description>
+      <description>&amp;#x3000;このサイトはチュートリアル形式でゼロから一冊の本を組みながら、その場その場で必要になった知識を解説していくという泥縄式になり</description>
     </item>
     
     <item>
@@ -148,63 +44,7 @@
       <pubDate>Sat, 31 Dec 2016 20:04:25 +0900</pubDate>
       
       <guid>https://hakuoku.github.io/agakuTeX/tutorial/prepare/</guid>
-      <description>
-
-&lt;p&gt;&amp;#x3000;ではさっそく使ってみようじゃないか、と思ったところでまずつまずきます。&lt;a href=&#34;https://texwiki.texjp.org/?TeX%E5%85%A5%E6%89%8B%E6%B3%95&#34;&gt;ここ&lt;/a&gt;とか&lt;a href=&#34;https://ja.wikibooks.org/wiki/TeX/LaTeX%E5%85%A5%E9%96%80&#34;&gt;ここ&lt;/a&gt;とか見ても、全然導入方法が分かんない。そもそもインストールって、zipとかexeとかついたファイルをダウンロードして、それをダブルクリックしてちょっとカチカチやれば完了するもんなんじゃないの？&lt;br /&gt;
-　と思っていた頃が私にもありました。&lt;br /&gt;
-　このへんがTeXの魔道たるゆえんだと思うんですが、そもそも.exeにあたる“TeXの本体”というものがどの辺りを指すのか、私には未だに全く分かりません。&lt;br /&gt;
-　いや、正確には発端で書いた通り、e-upTeXのことを指すんでしょうが、これはあくまで組版エンジン単体であって、これだけでは使えないんです。いえ使えますが、素人には魔界の扉みたいに見えるコマンドプロンプトを使わないと動かせないんです。&lt;/p&gt;
-
-
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://hakuoku.github.io/agakuTeX/img/21prepare/command.png&#34; alt=&#34;CUI&#34; /&gt;
-    
-    
-    &lt;figcaption&gt;
-        &lt;p&gt;
-        魔界の門。呪文が書いてある
-        
-            
-        
-        &lt;/p&gt; 
-    &lt;/figcaption&gt;
-    
-&lt;/figure&gt;
-
-
-&lt;p&gt;　というわけで、これを呪文を用いずに普通にクリックで操作できるようにするソフトとか、e-upTeXが吐き出したdviファイルなるものをおなじみのPDFに変換するソフトとか、そういうもの全てを含めて組織化した巨大なファイルの集合体が、いわゆる『TeXディストリビューション』というものらしいです。これをまるっとPCに入れてやることで初めて素人も動かせるようになります。そしてそれこそがある意味TeX最大の関門でもあります（インストールが一番辛かったと言う人は多い）。&lt;/p&gt;
-
-&lt;p&gt;　&lt;a href=&#34;https://texwiki.texjp.org/?Microsoft%20Windows#distribution&#34;&gt;いろんなところ&lt;/a&gt;で言われていますが、日本でインストールしたいと思えばディストリビューションはほぼ二択です。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.tug.org/texlive/&#34;&gt;TeX Live&lt;/a&gt;　国際標準、とにかくどんな言語にもどんな場合にも対応できるようにすさまじい数のファイル群が詰め込まれている。その量なんと4GB超え。&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.math.sci.hokudai.ac.jp/~abenori/soft/abtexinst.html&#34;&gt;W32TeX（TeXインストーラ 3）&lt;/a&gt;　日本人による日本人のための、「誰にでもインストールできるTeX」。TeX Liveよりもスリム。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;　導入が簡単なのはTeXインストール3の方で、しかも日本語を扱うために最適な内容となっています。ただし筆者は初っ端からTeX Liveの方に突っ込んでしまいました。多分毒を喰らわば皿まで的な心境だったんでしょう。&lt;br /&gt;
-　そこまで多機能じゃなくていい人、ディスクスペースに余裕のない人は&lt;a href=&#34;http://did2memo.net/2016/04/24/easy-latex-install-windows-10-2016-04/&#34;&gt;こちら&lt;/a&gt;などを参照して、W32TeXのほうで導入してみてください。いろいろやりたい人、多言語フェチ、大きいことはいいことだな人は、TeX Liveにトライしてみましょう。&lt;/p&gt;
-
-&lt;h4 id=&#34;なぜネットワークインストーラを使わないか&#34;&gt;なぜネットワークインストーラを使わないか&lt;/h4&gt;
-
-&lt;p&gt;　&lt;a href=&#34;https://texwiki.texjp.org/?TeX%20Live%2FWindows&#34;&gt;TeX Wiki&lt;/a&gt; にはネットワークインストーラの説明が一番に出ていますが、ここでは使いません。代わりにisoイメージによる導入をします。なんでかって？私がネットワークインストールで失敗しまくったからだよ！&lt;br /&gt;
-　原因は未だに分かりませんが、こういうエラーが何度も（異なるマシン上でも）出ました。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;TLUtils::check_file: removing /tmp/bd1BBkrSDi/uEpFRVo_Yx/pdfpagediff.doc.tar.xz, sizes differ:
-TLUtils::check_file:   TL=56330, arg=740820
-TLPDB:: install_package: downloading did not succeed
-Installation failed.
-Rerunning the installer will try to restart the installation.
-Or you can restart by running the installer with:
-install-tl --profile installation.profile [EXTRA-ARGS]
-install-tl: Writing log in current directory: /home/daleif/tmp/install-tl-20160523/install-tl.log
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;　毎回違う名前が入ってたので、多分こっちじゃなく向こうのサーバが悪かったんだと思いたい。&lt;br /&gt;
-　この両者は何が違うかと言うと、前述の通りTeX Liveは巨大なファイル群です。ネットワークインストーラはそのファイル群が置いてあるサーバに接続しっぱなしにして、一つずつファイルをダウンロードしながら逐次的にインストールしていく、というもののようです。&lt;br /&gt;
-　対してisoイメージは、そのファイル群をあらかじめガッと圧縮したものです。これをブラウザ経由でダウンロードして、しかるのちにオフラインで、マシンの中で解凍するというようになっています。&lt;br /&gt;
-　どっちにしろ死ぬほど時間がかかります。isoは筆者の環境では最初のダウンロードに2時間ぐらいかかって、展開は30分くらいでした。ネットワークインストーラはダウンロードとインストールを同時にやるので、それを合計した時間がかかるっぽい。接続状況によっては6時間超えとかもあるらしい。ディスクスペースだけでなく、時間にも余裕のある方のみお試しください。&lt;/p&gt;
-</description>
+      <description>&amp;#x3000;ではさっそく使ってみようじゃないか、と思ったところでまずつまずきます。こことかこことか見ても、全然導入方法が分かんない。そも</description>
     </item>
     
     <item>
@@ -213,103 +53,7 @@ install-tl: Writing log in current directory: /home/daleif/tmp/install-tl-201605
       <pubDate>Tue, 03 Jan 2017 14:25:46 +0900</pubDate>
       
       <guid>https://hakuoku.github.io/agakuTeX/tutorial/install/</guid>
-      <description>&lt;p&gt;&amp;#x3000;いよいよインストールにかかります。&lt;br /&gt;
-　まず念のためウイルスチェックソフトを切っておきます。起きてると障害になることがあるらしいので。たいていは一番下のタスクバーの通知領域にセキュリティソフトのアイコンが入ってるので、お使いのソフトのメニューに沿って機能を一旦オフにしてください。&lt;br /&gt;
-　&lt;a href=&#34;http://www.tug.org/texlive/acquire-iso.html&#34;&gt;Acquiring TeX Live as an ISO image &lt;/a&gt;のページにアクセスして、・download from a nearby CTAN mirrorというリンクをクリックします。たくさんサーバがある中で、自動的に一番近いところまで飛ばしてくれます。筆者はこんな画面が出ました。&lt;/p&gt;
-
-
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://hakuoku.github.io/agakuTeX/img/22install/ctan.png&#34; alt=&#34;最寄りのctan&#34; /&gt;
-    
-    
-&lt;/figure&gt;
-
-
-&lt;p&gt;　どこのページに飛んでも、その中の&lt;strong&gt;texlive2016.iso&lt;/strong&gt;をクリックします。ポップアップが出るので、「ファイルに保存する」を選びます。&lt;/p&gt;
-
-
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://hakuoku.github.io/agakuTeX/img/22install/download_Ink_LI.jpg&#34; alt=&#34;ダウンロード／ファイルに保存&#34; /&gt;
-    
-    
-&lt;/figure&gt;
-
-
-&lt;p&gt;　地獄の長時間ダウンロードが始まります。図にあるように2.9GBありました。2時間ほどPCを放っておいて散歩にでも行きましょう。&lt;/p&gt;
-
-&lt;p&gt;　｜帰宅｜　λ&amp;hellip;&amp;hellip;&amp;hellip;..&lt;/p&gt;
-
-&lt;p&gt;　ダウンロードが完了したら、ブラウザによって表示は違いますが、ダウンロードメニューから「保存フォルダを開く」で保存先に飛んでください。そこからisoイメージを、一応Cドライブ直下に移しておきます（切り取り＆貼り付け、もしくはドラッグ＆ドロップでOK）。&lt;br /&gt;
-　Windows8以降の場合、標準でisoを取り扱えますので、右クリックして「マウント」を選びます。DVDドライブとして展開されるかと思います。&lt;/p&gt;
-
-&lt;p&gt;
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://hakuoku.github.io/agakuTeX/img/22install/isomini.png&#34; alt=&#34;isoを仮想ドライブとしてマウント&#34; /&gt;
-    
-    
-    &lt;figcaption&gt;
-        &lt;p&gt;
-        ↓
-        
-            
-        
-        &lt;/p&gt; 
-    &lt;/figcaption&gt;
-    
-&lt;/figure&gt;
-
-
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://hakuoku.github.io/agakuTeX/img/22install/mountedmini.png&#34; alt=&#34;マウント結果&#34; /&gt;
-    
-    
-&lt;/figure&gt;
-&lt;/p&gt;
-
-&lt;p&gt;　Windows7以前の場合は、isoを直接マウントできないので、ソフトを追加してからの展開になります。まず&lt;a href=&#34;http://forest.watch.impress.co.jp/library/software/vclonedrive/&#34;&gt;Virtual CloneDrive &lt;/a&gt;などの専用ソフトをインストールし、そのソフトの操作法に従ってマウントします。&lt;/p&gt;
-
-&lt;p&gt;　無事にマウントされたらひとまずそれは置いておいて、次に10も8も7も追加ソフトが要ります。perlが入ってない環境だと、この時点ではまだGUIインストーラが動かないはずです。&lt;br /&gt;
-　&lt;a href=&#34;http://www.activestate.com/activeperl&#34;&gt;ActiveState&lt;/a&gt;からActivePerlを取ってきます。サイトの中の「Community Edition」、念のためx86版をクリックしてダウンロードします。これは普通のインストールで、アイコンをダブルクリックして画面に従ってカチカチやるだけです。&lt;/p&gt;
-
-&lt;p&gt;　青いperlの六角形が入ったら、マウントしたDVDドライブに戻って中のinstall-tl-windows.batをダブルクリックします。&lt;/p&gt;
-
-
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://hakuoku.github.io/agakuTeX/img/22install/perl.png&#34; alt=&#34;batをダブルクリック&#34; /&gt;
-    
-    
-&lt;/figure&gt;
-
-
-&lt;p&gt;　魔界の門ことコマンドプロンプトが出てきますが大丈夫。しばらくすると、こんなウィンドウが出てきます。&lt;/p&gt;
-
-
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://hakuoku.github.io/agakuTeX/img/22install/live.png&#34; alt=&#34;TeX Live wizard&#34; /&gt;
-    
-    
-&lt;/figure&gt;
-
-
-&lt;p&gt;　あとは画面の指示に従って、じゃかじゃか「次へ」をクリック。最後に「導入」を押せば、isoイメージからの展開／インストールが始まります。30分かそれ以上かかります。&lt;br /&gt;
-　この画面出てこねーよ！という時は、ひとまず気長に待ってみてください。かなり重い工程のようなので……&lt;br /&gt;
-　最終的に、「TeX Liveへようこそ！」という文があればインストール完了です。お疲れ様でした！&lt;/p&gt;
-
-
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://hakuoku.github.io/agakuTeX/img/22install/welcome.png&#34; alt=&#34;TeX Liveへようこそ！&#34; /&gt;
-    
-    
-&lt;/figure&gt;
-
-</description>
+      <description>&amp;#x3000;いよいよインストールにかかります。 まず念のためウイルスチェックソフトを切っておきます。起きてると障害になることがあるらしいの</description>
     </item>
     
     <item>
@@ -318,103 +62,7 @@ install-tl: Writing log in current directory: /home/daleif/tmp/install-tl-201605
       <pubDate>Sun, 08 Jan 2017 23:02:45 +0900</pubDate>
       
       <guid>https://hakuoku.github.io/agakuTeX/tutorial/test/</guid>
-      <description>
-
-&lt;p&gt;&amp;#x3000;無事にインストールできたかテストしてみます。&lt;br /&gt;
-　Windowsのスタートメニューから潜って、「TeXWorks Editor」を起動させます。&lt;/p&gt;
-
-&lt;p&gt;
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://hakuoku.github.io/agakuTeX/img/23test/start.png&#34; alt=&#34;スタートメニュー&#34; /&gt;
-    
-    
-&lt;/figure&gt;
-
-
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://hakuoku.github.io/agakuTeX/img/23test/works.png&#34; alt=&#34;TeXWorks開始画面&#34; /&gt;
-    
-    
-&lt;/figure&gt;
-&lt;/p&gt;
-
-&lt;p&gt;　こんなのが出てきます。これがいわゆるGUIエディタで、TeX文章を読み込ませてPDFを出力させるための窓口になります。&lt;br /&gt;
-　とりあえず以下の文をコピーして、白い入力ウインドウに貼り付けます。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;\documentclass{article}
-\begin{document}
-Hello World!
-\end{document}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;　「名前をつけて保存」で適当なタイトルをつけて保存し、その後左上の再生ボタン（タイプセットもしくは組版ボタン）を押します。わけの分からん文字列がバーっと出てきても気にせず待ちます。すると、&lt;/p&gt;
-
-
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://hakuoku.github.io/agakuTeX/img/23test/pdf.png&#34; alt=&#34;最初の組版成功&#34; /&gt;
-    
-    
-&lt;/figure&gt;
-
-
-&lt;p&gt;　PDFが出てきた！これで成功です！やった！&lt;br /&gt;
-　引き続き日本語も読ませてみましょう。以下を試します。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-tex&#34;&gt;\documentclass{jsarticle}
-\begin{document}
-こんにちは，\LaTeX
-\end{document}
-&lt;/code&gt;&lt;/pre&gt;
-
-
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://hakuoku.github.io/agakuTeX/img/23test/error.png&#34; alt=&#34;エラー&#34; /&gt;
-    
-    
-&lt;/figure&gt;
-
-
-&lt;p&gt;　PDFが出てきません。ボタンが赤い停止標識になってなにやら不穏な雰囲気。&lt;/p&gt;
-
-&lt;p&gt;　実はこれ、&lt;a href=&#34;https://hakuoku.github.io/agakuTeX/tutorial/whatstex&#34;&gt;TeXとは&lt;/a&gt;の項で書いた「『TeX』という言葉は何を指すのか」に関係があります。TeXというのは慣用的な言葉で、厳密には指しているエンジンは人や国によって違うというくだりです。ボタンの隣を見ると、「pdfLaTeX」になっているかと思います。（あるいはそれ以外でも同じことです）&lt;br /&gt;
-　このpdfLaTeXは、アスキーさんのpシリーズとはまた違う、日本語対応していないエンジンになります。だから日本語の文章が読めない。正確には、documentclassで指定してるjsarticleってスタイルが適用できない。（jはjapaneseのj）&lt;br /&gt;
-　これを読み込ませるためには、日本語のわかるエンジンに切り替えてやるか、あるいは日本語OKなスタイルを捨てる必要があります。&lt;/p&gt;
-
-&lt;p&gt;　前者をやってみます。「pdfLaTeX」を押して、下の方の「pLaTeX」に切り替えます。そしてボタンを押して実行。&lt;/p&gt;
-
-
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://hakuoku.github.io/agakuTeX/img/23test/konnichiwa_Ink_LI.jpg&#34; alt=&#34;日本語組版成功&#34; /&gt;
-    
-    
-&lt;/figure&gt;
-
-
-&lt;p&gt;　できた!!　日本語スタイルOKなpLaTeXエンジンのおかげです。&lt;br /&gt;
-　後者も試してみましょう。「pdfLaTeX」に戻して、本文のほうをいじります。{jsarticle}のjsを取って{article}に。&lt;/p&gt;
-
-
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://hakuoku.github.io/agakuTeX/img/23test/latex_Ink_LI_Moment.jpg&#34; alt=&#34;部分的に成功&#34; /&gt;
-    
-    
-&lt;/figure&gt;
-
-
-&lt;p&gt;　LaTeXロゴだけが刷られてきました。これはどうもTeXWorks側の問題らしいんですが、日本語のフォントが全然表示されないんです。できあがったPDFをAdobe Acrobatなんかで表示させると日本語がちゃんと植わってるようですが、いずれにせよ不便なので、今後は日本語を使えるエンジン／スタイルを用いて話を進めます。&lt;/p&gt;
-
-&lt;p&gt;　これでテストは完了です。いよいよ本番入ります！&lt;/p&gt;
-
-&lt;h4 id=&#34;参考&#34;&gt;参考&lt;/h4&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://texwiki.texjp.org/?LaTeX%20%E3%81%AE%E3%82%A8%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%83%E3%82%BB%E3%83%BC%E3%82%B8#p4b7362a&#34;&gt;https://texwiki.texjp.org/?LaTeX%20%E3%81%AE%E3%82%A8%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%83%E3%82%BB%E3%83%BC%E3%82%B8#p4b7362a&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>&amp;#x3000;無事にインストールできたかテストしてみます。 Windowsのスタートメニューから潜って、「TeXWorks Editor」を起</description>
     </item>
     
     <item>
@@ -423,87 +71,7 @@ Hello World!
       <pubDate>Sun, 02 Apr 2017 14:41:40 +0900</pubDate>
       
       <guid>https://hakuoku.github.io/agakuTeX/tutorial/stuff/</guid>
-      <description>
-
-&lt;p&gt;&amp;#x3000;満を持して本番の組版に入りたいところですが、まずは必要なものを用意します。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;テキスト&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;　組版したい文章がないと始まらない。この入門では&lt;a href=&#34;http://www.aozora.gr.jp/&#34;&gt;青空文庫&lt;/a&gt;からお借りします。&lt;br /&gt;
-　青空文庫は著作権の切れた作家の作品の一大アーカイブサイトです。見たことない人はこれを期にアクセスしてみてね。乱歩も太宰も宮沢賢治もあるよ。&lt;br /&gt;
-　そしてまた、日本語の小説を本の通りに表記することにかけては今のところデファクトスタンダードのプロジェクトと言っていいと思います（2017年現在）。そもそもが「既存の本をデジタルデータにして永続的に保存する」という目的のサイトなので、そのための方法が蓄積されています。&lt;/p&gt;
-
-&lt;p&gt;　青空文庫ではTeXと同じように、小説本文に特殊な指示を書き込むことで表示を実現しています。&lt;code&gt;青空《あおぞら》&lt;/code&gt;でルビとか、&lt;code&gt;（上）事実［＃「（上）事実」は大見出し］&lt;/code&gt;とか。今だとpixivでも青空形式からの変換が使えますよね。（詳しい文法は&lt;a href=&#34;http://www.aozora.gr.jp/annotation/&#34;&gt;注記一覧&lt;/a&gt;を参照）&lt;br /&gt;
-　このように全て日本語で非常に直感的な文法なので、筆者はベタ書きの時はこの記法を使っていました。今も一部使っています。ただPDF等他の形式への変換はなかなか難しいものがあったのでTeXに切り替えたという側面もあります。&lt;br /&gt;
-　そんなわけでここからの解説も、青空文庫のルールに一部沿う形で進めていきます。もちろん青空記法に従わず素のテキストから作ることもできますよ。&lt;/p&gt;
-
-&lt;p&gt;　すでにワープロで書き上げた原稿をお持ちの方は、あらかじめプレーンテキストに変換してやってください。Wordなら保存する時に「テキストファイル」を選ぶとできます。他のサービスやアプリを使っている人はエクスポート機能を使うか（拡張子は必ず.txtで）、本文をPCのメモ帳にコピペして保存しておきましょう。&lt;/p&gt;
-
-&lt;p&gt;　さて、そんな青空文庫の中で個人的に最もしんどい部類に入ると思われる作家、&lt;a href=&#34;http://www.aozora.gr.jp/index_pages/person1224.html&#34;&gt;久生十蘭&lt;/a&gt;をピックアップ。一番好きな「ノンシャラン道中記」シリーズを選びました。短編連作だから章立ての練習もできるし。&lt;br /&gt;
-　どうしんどいかはまあこれを見てくれ。&lt;/p&gt;
-
-
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://hakuoku.github.io/agakuTeX/img/31stuff/juran.png&#34; alt=&#34;久生十蘭サンプル&#34; /&gt;
-    
-    
-&lt;/figure&gt;
-
-
-&lt;p&gt;　どうですこのルビの乱舞。漢字モノルビ、漢字グループルビ、フランス語にカタカナルビ、日本語の文にまるごとフランス語ルビと鬼のような混み入り具合です。もちろんアクサンテギュバリバリ。ハングインデントとか看板っぽいレイアウトとかも出てくる。挿絵もある。死ぬ。盛りだくさんで素材としてはぴったりです。&lt;/p&gt;
-
-&lt;p&gt;　ごちゃごちゃ具合にびびりつつ、まずは青空文庫の作品ページからzipを落としてきます。展開して中の.txtファイルを開いてみると、中はこんな感じです。&lt;/p&gt;
-
-
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://hakuoku.github.io/agakuTeX/img/31stuff/aozora.png&#34; alt=&#34;青空文庫テキストサンプル&#34; /&gt;
-    
-    
-&lt;/figure&gt;
-
-
-&lt;p&gt;　青や緑の字がエンジンに伝える特殊な指示です。TeXもこんな風に、本文に注記をガリガリ書き込むことで組版していきます。&lt;br /&gt;
-&lt;br&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;テキストエディタ&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;　テキストエディタというのはプレーンテキストを編集するためのソフトで、原理は「メモ帳」と一緒です。付加情報がない質素なやつ。ただし情報を持ってないのはあくまで“文書そのもの”なので、編集する時にはソフト側のフィルター次第で本文と注記を分けたり見やすくできたりします。テストや上の画像で字に色がついて見えたのもこれのおかげです。TeXに限らず、自分に合ったエディタをひとつ持っておくと何かと便利です。&lt;br /&gt;
-　テストで使ったTeXWorksはTeX専用の統合開発環境ですが、テキストエディタであるとも言えます。どのエディタで書いても結局最後はTeXWorksに通すので、初めからこれで書くのもいいと思います。（ただし使い勝手はあまりよくない）&lt;br /&gt;
-　既に好みのものがあるなら勿論そちらを使ってください。基本的に既存の.txtファイルにコマンドを書き込んでいくだけなので、わざわざTeXのために執筆環境を変える必要はありません。&lt;/p&gt;
-
-&lt;p&gt;　ちなみに筆者は「&lt;a href=&#34;http://www.haijin-boys.com/wiki/%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9A%E3%83%BC%E3%82%B8&#34;&gt;Mery&lt;/a&gt;」というエディタを溺愛しています。純国産、シンプルでキュートで軽快でとにかくひたすら使いやすい！色分け以外にも置換やマクロなどの強力な機能があり、細かい動作までカスタマイズできます。作者のkuro様に&lt;a href=&#34;http://www.haijin-boys.com/11.html&#34;&gt;感謝&lt;/a&gt;です。&lt;br /&gt;
-　最近ではGitHub製の「&lt;a href=&#34;https://atom.io/&#34;&gt;Atom&lt;/a&gt;」がクールだとの評判で、使っている人も多いです。いちいち長いコマンドを打ち込まずに済む自動補完機能などを備えた、プログラミング用の高機能で先進的なエディタです。ただし便利な分複雑で、ヘルプも全て英語なので体力のある人が挑戦するといいでしょう。&lt;br /&gt;
-　ここではMeryを使って解説します。どれがいいのかわからない時はとりあえずMeryにしときましょう。組版結果を見るためのスクリーンショットにはTeXWorksと標準のPDFプレビューが登場します。&lt;/p&gt;
-
-&lt;h4 id=&#34;あると便利なもの&#34;&gt;あると便利なもの&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;高校程度の英語力もしくはサッと引ける辞書&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;　これから行うのは日本語の組版ですが、TeXに与える指示は全て英語をベースとしたコマンドです。そしてTeX本体が返してくるメッセージや警告も全て英語です。プログラミングでエラーが出た時は「検索するより先に辞書を引け」というのが初心者の鉄則です。まずエラー文が何を言ってるか訳して理解すればそれで解決しちゃう時もあるし、理解してから検索した方が効率もいいからです。&lt;br /&gt;
-　あとは大概のエラーや疑問は&lt;a href=&#34;https://tex.stackexchange.com/&#34;&gt;TeX - LaTeX Stack Exchange&lt;/a&gt;のようなQ&amp;amp;Aサイトで出尽くしてるんですが、これがオール英語です。辞書やGoogle翻訳を味方につければ、日本語訳されていない問題にぶち当たっても自力でザクザク先に進めます。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;PDF編集ソフト&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;　テストで出てきたように、TeXWorksには組み込みのPDFビューワーがついていますし、完成したPDF原稿を後で見るにもお馴染みのAdobe Acrobat Readerを使えばいいので、新しいソフトを入れないといけないわけではありません。ただ組版の後半の方になってくると、正直TeXを介さず直接PDFをいじった方が早い工程とかが出てきます。そんな場合に備えて、閲覧だけでなく編集もできる軽快なソフトがあると便利でしょう。&lt;br /&gt;
-　本家本元の&lt;a href=&#34;https://acrobat.adobe.com/jp/ja/acrobat.html&#34;&gt;Adobe Acrobat DC&lt;/a&gt;が使えたらいいんでしょうが、有償の上動作もあまり軽くないです。&lt;a href=&#34;http://forest.watch.impress.co.jp/library/nav/genre/offc/document_pdf.html&#34;&gt;窓の杜&lt;/a&gt;などから好みのソフトを探してみてください。&lt;/p&gt;
-
-&lt;h4 id=&#34;参考&#34;&gt;参考&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://texwiki.texjp.org/?PDF%E3%81%AE%E4%BD%9C%E3%82%8A%E6%96%B9&#34;&gt;PDFの作り方 - TeX Wiki&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://texwiki.texjp.org/?PDF&#34;&gt;PDF - TeX Wiki&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description>&amp;#x3000;満を持して本番の組版に入りたいところですが、まずは必要なものを用意します。 テキスト 組版したい文章がないと始まらない。この入門</description>
     </item>
     
     <item>
@@ -512,63 +80,7 @@ Hello World!
       <pubDate>Tue, 18 Apr 2017 18:13:32 +0900</pubDate>
       
       <guid>https://hakuoku.github.io/agakuTeX/tutorial/settings/</guid>
-      <description>
-
-&lt;p&gt;&amp;#x3000;ここが最初の泣きどころです。テストの時にもあったように、TeXは設定を間違えると動きません。エラーメッセージもなんか暗号みたいなので一度落とし穴にハマるとなかなか抜けられません。何度辛酸を舐めたことか。&lt;br /&gt;
-　ここでは実際に組版ボタンを押すまでに必要な設定を書いていきます。&lt;/p&gt;
-
-&lt;h4 id=&#34;エンコード&#34;&gt;エンコード&lt;/h4&gt;
-
-&lt;p&gt;　説明する自信がない。のでとにかく何も聞かずにこれだけやってくれ、ということだけ書きます。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;テストに出てきたTeXWorksの「pdfLaTeX」のところを「&lt;strong&gt;upLaTeX(ptex2pdf)&lt;/strong&gt;」にします。「編集 &amp;gt; 設定 &amp;gt; タイプセット」の中の「デフォルト」をupLaTeXにしておくと、以降の手間が省けます。&lt;/li&gt;
-&lt;li&gt;イチからテキストを書こうという人はテキストエディタのエンコード設定を「&lt;strong&gt;UTF-8&lt;/strong&gt;」もしくは「Unicode」にします。Meryだと下のステータスバーのとこに「UTF-8」って書いてあれば大丈夫です。「ShiftJIS」とか他の言葉が表示されてたら、ダブルクリックして変更します。&lt;/li&gt;
-&lt;li&gt;青空文庫、またはすでに書き上げた原稿から組もうという人はファイル自体をUTF-8に変換してやります。エディタでテキストを開き、「名前をつけて保存」をします。その時ダイアログの中にある「エンコード」の欄からUTF-8を選びます。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;　これでいいはず。一応説明を試みますが読み飛ばしても構いません。&lt;/p&gt;
-
-&lt;p&gt;　そもそもエンコード（正確には文字コード）とは何ぞや、というと、要は“暗号体系”のようなものです。コンピュータは本来0と1の2進数しか知らないはずで、そいつが多様な文字を描き出すための仕組みです。&lt;br /&gt;
-　例えばaは0001、bは0010、cは0011、dは0100と決めておきます。ただ送り手のマシンがそのつもりでも、受け取り手のマシンに違う対応表がインストールされてると混乱します。向こうで0001をz、0010をy、0011をx、0100をwと決めてあったら、「bad」は「yzw」として受け取られます。&lt;br /&gt;
-　モールス信号でもいいですね。SOSは「・・・　ーーー　・・・」ですが、受け手がイロハ式の表を使っていた場合これは「ラレラ」と読まれます。&lt;br /&gt;
-　こんなふうに記号と文字の対応表を一致させておかないと物事は回りません。UTFとかShiftJISというのは、何が何番っていう対応表の名前です。世の中にはこれがたくさんあってそれぞれ好き勝手なのを使ってるんだ。だから世界は平和にならないんだ。&lt;/p&gt;
-
-&lt;p&gt;　我々はこれ以降、必ず「UTF-8」というエンコードを使います。使うったら使うんです。詳しくは下のリンクを参照してください。&lt;br /&gt;
-　ここで使いたいのはUTFなんですが、青空文庫はShiftJISを使っています。そのままTeXに読ませようとするといわゆる文字化けを起こすので、こちらで変換してやるわけですね。幸いエディタで保存するだけでいいので説明の割には簡単です。&lt;/p&gt;
-
-&lt;h5 id=&#34;参考&#34;&gt;参考&lt;/h5&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://e-words.jp/w/%E6%96%87%E5%AD%97%E3%82%B3%E3%83%BC%E3%83%89.html&#34;&gt;文字コードとは｜IT用語辞典&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.kanzaki.com/docs/jcode.html&#34;&gt;日本語と文字コード&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&#34;エディタの設定&#34;&gt;エディタの設定&lt;/h4&gt;
-
-&lt;p&gt;　これまでカラフルな文書の画像がよく出てきましたが、前述の通りこれはエディタに「青空形式やTeXの特殊指示は本文と分けて色で表示してね」と頼んだ結果です。この機能を&lt;strong&gt;シンタックスハイライト&lt;/strong&gt;といいます。やらなくてもプログラムは動くけどやったほうが人間にとって編集しやすいという設定です。このサイト上でもサンプルコードのところに使っています。&lt;/p&gt;
-
-&lt;p&gt;　TeXWorksは白地に青や緑や赤の字という質素なデフォルトしかないんですが、Mery（や他のモダンなエディタ）にはいろんなカラースキームが収録されてて好みに合わせて選べたりします。「ツール &amp;gt; オプション &amp;gt; 表示」の中の「テーマ」メニューから切り替えられます。&lt;br /&gt;
-　個人的にエディタの外観はとても重要だと思っています。ステキな文房具があれば作業も楽しくなるというもの。テーマ以外にもフォントやツールバーなど、気が済むまでいじりましょう。&lt;/p&gt;
-
-&lt;p&gt;　実用的には、「表示 &amp;gt; 記号」から制御記号の表示をオンにしておくと予期せぬエラーの予防になります。特に半角空白と全角空白の区別は重要です。執筆中は邪魔に感じるかもしれないので、原稿中はオフにして組版中は全部オンにする、常に半角空白だけはオンにするなど、ご自身の好みに合わせて設定してください。&lt;/p&gt;
-
-&lt;p&gt;　TeX専用でない汎用エディタは多様な言語をハイライトできます。基本的に青空文庫形式に対応しているエディタは無いんですが、Meryでは有志の方が作ったカスタム文法ファイルを読み込んでやることで色分けできるようになります。&lt;/p&gt;
-
-&lt;p&gt;　MeryWikiの「&lt;a href=&#34;http://www.haijin-boys.com/wiki/%E6%A7%8B%E6%96%87%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB&#34;&gt;構文ファイル&lt;/a&gt;」ページからAozoraを選び、zipをダウンロードします。適当に展開してやった後、Meryのメニューの「表示 &amp;gt; 編集モード &amp;gt; 編集モードの設定」を選び、「新規作成」、できた「新しい編集モード」の名前を「Aozora（もしくは好きな名前）」に変更します。その後「プロパティ」を押します。ダイアログが出たら「インポート」を押してさっきの展開フォルダの中の「aozora.msy」を選び、設定を取り込みます。その後「関連付け」タブで拡張子にtxtを追加してやります。これで青空形式が自動で色分けされるようになりました。&lt;br /&gt;
-　日常的に青空形式を使わない場合は、関連付けは飛ばしてください。使いたい時だけ「表示 &amp;gt; 編集モード」か、下のステータスバーの言語名のところから「Aozora」を選ぶようにします。&lt;/p&gt;
-
-
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://hakuoku.github.io/agakuTeX/img/32settings/mery.png&#34; alt=&#34;Meryの言語モード拡張&#34; /&gt;
-    
-    
-&lt;/figure&gt;
-
-
-&lt;p&gt;　逆に伝統のTeX文法はたいがいどれでも対応してます。拡張子.texのファイルを開けば自動で色分けされるはずなので、ここでは特になにもしません。.txtファイルのままでTeX文書として編集したい時などは、手動で編集モードをTeXに切り替えます。&lt;/p&gt;
-</description>
+      <description>&amp;#x3000;ここが最初の泣きどころです。テストの時にもあったように、TeXは設定を間違えると動きません。エラーメッセージもなんか暗号みた</description>
     </item>
     
     <item>
@@ -577,213 +89,7 @@ Hello World!
       <pubDate>Wed, 19 Apr 2017 13:03:39 +0900</pubDate>
       
       <guid>https://hakuoku.github.io/agakuTeX/tutorial/escape/</guid>
-      <description>
-
-&lt;p&gt;&amp;#x3000;いよいよ本チャンの原稿作りに入ります。TeX文法と機能を一つずつ組んで一喜一憂しながら解説します。&lt;/p&gt;
-
-&lt;p&gt;　まずは新しくファイルを作り、テストと同じように、最低限の4行を書いてやります。ここでは「chapter01」と名前をつけ（好きな名前でOK。ただしスペースは避け半角英数のみにする）、拡張子を.texにしてUTF-8で保存します。&lt;/p&gt;
-
-&lt;p&gt;　あるいは既存の原稿に上書きすることもできます。その場合「ここに～」のところに小説本文が来るように書き込んでください（ただし長編全部は扱いづらいので、長い話はひとまずキリのいいところまでカットするのが吉）。&lt;br /&gt;
-　実は拡張子は.txtのままでもTeXWorksに通せます。なのでファイルの保存方式を変えたくない人や、原稿がまだ未完成でこれからも加筆するだろうという人は上書き方式の方がいいと思います。特にスマホで編集したい場合は、texファイルは読み込めないことが多いので.txtのままにしておきましょう。あとは組版だけとなった決定稿の時点で.texにするのが無難かと思います。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\documentclass{article}
-\begin{document}
-ここに本文が来ます
-\end{document}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;　基本的にTeXは、&lt;strong&gt;&lt;code&gt;\&lt;/code&gt;&lt;/strong&gt; （バックスラッシュ。環境によって円マークに見えたり斜め線に見えたりしますが同じものです）を頭につけた&lt;strong&gt;コマンド&lt;/strong&gt;という文字列で指示をします。\指示の種類{指示の中身}って感じです。&lt;br /&gt;
-　&lt;code&gt;\begin&lt;/code&gt;と&lt;code&gt;\end&lt;/code&gt;は「これこれこういうフィールドが始まります／終わります」という宣言です。この場合は&lt;strong&gt;document&lt;/strong&gt;という一番基本のフィールドをこしらえています。これがないとTeX文書になりません。字が植え込まれるこのフィールドのことを「&lt;strong&gt;環境&lt;/strong&gt;」と呼びます。「版面」だと思っちゃってもいいです。&lt;/p&gt;
-
-&lt;p&gt;　青空文庫の人も同様、新しいtexファイルに本文を入れ込むか元のファイルにコマンドを書きこんで、beginとendで本文を挟みます。原理的にはもうそれで組版できるはずなんですが、私はこんなエラーが出ました。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;! You can&#39;t use `macro parameter character #&#39; in horizontal mode.
-l.89 ...なので、五番目のポオルは fa#
-だというわけ。そこ
-?
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;　どういうことかというと、「ノンシャラン道中記」の本文に、TeXで使っちゃいけない#の字が入っているんですね。ちなみにオルガンごっこをするというシーンで、ファのシャープです。&lt;br /&gt;
-　こういう「TeX側がコマンドとして使うから人間は使っちゃいけない記号」はけっこうあって、選んだテキストによっては文字は違えどこれと同じエラーが出るかもしれません。そのため&lt;strong&gt;エスケープ&lt;/strong&gt;というものをして、特殊文字が表示されるようにします。&lt;br /&gt;
-　使い方は簡単で、特殊文字の前にバックスラッシュをつけるだけです。その方式じゃない字もありますが、その場合は以下の表を参考に正しいコマンドに置き換えます。ちなみに全て半角です。全角文字は全て字として描画されるので、違和感がなければただ全角に置き換えるのでもいいと思います。&lt;/p&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&#34;center&#34;&gt;記号&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;TeXにとっての働き&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;置き換え&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;#&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;命令や環境の引数&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;code&gt;\#&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;$&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;数式モードへ移行&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;code&gt;\$&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;%&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;以降をコメントアウト&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;code&gt;\%&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;&amp;amp;&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;表のセルの区切り&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;code&gt;\&amp;amp;&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;_&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;下付きの添字&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;code&gt;\_&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;{&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;グループ化の開始&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;code&gt;\{&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;}&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;グループ化の終了&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;code&gt;\}&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;&amp;lt;&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;（モードにより出力が異なる ）&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;code&gt;\textless&lt;/code&gt; または \verb|&amp;lt;|&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;&amp;gt;&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;（同上）&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;code&gt;\textgreater&lt;/code&gt; または \verb|&amp;gt;|&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;\&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;コマンドのためのエスケープ文字&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;code&gt;\textbackslash&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;|&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;表の縦の罫線&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;code&gt;\textbar&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;^&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;上付きの添字&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;code&gt;\textasciicircum&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;~&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;改行を抑制して単語間の空白を空ける&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;code&gt;\textasciitilde&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;　\textなんちゃらというのも、「なんちゃらという文字を出力せよ」という一種のコマンドになります。バックスラッシュの後が記号だけのコマンドはいいんですが、アルファベットが続くコマンドは&lt;code&gt;ポオルは\textlessfa\textgreaterと&lt;/code&gt;というように、本文とそのまま続けて書くことはできません（「\textlessfa」という文字列だと認識されてしまう）。&lt;br /&gt;
-　本文との間に半角スペースを空けるか、&lt;code&gt;{\textless}fa&lt;/code&gt;のようにコマンドを中括弧で囲みます。半角スペースを入れるとぴったりくっつけて出力したい記号と本文の間に空白ができてしまう場合があるので、随時括弧と使い分けて下さい。&lt;/p&gt;
-
-&lt;p&gt;　&lt;code&gt;\verb&lt;/code&gt;というのはverbatim［逐語的に／一字一句変えずに］の略で、記号で挟んだ部分（縦棒じゃなくてもいい。&lt;code&gt;\verb!fa#!&lt;/code&gt;とかでもいい）を文字通り出力できるコマンドです。これは本文とくっつけて書いても大丈夫です。&lt;br /&gt;
-　じゃあ全部それの内側に書けばいいじゃんって話になるかもしれませんが、それをやってしまうと今度は逆に組版に支障が出るので控えます。小説ではさほど多用することにはならないと思いますが、URLなど特殊文字があまりにたくさん出てくる箇所に使うといいでしょう。&lt;/p&gt;
-
-&lt;p&gt;　ちなみにエスケープ文字に限らずエラーが出た時は、停止ボタンを押すと下のコンソールエリアに「errors, warnings, badboxes」タブが現れます。中のリンクを押すと上のエディタで該当箇所に飛びますので、これを使ってチェックしてください。エラー文のGoogle検索も役に立ちます。&lt;br /&gt;
-　修正しても組版結果が思ったようなデザインにならないかもしれませんが、こうした記号の細かい出力制御は後ほど行います。今はひとまずエラーが出ないところまで置き換えればOKとしておきましょう。&lt;/p&gt;
-
-
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://hakuoku.github.io/agakuTeX/img/33makefile/errortab.png&#34; alt=&#34;エラータブ&#34; /&gt;
-    
-    
-&lt;/figure&gt;
-
-
-&lt;p&gt;　多すぎて手で書き換えられないという時は、エディタの&lt;strong&gt;検索・置換機能&lt;/strong&gt;を使うと一括で編集することができます。&lt;br /&gt;
-　まず本文のところのみを範囲選択します。次に置換ウィンドウを開き、「 &lt;em&gt;選択した範囲のみ&lt;/em&gt; 」と「 &lt;em&gt;正規表現を使用&lt;/em&gt; 」のところにチェックを入れます（これをやらないとコマンドのところまで認識されて大変なことになる）。&lt;br /&gt;
-　そうしたら以下の表を&lt;strong&gt;上から順に&lt;/strong&gt;1段ずつコピペして、「すべて置換」してください。&lt;/p&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&#34;left&#34;&gt;検索する文字列&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;置換後の文字列&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;&lt;code&gt;&amp;#092;&amp;#092;&lt;/code&gt;&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;&lt;code&gt;{&amp;#092;&amp;#092;textbackslash}&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;&lt;code&gt;([&amp;#35;&amp;#36;&amp;#37;&amp;amp;&amp;#95;&amp;#123;&amp;#125;])&lt;/code&gt;&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;&lt;code&gt;&amp;#092;&amp;#092;$1&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;&lt;code&gt;&amp;#092;|&lt;/code&gt;&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;&lt;code&gt;{&amp;#092;&amp;#092;textbar}&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;&lt;code&gt;&amp;#092;&amp;lt;&lt;/code&gt;&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;&lt;code&gt;&amp;#092;&amp;#092;verb|&amp;lt;|&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;&lt;code&gt;&amp;#092;&amp;gt;&lt;/code&gt;&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;&lt;code&gt;&amp;#092;&amp;#092;verb|&amp;gt;|&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;&lt;code&gt;&amp;#092;&amp;#94;&lt;/code&gt;&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;&lt;code&gt;{&amp;#092;&amp;#092;textasciicircum}&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;&lt;code&gt;~&lt;/code&gt;&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;&lt;code&gt;{&amp;#092;&amp;#092;textasciitilde}&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;&lt;code&gt;&amp;#092;&amp;#092;{&amp;#092;&amp;#092;textbackslash&amp;#092;&amp;#092;}&lt;/code&gt;&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;&lt;code&gt;{&amp;#092;&amp;#092;textbackslash}&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;　さて#を&lt;code&gt;\#&lt;/code&gt;にしてやって、TeXWorksで開いてボタンを押すと、&lt;/p&gt;
-
-
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://hakuoku.github.io/agakuTeX/img/33makefile/first.png&#34; alt=&#34;最初の組版結果&#34; /&gt;
-    
-    
-&lt;/figure&gt;
-
-
-&lt;p&gt;　無事に組版できました。だいぶごちゃごちゃしてますが、これからちゃんとした本になっていきますよ。&lt;/p&gt;
-
-&lt;h4 id=&#34;参考&#34;&gt;参考&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://texwiki.texjp.org/?TeX%20%E3%81%AE%E3%82%A8%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%83%E3%82%BB%E3%83%BC%E3%82%B8#cf1b15c8&#34;&gt;https://texwiki.texjp.org/?TeX%20%E3%81%AE%E3%82%A8%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%83%E3%82%BB%E3%83%BC%E3%82%B8#cf1b15c8&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://osksn2.hep.sci.osaka-u.ac.jp/~naga/miscellaneous/tex/tex-tips6.html&#34;&gt;Tex tips - ６．特殊文字&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://medemanabu.net/latex/special-character/&#34;&gt;LaTeXコマンド - そのまま出力できる文字と特殊文字&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://medemanabu.net/latex/verb-verbatim/&#34;&gt;LaTeXコマンド - テキストを入力通りにそのまま出力（verb、verbatim)&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description>&amp;#x3000;いよいよ本チャンの原稿作りに入ります。TeX文法と機能を一つずつ組んで一喜一憂しながら解説します。 まずは新しくファイルを作り</description>
     </item>
     
     <item>
@@ -792,44 +98,7 @@ l.89 ...なので、五番目のポオルは fa#
       <pubDate>Wed, 19 Apr 2017 21:37:32 +0900</pubDate>
       
       <guid>https://hakuoku.github.io/agakuTeX/tutorial/documentclass/</guid>
-      <description>
-
-&lt;p&gt;&amp;#x3000;組めたはいいけど横書きだし余白めっちゃあるし何なん？って感じですね。これは一番最初の文である&lt;code&gt;\documentclass{article}&lt;/code&gt;に問題があります。&lt;br /&gt;
-　この文は「どの&lt;strong&gt;ドキュメントクラス&lt;/strong&gt;を使うか」ということを宣言しています。今はarticleです。ドキュメントクラスとは拡張子.clsのファイルのことで、デザイン情報が書かれたスタイルシートのようなものです（TeX Liveインストールフォルダの奥深くに存在している）。文書をどんな設定、どんなレイアウト、どんなデザインにするかは全てこれが握っています。全く同一の本文でも、クラスを取り替えることでガラッと違うレイアウトにできたりします。&lt;/p&gt;
-
-&lt;p&gt;　「article」は超基本的な、英語の記事や小論のためのクラスです。テストで使ったjsarticleはTeX界の巨人・&lt;a href=&#34;https://oku.edu.mie-u.ac.jp/~okumura/&#34;&gt;奥村先生&lt;/a&gt;の作った、日本語横書き版articleクラスです。文章の規模が増えると「report」、「book」というように使うクラスも大きくしていきます。&lt;br /&gt;
-　他にもTeX Liveには山のようなクラスが収録されていて、中には編み物の編み図を描くためのknittingクラスとか、正方形のCDジャケットを作れるcdcoverクラスとかぶっ飛んだものもあります。誰がいつ使うんだろう。&lt;br /&gt;
-　「じゃあ縦書きでA5とか新書版とかな小説用のクラスを使えばいいんだね！」となります。然り。ただし実は日本語を書くためのクラスは多くなく、限られた選択肢から選んだ上で細かいところは自分の手で設定していかなければなりません。&lt;br /&gt;
-　中でも縦書き用のクラスはt系列に限られます。Unicode用にはutarticle、utreport、utbookが用意されており、小説を組みたいとなれば選択肢は&lt;strong&gt;utbook&lt;/strong&gt;一択です。&lt;br /&gt;
-（PDFオンリーの電子書籍にしたい人はutreportを選びましょう。左右でレイアウトが変わらない、つまり製本の時のノドを考慮しないのがreportクラスになります）&lt;/p&gt;
-
-&lt;p&gt;　そんな状況の中、2017年2月に衝撃的な出来事がありました。あべのりさんこと&lt;a href=&#34;http://www.math.sci.hokudai.ac.jp/~abenori/&#34;&gt;阿部紀行氏&lt;/a&gt;の開発した、&lt;strong&gt;&lt;a href=&#34;https://github.com/abenori/jlreq&#34;&gt;jlreqクラス&lt;/a&gt;&lt;/strong&gt;がリリースされたんです。&lt;br /&gt;
-　「JLReq」とは、ウェブの親玉W3C（Web技術の標準化団体）が発表した「&lt;a href=&#34;https://www.w3.org/TR/jlreq/ja/&#34;&gt;日本語組版処理の要件&lt;/a&gt;」のことで、JIS X 4051「日本語文書の組版方法」を元に策定されており、ざっくり言えば前者はWeb、後者は紙で日本語を組む時に用いられる公式規格ということです。&lt;br /&gt;
-　それをTeX上で実現しようということで作られたのがjlreq.clsで、これがほんとに綺麗に日本語を組めます。日本語のみならずCJK（中日韓）界隈に革命が起きたのではというくらい素晴らしいクラスなんですが、いかんせんこれを書いている17年4月の段階でまだまだ出来たてで、細部が詰まっていないところがあるようです。これからどんどん仕様が変わっていくでしょう。&lt;/p&gt;
-
-&lt;p&gt;　というわけで本項では安定版として、utbookを使った方法で組版していきます。将来的にはjlreqクラスを使う方法に揃えたいですが、現段階ではNightly Buildとして別項で紹介します。&lt;br /&gt;
-　なので、一行目を&lt;code class=&#34; language-latex&#34;&gt;\documentclass{utbook}&lt;/code&gt;に変更します。これで組んでみましょう。&lt;/p&gt;
-
-
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://hakuoku.github.io/agakuTeX/img/34documentclass/tate.png&#34; alt=&#34;utbook適用後&#34; /&gt;
-    
-    
-&lt;/figure&gt;
-
-
-&lt;p&gt;　縦書きできた!!　嬉しい！　自分の文章がちゃんとした形になって出て来るのはいつになっても楽しいです。&lt;br /&gt;
-　次項でさらに小説本文にふさわしい組み方にします。&lt;/p&gt;
-
-&lt;h4 id=&#34;参考&#34;&gt;参考&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://abenori.blogspot.com/2017/02/jlreq_9.html&#34;&gt;にっき♪&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://texwiki.texjp.org/?%E3%82%AF%E3%83%A9%E3%82%B9%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E4%B8%80%E8%A6%A7&#34;&gt;クラスファイル一覧 - TeX Wiki&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://texcatalogue.ctan.org/bytopic.html#cd&#34;&gt;The TeX Catalogue OnLine, Topic Index&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description>&amp;#x3000;組めたはいいけど横書きだし余白めっちゃあるし何なん？って感じですね。これは一番最初の文である\documentclass{a</description>
     </item>
     
     <item>
@@ -838,97 +107,7 @@ l.89 ...なので、五番目のポオルは fa#
       <pubDate>Sat, 22 Apr 2017 19:24:51 +0900</pubDate>
       
       <guid>https://hakuoku.github.io/agakuTeX/tutorial/linebreak/</guid>
-      <description>
-
-&lt;p&gt;&amp;#x3000;それにしても読みづらいですね。改行が全然なくて一面に字が植えてある。&lt;strong&gt;面倒なことにTeXは、いわゆる普通の改行を感知しません。&lt;/strong&gt;&lt;br /&gt;
-　いやさすがに語弊があるな。正しくは下のように、間に空行を入れることで改行、つまり新たな段落が製造されます。&lt;/p&gt;
-
-
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://hakuoku.github.io/agakuTeX/img/41linebreak/kuugyou.png&#34; alt=&#34;新しい段落&#34; /&gt;
-    
-    
-&lt;/figure&gt;
-
-
-&lt;p&gt;　じゃあ改行したいところに空行を入れていけばいいのかとなると、そうとも言い切れない。だってこうなるんだよ。（十蘭は改行少ないんで乱歩で）&lt;/p&gt;
-
-
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://hakuoku.github.io/agakuTeX/img/41linebreak/rampo.png&#34; alt=&#34;行間の空きすぎた乱歩&#34; /&gt;
-    
-    
-&lt;/figure&gt;
-
-
-&lt;p&gt;　いやだ！こんなの乱歩じゃない！なにより面倒くさい。いちいち空きを入れてくなんてミスも増えそうだし。&lt;br /&gt;
-　間が開かない段落内強制改行のやり方は、&lt;a href=&#34;http://www.latex-cmd.com/struct/space.html&#34;&gt;一般的&lt;/a&gt;には行末に\か\newlineを入れることです。ただこれも、面倒くささとミスのしやすさでは大して変わりません。&lt;/p&gt;
-
-&lt;p&gt;　もともと英語の特に論文では、新しい行＝新しい段落という認識なので、空行方式で破綻なく書いて組版できます。でも小説でいうと、改行って必ずしも新しい段落に移るわけじゃないですよね。特にセリフがそうで、会話になると改行のオンパレードだけど段落は全部一緒です。&lt;br /&gt;
-　この改行・段落問題はMarkdownなどとも共通で、個人的にはかなり根深い問題だと思っています。単なる英語と日本語の壁かと思ったんですが、機械にとっての解析のしやすさや伝統的な組版ルールとの絡みなどもあり、また英語圏でも空行派vs反対派議論は存在するようです。&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;br /&gt;
-　というわけでここでは正しい文法を模索するよりも、.texファイルの扱いやすさおよび表現としての柔軟さを重視します。たとえ段落と強制改行を使い分けてきちんと整形した正しいTeX文書でも、エディタでファイルを開いた時に行の間がスカスカだと腹が立ってくるからです。編集作業は楽しくやりたい。&lt;/p&gt;
-
-&lt;p&gt;　そのためにはあらかじめこちら側で、「全部の行を見たまま改行する」的なコマンドを指定しなければなりません。TeXにはもともと&lt;code&gt;\obeylines&lt;/code&gt;というコマンドがあって、これを書いてやると大体望む動作になります。&lt;br /&gt;
-　エスケープの時のような部分的なコマンドではない、文書全体に関わるコマンドは本文が始まる前、&lt;code&gt;\documentclass&lt;/code&gt;と&lt;code&gt;\begin&lt;/code&gt;の間で指定します。ここの間のことを&lt;strong&gt;プリアンブル&lt;/strong&gt;といいます。以降のコード例ではプリアンブルの部分のみを示していることがあります。&lt;br /&gt;
-　これでちゃんと改行できたかのように見えるんですが、実はまだ落とし穴があります。&lt;/p&gt;
-
-
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://hakuoku.github.io/agakuTeX/img/41linebreak/obeylines.png&#34; alt=&#34;空行が反映されない&#34; /&gt;
-    
-    
-&lt;/figure&gt;
-
-
-&lt;p&gt;　&lt;strong&gt;空きが反映されてない。&lt;/strong&gt;実はobeylinesは、「 &lt;em&gt;文字のない空白だけの行は無視する&lt;/em&gt; 」というTeX本来の動作に従います。なので一行アキや二行アキを入れたくて何回改行しても無視されます。&lt;br /&gt;
-　空行の制御には\vspaceコマンドなどがあるんですが、本文が読みづらくなるのであまり使いたくありません。どうしたもんかと悩んでいたところ、&lt;a href=&#34;https://xscey.github.io/&#34;&gt;xsceyさん&lt;/a&gt;が解決法を教えて下さいました。（ありがとうございます！）&lt;br /&gt;
-　\obeylinesは使わず、以下のようにしてやります。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-LaTeX&#34;&gt;\documentclass{utbook}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-{\catcode`\^^M=\active%
-\gdef\xobeylines{\catcode`\^^M\active \def^^M{\par\leavevmode}}%
-\global\def^^M{\par\leavevmode}}
-\AtBeginDocument{\xobeylines}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{document}
-︙
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;　何やら恐ろしげな呪文ですが、意味は分からなくても大丈夫です。（詳しい技術的な解説は&lt;a href=&#34;http://hakuoku.hatenablog.com/entry/2016/12/14/222246&#34;&gt;ブログ&lt;/a&gt;の方にあります） こういうTeXへの命令を組み合わせた一種のプログラムを&lt;strong&gt;マクロ&lt;/strong&gt;と呼ぶことだけ覚えておいてください。&lt;br /&gt;
-　それから%の羅列はただの区切りで、意味はありません。TeXでは頭に半角の&lt;code&gt;%&lt;/code&gt;をつけた文は本文にも組版にも影響を与えない&lt;strong&gt;コメント&lt;/strong&gt;として扱われるので、それを利用してプリアンブル部分を挟んでみました。以降はプリアンブルでの命令はこの区切り線の内側に書いていきます。うるさかったら省いてもOKです。（ただしマクロ行末の％は消さないで！）&lt;/p&gt;
-
-&lt;p&gt;　これで、本文通りの改行になりました。&lt;/p&gt;
-
-
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://hakuoku.github.io/agakuTeX/img/41linebreak/exobeylines.png&#34; alt=&#34;exobeylines適用後&#34; /&gt;
-    
-    
-&lt;/figure&gt;
-
-
-&lt;h4 id=&#34;参考&#34;&gt;参考&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://books.google.com/books/about/A_Beginner_s_Book_of_TEX.html?hl=ja&amp;amp;id=72wKBwAAQBAJ&#34;&gt;A Beginner’s Book of TEX - Raymond Seroul&lt;/a&gt;
-　6.4 obeying lines&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://books.google.co.jp/books/about/TEX_in_Practice.html?hl=ja&amp;amp;id=xWvgBwAAQBAJ&#34;&gt;TEX in Practice: Volume III: Tokens, Macros - Stephan v. Bechtolsheim&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;footnotes&#34;&gt;
-
-&lt;hr /&gt;
-
-&lt;ol&gt;
-&lt;li id=&#34;fn:1&#34;&gt;&lt;a href=&#34;https://meta.stackexchange.com/questions/26011/should-the-markdown-renderer-treat-a-single-line-break-as-br&#34;&gt;Should the markdown renderer treat a single line break as br? - Meta Stack Exchange&lt;/a&gt;&lt;br&gt;また&lt;a href=&#34;http://conv.denshochan.com/markdown&#34;&gt;でんでんマークダウン&lt;/a&gt;では、デフォルトでこの問題をクリアしています。
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-</description>
+      <description>&amp;#x3000;それにしても読みづらいですね。改行が全然なくて一面に字が植えてある。面倒なことにTeXは、いわゆる普通の改行を感知しません。</description>
     </item>
     
     <item>
@@ -937,116 +116,61 @@ l.89 ...なので、五番目のポオルは fa#
       <pubDate>Wed, 26 Apr 2017 23:07:39 +0900</pubDate>
       
       <guid>https://hakuoku.github.io/agakuTeX/tutorial/indent/</guid>
-      <description>
-
-&lt;p&gt;&amp;#x3000;改行はできたものの、行頭の字下げがなんかおかしい。まるまる2字分空いてますね。&lt;br /&gt;
-　これは青空文庫の本文行頭にもともとあった全角スペース（自作原稿でも、行頭を一字下げにしてる人は多いと思います）と、ドキュメントクラスutbookのデフォルトである1字下げが合わさって2文字分になっているからです。筆者も執筆の時に必ず全角スペースで字下げをするので、この癖は変えたくありません。utbookのほうに変わってもらいましょう。&lt;br /&gt;
-　段落のインデント量を指定するコマンドは\parindent。プリアンブルに&lt;code&gt;\parindent = 0pt&lt;/code&gt;と書き込みます。&lt;br /&gt;
-　自作原稿を1字下げしていなくて、PDFでも下げたくない人は同じようにしてください。逆に出力の時だけ下げたい人は何もしなくてOKです。&lt;/p&gt;
-
-&lt;h5 id=&#34;言いわけ&#34;&gt;言いわけ&lt;/h5&gt;
-
-&lt;p&gt;　ぶっちゃけて言うとこれはやっちゃいけないバッドノウハウです。TeXやプログラミング界隈では基本的に全角スペースは避けるものとされていて、場合によってはエラー潰しに死ぬほど時間がかかったりするのは有名な話です。（筆者も2時間ハマったことがある）&lt;br /&gt;
-　それでもTeXは活字を組むシステムですから、例えば「ロリータ　レンピカ」みたいに文中の単語として全角スペースを使いたい時は使っても許されます。問題は行頭の字下げで、これは全文に渉って必ず適用されるものですから、人間がいちいち手で打つのではなくレイアウトの一要素として機械に任せるべきだ、という考え方が徹底されています。なのでクラスファイルに「括弧で始まる行以外は何ポイント下げる」というような指定があらかじめ書かれています。これと衝突しないように、原稿は字下げせずに書くのがセオリーです。&lt;br /&gt;
-　しかしですね、正直、&lt;strong&gt;書いてる間字下げしたくならないですか？&lt;/strong&gt;&lt;br /&gt;
-　別にしたくならない人はそれで全然OKだと思います。むしろTeX的にはそっちの方がいいです。でも私は字下げしたい。執筆段階で、未完成の文やいまいち納得していないところは字下げせずに書いて、大体いいなと思ったら全角スペースで下げています。字下げしてあるとなんとなく&amp;rdquo;ちゃんとした文&amp;rdquo;に見えるものです。&lt;/p&gt;
-
-&lt;p&gt;　ということで、ここでは完全にフィーリングと私利私欲でインデント抑制をしています。そこまで我欲が強くない人は、行頭のスペースは消してしまってクラスのインデント設定に任せた方がいいでしょう。&lt;br /&gt;
-　これもエディタの検索・置換で一括編集できます。「正規表現」のところにチェックを入れてから「すべて置換」してください。&lt;/p&gt;
-
-&lt;p&gt;検索する文字列：&lt;code&gt;^　&lt;/code&gt;（半角キャレットの後に全角スペース）　→　置換する文字列：（何も入力しない）&lt;/p&gt;
-
-&lt;h4 id=&#34;空白の扱い&#34;&gt;空白の扱い&lt;/h4&gt;
-
-&lt;p&gt;　インデントに限らず、TeXでは空白・空間は人間ではなく主に機械が担うべき領域とされています。1行アキが出力されなかったのもそのせいです。いくら改行しても無駄だったのと同じように、半角スペースをいくつ入れても一つの空白として出力されます。（全角スペースは&amp;rdquo;空間&amp;rdquo;ではなく&amp;rdquo;文字&amp;rdquo;扱いなので、入れた分出力できます）&lt;br /&gt;
-　強制的に複数出力したい時は&lt;code&gt;\␣&lt;/code&gt;（␣は半角スペース）か&lt;code&gt;~&lt;/code&gt;を使います。~~を使うと、その位置では改行が起こりません。下の例の括弧内のように、次の行にかかるとおかしくなる所には~を使います。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;（~~~~）の\␣\␣『吾輩は（~~）である』
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;　英詩やプログラムのソースコードなど、あまりにもたくさん半角スペースが出て来るところは、全てを見たまま出力する&lt;strong&gt;verbatim環境&lt;/strong&gt;の中に入れてやることで対応できます。エスケープのところで出てきた&lt;code&gt;\verb|ナントカ|&lt;/code&gt;はこれの短縮形です（一行で収まる時に使う）。&lt;br /&gt;
-　begin／endがついていますが、これはそのまま本文中、&lt;code&gt;\begin{document}～\end{document}&lt;/code&gt;の間に書き込みます。documentという環境の中に、verbatimという環境を入れ込んでいます。\verbとverbatim環境のように、単一行用と複数行用がセットになっているコマンドはよくあります。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-LaTeX&#34;&gt;\begin{verbatim}
-&#39;Twas brillig, and the slithy toves
-   Did gyre and gimble in the wabe;  %半角スペース3個で字下げされている
-All mimsy were the borogoves,
-   And the mome raths outgrabe.
-            ――ルイス・キャロル『ジャバウォックの詩』
-\end{verbatim}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;　上の例だと、改行マクロを入れていなくても改行が見たまま出力され、さらに%で始まるコメントまで原稿に出力されてしまいます。本当にガチで見たままで細かい制御ができず、思ったのとは違う出力が出がちなので、できればverbatimの多用は控えた方が楽かと思います。&lt;/p&gt;
-
-&lt;p&gt;　一文字単位ではない、もっと広い空間の制御にもコマンドが要ります。一覧は&lt;a href=&#34;http://osksn2.hep.sci.osaka-u.ac.jp/~naga/miscellaneous/tex/tex-tips7.html&#34;&gt;こちら&lt;/a&gt;のページを参照してください。詳しい使い方は後述します。&lt;/p&gt;
-
-&lt;h4 id=&#34;参考&#34;&gt;参考&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://hooktail.org/computer/index.php?%CA%B8%BD%F1%A4%CE%C0%DF%C4%EA&#34;&gt;文書の設定 - [物理のかぎしっぽ]&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://texwiki.texjp.org/?%E8%8B%B1%E8%AA%9E%E6%96%87%E3%81%AE%E4%BD%93%E8%A3%81&#34;&gt;英語文の体裁 - TeX Wiki&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://osksn2.hep.sci.osaka-u.ac.jp/~naga/miscellaneous/tex/tex-tips7.html&#34;&gt;Tex tips - ７　空白のコントロール&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.serc.titech.ac.jp/~kannolab/kanno/tex/tex05.html&#34;&gt;□□TeXnique : Vol.5□□&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description>&amp;#x3000;改行はできたものの、行頭の字下げがなんかおかしい。まるまる2字分空いてますね。 これは青空文庫の本文行頭にもともとあった全角ス</description>
     </item>
     
     <item>
-      <title>全角と半角・縦中横</title>
+      <title>縦中横</title>
       <link>https://hakuoku.github.io/agakuTeX/tutorial/rensuji/</link>
       <pubDate>Tue, 27 Jun 2017 11:19:16 +0900</pubDate>
       
       <guid>https://hakuoku.github.io/agakuTeX/tutorial/rensuji/</guid>
-      <description>
-
-&lt;p&gt;&amp;#x3000;ここからしばらくめんどくさい記号の制御が続きます。ちまちましてる上変化が分かりにくくてアレなんですが、ここを乗り越えたら大幅な組版作業に行けますので頑張ってください。&lt;/p&gt;
-
-&lt;p&gt;　十蘭の小説にはフランス語が山ほど出てきます。青空文庫ではデフォルトで、横倒しにして欧文として表示したい箇所は半角、横倒しにせずカナと同じように縦向きで表示したいアルファベットは全角で書かれています。&lt;br /&gt;
-　TeXでもこれは全く同じです。なので縦向きで組みたい英数字は全角にしておきます。&lt;/p&gt;
-
-
-&lt;figure &gt;
+      <description>&amp;#x3000;ここからしばらくめんどくさい記号の制御が続きます。ちまちましてる上変化が分かりにくくてアレなんですが、今後も使う主要な概念が</description>
+    </item>
     
-        &lt;img src=&#34;https://hakuoku.github.io/agakuTeX/img/43rensuji/zenkaku.jpg&#34; alt=&#34;全角で縦向き&#34; /&gt;
+    <item>
+      <title>note：検索・置換と正規表現</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/regex/</link>
+      <pubDate>Wed, 28 Jun 2017 13:05:48 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/regex/</guid>
+      <description>&amp;#x3000;これまで検索・置換する時に出てきた謎の記号たちは正規表現［regular expression］といい、簡単に言うと「表記ゆれ</description>
+    </item>
     
+    <item>
+      <title>アクセントと特殊記号 前編</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/accent1/</link>
+      <pubDate>Wed, 28 Jun 2017 20:18:41 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/accent1/</guid>
+      <description>&amp;#x3000;縦向きにしたい英数字の処理はできました。横倒しにしたい欧文は普通に半角で書いておけばいいんですが、ここに英語以外の外国語使い</description>
+    </item>
     
-&lt;/figure&gt;
-
-
-&lt;p&gt;　ただし全角フォントが気に入らなかったり表示がおかしくなったりする場合があります。それから2つ以上の英数を1字分のスペースに押し込んで縦向きにしたい時もよくあります。青空文庫なら&lt;code&gt;39［＃「39」は縦中横］&lt;/code&gt;となっている部分です。&lt;br /&gt;
-　そんな時は&lt;strong&gt;rensuji&lt;/strong&gt;コマンドを使います。半角文字を半角のまま、いわば「全角一文字分の高さのスペースにおける横書き」にしてくれます。&lt;br /&gt;
-　実際に見た方が早いです。&lt;code class=&#34;language-latex&#34;&gt;一様に&amp;#092;rensuji{39}度の一夜を&lt;/code&gt;のように書いてやるとこうなります。&lt;/p&gt;
-
-
-&lt;figure &gt;
+    <item>
+      <title>アクセントと特殊記号 後編</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/accent2/</link>
+      <pubDate>Thu, 20 Jul 2017 10:38:56 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/accent2/</guid>
+      <description>&amp;#x3000;コマンドで入力できることは分かったんですが、十蘭のフランス語だのポーの暗号だのをいちいちコマンドで入れてたらイライラしてきま</description>
+    </item>
     
-        &lt;img src=&#34;https://hakuoku.github.io/agakuTeX/img/43rensuji/rensuji.jpg&#34; alt=&#34;連数字&#34; /&gt;
+    <item>
+      <title>note：Unicodeを知ろう！</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/unicode/</link>
+      <pubDate>Thu, 20 Jul 2017 23:05:21 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/unicode/</guid>
+      <description></description>
+    </item>
     
-    
-&lt;/figure&gt;
-
-
-&lt;p&gt;　面倒なのが !! や !? の扱いです。全角で書くと縦に二つ、半角で書くと横倒しで二つ表示されてしまうので、二重の感嘆符も\rensuji{}に入れるようにしましょう。&lt;br /&gt;
-　ごちゃごちゃするのが嫌なら、コマンドを使わずに“二重感嘆符記号そのもの”を原稿に直書きしちゃう手もあります。&lt;code&gt;‼・⁉・⁈・⁇&lt;/code&gt;←これをコピペしてもいいし、iPhone（androidも？）からなら普通に予測変換で入力できます。三重以上だとコマンド使わざるを得ないですが。&lt;/p&gt;
-
-&lt;p&gt;　いずれにしても大事なのは、原稿中でのルールを揃えることです。あるところでは連数字、あるところでは直書きのようにすると、表示が微妙に違ってバラバラな印象になります。1文字の英数字を全角で入れるか半角でrensujiにするか、2文字の場合は全角か半角か、!!をどうするか、暫定的でもいいので自分の文体に合ったルールを決めてみてください。&lt;br /&gt;
-　Meryの「&lt;a href=&#34;http://www.haijin-boys.com/wiki/%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3&#34;&gt;全角／半角変換プラグイン&lt;/a&gt;」を入れると、文字種ごとに柔軟に一括揃えすることができます。&lt;/p&gt;
-
-&lt;h4 id=&#34;大量にある時&#34;&gt;大量にある時&lt;/h4&gt;
-
-&lt;p&gt;　コマンドへの検索・置換は以下です。これ以降も本文の部分だけを範囲選択後に、「選択範囲のみ」と「正規表現」にチェックを入れるのを忘れないでください。&lt;/p&gt;
-
-&lt;p&gt;検索する文字列：&lt;code&gt;([!?！？]{2,3})&lt;/code&gt;　→　置換後の文字列：&lt;code&gt;\\rensuji{\1}&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;　記号でない英数字の置換はちょっと難しいです。横倒しにしたい長い欧文の部分を_除いて_範囲選択→置換を、本文の終わりまで繰り返します。&lt;/p&gt;
-
-&lt;p&gt;検索する文字列：&lt;code&gt;([0-9a-zA-Z０-９ａ-ｚＡ-Ｚ]{2,3})&lt;/code&gt;　→　置換後の文字列：&lt;code&gt;\\rensuji{\1}&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;　&lt;code&gt;{2,3}&lt;/code&gt;のところが文字数を表していて、この場合は2文字以上3文字以下（つまり2文字か3文字）の英数字がヒットします。4文字でも連数字にしたい時は&lt;code&gt;{2,4}&lt;/code&gt;、一文字の英数も半角で入れて縦向きにしたいときは&lt;code&gt;{1,3}&lt;/code&gt;というように、状況に合わせて文字数の部分を変えてください。&lt;br /&gt;
-　それでもなおかなり文脈によるところが大きいので、「すべて置換」はせずに一回ずつ「次を検索」＆「置換」を押すか、置換はせずに検索だけを使って手で書き換えるのが安全です。&lt;/p&gt;
-
-&lt;p&gt;　そしてこの方法だと、英数字以外の記号が入るケースなどは検索できません。そのあたりのことを含め、次項ではちょっと寄り道して、ちょいちょい出てきた謎の呪文「&lt;strong&gt;正規表現&lt;/strong&gt;」について解説したいと思います。&lt;/p&gt;
-</description>
+    <item>
+      <title>青空文庫からの置換一覧</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/replace/</link>
+      <pubDate>Sun, 07 May 2017 17:50:02 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/replace/</guid>
+      <description>&amp;#x3000;以下は筆者の覚え書きを兼ねた青空文庫形式からの検索・置換正規表現一覧です。エディタで一つずつ置換する時用のリファレンスです。</description>
     </item>
     
     <item>
@@ -1055,16 +179,7 @@ All mimsy were the borogoves,
       <pubDate>Sat, 31 Dec 2016 20:21:48 +0900</pubDate>
       
       <guid>https://hakuoku.github.io/agakuTeX/tutorial/reference/</guid>
-      <description>&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://texwiki.texjp.org/?%E3%81%AF%E3%81%98%E3%82%81%E3%81%A6%E3%81%AE%E6%96%B9%E3%81%B8&#34;&gt;はじめての方へ - TeX Wiki&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://texwiki.texjp.org/?LaTeX%E5%85%A5%E9%96%80#xb5d1a9c&#34;&gt;LaTeX入門 - TeX Wiki&lt;/a&gt;&lt;br /&gt;
-　日本語公式ドキュメントとも言うべき、「TeX Wiki」の入門記事&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://ja.wikibooks.org/wiki/TeX/LaTeX%E5%85%A5%E9%96%80&#34;&gt;TeX/LaTeX入門 - Wikibooks&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://ideas.paunix.org/latex/index.htm&#34;&gt;文系のマカーにも「使える」LaTeX&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.fugenji.org/~thomas/texlive-guide/vertical.html&#34;&gt;縦書きしてみよう&lt;/a&gt;&lt;br /&gt;
-　TeXにおける日本語と縦書きの基本&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description>はじめての方へ - TeX Wiki LaTeX入門 - TeX Wiki 日本語公式ドキュメントとも言うべき、「TeX Wiki」の入門記事 TeX/LaTeX入門 - Wikibooks 文系のマカ</description>
     </item>
     
     <item>
@@ -1073,18 +188,7 @@ All mimsy were the borogoves,
       <pubDate>Fri, 16 Dec 2016 23:45:42 +0900</pubDate>
       
       <guid>https://hakuoku.github.io/agakuTeX/about/about/</guid>
-      <description>&lt;p&gt;&amp;#x3000;DTP知識ゼロ・プログラミング経験ほぼなしの文系人間が、「それでも綺麗に&lt;ruby&gt;小説&lt;rp&gt;（&lt;/rp&gt;&lt;rt&gt;・・&lt;/rt&gt;&lt;rp&gt;）&lt;/rp&gt;&lt;/ruby&gt;を組版したい！」と思いつめた末にTeXの魔道に落ち、悪戦苦闘しながらどうにか体裁を整えるところまでは来た過程を、テキトーな文章で記した実録風チュートリアルです。&lt;/p&gt;
-
-&lt;p&gt;　自分の備忘録兼、日本語の文書を作る時、初心者が参考できるような場所が欲しいと思って書きました。&lt;br /&gt;
-　とにかくTeXのての字も知らなかった人間が書いてるので、きちんとしたリファレンスや手順をお求めの方にはまったく役に立ちません。筆者と同じレベルの、本当に初歩の初歩の入門編を探している方向けです。「インストールすらうまくいかない」「文法の意味もわからない」という方は、これを読めば少しは前進できるかもしれません。&lt;br /&gt;
-　また小説および縦組みの日本語を組版する、というのが大前提ですので、論文その他&amp;rdquo;正しい&amp;rdquo;TeXの使い方をお探しの方のお役にも立てないと思います。論文の組み方については熟練の使い手さんたちがネット上に充実したドキュメントを上げておられますので、どうぞそちらをご参照ください。&lt;/p&gt;
-
-&lt;p&gt;　こんなポンコツが書いてますがフィードバック、質問はいつでも大歓迎です。なにぶんポンコツなので私に訊いてもたぶん問題は解決しませんが、初歩的な「ここで詰まった」を一緒に考えていけるようなサイトにできればと思っております。逆にお詳しい方はお叱り、ご意見を頂ければ大変助かります。&lt;/p&gt;
-
-&lt;p&gt;　免責事項：あくまでド素人によるガイドですので、もし失敗して何か損害が発生しましても保証は致しかねます。心配な方はちゃんと紙の教科書を読んだほうが無難です。&lt;/p&gt;
-
-&lt;p&gt;　Then, Happy T&lt;span style = &#34;line-height: 0; text-transform: uppercase;margin-left: -0.140em; margin-right: -0.102em;vertical-align: -0.161em; &#34;&gt;e&lt;/span&gt;Xing!&lt;/p&gt;
-</description>
+      <description>&amp;#x3000;DTP知識ゼロ・プログラミング経験ほぼなしの文系人間が、「それでも綺麗に小説（・・）を組版したい！」と思いつめた末にTeXの</description>
     </item>
     
   </channel>
