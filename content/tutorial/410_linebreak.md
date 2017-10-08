@@ -13,7 +13,7 @@ weight = 410
 
 {{< figure src="/img/41linebreak/kuugyou.png" caption="" alt="新しい段落" class="" >}}
 
-　じゃあ改行したいところに空行を入れていけばいいのかとなると、そうとも言い切れない。だってこうなるんだよ。（十蘭は改行少ないんで乱歩で）
+　じゃあ改行したいところに空行を入れていけばいいのかとなると、そうとも言い切れません。だってこうなるんだよ。（十蘭は改行少ないので乱歩で）
 
 {{< figure src="/img/41linebreak/rampo.png" caption="" alt="行間の空きすぎた乱歩" class="" >}}
 
