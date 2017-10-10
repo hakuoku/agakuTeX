@@ -6,26 +6,44 @@
     <description>Recent content in Topics on あがきながら覚えるTeX</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Thu, 20 Jul 2017 23:05:21 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 10 Oct 2017 11:15:56 +0900</lastBuildDate>
     
 	<atom:link href="https://hakuoku.github.io/agakuTeX/topics/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title></title>
-      <link>https://hakuoku.github.io/agakuTeX/topics/</link>
-      <pubDate>Thu, 20 Jul 2017 23:05:21 +0900</pubDate>
+      <title>Babel</title>
+      <link>https://hakuoku.github.io/agakuTeX/topics/babel/</link>
+      <pubDate>Tue, 10 Oct 2017 11:15:56 +0900</pubDate>
       
-      <guid>https://hakuoku.github.io/agakuTeX/topics/</guid>
+      <guid>https://hakuoku.github.io/agakuTeX/topics/babel/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Verb</title>
-      <link>https://hakuoku.github.io/agakuTeX/topics/verb/</link>
-      <pubDate>Wed, 19 Apr 2017 13:03:39 +0900</pubDate>
+      <title>UTF-8</title>
+      <link>https://hakuoku.github.io/agakuTeX/topics/utf-8/</link>
+      <pubDate>Tue, 18 Apr 2017 18:13:32 +0900</pubDate>
       
-      <guid>https://hakuoku.github.io/agakuTeX/topics/verb/</guid>
+      <guid>https://hakuoku.github.io/agakuTeX/topics/utf-8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Unicode</title>
+      <link>https://hakuoku.github.io/agakuTeX/topics/unicode/</link>
+      <pubDate>Thu, 20 Jul 2017 23:05:21 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/topics/unicode/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Uniview</title>
+      <link>https://hakuoku.github.io/agakuTeX/topics/uniview/</link>
+      <pubDate>Thu, 20 Jul 2017 23:05:21 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/topics/uniview/</guid>
       <description></description>
     </item>
     
@@ -66,6 +84,15 @@
     </item>
     
     <item>
+      <title>ギリシャ・キリル文字</title>
+      <link>https://hakuoku.github.io/agakuTeX/topics/%E3%82%AE%E3%83%AA%E3%82%B7%E3%83%A3%E3%82%AD%E3%83%AA%E3%83%AB%E6%96%87%E5%AD%97/</link>
+      <pubDate>Tue, 10 Oct 2017 11:15:56 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/topics/%E3%82%AE%E3%83%AA%E3%82%B7%E3%83%A3%E3%82%AD%E3%83%AA%E3%83%AB%E6%96%87%E5%AD%97/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>コメント</title>
       <link>https://hakuoku.github.io/agakuTeX/topics/%E3%82%B3%E3%83%A1%E3%83%B3%E3%83%88/</link>
       <pubDate>Sat, 22 Apr 2017 19:24:51 +0900</pubDate>
@@ -102,6 +129,15 @@
     </item>
     
     <item>
+      <title>フォントエンコーディング</title>
+      <link>https://hakuoku.github.io/agakuTeX/topics/%E3%83%95%E3%82%A9%E3%83%B3%E3%83%88%E3%82%A8%E3%83%B3%E3%82%B3%E3%83%BC%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0/</link>
+      <pubDate>Tue, 10 Oct 2017 11:15:56 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/topics/%E3%83%95%E3%82%A9%E3%83%B3%E3%83%88%E3%82%A8%E3%83%B3%E3%82%B3%E3%83%BC%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>プリアンブル</title>
       <link>https://hakuoku.github.io/agakuTeX/topics/%E3%83%97%E3%83%AA%E3%82%A2%E3%83%B3%E3%83%96%E3%83%AB/</link>
       <pubDate>Sat, 22 Apr 2017 19:24:51 +0900</pubDate>
@@ -116,6 +152,15 @@
       <pubDate>Sat, 22 Apr 2017 19:24:51 +0900</pubDate>
       
       <guid>https://hakuoku.github.io/agakuTeX/topics/%E3%83%9E%E3%82%AF%E3%83%AD/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>引数</title>
+      <link>https://hakuoku.github.io/agakuTeX/topics/%E5%BC%95%E6%95%B0/</link>
+      <pubDate>Thu, 20 Jul 2017 10:38:56 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/topics/%E5%BC%95%E6%95%B0/</guid>
       <description></description>
     </item>
     

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Note on あがきながら覚えるTeX</title>
+    <link>https://hakuoku.github.io/agakuTeX/tags/note/</link>
+    <description>Recent content in Note on あがきながら覚えるTeX</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Wed, 28 Jun 2017 13:05:48 +0900</lastBuildDate>
+    
+	<atom:link href="https://hakuoku.github.io/agakuTeX/tags/note/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>note：検索・置換と正規表現</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/regex/</link>
+      <pubDate>Wed, 28 Jun 2017 13:05:48 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/regex/</guid>
+      <description>&amp;#x3000;これまで検索・置換する時に出てきた謎の記号たちは正規表現［regular expression］といい、簡単に言うと「表記ゆれ</description>
+    </item>
+    
+  </channel>
+</rss>

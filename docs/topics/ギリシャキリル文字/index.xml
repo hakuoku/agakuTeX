@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ギリシャ・キリル文字 on あがきながら覚えるTeX</title>
+    <link>https://hakuoku.github.io/agakuTeX/topics/%E3%82%AE%E3%83%AA%E3%82%B7%E3%83%A3%E3%82%AD%E3%83%AA%E3%83%AB%E6%96%87%E5%AD%97/</link>
+    <description>Recent content in ギリシャ・キリル文字 on あがきながら覚えるTeX</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Tue, 10 Oct 2017 11:15:56 +0900</lastBuildDate>
+    
+	<atom:link href="https://hakuoku.github.io/agakuTeX/topics/%E3%82%AE%E3%83%AA%E3%82%B7%E3%83%A3%E3%82%AD%E3%83%AA%E3%83%AB%E6%96%87%E5%AD%97/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>アクセントと特殊記号 (3)</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/accent3/</link>
+      <pubDate>Tue, 10 Oct 2017 11:15:56 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/accent3/</guid>
+      <description>&amp;#x3000;さて話を戻して、pxcjkcatパッケージの使い方の続きです。 横倒ししたい字が死ぬほど出てくるとき いちいち部分指定なんかして</description>
+    </item>
+    
+  </channel>
+</rss>

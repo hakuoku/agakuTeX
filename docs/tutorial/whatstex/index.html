@@ -34,7 +34,7 @@
 <meta name="twitter:site" content="@isaribi_saitoh" />
 <meta name="twitter:creator" content="@isaribi_saitoh" />
 
-    <base href="https://hakuoku.github.io/agakuTeX/">
+    
     <meta name="generator" content="Hugo 0.25.1" />
     <link rel="canonical" href="https://hakuoku.github.io/agakuTeX/tutorial/whatstex/">
     
@@ -170,7 +170,7 @@
     
         
         <li class = "sub-menu">
-        本文の編集
+        本文の編集―基盤編
             <ul class = "sub">
                 
                     
@@ -183,23 +183,23 @@
                 
                     
                     <li class = "sub-menu">
-                    全角と半角――縦横の制御
+                    全角・半角―文字と記号の縦横
                         <ul class = "sub">
                             
                             <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/rensuji/">縦中横</a></li>
                             
                             <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/regex/">note：検索・置換と正規表現</a></li>
                             
-                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/accent1/">アクセントと特殊記号 前編</a></li>
+                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/accent1/">アクセントと特殊記号 (1)</a></li>
                             
-                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/accent2/">アクセントと特殊記号 後編</a></li>
+                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/accent2/">アクセントと特殊記号 (2)</a></li>
+                            
+                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/unicode/">note：Unicodeで遊ぼう</a></li>
+                            
+                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/accent3/">アクセントと特殊記号 (3)</a></li>
                             
                         </ul>
                     </li>
-                    
-                
-                    
-                    <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/unicode/">note：Unicodeを知ろう！</a></li>
                     
                 
             </ul>
@@ -236,8 +236,8 @@
 
 <p>　とまあ要するに、心ゆくまでカスタマイズできて、お店で売ってるような本が作れるシステムですよ、ということらしい。<br />
 　ちなみにこのクヌース教授という方はいろいろすごい人のようで、TeX開発の件のように「今あるやつ気に入らないから俺が作る！」という衝動に駆られることを『クヌース病』と呼ぶそうな。<br />
-　数学者が作っただけあって、基本は“英語の論文”を書くためのシステムです。日本ではアスキーがpTeX、pLaTeXという日本語対応版を出しています。これがないと日本語が書けない。<br />
-（ちなみにここで挙げるプログラムは原則としてすべてフリーウェア、無料です。ありがたや）</p>
+　数学者が作っただけあって、基本は“英語の論文”を書くためのシステムです。日本ではアスキーがpTeX、pLaTeXという日本語対応版を出しています。これがないと日本語が書けません。<br />
+（ちなみにここで挙げるプログラムは原則としてすべてフリーウェア、無料です。ありがたい）</p>
 
 <p>　ここでちょっと補足ですが、これまでTeXTeXと呼んできたものは正しい呼び方ではありません。TeXというのは大分慣用的な表現で、あれです、おばあちゃんに言わせると全部「ファミコン」になる的なそういうやつです。オリジナルのファミコンだろうがwiiだろうがDSだろうが全部ファミコンと呼ぶみたいな用法です。<br />
 　厳密には『TeX』というのはクヌース教授が自分のために作った素のままのプログラムのことで、それだと扱いづらいので普段はみんなそこにいろいろ機能を足した『LaTeX』というのを使っています。普通にTeXと言えばだいたいLaTeXのことを指しているくらいです。<br />
@@ -265,8 +265,8 @@
 </figure>
 
 
-<p>　上の図のように小説本文の間に余計な文字列が入ることになるので、この表示にひどい違和感を覚える人や、原稿ファイルは本文のみであるべきだと考える人にはTeXの使用をおすすめできません。WYSIWYG（見たまんま）で編集できるInDesignやワープロソフトを使いましょう。個人的には一太郎が本当に素晴らしいと思います。<br />
-　この表示が嫌じゃない人や、見たままよりはむしろ効率化や論理性を重視したいと思う人には、TeXの使用自体はそんなに難しくありません。ただし日本語組版はわりと地獄です。英語話者が数学論文のために作ったプログラムで日本語縦書き文書を組むという、ある意味すごく不自然なことをやってるのでめんどくさくなるのもむべなるかなです。<br />
+<p>　上の図のように小説本文の間に余計な文字列が入ることになるので、この表示にひどい違和感を覚える人や、原稿ファイルは本文のみであるべきだと考える人にはTeXの使用をおすすめできません。WYSIWYG（見たまんま）で編集できるInDesignやワープロソフトを使いましょう。個人的には<a href="http://www.justsystems.com/jp/products/ichitaro/index.html">一太郎</a>が本当に素晴らしいと思います。<br />
+　この表示が嫌じゃない人や、見たままよりはむしろ効率化や論理性を重視したいと思う人には、TeXの使用自体はそんなに難しくありません。ただし日本語組版はわりと地獄です。英語話者が数学論文のために作ったプログラムで日本語縦書き文書を組むという、ある意味すごく不自然なことをやっているのでめんどくさくなるのもむべなるかなです。<br />
 　しかしですね、あまたの困難を乗り越えて組みあがった文書は、ユーザーの誰もが言うように本当に美しいです。初めて理想の文書を印刷できたときは思わず「おお……」と唸りました。向いてないはずの処理を素人がやってもここまで綺麗にできるというのがTeXの底力だと思います。</p>
 
 

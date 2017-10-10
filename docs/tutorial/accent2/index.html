@@ -2,7 +2,7 @@
 <html class="no-js" lang="ja" prefix="og: http://ogp.me/ns#">
 <head>
     <meta charset="utf-8">
-    <title>アクセントと特殊記号 後編 | あがきながら覚えるTeX</title>
+    <title>アクセントと特殊記号 (2) | あがきながら覚えるTeX</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="author" content="白屋書房">
@@ -10,7 +10,7 @@
 
     
 <meta property="og:locale" content="ja">
-<meta property="og:title" content="アクセントと特殊記号 後編" />
+<meta property="og:title" content="アクセントと特殊記号 (2)" />
 <meta property="og:description" content="" />
 <meta property="og:site_name" content="あがきながら覚えるTeX" />
 <meta property="og:url" content="https://hakuoku.github.io/agakuTeX/tutorial/accent2/" />
@@ -26,7 +26,7 @@
     
 
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="アクセントと特殊記号 後編" />
+<meta name="twitter:title" content="アクセントと特殊記号 (2)" />
 <meta name="twitter:description" content="" />
 <meta name="twitter:url" content="https://hakuoku.github.io/agakuTeX/tutorial/accent2/" />
 <meta name="twitter:image:src" content="https://hakuoku.github.io/agakuTeX//media/twitter-card.jpg">
@@ -34,7 +34,7 @@
 <meta name="twitter:site" content="@isaribi_saitoh" />
 <meta name="twitter:creator" content="@isaribi_saitoh" />
 
-    <base href="https://hakuoku.github.io/agakuTeX/">
+    
     <meta name="generator" content="Hugo 0.25.1" />
     <link rel="canonical" href="https://hakuoku.github.io/agakuTeX/tutorial/accent2/">
     
@@ -170,7 +170,7 @@
     
         
         <li class = "sub-menu active">
-        本文の編集
+        本文の編集―基盤編
             <ul class = "sub">
                 
                     
@@ -183,23 +183,23 @@
                 
                     
                     <li class = "sub-menu active">
-                    全角と半角――縦横の制御
+                    全角・半角―文字と記号の縦横
                         <ul class = "sub">
                             
                             <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/rensuji/">縦中横</a></li>
                             
                             <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/regex/">note：検索・置換と正規表現</a></li>
                             
-                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/accent1/">アクセントと特殊記号 前編</a></li>
+                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/accent1/">アクセントと特殊記号 (1)</a></li>
                             
-                            <li class="active"><a href="https://hakuoku.github.io/agakuTeX/tutorial/accent2/">アクセントと特殊記号 後編</a></li>
+                            <li class="active"><a href="https://hakuoku.github.io/agakuTeX/tutorial/accent2/">アクセントと特殊記号 (2)</a></li>
+                            
+                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/unicode/">note：Unicodeで遊ぼう</a></li>
+                            
+                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/accent3/">アクセントと特殊記号 (3)</a></li>
                             
                         </ul>
                     </li>
-                    
-                
-                    
-                    <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/unicode/">note：Unicodeを知ろう！</a></li>
                     
                 
             </ul>
@@ -225,90 +225,136 @@
     <main class="content" role="main" id="main-content" itemscope itemtype="http://schema.org/Article">
         <article class="post">
             <header>
-                <h1 class="post__title" itemprop="name">アクセントと特殊記号 後編</h1>
+                <h1 class="post__title" itemprop="name">アクセントと特殊記号 (2)</h1>
             </header>
             <section class="post__content" itemprop="articleBody">
                 
 
-<p>&#x3000;コマンドで入力できることは分かったんですが、十蘭のフランス語だのポーの暗号だのをいちいちコマンドで入れてたらイライラしてきます。置換ができるとはいえ可読性下がるし。<br />
-　なので本文には手を加えずに、設定をいじることでアクセント文字や特殊記号も欧文として横倒しさせてしまいましょう。</p>
+<p>&#x3000;コマンドで入力できることは分かったんですが、十蘭のフランス語だのポーの暗号だのをいちいちコマンドで入れてたらイライラしてきます。可読性も下がるし。<br />
+　なので本文には手を加えずに、設定をいじることでアクセント文字や特殊記号も欧文として横倒しさせてしまいましょう。<br />
+（ちなみに青空文庫から取ってきた『ノンシャラン道中記』はアクセント分解という技法を使っていますが、ここでは分かりやすくするためにあらかじめ普通のアクセントつきアルファベットに変換してあります）</p>
 
 <p>　具体的にはTeX界のスーパースター・<a href="http://zrbabbler.sp.land.to/">ZRさん</a>の作成された<strong>px­cjk­cat</strong>パッケージを使います。この人がいなければ日本語TeX組版は今よりもっと悲惨なものになっていただろうというすごいお方です。当サイトでやってることの70％くらいはZRさんのパッケージによっています。</p>
 
-<p>　pxcjkcatと、関係するパッケージをプリアンブルで読み込みます。</p>
+<p>　px­cjk­catは、それぞれの文字が属するグループを変更することのできるパッケージです。今éは日本語の文字と同じグループに入ってしまっているので、英語のグループの方に入れたいと思います。</p>
 
-<pre><code class="language-LaTeX">\usepackage{bxbase}
-\usepackage[bxutf8]{inputenc}
-\usepackage[prefernoncjk]{pxcjkcat}
+<p>　プリアンブルでパッケージを読み込みます。</p>
+
+<pre><code class="language-LaTeX">\usepackage[utf8]{inputenc}
+\usepackage[&lt;モード&gt;]{pxcjkcat}
 </code></pre>
 
-<p>　BXbaseはZRさんのBX・PXシリーズの基盤になるパッケージです。これを読み込むことで、次のinputencで普通のutf8ではない、ZR版のbxutf8が指定できるようになります。<br />
-（正直この辺は正確なことはさっぱり分かんないまま書いてます。特にinputencの意味と挙動が謎すぎる。ここに至るまでの試行錯誤と詳しい解説らしきものはブログの方にありますので、不明な点があったら見てみてください）</p>
+<p>　inputencパッケージは原稿中にベタ書きするために必要なものです。詳しい説明はこちらを参照してください。<br />
+　　<a href="https://qiita.com/zr_tex8r/items/b40ca3478e4fe14868e5">UTF-8 で欧文文字を入力する ～inputenc パッケージ～ - Qiita</a></p>
 
-<p>　これで本題のpxcjkcatが使えるようになりました。これはそれぞれの文字が属するグループを変更することのできるパッケージです。今éは日本語の文字と同じグループに入っちゃってるので、英語のグループの方に入れたいわけです。<br />
-　<a href="http://mirrors.ctan.org/macros/latex/contrib/pxcjkcat/README-ja">説明書</a>によると指定できるモードは4つです。</p>
+<p>　次の行でpxcjkcatを呼び出しながらモードを指定します。<a href="http://mirrors.ctan.org/macros/latex/contrib/pxcjkcat/README-ja">説明書</a>によると指定できるモードは4つです。</p>
 
 <ul>
 <li>forcecjk：upLaTeXのデフォルトと同じ。英語の文字以外は全て全角の和文扱い。</li>
-<li>prefercjk：Adobeの定めるCJK（中日韓）が包括する部分を和文扱いにする。と言いつつ上とあんまり変わらない。</li>
-<li>prefercjkvar：ギリシャ文字・キリル文字が欧文扱いになる。</li>
+<li>prefercjk：Adobeの定めるCJK（中日韓）が包括する部分を和文扱いにする。上とさほど変わらない。</li>
+<li>prefercjkvar：上に加え、ギリシャ文字・キリル文字が欧文扱いになる。</li>
 <li>prefernoncjk：漢字・かななど最低限のCJK文字のみを和文扱いにし、それ以外は全て欧文扱い。</li>
 </ul>
 
-<p>　ここではフランス語を欧文扱いしたいので、オプションに「prefernoncjk」を指定してやります。これで組んでみましょう。</p>
+<p>　このうち実質的に使うことになるのは後の2つです。どちらを選ぶかは本文の内容によるんですが、まずは一般的と思われる方から見ていきましょう。</p>
 
+<h4 id="横倒ししたい字が少なめな時">横倒ししたい字が少なめな時</h4>
 
-<figure >
-    
-        <img src="https://hakuoku.github.io/agakuTeX/img/43accent2/prefernoncjk.jpg" alt="欧文扱い成功" />
-    
-    
-</figure>
+<p>　使う外国語が仏独西伊あたりに限られ、éやñや£といった「よくある」字のみを横倒しにしたい場合は<code>prefercjkvar</code>を選びます。<br />
+　それだけではほとんどの字が和文扱いになるデフォルトとさして変わらないので、パッケージの機能である<code>\cjkcategory{&lt;ブロック&gt;,...}{&lt;カテゴリ&gt;}</code>命令で欧文扱いにしたいグループを追加してやります。</p>
 
-
-<p>　できたー！できたよおかあさーん！！これで文中にコマンドを使わずすっきり、かつ望む組版結果になりました。</p>
-
-<h4 id="応用編">応用編</h4>
-
-<p>　プリセットの4つのモードはだいぶざっくりしたカテゴリ分けになりますが、実はpxcjkcatパッケージはもっときめ細かな指定をすることが可能です。<br />
-　例えば上で使ったprefernoncjkモードは、本当に最低限しか和文扱いしないので、約物や記号は全部欧文扱いになってしまいます。なのでこういうことが起こります。</p>
-
-
-<figure >
-    
-        <img src="https://hakuoku.github.io/agakuTeX/img/43accent2/noncjkwrong.jpg" alt="全角記号も全て横倒しに" />
-    
-    
-</figure>
-
-
-<p>　パッケージの機能である<code>\cjkcategory</code>コマンドを使うことでこういった事態を回避できます。記号は普通に直打ちできるように和文扱いのままで、フランス語やスペイン語のアルファベットだけ欧文扱いしたい、という時は、プリアンブルで以下のようにしてやります。</p>
-
-<pre><code class="language-LaTeX">\usepackage[prefercjkvar]{pxcjkcat} %varモード。英語・ギリシャ・キリル文字だけ欧文扱いで、他は和文扱い
-\cjkcategory{latn1}{noncjk} %Latin-1 Supplement（アクセントつきアルファベット）を欧文扱いに追加
+<pre><code class="language-LaTeX">\usepackage[utf8]{inputenc}
+\usepackage[prefercjkvar]{pxcjkcat}
+\cjkcategory{latn1}{noncjk}
 </code></pre>
 
-<p>　より詳しい使い方はブログで解説しています。プラス、この次ページの内容も参考にしてください。</p>
-
-<h4 id="参考">参考</h4>
+<p>　éや£はUnicodeの「Latin-1 Supplement」というブロックに属しています。なので説明書を検索して、対応する略語（＝ブロックID）である<code>latn1</code>を最初のカッコに入れてやります。次のカッコではそのブロックを何扱いにするかを指定します。ここでは和文から欧文扱いにしたいので<code>noncjk</code>を入れています。指定できるのは次の5つです。</p>
 
 <ul>
-<li><a href="http://zrbabbler.sp.land.to/pxbase.html#sec-pxcjkcat">BXbase／PXbase パッケージ [電脳世界の奥底にて]</a></li>
-<li><a href="http://zrbabbler.sp.land.to/unichar.html">Unicode による文字の入力 [電脳世界の奥底にて]</a></li>
-<li><a href="http://qiita.com/zr_tex8r/items/5c14042078b20edbfb07">［改訂新版］upLaTeXを使おう - Qiita</a></li>
-<li><a href="http://qiita.com/zr_tex8r/items/b40ca3478e4fe14868e5">UTF-8 で欧文文字を入力する ～inputenc パッケージ～ - Qiita</a></li>
-<li><a href="http://id.fnshr.info/2017/05/27/pxcjkcat/">upLaTeX でアクセント付きのラテン文字などがうまく出力されないときの対処法｜Colorless Green Ideas</a></li>
-<li><a href="http://qiita.com/zr_tex8r/items/297154ca924749e62471#%E3%81%9D%E3%81%AE10uptex%E3%81%AE%E5%92%8C%E6%96%87%E3%82%AB%E3%83%86%E3%82%B4%E3%83%AA%E3%82%B3%E3%83%BC%E3%83%89%E3%81%8C%E3%82%A2%E3%83%AC">『その10：upTeXの和文カテゴリコードがアレ』</a></li>
+<li>noncjk: 欧文扱い</li>
+<li>kanji [または han]: 漢字扱い</li>
+<li>kana: 仮名扱い</li>
+<li>cjk: 「その他の和文」扱い</li>
+<li>hangul: ハングル扱い</li>
 </ul>
+
+<p>　ちなみにこういったコマンドの後につく<code>｛波括弧｝</code>を<strong>引数</strong>といい、前から順に第1引数、第2引数と数えます。オプションと似たような感じで、コマンドに与える指示の詳細を入れるところです。今の場合第1引数は取り扱いたいブロック（コンマで区切って複数指定可）を、第2引数はそれを何扱いするかを表しています。</p>
+
+<p>　これで見事にアクサンテギュeは他のアルファベット同様横向きにできましたが、筆者はこんな副作用が出ました。</p>
+
+
+<figure >
+    
+        <img src="https://hakuoku.github.io/agakuTeX/img/43accent2/kakeru.jpg" alt="×だけが半角に" />
+    
+    
+</figure>
+
+
+<p>　これは×と÷がLatin-1 Supplementに入ってしまっているので欧文扱いになった一方で、全角の＋や＝は全角ゆえにもともと和文扱いになっているためです。<br />
+　別に違和感がなければこのままで大丈夫なんですが、気持ち悪いという時はとりあえず<code>+-=</code>を全部半角で打ってしまうという手があります。<br />
+　どうしても×と÷を全角に寄せたい場合、残念ながら同じブロックに入っている記号を別々に指定することはできないので、局所的に手を打つしかありません。<code>\cjkcategory</code>や<code>\cjkcategorymode</code>を本文中に直接書き込んで、部分的に扱いを変更します。</p>
+
+<pre><code class="language-LaTeX">\usepackage[utf8]{inputenc}
+\usepackage[prefercjkvar]{pxcjkcat}
+\cjkcategory{latn1}{noncjk}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ここでタヌは、消炭《けしずみ》のかけらを拾って歩道の上へ書きつけた。
+\cjkcategory{latn1}{cjk}  %ここでLatin-1を和文扱いにして×と÷を全角に寄せる
+400×2＝800 800＋6＝806 806＋40＝846 846＋400＝1246
+\cjkcategory{latn1}{noncjk}  %元に戻す
+︙
+Quand nous étions deux《おまえとふたりでいたときにゃ》 という小唄を口笛で吹きながら、…  %Latin-1が欧文扱いに戻っているのでéが半角横倒しで表示される
+</code></pre>
+
+
+<figure >
+    
+        <img src="https://hakuoku.github.io/agakuTeX/img/43accent2/kakezan.jpg" alt="算術記号を統一" />
+    
+    
+    <figcaption>
+        <p>
+        右が全角、左が半角に寄せたもの
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+
+
+<p>　十蘭のようにあちこちに出てくるフランス語に比べれば他の記号は大して出てこない、という場合ならこの手が使えると思います。<br />
+　または『黄金虫』のように一箇所だけに半角記号が固まって出てくる場合も局所的な指定でうまくいきます。</p>
+
+<pre><code class="language-LaTeX">\usepackage[utf8]{inputenc}
+\usepackage[prefercjkvar]{pxcjkcat}  %基本的に和文扱い
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+…
+髑髏と山羊とのあいだに、赤い色で、次のような記号が乱雑に出ている。――
+\cjkcategorymode{prefernoncjk} %ここでモードを切り替え
+
+53‡‡†305))6*;4826)4‡.)4‡);806*;48†8¶60))85;1‡(;:‡*8†83(88)5*†;46(;88*96*?;8)*‡(;485);5*†2:*‡(;4956*2(5*―4)8¶8*;4069285);)6†8)4‡‡;1(‡9;48081;8:8‡1;48†85;4)485†528806*81(‡9;48;(88;4(‡?34;48)4‡;161;:188;‡?;
+
+\cjkcategorymode{prefercjkvar} %元に戻す
+「しかし」と私は紙片を彼に返しながら言った。
+…
+</code></pre>
+
+<p>（ちなみにこれはこれで一切のスペースがないので、暗号文全体が「ひとつの単語」と認識されてページの外にはみ出してしまいます。その問題は後回しにしてここでは詳述しません）</p>
+
+<p>　ここまででだいたいのケースには対応できたと思いますが、中にはもっと珍しいőだのāだののような字が出てくる言語を使いたいという剛の者や（ハンガリー語やラトビア語だ）、ソースコード・暗号・英詩といった半角記号の列があちこちに出てくるミステリを書いている人など、もっと欧文扱いする範囲を広くしたい層もいるかもしれません。<br />
+　この先に進むにはそもそも自分の使いたい字がどこに属するのかなどの、Unicodeについての知識が若干必要になります。次項では改めて文字コードについて解説しますので、外国語使いじゃなくても文字が好きな人は覚えていってください。</p>
 
             </section>
             <nav class = "pager" >
     <ul class = "pager-list">
         
-            <li class = "pager-prev"><a href = "https://hakuoku.github.io/agakuTeX/tutorial/accent1/">←アクセントと特殊記号 前編</a></li>
+            <li class = "pager-prev"><a href = "https://hakuoku.github.io/agakuTeX/tutorial/accent1/">←アクセントと特殊記号 (1)</a></li>
         
         
-            <li class = "pager-next"><a href = "https://hakuoku.github.io/agakuTeX/tutorial/unicode/">note：Unicodeを知ろう！→</a></li>
+            <li class = "pager-next"><a href = "https://hakuoku.github.io/agakuTeX/tutorial/unicode/">note：Unicodeで遊ぼう→</a></li>
         
     </ul>
 </nav>
