@@ -5,7 +5,7 @@ date = "2017-04-18T18:13:32+09:00"
 lastmod = "2017-04-19T12:44:26+09:00"
 slug = "settings"
 weight = 320
-topics = ["エンコード", "シンタックスハイライト"]
+topics = ["エンコード", "UTF-8", "シンタックスハイライト"]
 [menu.toc]
     parent = "generate"
 +++

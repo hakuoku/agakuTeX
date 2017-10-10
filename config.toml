@@ -35,11 +35,11 @@ canonifyURLs = false
     identifier = "generate"
     weight = 300
 [[menu.toc]]
-    name = "本文の編集"
+    name = "本文の編集―基盤編"
     identifier = "edit"
     weight = 400
     [[menu.toc]]
-        name = "全角と半角――縦横の制御"
+        name = "全角・半角―文字と記号の縦横"
         identifier = "tateyoko"
         weight = 430
         parent = "edit"
