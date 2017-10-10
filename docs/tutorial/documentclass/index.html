@@ -34,7 +34,7 @@
 <meta name="twitter:site" content="@isaribi_saitoh" />
 <meta name="twitter:creator" content="@isaribi_saitoh" />
 
-    <base href="https://hakuoku.github.io/agakuTeX/">
+    
     <meta name="generator" content="Hugo 0.25.1" />
     <link rel="canonical" href="https://hakuoku.github.io/agakuTeX/tutorial/documentclass/">
     
@@ -170,7 +170,7 @@
     
         
         <li class = "sub-menu">
-        本文の編集
+        本文の編集―基盤編
             <ul class = "sub">
                 
                     
@@ -183,23 +183,23 @@
                 
                     
                     <li class = "sub-menu">
-                    全角と半角――縦横の制御
+                    全角・半角―文字と記号の縦横
                         <ul class = "sub">
                             
                             <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/rensuji/">縦中横</a></li>
                             
                             <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/regex/">note：検索・置換と正規表現</a></li>
                             
-                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/accent1/">アクセントと特殊記号 前編</a></li>
+                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/accent1/">アクセントと特殊記号 (1)</a></li>
                             
-                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/accent2/">アクセントと特殊記号 後編</a></li>
+                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/accent2/">アクセントと特殊記号 (2)</a></li>
+                            
+                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/unicode/">note：Unicodeで遊ぼう</a></li>
+                            
+                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/accent3/">アクセントと特殊記号 (3)</a></li>
                             
                         </ul>
                     </li>
-                    
-                
-                    
-                    <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/unicode/">note：Unicodeを知ろう！</a></li>
                     
                 
             </ul>
@@ -231,7 +231,8 @@
                 
 
 <p>&#x3000;組めたはいいけど横書きだし余白めっちゃあるし何なん？って感じですね。これは一番最初の文である<code>\documentclass{article}</code>に問題があります。<br />
-　この文は「どの<strong>ドキュメントクラス</strong>を使うか」ということを宣言しています。今はarticleです。ドキュメントクラスとは拡張子.clsのファイルのことで、デザイン情報が書かれたスタイルシートのようなものです（TeX Liveインストールフォルダの奥深くに存在している）。文書をどんな設定、どんなレイアウト、どんなデザインにするかは全てこれが握っています。全く同一の本文でも、クラスを取り替えることでガラッと違うレイアウトにできたりします。</p>
+　この文は「どの<strong>ドキュメントクラス</strong>を使うか」ということを宣言しています。今はarticleです。ドキュメントクラスとは拡張子.clsのファイルのことで、デザイン情報が書かれたスタイルシートのようなものです（TeX Liveインストールフォルダの奥深くに存在している）。<br />
+　文書をどんな設定、どんなレイアウト、どんなデザインにするかは全てこれが握っています。全く同一の本文でも、クラスを取り替えることでガラッと違うレイアウトにできたりします。</p>
 
 <p>　「article」は超基本的な、英語の記事や小論のためのクラスです。テストで使ったjsarticleはTeX界の巨人・<a href="https://oku.edu.mie-u.ac.jp/~okumura/">奥村先生</a>の作った、日本語横書き版articleクラスです。文章の規模が増えると「report」、「book」というように使うクラスも大きくしていきます。<br />
 　他にもTeX Liveには山のようなクラスが収録されていて、中には編み物の編み図を描くためのknittingクラスとか、正方形のCDジャケットを作れるcdcoverクラスとかぶっ飛んだものもあります。誰がいつ使うんだろう。<br />

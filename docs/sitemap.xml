@@ -79,12 +79,17 @@
   
   <url>
     <loc>https://hakuoku.github.io/agakuTeX/tutorial/accent2/</loc>
-    <lastmod>2017-07-20T10:38:56+09:00</lastmod>
+    <lastmod>2017-10-10T09:17:11+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://hakuoku.github.io/agakuTeX/tutorial/unicode/</loc>
-    <lastmod>2017-07-20T23:05:21+09:00</lastmod>
+    <lastmod>2017-10-10T10:47:11+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hakuoku.github.io/agakuTeX/tutorial/accent3/</loc>
+    <lastmod>2017-10-10T11:15:56+09:00</lastmod>
   </url>
   
   <url>
@@ -103,14 +108,14 @@
   </url>
   
   <url>
-    <loc>https://hakuoku.github.io/agakuTeX/topics/</loc>
-    <lastmod>2017-07-20T23:05:21+09:00</lastmod>
+    <loc>https://hakuoku.github.io/agakuTeX/about/</loc>
+    <lastmod>2016-12-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://hakuoku.github.io/agakuTeX/about/</loc>
-    <lastmod>2016-12-18T00:00:00+00:00</lastmod>
+    <loc>https://hakuoku.github.io/agakuTeX/topics/babel/</loc>
+    <lastmod>2017-10-10T11:15:56+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -120,13 +125,20 @@
   </url>
   
   <url>
+    <loc>https://hakuoku.github.io/agakuTeX/tags/note/</loc>
+    <lastmod>2017-06-28T13:05:48+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://hakuoku.github.io/agakuTeX/tags/</loc>
+    <lastmod>2017-06-28T13:05:48+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://hakuoku.github.io/agakuTeX/topics/</loc>
-    <lastmod>2017-07-20T23:05:21+09:00</lastmod>
+    <lastmod>2017-10-10T11:15:56+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -137,8 +149,20 @@
   </url>
   
   <url>
-    <loc>https://hakuoku.github.io/agakuTeX/topics/verb/</loc>
-    <lastmod>2017-04-19T13:03:39+09:00</lastmod>
+    <loc>https://hakuoku.github.io/agakuTeX/topics/utf-8/</loc>
+    <lastmod>2017-04-19T12:44:26+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hakuoku.github.io/agakuTeX/topics/unicode/</loc>
+    <lastmod>2017-10-10T10:47:11+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hakuoku.github.io/agakuTeX/topics/uniview/</loc>
+    <lastmod>2017-10-10T10:47:11+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -173,6 +197,12 @@
   </url>
   
   <url>
+    <loc>https://hakuoku.github.io/agakuTeX/topics/%E3%82%AE%E3%83%AA%E3%82%B7%E3%83%A3%E3%82%AD%E3%83%AA%E3%83%AB%E6%96%87%E5%AD%97/</loc>
+    <lastmod>2017-10-10T11:15:56+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://hakuoku.github.io/agakuTeX/topics/%E3%82%B3%E3%83%A1%E3%83%B3%E3%83%88/</loc>
     <lastmod>2017-04-22T19:24:51+09:00</lastmod>
     <priority>0</priority>
@@ -197,6 +227,12 @@
   </url>
   
   <url>
+    <loc>https://hakuoku.github.io/agakuTeX/topics/%E3%83%95%E3%82%A9%E3%83%B3%E3%83%88%E3%82%A8%E3%83%B3%E3%82%B3%E3%83%BC%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0/</loc>
+    <lastmod>2017-10-10T11:15:56+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://hakuoku.github.io/agakuTeX/topics/%E3%83%97%E3%83%AA%E3%82%A2%E3%83%B3%E3%83%96%E3%83%AB/</loc>
     <lastmod>2017-04-22T19:24:51+09:00</lastmod>
     <priority>0</priority>
@@ -205,6 +241,12 @@
   <url>
     <loc>https://hakuoku.github.io/agakuTeX/topics/%E3%83%9E%E3%82%AF%E3%83%AD/</loc>
     <lastmod>2017-04-22T19:24:51+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hakuoku.github.io/agakuTeX/topics/%E5%BC%95%E6%95%B0/</loc>
+    <lastmod>2017-10-10T09:17:11+09:00</lastmod>
     <priority>0</priority>
   </url>
   

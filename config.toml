@@ -1,4 +1,4 @@
-baseurl = "http://replace-this-with-your-hugo-site.com/"
+baseurl = "https://hakuoku.github.io/agakuTeX/"
 title = "あがきながら覚えるTeX"
 theme = "hugo-frais"
 languageCode = "ja"
@@ -6,7 +6,7 @@ DefaultContentLanguage = "ja"
 hasCJKLanguage = true
 preserveTaxonomyNames = true
 publishDir = "docs"
-canonifyURLs = false
+canonifyURLs = true
 
 [params]
     author = "白屋書房"

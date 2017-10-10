@@ -2,7 +2,7 @@
 <html class="no-js" lang="ja" prefix="og: http://ogp.me/ns#">
 <head>
     <meta charset="utf-8">
-    <title>アクセントと特殊記号 前編 | あがきながら覚えるTeX</title>
+    <title>アクセントと特殊記号 (1) | あがきながら覚えるTeX</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="author" content="白屋書房">
@@ -10,7 +10,7 @@
 
     
 <meta property="og:locale" content="ja">
-<meta property="og:title" content="アクセントと特殊記号 前編" />
+<meta property="og:title" content="アクセントと特殊記号 (1)" />
 <meta property="og:description" content="" />
 <meta property="og:site_name" content="あがきながら覚えるTeX" />
 <meta property="og:url" content="https://hakuoku.github.io/agakuTeX/tutorial/accent1/" />
@@ -26,7 +26,7 @@
     
 
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="アクセントと特殊記号 前編" />
+<meta name="twitter:title" content="アクセントと特殊記号 (1)" />
 <meta name="twitter:description" content="" />
 <meta name="twitter:url" content="https://hakuoku.github.io/agakuTeX/tutorial/accent1/" />
 <meta name="twitter:image:src" content="https://hakuoku.github.io/agakuTeX//media/twitter-card.jpg">
@@ -34,7 +34,7 @@
 <meta name="twitter:site" content="@isaribi_saitoh" />
 <meta name="twitter:creator" content="@isaribi_saitoh" />
 
-    <base href="https://hakuoku.github.io/agakuTeX/">
+    
     <meta name="generator" content="Hugo 0.25.1" />
     <link rel="canonical" href="https://hakuoku.github.io/agakuTeX/tutorial/accent1/">
     
@@ -170,7 +170,7 @@
     
         
         <li class = "sub-menu active">
-        本文の編集
+        本文の編集―基盤編
             <ul class = "sub">
                 
                     
@@ -183,23 +183,23 @@
                 
                     
                     <li class = "sub-menu active">
-                    全角と半角――縦横の制御
+                    全角・半角―文字と記号の縦横
                         <ul class = "sub">
                             
                             <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/rensuji/">縦中横</a></li>
                             
                             <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/regex/">note：検索・置換と正規表現</a></li>
                             
-                            <li class="active"><a href="https://hakuoku.github.io/agakuTeX/tutorial/accent1/">アクセントと特殊記号 前編</a></li>
+                            <li class="active"><a href="https://hakuoku.github.io/agakuTeX/tutorial/accent1/">アクセントと特殊記号 (1)</a></li>
                             
-                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/accent2/">アクセントと特殊記号 後編</a></li>
+                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/accent2/">アクセントと特殊記号 (2)</a></li>
+                            
+                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/unicode/">note：Unicodeで遊ぼう</a></li>
+                            
+                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/accent3/">アクセントと特殊記号 (3)</a></li>
                             
                         </ul>
                     </li>
-                    
-                
-                    
-                    <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/unicode/">note：Unicodeを知ろう！</a></li>
                     
                 
             </ul>
@@ -225,7 +225,7 @@
     <main class="content" role="main" id="main-content" itemscope itemtype="http://schema.org/Article">
         <article class="post">
             <header>
-                <h1 class="post__title" itemprop="name">アクセントと特殊記号 前編</h1>
+                <h1 class="post__title" itemprop="name">アクセントと特殊記号 (1)</h1>
             </header>
             <section class="post__content" itemprop="articleBody">
                 
@@ -235,7 +235,7 @@
 
 <figure >
     
-        <img src="img/43accent1/accent.jpg" alt="eだけが縦書きになった仏文" />
+        <img src="https://hakuoku.github.io/agakuTeX/img/43accent1/accent.jpg" alt="eだけが縦書きになった仏文" />
     
     
     <figcaption>
@@ -251,12 +251,12 @@
 
 
 <p>　例え半角幅のアルファベットでも、upLaTeXのデフォルトでは“英語に含まれていない字”はカナや漢字と同じ全角文字のくくりに入るので、和文のように縦に組まれてしまうんです。<br />
-　フランス語とか使わないし、という人でも要注意です。£や†といった、一見普通の半角っぽい記号でも同じ現象が起こります。記号がミソの暗号ミステリ、『黄金虫』とかやってみるとひどいことになります。</p>
+　フランス語とか使わないし、という人でも要注意です。£や†といった、一見普通の半角っぽい記号でも同じ現象が起こります。記号がミソの暗号ミステリ、『黄金虫』なんかでやってみるとひどいことになります。</p>
 
 
 <figure >
     
-        <img src="img/43accent1/GoldBug.jpg" alt="記号の一部だけが縦組みになっている" />
+        <img src="https://hakuoku.github.io/agakuTeX/img/43accent1/GoldBug.jpg" alt="記号の一部だけが縦組みになっている" />
     
     
     <figcaption>
@@ -271,10 +271,10 @@
 </figure>
 
 
-<p>　こうしてはいられないので対策を取るんですが、その前に重要な機能である「<strong>パッケージ</strong>」について説明しちゃいます。記号の表示が全然問題ない人もここだけは覚えていってください。</p>
+<p>　こうしてはいられないので対策を取るんですが、その前に重要な機能である「<strong>パッケージ</strong>」について説明してしまいます。記号の表示が全然問題ない人もここだけは覚えていってください。</p>
 
-<p>　<strong>パッケージ</strong>とは要するにTeXの拡張機能のことで、素のままのTeXにはできない様々な機能を提供してくれるものです。ブラウザのアドオンとかに似てますね。<br />
-　これの実体はTeXへの命令が書かれた.styファイルで、ドキュメントクラスと同様膨大な数がTeX Liveの奥深くに収録されています。TeX文書のプリアンブルで、必要なものを呼び出してやって使います。</p>
+<p>　<strong>パッケージ</strong>とは要するにTeXの拡張機能のことで、素のままのTeXにはできない様々な機能を提供してくれるものです。ブラウザのアドオンなんかに似てますね。<br />
+　これの実体はTeXへの命令が書かれた.styファイルで、ドキュメントクラスと同様膨大な数がTeX Liveの奥深くに収録されています。まだ収録されていない最新のものをサイトからダウンロードして使うこともできます。TeX文書のプリアンブルで、必要なものを呼び出すことによって使用できるようになります。</p>
 
 <p>　実際にやってみましょう。プリアンブルの、今まで書いたマクロなどの前の行に以下を入れます。</p>
 
@@ -283,9 +283,9 @@
 </code></pre>
 
 <p>　<code>\usepackage[オプション]{パッケージ名}</code>という形になります。1行目はfontencパッケージによりT1エンコーディングを選択、２行目はtextcompパッケージを読み込んでいます。<br />
-　この二つのパッケージの機能とか意味は分からなくてもOKです。とりあえずおまじない＆パッケージ呼び出しの基礎として書いておいてください。</p>
+　この二つのパッケージの機能や意味は分からなくてもOKです。とりあえずおまじない＆パッケージ呼び出しの基礎として書いておいてください。</p>
 
-<p>　さてこれを踏まえた上で、横組みの対策をします。</p>
+<p>　さてこれを踏まえた上で、縦向きになってしまう字の対策をします。</p>
 
 <h4 id="古典的な方法">古典的な方法</h4>
 
@@ -306,7 +306,7 @@
     </tbody>
 </table>
 
-<p>　<code>\アクセントコマンド{つけたい文字}</code>のようになっており、組み合わせを変えればどんな字にでもアクセントつけられます。かなや漢字もOK。</p>
+<p>　<code>\アクセントコマンド{つけたい文字}</code>のようになっており、組み合わせを変えればどんな字にでもアクセントがつけられます。かなや漢字でもOK。</p>
 
 <!-- 　[標準的なアクセント分解](http://cosmoshouse.com/tools/acc-conv-j.htm)イコール青空文庫の形式を使っている場合は置換ができます。 -->
 
@@ -353,7 +353,7 @@
     </tbody>
 </table>
 
-<p>　大体エスケープのところでやったのとかぶってますね。まあほぼほぼ「縦向きでいい記号は全角直打ち、横向きにしたい記号はコマンドで入れる」って覚えておけば適切に使い分けられると思います。こんな感じ。</p>
+<p>　大体エスケープのところでやったのとかぶってますね。まあほぼほぼ「縦向きでいい記号は全角直打ち、横向きにしたい記号はコマンドで入れる」と覚えておけば適切に使い分けられると思います。こんな感じです。</p>
 
 <pre><code class="language-LaTeX">チャゲ＆飛鳥　%これは全角のアンド
 DEAN \&amp; DELUCA　%こっちは半角のアンド（コマンド）
@@ -371,7 +371,7 @@ intel{\textregistered} inside.　%コマンドの登録商標マーク
 </figure>
 
 
-<p>　ちなみに上の表のコマンド群はTeXのネイティブ命令なんですが、冒頭でtextcompパッケージを読み込んでいるので、その拡張コマンドを使って入れられる記号の種類が増えてます。<a href="http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/textcomp.html">textcomp.sty: LaTeX パッケージ</a> のページに使える記号とコマンドが載っていますので、必要な人は見てみてください。葉っぱのマークとかあるよ。</p>
+<p>　ちなみに上の表のコマンド群はTeXのネイティブ命令なんですが、冒頭でtextcompパッケージを読み込んでいるので、その拡張コマンドを使って入れられる記号の種類が増えています。<a href="http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/textcomp.html">textcomp.sty: LaTeX パッケージ</a> のページに使える記号とコマンドが載っていますので、必要な人は見てみてください。かわいい葉っぱのマークやなんかがあります。</p>
 
             </section>
             <nav class = "pager" >
@@ -380,7 +380,7 @@ intel{\textregistered} inside.　%コマンドの登録商標マーク
             <li class = "pager-prev"><a href = "https://hakuoku.github.io/agakuTeX/tutorial/regex/">←note：検索・置換と正規表現</a></li>
         
         
-            <li class = "pager-next"><a href = "https://hakuoku.github.io/agakuTeX/tutorial/accent2/">アクセントと特殊記号 後編→</a></li>
+            <li class = "pager-next"><a href = "https://hakuoku.github.io/agakuTeX/tutorial/accent2/">アクセントと特殊記号 (2)→</a></li>
         
     </ul>
 </nav>

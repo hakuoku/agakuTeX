@@ -34,7 +34,7 @@
 <meta name="twitter:site" content="@isaribi_saitoh" />
 <meta name="twitter:creator" content="@isaribi_saitoh" />
 
-    <base href="https://hakuoku.github.io/agakuTeX/">
+    
     <meta name="generator" content="Hugo 0.25.1" />
     <link rel="canonical" href="https://hakuoku.github.io/agakuTeX/tutorial/escape/">
     
@@ -170,7 +170,7 @@
     
         
         <li class = "sub-menu">
-        本文の編集
+        本文の編集―基盤編
             <ul class = "sub">
                 
                     
@@ -183,23 +183,23 @@
                 
                     
                     <li class = "sub-menu">
-                    全角と半角――縦横の制御
+                    全角・半角―文字と記号の縦横
                         <ul class = "sub">
                             
                             <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/rensuji/">縦中横</a></li>
                             
                             <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/regex/">note：検索・置換と正規表現</a></li>
                             
-                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/accent1/">アクセントと特殊記号 前編</a></li>
+                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/accent1/">アクセントと特殊記号 (1)</a></li>
                             
-                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/accent2/">アクセントと特殊記号 後編</a></li>
+                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/accent2/">アクセントと特殊記号 (2)</a></li>
+                            
+                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/unicode/">note：Unicodeで遊ぼう</a></li>
+                            
+                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/accent3/">アクセントと特殊記号 (3)</a></li>
                             
                         </ul>
                     </li>
-                    
-                
-                    
-                    <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/unicode/">note：Unicodeを知ろう！</a></li>
                     
                 
             </ul>
@@ -235,7 +235,7 @@
 <p>　まずは新しくファイルを作り、テストと同じように、最低限の4行を書いてやります。ここでは「chapter01」と名前をつけ（好きな名前でOK。ただしスペースは避け半角英数のみにする）、拡張子を.texにしてUTF-8で保存します。</p>
 
 <p>　あるいは既存の原稿に上書きすることもできます。その場合「ここに～」のところに小説本文が来るように書き込んでください（ただし長編全部は扱いづらいので、長い話はひとまずキリのいいところまでカットするのが吉）。<br />
-　実は拡張子は.txtのままでもTeXWorksに通せます。なのでファイルの保存方式を変えたくない人や、原稿がまだ未完成でこれからも加筆するだろうという人は上書き方式の方がいいと思います。特にスマホで編集したい場合は、texファイルは読み込めないことが多いので.txtのままにしておきましょう。あとは組版だけとなった決定稿の時点で.texにするのが無難かと思います。</p>
+　実は拡張子は.txtのままでもTeXWorksに通せます。なのでファイルの保存方式を変えたくない人や、原稿がまだ未完成でこれからも加筆するだろうという人は上書き方式の方がいいと思います。特にスマホで編集したい場合は、texファイルは読み込めないことが多いので.txtのままにしておきましょう。あとは組版だけとなった決定稿の時点で.texにするのが無難かと思います。なんなら最後までtxtのままでもOKです。</p>
 
 <pre><code class="language-latex">\documentclass{article}
 \begin{document}
@@ -243,7 +243,7 @@
 \end{document}
 </code></pre>
 
-<p>　基本的にTeXは、<strong><code>\</code></strong> （バックスラッシュ。環境によって円マークに見えたり斜め線に見えたりしますが同じものです）を頭につけた<strong>コマンド</strong>という文字列で指示をします。\指示の種類{指示の中身}って感じです。<br />
+<p>　基本的にTeXは、<strong><code>\</code></strong> （バックスラッシュ。環境によって円マークに見えたり斜め線に見えたりしますが同じものです）を頭につけた<strong>コマンド</strong>という文字列で指示をします。\指示の種類{指示の中身}という感じです。<br />
 　<code>\begin</code>と<code>\end</code>は「これこれこういうフィールドが始まります／終わります」という宣言です。この場合は<strong>document</strong>という一番基本のフィールドをこしらえています。これがないとTeX文書になりません。字が植え込まれるこのフィールドのことを「<strong>環境</strong>」と呼びます。「版面」だと思っちゃってもいいです。</p>
 
 <p>　青空文庫の人も同様、新しいtexファイルに本文を入れ込むか元のファイルにコマンドを書きこんで、beginとendで本文を挟みます。原理的にはもうそれで組版できるはずなんですが、私はこんなエラーが出ました。</p>
