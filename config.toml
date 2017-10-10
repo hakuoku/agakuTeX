@@ -1,4 +1,4 @@
-baseurl = "https://hakuoku.github.io/agakuTeX/"
+baseurl = "http://replace-this-with-your-hugo-site.com/"
 title = "あがきながら覚えるTeX"
 theme = "hugo-frais"
 languageCode = "ja"

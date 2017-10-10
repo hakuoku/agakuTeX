@@ -474,8 +474,8 @@ html {
 }
 @media screen and (max-width: 40em) {
     html {
-            font-size: 0.8em;
-            line-height: 1.5em;
+            font-size: 0.85em;
+            line-height: 1.7em;
     }
 }
 .template {
@@ -530,6 +530,11 @@ section.post__comment {
 }
 .about .post__meta__infos {
     text-align: right;
+}
+@media screen and (max-width: 40em) {
+    .about .post__meta__infos {
+        font-size: 0.8em;
+    }
 }
 nav.pager {
     margin-top: 4em;
