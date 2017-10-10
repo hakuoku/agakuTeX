@@ -1,4 +1,4 @@
-baseurl = "https://hakuoku.github.io/agakuTeX/"
+baseurl = "http://replace-this-with-your-hugo-site.com/"
 title = "あがきながら覚えるTeX"
 theme = "hugo-frais"
 languageCode = "ja"
@@ -6,7 +6,7 @@ DefaultContentLanguage = "ja"
 hasCJKLanguage = true
 preserveTaxonomyNames = true
 publishDir = "docs"
-canonifyURLs = true
+canonifyURLs = false
 
 [params]
     author = "白屋書房"
@@ -35,11 +35,11 @@ canonifyURLs = true
     identifier = "generate"
     weight = 300
 [[menu.toc]]
-    name = "本文の編集"
+    name = "本文の編集―基盤編"
     identifier = "edit"
     weight = 400
     [[menu.toc]]
-        name = "全角と半角――縦横の制御"
+        name = "全角・半角―文字と記号の縦横"
         identifier = "tateyoko"
         weight = 430
         parent = "edit"
