@@ -23,12 +23,12 @@
     {{ $currentNode := . }}
     {{ range .Site.Menus.toc }}
         {{ if .HasChildren}}
-        <li class = "sub-menu{{if $currentNode.HasMenuCurrent "toc" . }} active{{end}}">
-        {{.Name}}
-            <ul class = "sub">
+        <li class = "sub-menu{{if $currentNode.HasMenuCurrent "toc" . }} active{{end}} drawer-dropdown">
+        <a class="drawer-menu-item" href="#" data-toggle="dropdown" role="button" aria-expanded="false">{{.Name}} <span class="drawer-caret"></span></a>
+            <ul class = "sub drawer-dropdown-menu">
                 {{ range .Children }}
                     {{ if .HasChildren}}
-                    <li class = "sub-menu{{if $currentNode.HasMenuCurrent "toc" . }} active{{end}}">
+                    <li class = "drawer-dropdown-menu-item sub-menu{{if $currentNode.HasMenuCurrent "toc" . }} active{{end}}">
                     {{.Name}}
                         <ul class = "sub">
                             {{ range .Children }}
@@ -37,7 +37,7 @@
                         </ul>
                     </li>
                     {{ else }}
-                    <li><a href="{{.URL}}">{{ .Name }}</a></li>
+                    <li><a class="drawer-dropdown-menu-item" href="{{.URL}}">{{ .Name }}</a></li>
                     {{ end }}
                 {{end}}
             </ul>
