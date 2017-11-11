@@ -174,6 +174,51 @@
     </item>
     
     <item>
+      <title>引用符</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/quotation/</link>
+      <pubDate>Thu, 09 Nov 2017 13:32:05 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/quotation/</guid>
+      <description>&amp;#x3000;英数字・記号まわりの制御が終わりましたので、今度は日本語・縦書きならではの約物の処理に入ります。まずは引用符（クオーテーショ</description>
+    </item>
+    
+    <item>
+      <title>OTFパッケージ</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/otf/</link>
+      <pubDate>Thu, 09 Nov 2017 13:32:05 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/otf/</guid>
+      <description>&amp;#x3000;OTFパッケージとは、もともとはOpenTypeフォントを扱うためのパッケージだそうですが、日本語あるいはCJKの文字を美し</description>
+    </item>
+    
+    <item>
+      <title>！と？ --縦中横ふたたび</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/exclamation/</link>
+      <pubDate>Thu, 09 Nov 2017 23:13:02 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/exclamation/</guid>
+      <description>&amp;#x3000;自動でグルーが入ってしまう感嘆符と疑問符の制御に入るんですが、その前に縦中横のところでちらっと触れた、rensujiの問題を</description>
+    </item>
+    
+    <item>
+      <title>和文・欧文間のスペース</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/wordglue/</link>
+      <pubDate>Fri, 10 Nov 2017 12:54:43 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/wordglue/</guid>
+      <description>&amp;#x3000;約物ではありませんが、グルーの話が出たのでここでやってしまいます。和文と欧文の間のアキについてです。 青空文庫では、かなや漢字</description>
+    </item>
+    
+    <item>
+      <title>カッコ類</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/brackets/</link>
+      <pubDate>Fri, 10 Nov 2017 14:00:48 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/brackets/</guid>
+      <description>&amp;#x3000;これまで「カギ括弧」や（丸括弧）は何の問題もなく組めたので、それしか使わないという人は飛ばして構いません。それ以外のカッコ類</description>
+    </item>
+    
+    <item>
       <title>青空文庫からの置換一覧</title>
       <link>https://hakuoku.github.io/agakuTeX/tutorial/replace/</link>
       <pubDate>Sun, 07 May 2017 17:50:02 +0900</pubDate>
@@ -189,6 +234,15 @@
       
       <guid>https://hakuoku.github.io/agakuTeX/tutorial/reference/</guid>
       <description>はじめての方へ - TeX Wiki LaTeX入門 - TeX Wiki 日本語公式ドキュメントとも言うべき、「TeX Wiki」の入門記事 TeX/LaTeX入門 - Wikibooks 文系のマカ</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/446_dash/</link>
+      <pubDate>Fri, 10 Nov 2017 14:03:29 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/446_dash/</guid>
+      <description></description>
     </item>
     
     <item>

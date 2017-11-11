@@ -20,5 +20,14 @@
       <description>&amp;#x3000;ここからしばらくめんどくさい記号の制御が続きます。ちまちましてる上変化が分かりにくくてアレなんですが、今後も使う主要な概念が</description>
     </item>
     
+    <item>
+      <title>！と？ --縦中横ふたたび</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/exclamation/</link>
+      <pubDate>Thu, 09 Nov 2017 23:13:02 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/exclamation/</guid>
+      <description>&amp;#x3000;自動でグルーが入ってしまう感嘆符と疑問符の制御に入るんですが、その前に縦中横のところでちらっと触れた、rensujiの問題を</description>
+    </item>
+    
   </channel>
 </rss>

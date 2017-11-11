@@ -6,18 +6,18 @@
     <description>Recent content in Verb on あがきながら覚えるTeX</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Wed, 19 Apr 2017 13:03:39 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 10 Nov 2017 14:00:48 +0900</lastBuildDate>
     
 	<atom:link href="https://hakuoku.github.io/agakuTeX/topics/verb/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>ファイル作成とエスケープ</title>
-      <link>https://hakuoku.github.io/agakuTeX/tutorial/escape/</link>
-      <pubDate>Wed, 19 Apr 2017 13:03:39 +0900</pubDate>
+      <title>カッコ類</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/brackets/</link>
+      <pubDate>Fri, 10 Nov 2017 14:00:48 +0900</pubDate>
       
-      <guid>https://hakuoku.github.io/agakuTeX/tutorial/escape/</guid>
-      <description>&amp;#x3000;いよいよ本チャンの原稿作りに入ります。TeX文法と機能を一つずつ組んで一喜一憂しながら解説します。 まずは新しくファイルを作り</description>
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/brackets/</guid>
+      <description>&amp;#x3000;これまで「カギ括弧」や（丸括弧）は何の問題もなく組めたので、それしか使わないという人は飛ばして構いません。それ以外のカッコ類</description>
     </item>
     
   </channel>

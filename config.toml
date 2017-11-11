@@ -39,7 +39,7 @@ canonifyURLs = true
     identifier = "edit"
     weight = 400
     [[menu.toc]]
-        name = "全角・半角―文字と記号の縦横"
+        name = "全角・半角 --文字と記号の縦横"
         identifier = "tateyoko"
         weight = 430
         parent = "edit"
