@@ -11,6 +11,7 @@ canonifyURLs = true
 [params]
     author = "白屋書房"
     pseudo = "isari"
+    description = "ド素人が魔のシステムTeXで小説を組めるようになるまでのポンコツ入門"
     twitter = "isaribi_saitoh"
     github = "hakuoku"
     blog = "http://hakuoku.hatenablog.com/"
