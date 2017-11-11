@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>外字 on あがきながら覚えるTeX</title>
+    <link>https://hakuoku.github.io/agakuTeX/topics/%E5%A4%96%E5%AD%97/</link>
+    <description>Recent content in 外字 on あがきながら覚えるTeX</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Thu, 09 Nov 2017 13:32:05 +0900</lastBuildDate>
+    
+	<atom:link href="https://hakuoku.github.io/agakuTeX/topics/%E5%A4%96%E5%AD%97/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>OTFパッケージ</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/otf/</link>
+      <pubDate>Thu, 09 Nov 2017 13:32:05 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/otf/</guid>
+      <description>&amp;#x3000;OTFパッケージとは、もともとはOpenTypeフォントを扱うためのパッケージだそうですが、日本語あるいはCJKの文字を美し</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>フォント on あがきながら覚えるTeX</title>
+    <link>https://hakuoku.github.io/agakuTeX/topics/%E3%83%95%E3%82%A9%E3%83%B3%E3%83%88/</link>
+    <description>Recent content in フォント on あがきながら覚えるTeX</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Thu, 09 Nov 2017 13:32:05 +0900</lastBuildDate>
+    
+	<atom:link href="https://hakuoku.github.io/agakuTeX/topics/%E3%83%95%E3%82%A9%E3%83%B3%E3%83%88/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>引用符</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/quotation/</link>
+      <pubDate>Thu, 09 Nov 2017 13:32:05 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/quotation/</guid>
+      <description>&amp;#x3000;英数字・記号まわりの制御が終わりましたので、今度は日本語・縦書きならではの約物の処理に入ります。まずは引用符（クオーテーショ</description>
+    </item>
+    
+  </channel>
+</rss>

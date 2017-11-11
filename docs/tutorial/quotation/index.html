@@ -1,0 +1,406 @@
+<!doctype html>
+<html class="no-js" lang="ja" prefix="og: http://ogp.me/ns#">
+<head>
+    <meta charset="utf-8">
+    <title>引用符 | あがきながら覚えるTeX</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="白屋書房">
+<meta name="description" content="" />
+
+    
+<meta property="og:locale" content="ja">
+<meta property="og:title" content="引用符" />
+<meta property="og:description" content="" />
+<meta property="og:site_name" content="あがきながら覚えるTeX" />
+<meta property="og:url" content="https://hakuoku.github.io/agakuTeX/tutorial/quotation/" />
+
+
+
+
+<meta property="og:type" content="article" />
+<meta property="article:section" content="tutorial" />
+<meta property="article:published_time" content="2017-11-09" />
+<meta property="article:modified_time" content="2017-11-09" />
+
+    
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="引用符" />
+<meta name="twitter:description" content="" />
+<meta name="twitter:url" content="https://hakuoku.github.io/agakuTeX/tutorial/quotation/" />
+<meta name="twitter:image:src" content="https://hakuoku.github.io/agakuTeX//media/twitter-card.jpg">
+<meta name="twitter:domain" content="https://hakuoku.github.io/agakuTeX/">
+<meta name="twitter:site" content="@isaribi_saitoh" />
+<meta name="twitter:creator" content="@isaribi_saitoh" />
+
+    
+    <meta name="generator" content="Hugo 0.25.1" />
+    <link rel="canonical" href="https://hakuoku.github.io/agakuTeX/tutorial/quotation/">
+    
+    
+    <link rel="stylesheet" href="https://hakuoku.github.io/agakuTeX/css/prism.css">
+
+    <link rel="stylesheet" href="https://hakuoku.github.io/agakuTeX/css/drawer.css">
+
+<link rel="stylesheet" href="https://hakuoku.github.io/agakuTeX/css/style.css">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://hakuoku.github.io/agakuTeX/img/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://hakuoku.github.io/agakuTeX/img/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://hakuoku.github.io/agakuTeX/img/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://hakuoku.github.io/agakuTeX/manifest.json">
+<link rel="mask-icon" href="https://hakuoku.github.io/agakuTeX/img/safari-pinned-tab.svg" color="#636363">
+<meta name="apple-mobile-web-app-title" content="あがきながら覚えるTeX">
+<meta name="application-name" content="あがきながら覚えるTeX">
+<meta name="theme-color" content="#333333">
+
+</head>
+
+
+<body class="template template--post drawer drawer--right">
+    <section class="header-wrapper">
+        <header class="headline" role="banner">
+    
+        <a class="headline__title" href="https://hakuoku.github.io/agakuTeX/"><img src="https://hakuoku.github.io/agakuTeX/img/logo.png" alt="Home"></a>
+    
+</header>
+
+        <nav class="menu" role="navigation" id="main-menu">
+    <ul class="menu__items">
+        
+        
+        <li class="blog">
+            <a href="http://hakuoku.hatenablog.com/" title="Blog"><img src="https://hakuoku.github.io/agakuTeX/img/hb.png" alt="Blog"></a>
+        </li>
+        
+        
+        <li class="twitter">
+            <a href="https://twitter.com/isaribi_saitoh" title="Follow me"><img src="https://hakuoku.github.io/agakuTeX/img/tw.png" alt="Follow me"></a>
+        </li>
+        
+        
+        <li class="github">
+            <a href="https://github.com/hakuoku" title="Fork me"><img src="https://hakuoku.github.io/agakuTeX/img/gh.png" alt="Fork me"></a>
+        </li>
+        
+        
+    </ul>
+</nav>
+
+        
+<gcse:searchbox-only></gcse:searchbox-only>
+
+<button type="button" class="drawer-toggle drawer-hamburger">
+  <span class="sr-only">toggle navigation</span>
+  <span class="drawer-hamburger-icon"><img src="https://hakuoku.github.io/agakuTeX/img/toc.png" alt="TOC"></span>
+</button>
+ 
+<nav id="side-menu" class="drawer-nav">
+  <ul class="drawer-menu">
+    
+    <li><a href="https://hakuoku.github.io/agakuTeX/">TOP</a></li>
+    
+    
+        
+        <li class = "sub-menu drawer-dropdown">
+        <a class="drawer-menu-item" href="#" data-toggle="dropdown" role="button" aria-expanded="false">前説 <span class="drawer-caret"></span></a>
+            <ul class = "sub drawer-dropdown-menu">
+                
+                    
+                    <li><a class="drawer-dropdown-menu-item" href="https://hakuoku.github.io/agakuTeX/tutorial/beginning/">発端</a></li>
+                    
+                
+                    
+                    <li><a class="drawer-dropdown-menu-item" href="https://hakuoku.github.io/agakuTeX/tutorial/whatstex/">TeXとは</a></li>
+                    
+                
+                    
+                    <li><a class="drawer-dropdown-menu-item" href="https://hakuoku.github.io/agakuTeX/tutorial/usage/">このサイトの使い方</a></li>
+                    
+                
+            </ul>
+            </li>
+        
+    
+        
+        <li class = "sub-menu drawer-dropdown">
+        <a class="drawer-menu-item" href="#" data-toggle="dropdown" role="button" aria-expanded="false">導入 <span class="drawer-caret"></span></a>
+            <ul class = "sub drawer-dropdown-menu">
+                
+                    
+                    <li><a class="drawer-dropdown-menu-item" href="https://hakuoku.github.io/agakuTeX/tutorial/prepare/">準備</a></li>
+                    
+                
+                    
+                    <li><a class="drawer-dropdown-menu-item" href="https://hakuoku.github.io/agakuTeX/tutorial/install/">インストール</a></li>
+                    
+                
+                    
+                    <li><a class="drawer-dropdown-menu-item" href="https://hakuoku.github.io/agakuTeX/tutorial/test/">テスト</a></li>
+                    
+                
+            </ul>
+            </li>
+        
+    
+        
+        <li class = "sub-menu drawer-dropdown">
+        <a class="drawer-menu-item" href="#" data-toggle="dropdown" role="button" aria-expanded="false">ファイル作成 <span class="drawer-caret"></span></a>
+            <ul class = "sub drawer-dropdown-menu">
+                
+                    
+                    <li><a class="drawer-dropdown-menu-item" href="https://hakuoku.github.io/agakuTeX/tutorial/stuff/">いるもの</a></li>
+                    
+                
+                    
+                    <li><a class="drawer-dropdown-menu-item" href="https://hakuoku.github.io/agakuTeX/tutorial/settings/">設定</a></li>
+                    
+                
+                    
+                    <li><a class="drawer-dropdown-menu-item" href="https://hakuoku.github.io/agakuTeX/tutorial/escape/">ファイル作成とエスケープ</a></li>
+                    
+                
+                    
+                    <li><a class="drawer-dropdown-menu-item" href="https://hakuoku.github.io/agakuTeX/tutorial/documentclass/">ドキュメントクラスの設定</a></li>
+                    
+                
+            </ul>
+            </li>
+        
+    
+        
+        <li class = "sub-menu active drawer-dropdown">
+        <a class="drawer-menu-item" href="#" data-toggle="dropdown" role="button" aria-expanded="false">本文の編集―基盤編 <span class="drawer-caret"></span></a>
+            <ul class = "sub drawer-dropdown-menu">
+                
+                    
+                    <li><a class="drawer-dropdown-menu-item" href="https://hakuoku.github.io/agakuTeX/tutorial/linebreak/">改行・段落</a></li>
+                    
+                
+                    
+                    <li><a class="drawer-dropdown-menu-item" href="https://hakuoku.github.io/agakuTeX/tutorial/indent/">インデント（字下げ）・空白</a></li>
+                    
+                
+                    
+                    <li class = "drawer-dropdown-menu-item sub-menu">
+                    全角・半角 --文字と記号の縦横
+                        <ul class = "sub">
+                            
+                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/rensuji/">縦中横</a></li>
+                            
+                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/regex/">note：検索・置換と正規表現</a></li>
+                            
+                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/accent1/">アクセントと特殊記号 (1)</a></li>
+                            
+                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/accent2/">アクセントと特殊記号 (2)</a></li>
+                            
+                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/unicode/">note：Unicodeで遊ぼう</a></li>
+                            
+                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/accent3/">アクセントと特殊記号 (3)</a></li>
+                            
+                        </ul>
+                    </li>
+                    
+                
+                    
+                    <li class = "drawer-dropdown-menu-item sub-menu active">
+                    約物
+                        <ul class = "sub">
+                            
+                            <li class="active"><a href="https://hakuoku.github.io/agakuTeX/tutorial/quotation/">引用符</a></li>
+                            
+                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/otf/">OTFパッケージ</a></li>
+                            
+                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/exclamation/">！と？ --縦中横ふたたび</a></li>
+                            
+                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/wordglue/">和文・欧文間のスペース</a></li>
+                            
+                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/brackets/">カッコ類</a></li>
+                            
+                        </ul>
+                    </li>
+                    
+                
+            </ul>
+            </li>
+        
+    
+        
+        <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/replace/">青空文庫からの置換一覧</a></li>
+        
+    
+        
+        <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/reference/">主要参考文献</a></li>
+        
+    
+        
+        <li><a href="https://hakuoku.github.io/agakuTeX/topics/">索引</a></li>
+        
+    
+  </ul>
+</nav>
+
+    </section>
+    <main class="content" role="main" id="main-content" itemscope itemtype="http://schema.org/Article">
+        <article class="post">
+            <header>
+                <h1 class="post__title" itemprop="name">引用符</h1>
+            </header>
+            <section class="post__content" itemprop="articleBody">
+                
+
+<p>&#x3000;英数字・記号まわりの制御が終わりましたので、今度は日本語・縦書きならではの約物の処理に入ります。まずは引用符（クオーテーションマーク）です。</p>
+
+<p>　みなさんは引用符をつける時はどう入力していますか？筆者は日本語を囲う時は“左右組になった全角ダブルクォート”を、英語を囲う時やスマホで書いている時は変換ナシで&rdquo;左右同じの半角ダブルクォート&rdquo;を使っています。シングルクォートにも‘左右組になった全角のもの’と&rsquo;左右同じの半角のもの&rsquo;があります。（正確な名称や字形は<a href="https://ja.wikipedia.org/wiki/%E5%BC%95%E7%94%A8%E7%AC%A6#.E6.97.A5.E6.9C.AC.E8.AA.9E.E3.83.BB.E4.B8.AD.E5.9B.BD.E8.AA.9E.E3.83.BB.E6.9C.9D.E9.AE.AE.E8.AA.9E.E3.81.AE.E5.BC.95.E7.94.A8.E7.AC.A6">Wikipedia</a>参照）<br />
+　が、今やっているのは縦書きです。たいていの書籍ではこうなっていると思います。</p>
+
+
+<figure >
+    
+        <img src="https://hakuoku.github.io/agakuTeX/img/44quotation/minute.jpg" alt="縦書き時の引用符" />
+    
+    
+</figure>
+
+
+<p>　これは〝ダブルミニュート〟あるいはノノカギと呼ばれるもので、機種依存文字ではあるんですがUnicodeに収録されているので普通に使えます。コードポイントは301D～F。私はいつも「かっこ」という言葉から変換して入力しています。<br />
+　これをそのまま原稿中に直書きすれば普通のカッコやカギカッコ同様に、ちゃんと正しい向きで組んでくれます。<br />
+（ただしこの時点ではある恐ろしい陥穽がひそんでおり、環境によってそこにハマっているかと思います。後ほど詳しく解説します）</p>
+
+<p>　逆にいつも使っている引用符はどうなるんでしょう？以下のようにして組んでみます。</p>
+
+<pre><code class="language-LaTeX">“全角ダブルクォート（左右違う）”
+&quot;半角ダブルクオート（左右同じ）&quot;
+‘全角シングルクォート（左右違う）’
+'半角シングルクオート（左右同じ）'
+</code></pre>
+
+
+<figure >
+    
+        <img src="https://hakuoku.github.io/agakuTeX/img/44quotation/quotes.jpg" alt="クォートの組版結果" />
+    
+    
+</figure>
+
+
+<p>　ガタガタになりました。半角ダブルクォートだけは使えそうですが、シングルクォートの方はちょっと惜しい感じですし、全角は組方向（縦向き）は合っていますが一文字分のスペースにおける位置が変です。<br />
+　これは別に筆者が書く順番を間違えたのではなく、左右を入れ替えてみてもガタガタのままです。元から縦組みに対応できていないんですね。</p>
+
+<p>　というわけでここではこれらの挙動と組版の慣習にのっとり、縦向きの引用符にはすべからく〝ダブルミニュート〟を使うこととします。どうしてもダブルクォートを使いたい！という場合、手はなくはないんですが高度な職人技を使うことになるのでここではサポート外です。</p>
+
+<p>　では左右違うダブルクォートを横組みで使いたい時はどうすればいいでしょう。十蘭全集にはこういう組み方になっている箇所があります。</p>
+
+
+<figure >
+    
+        <img src="https://hakuoku.github.io/agakuTeX/img/44quotation/p.jpg" />
+    
+    
+</figure>
+
+
+<p>　この場合横書きで全部半角で書く時と変わらないので、TeX本来のルールに従います。こう書きます：<code>Peugeot-``103&rdquo;</code><br />
+　右側は普通の、キーボードの「7」の上にある半角のシングルクォート（アポストロフィ）を2つ続けて書き、左側は<strong>バッククォート</strong>2つを使います。「＠」のキーについているやつです。<br />
+　これでお手本通り綺麗に組めました。半角シングルクォートを使いたい時も同様に、アポストロフィとバッククォートを一つずつ書けば向きが整います。</p>
+
+
+<figure >
+    
+        <img src="https://hakuoku.github.io/agakuTeX/img/44quotation/peujeotdone.jpg" alt="横組み成功" />
+    
+    
+</figure>
+
+
+<p>　さて縦組みとノノカギの方に戻ります。現段階で筆者の環境ではこう表示されています。</p>
+
+
+<figure >
+    
+        <img src="https://hakuoku.github.io/agakuTeX/img/44quotation/ipa.jpg" alt="下のダブルミニュートだけ文字化け" />
+    
+    
+    <figcaption>
+        <p>
+        初めて見た時は悲鳴を上げた
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+
+
+<p>　この四角の窓は「該当する文字がない」ことを表しています。ないってどういうことだよ……タイプセットはちゃんとできてるのに……と最初は途方に暮れましたが、これはフォントに原因があってのことです。<br />
+　今使っているTeXWorksの標準PDFプレビューは、デフォルトでIPA明朝を使って最終的な組版結果を出してくれています。そしてどういうわけか、本当に不可解なことに、<strong>IPAフォントには受け側のダブルミニュートが収録されていないんです</strong>。<br />
+　<a href="http://ipafont.ipa.go.jp/">IPAフォント</a>はフリーで膨大な漢字を網羅しているフォントです。商用利用可能なので、紙の本を作って売る時に使ったという人も多いんではないでしょうか。<br />
+　これが使えないとなると正直困ります。MS明朝だけは絶対に使いたくないし（権利的にも微妙）、小塚やヒラギノは基本有償というか母製品を買わないと使えないし、他のフリーフォントは漢字をほとんどサポートしていなかったりするし。（最近<a href="https://source.typekit.com/source-han-serif/jp/">源ノ明朝</a>が出たけれど）<br />
+　実は他にもフォントによって揺れる箇所はたくさんあって、使うフォント次第ではこういう問題が一切起きなかったりします。実際小塚明朝で組んだ時はベタ書きから出力してほとんど支障がありませんでした。<br />
+　なので使いたいフォントが決まっている人や、いろいろ変えてみて一番いいのを選びたいという人は「フォント」の項まで行った後で、またこの「約物」のセクションまで戻ってきてください。改めておかしな表示になっている箇所に対策を施すことになります。<br />
+　ちなみにTeXで使用フォントを変えるというのはこれはこれでうんざりするほどややこしくて面倒くさい作業です。無事にここに戻ってこられることを祈ります。</p>
+
+<p>　以上を踏まえた上で、IPA明朝でダブルミニュートを表示させる方法に入りたいところですが、これには強力な<strong>otfパッケージ</strong>の挙動が絡んでくるので次項で説明します。何かと言及されることが多いパッケージなので、約物に問題がない人も基本的に使う方針でいてください。</p>
+
+<h4 id="参考">参考</h4>
+
+<ul>
+<li><a href="http://www.fugenji.org/~thomas/texlive-guide/vertical.html">縦書きしてみよう</a></li>
+<li><a href="http://d.hatena.ne.jp/works014/20070728">ダブルミニュートにご注意 - なんでやねんDTP</a></li>
+<li><a href="http://d.hatena.ne.jp/NAOI/20081104/1225780207">Adobe-Japan1とInDesignの二重引用符 - Mac OS Xの文字コード問題に関するメモ</a></li>
+</ul>
+
+            </section>
+            <nav class = "pager" >
+    <ul class = "pager-list">
+        
+            <li class = "pager-prev"><a href = "https://hakuoku.github.io/agakuTeX/tutorial/accent3/">←アクセントと特殊記号 (3)</a></li>
+        
+        
+            <li class = "pager-next"><a href = "https://hakuoku.github.io/agakuTeX/tutorial/otf/">OTFパッケージ→</a></li>
+        
+    </ul>
+</nav>
+
+        </article>
+        <section class="post__comment">
+            <div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'hakuoku';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </section>
+    </main>
+    <footer class="legal" role="contentinfo">
+    <p>&copy; 2017 Hakuoku Shobo Some Rights Reserved. Performed by <a href="//gohugo.io" title="Hugo :: A fast and modern static website engine">Hugo</a> .</p>
+
+
+</footer>
+
+    
+<script type="text/javascript" src="https://hakuoku.github.io/agakuTeX/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="https://hakuoku.github.io/agakuTeX/js/prism.js"></script>
+<script type="text/javascript" src="https://hakuoku.github.io/agakuTeX/js/iscroll.js"></script>
+<script type="text/javascript" src="https://hakuoku.github.io/agakuTeX/js/drawer.min.js"></script>
+<script type="text/javascript" src="https://hakuoku.github.io/agakuTeX/js/dropdown.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+      $(".drawer").drawer();
+    });
+</script>
+
+</body>
+</html>
