@@ -1,5 +1,5 @@
 +++
-title = "！と？ --縦中横ふたたび"
+title = "！と？ - 縦中横ふたたび"
 date = "2017-11-09T23:13:02+09:00"
 description = ""
 slug = "exclamation"
@@ -36,11 +36,17 @@ topics = ["連数字", "plext", "マクロ", "makeatletter"]
 　二重の符号は全て`\rensuji{!?}`で入れている時のケースです。以下のマクロを追加します。
 
 ```LaTeX
+%行を節約したければ末尾の％を取った上で1行にまとめちゃってもいいです
 \makeatletter
-\newcommand{\renmark}[1]{\@ifnextchar」{\rensuji{#1}}{\rensuji{#1}\hspace{1zw}}}
+\newcommand{\renmark}[1]{%
+\@ifnextchar」{\rensuji{#1}}{%
+\@ifnextchar』{\rensuji{#1}}{%
+\@ifnextchar）{\rensuji{#1}}{%
+\rensuji{#1}\hspace{1zw}}}}}
 \makeatother
 ```
 
+　`\makeatletter`というのはコマンド名として「＠」を使えるようにするという命令です。`\makeatother`で離脱します。これを書かないで＠入りのマクロを書くとエラーになります。以降もここの内側に書くマクロが出てくるでしょう。
 　こうした後に、!!・!?・?!・??を囲っているコマンドをrensujiから**renmark**に変更します。これで自動でグルーが入るようになりました。
 
 ##### よりみち
@@ -55,18 +61,22 @@ topics = ["連数字", "plext", "マクロ", "makeatletter"]
 `‼`（二重感嘆符記号そのもの）を使っている場合でもグルーを入れられます。以下のマクロを使います。
 
 ```LaTeX
-%行を節約したければ全部1行にまとめちゃってもいいです
 \makeatletter
-\def\‼{\@ifnextchar」{‼}{‼\hspace{1zw}}}
-\def\⁉{\@ifnextchar」{⁉}{⁉\hspace{1zw}}}
-\def\⁈{\@ifnextchar」{⁈}{⁈\hspace{1zw}}}
-\def\⁇{\@ifnextchar」{⁇}{⁇\hspace{1zw}}}
+\def\‼{\@ifnextchar」{‼}{\@ifnextchar』{‼}{\@ifnextchar）{‼}{‼\hspace{1zw}}}}}
+\def\⁉{\@ifnextchar」{⁉}{\@ifnextchar』{⁉}{\@ifnextchar）{⁉}{⁉\hspace{1zw}}}}}
+\def\⁈{\@ifnextchar」{⁈}{\@ifnextchar』{⁈}{\@ifnextchar）{⁈}{⁈\hspace{1zw}}}}}
+\def\⁇{\@ifnextchar」{⁇}{\@ifnextchar』{⁇}{\@ifnextchar）{⁇}{⁇\hspace{1zw}}}}}
 \makeatother
 ```
 
 　本文に書く時には、ただの‼ではなく`\‼`と入れてください。これで記号自体が一種のコマンドのようになって自動で空きを入れてくれます。
 
-　そしてすいません、このページのやりかただと、受け側のカギ括弧!!」の直前にはグルーが入らないようになっていますが、カギ括弧以外の丸括弧!!　）やその他括弧!!　｝の前にはグルーが入ってしまいます。二重感嘆符は会話で使われるのが最も多いだろうと考えてのことですがやはり片手落ちです。今の筆者の技術力ではこれが精一杯でした……いい方法がありましたらご教授ください。
+　~~そしてすいません、このページのやりかただと、受け側のカギ括弧!!」の直前にはグルーが入らないようになっていますが、カギ括弧以外の丸括弧!!　）やその他括弧!!　｝の前にはグルーが入ってしまいます。二重感嘆符は会話で使われるのが最も多いだろうと考えてのことですがやはり片手落ちです。今の筆者の技術力ではこれが精一杯でした……いい方法がありましたらご教授ください。~~
+
+（2017/11/15追記）  
+　ZRさんが解決策を教えて下さいました！上のコードも修正してあります。  
+　`\renmark`・`\‼`ともに、`\@ifnextchar`の後に入っている閉じカッコを変えれば対応カッコの種類を変えることができます。ネスト（入れ子構造）を追加すれば3種類以上にも増やせます。
+
 
 #### 参考
 - [LaTeXによる小説誌制作のヒント ｜ 文藝部LaTeX研究会](https://qdaibungei.github.io/latex/2017/10/12/book-making-hints.html)
