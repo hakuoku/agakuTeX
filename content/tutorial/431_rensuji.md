@@ -4,7 +4,7 @@ date = "2017-06-27T11:19:16+09:00"
 title = "縦中横"
 weight = 431
 slug = "rensuji"
-topics = ["連数字"]
+topics = ["連数字", "二重感嘆符"]
 [menu.toc]
     parent = "tateyoko"
 +++

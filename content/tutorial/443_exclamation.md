@@ -5,7 +5,7 @@ description = ""
 slug = "exclamation"
 weight = 443
 topics = ["連数字", "plext", "マクロ", "makeatletter"]
-lastmod = "2017-11-17T21:20:03+09:00"
+lastmod = "2017-11-19T09:07:48+09:00"
 [menu.toc]
     parent = "punctuation"
 +++
@@ -47,8 +47,10 @@ lastmod = "2017-11-17T21:20:03+09:00"
 \makeatother
 ```
 
-　`\makeatletter`というのはコマンド名として「＠」を使えるようにするという命令です。`\makeatother`で離脱します。これを書かないで＠入りのマクロを書くとエラーになります。以降もここの内側に書くマクロが出てくるでしょう。
-　こうした後に、!!・!?・?!・??を囲っているコマンドをrensujiから**renmark**に変更します。これで自動でグルーが入るようになりました。
+　`\makeatletter`というのはコマンド名として「＠」を使えるようにするという命令です。`\makeatother`で離脱します。これを書かないで＠入りのマクロを書くとエラーになります。以降もここの内側に書くマクロが出てくるでしょう。  
+　こうした後に、!!・!?・?!・??を囲っているコマンドをrensujiから**renmark**に変更します。これで自動でグルーが入るようになりました。一括置換は以下です。  
+
+　　検索する文字列：`\\rensuji\{([!?！？]{2,3})\}`　→　置換する文字列：`\\renmark{\1}`
 
 ##### よりみち
 　前項からかなりマクロが出てきてちょうどいいので、ここでさわりだけ解説しちゃいます。  
@@ -81,4 +83,5 @@ lastmod = "2017-11-17T21:20:03+09:00"
 
 #### 参考
 - [LaTeXによる小説誌制作のヒント ｜ 文藝部LaTeX研究会](https://qdaibungei.github.io/latex/2017/10/12/book-making-hints.html)
-- [macros - Understanding \@ifnextchar - TeX - LaTeX Stack Exchange](https://tex.stackexchange.com/questions/57788/understanding-ifnextchar)
+- [Understanding \@ifnextchar - TeX - LaTeX Stack Exchange](https://tex.stackexchange.com/questions/57788/understanding-ifnextchar)
+- [How to peek and test whether the next character is a digit? - TeX - LaTeX Stack Exchange](https://tex.stackexchange.com/questions/323311/how-to-peek-and-test-whether-the-next-character-is-a-digit)
