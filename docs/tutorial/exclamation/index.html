@@ -217,8 +217,16 @@
                             
                             <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/brackets/">カッコ類</a></li>
                             
+                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/dash/">ダッシュ</a></li>
+                            
+                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/parameter/">note：変数と長さの単位</a></li>
+                            
                         </ul>
                     </li>
+                    
+                
+                    
+                    <li><a class="drawer-dropdown-menu-item" href="https://hakuoku.github.io/agakuTeX/tutorial/summary1/">まとめ</a></li>
                     
                 
             </ul>
@@ -249,7 +257,7 @@
             <section class="post__content" itemprop="articleBody">
                 
 
-<p>&#x3000;自動でグルーが入ってしまう感嘆符と疑問符の制御に入るんですが、その前に<a href="https://hakuoku.github.io/agakuTeX/tutorial/rensuji">縦中横</a>のところでちらっと触れた、rensujiの問題を片付けてしまいましょう。上下に小さな空きが入って隣とずれてしまうという問題です。<br />
+<p>&#x3000;自動でグルーが入ってしまう感嘆符と疑問符の制御に入るんですが、その前に<a href="https://hakuoku.github.io/agakuTeX/tutorial/rensuji/#fn:1">縦中横</a>のところでちらっと触れた、rensujiの問題を片付けてしまいましょう。上下に小さな空きが入って隣とずれてしまうという問題です。<br />
 　実は<code>\rensuji{}</code>コマンドというのはTeX/LaTeXネイティブの命令ではなく、パッケージ<strong>plext</strong>の機能です。日本語の、特に縦書きで活字を並べることをサポートしてくれるパッケージです。ドキュメントクラスにutbookを指定した時点で自動で読み込まれています。<br />
 　このplextを調べてみたところ、どうやら連数字を入れるスペースが全角1文字分の高さより高く設定されているようでした。なのでマクロでrensujiコマンドを設定し直すことにします。</p>
 
@@ -273,8 +281,9 @@
 <h4 id="スペースを入れていない場合">スペースを入れていない場合</h4>
 
 <p>　執筆中はスペースを入れないけれど、縦書きである以上組版結果では空きが入っていてほしいですよね。そのためOTFの自動グルー機能に頼ります。これは符号が行末に来た時、次の行頭に空きが入らないように自動で調整してくれます。後の心配をする必要はありません。<br />
-　ただし!?のような半角を2つ並べたものにはグルーが入りません。そこを手で入れてたら本末転倒なので、ある程度自動化してみようと思います。<br />
-　二重の符号は全て<code>\rensuji{!?}</code>で入れている時のケースです。以下のマクロを追加します。</p>
+　ただし!?のような半角を2つ並べたものにはグルーが入りません。そこを手で入れてたら本末転倒なので、ある程度自動化してみようと思います。</p>
+
+<p>　二重の符号は全て<code>\rensuji{!?}</code>で入れている時のケースです。以下のマクロを追加します。</p>
 
 <pre><code class="language-LaTeX">%行を節約したければ末尾の％を取った上で1行にまとめちゃってもいいです
 \makeatletter
@@ -286,8 +295,10 @@
 \makeatother
 </code></pre>
 
-<p>　<code>\makeatletter</code>というのはコマンド名として「＠」を使えるようにするという命令です。<code>\makeatother</code>で離脱します。これを書かないで＠入りのマクロを書くとエラーになります。以降もここの内側に書くマクロが出てくるでしょう。
-　こうした後に、!!・!?・?!・??を囲っているコマンドをrensujiから<strong>renmark</strong>に変更します。これで自動でグルーが入るようになりました。</p>
+<p>　<code>\makeatletter</code>というのはコマンド名として「＠」を使えるようにするという命令です。<code>\makeatother</code>で離脱します。これを書かないで＠入りのマクロを書くとエラーになります。以降もここの内側に書くマクロが出てくるでしょう。<br />
+　こうした後に、!!・!?・?!・??を囲っているコマンドをrensujiから<strong>renmark</strong>に変更します。これで自動でグルーが入るようになりました。一括置換は以下です。</p>
+
+<p>　　検索する文字列：<code>\\rensuji\{([!?！？]{2,3})\}</code>　→　置換する文字列：<code>\\renmark{\1}</code></p>
 
 <h5 id="よりみち">よりみち</h5>
 
@@ -322,7 +333,8 @@
 
 <ul>
 <li><a href="https://qdaibungei.github.io/latex/2017/10/12/book-making-hints.html">LaTeXによる小説誌制作のヒント ｜ 文藝部LaTeX研究会</a></li>
-<li><a href="https://tex.stackexchange.com/questions/57788/understanding-ifnextchar">macros - Understanding \@ifnextchar - TeX - LaTeX Stack Exchange</a></li>
+<li><a href="https://tex.stackexchange.com/questions/57788/understanding-ifnextchar">Understanding \@ifnextchar - TeX - LaTeX Stack Exchange</a></li>
+<li><a href="https://tex.stackexchange.com/questions/323311/how-to-peek-and-test-whether-the-next-character-is-a-digit">How to peek and test whether the next character is a digit? - TeX - LaTeX Stack Exchange</a></li>
 </ul>
 
             </section>

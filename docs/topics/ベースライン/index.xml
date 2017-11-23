@@ -20,5 +20,14 @@
       <description>&amp;#x3000;これまで「カギ括弧」や（丸括弧）は何の問題もなく組めたので、それしか使わないという人は飛ばして構いません。それ以外のカッコ類</description>
     </item>
     
+    <item>
+      <title>ダッシュ</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/dash/</link>
+      <pubDate>Fri, 10 Nov 2017 14:03:29 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/dash/</guid>
+      <description>&amp;#x3000;ダッシュ（ダーシ、倍角ダッシュ）――は好きですか？私は大好きです。めちゃめちゃ使います。ところがTeXにおいて倍角ダッシュは</description>
+    </item>
+    
   </channel>
 </rss>

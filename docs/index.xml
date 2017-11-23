@@ -219,6 +219,33 @@
     </item>
     
     <item>
+      <title>ダッシュ</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/dash/</link>
+      <pubDate>Fri, 10 Nov 2017 14:03:29 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/dash/</guid>
+      <description>&amp;#x3000;ダッシュ（ダーシ、倍角ダッシュ）――は好きですか？私は大好きです。めちゃめちゃ使います。ところがTeXにおいて倍角ダッシュは</description>
+    </item>
+    
+    <item>
+      <title>note：変数と長さの単位</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/parameter/</link>
+      <pubDate>Sun, 19 Nov 2017 10:08:20 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/parameter/</guid>
+      <description>&amp;#x3000;ちょこっとだけプログラミングっぽい話します。先ほど出てきた\tbaselineshiftや字下げの項で使った\parinde</description>
+    </item>
+    
+    <item>
+      <title>まとめ</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/summary1/</link>
+      <pubDate>Thu, 23 Nov 2017 00:09:25 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/summary1/</guid>
+      <description>&amp;#x3000;ここまでのまとめとして、現時点でのソースの様子を載せておきます。 この例はパッケージや自動処理を最大限使った場合のものになって</description>
+    </item>
+    
+    <item>
       <title>青空文庫からの置換一覧</title>
       <link>https://hakuoku.github.io/agakuTeX/tutorial/replace/</link>
       <pubDate>Sun, 07 May 2017 17:50:02 +0900</pubDate>
@@ -234,15 +261,6 @@
       
       <guid>https://hakuoku.github.io/agakuTeX/tutorial/reference/</guid>
       <description>はじめての方へ - TeX Wiki LaTeX入門 - TeX Wiki 日本語公式ドキュメントとも言うべき、「TeX Wiki」の入門記事 TeX/LaTeX入門 - Wikibooks 文系のマカ</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://hakuoku.github.io/agakuTeX/tutorial/446_dash/</link>
-      <pubDate>Fri, 10 Nov 2017 14:03:29 +0900</pubDate>
-      
-      <guid>https://hakuoku.github.io/agakuTeX/tutorial/446_dash/</guid>
-      <description></description>
     </item>
     
     <item>
