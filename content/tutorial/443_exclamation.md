@@ -5,12 +5,12 @@ description = ""
 slug = "exclamation"
 weight = 443
 topics = ["連数字", "plext", "マクロ", "makeatletter"]
-lastmod = "2017-11-17T21:20:03+09:00"
+lastmod = "2017-11-19T09:07:48+09:00"
 [menu.toc]
     parent = "punctuation"
 +++
 
-&#x3000;自動でグルーが入ってしまう感嘆符と疑問符の制御に入るんですが、その前に[縦中横](/tutorial/rensuji)のところでちらっと触れた、rensujiの問題を片付けてしまいましょう。上下に小さな空きが入って隣とずれてしまうという問題です。  
+&#x3000;自動でグルーが入ってしまう感嘆符と疑問符の制御に入るんですが、その前に[縦中横](/tutorial/rensuji/#fn:1)のところでちらっと触れた、rensujiの問題を片付けてしまいましょう。上下に小さな空きが入って隣とずれてしまうという問題です。  
 　実は`\rensuji{}`コマンドというのはTeX/LaTeXネイティブの命令ではなく、パッケージ**plext**の機能です。日本語の、特に縦書きで活字を並べることをサポートしてくれるパッケージです。ドキュメントクラスにutbookを指定した時点で自動で読み込まれています。  
 　このplextを調べてみたところ、どうやら連数字を入れるスペースが全角1文字分の高さより高く設定されているようでした。なのでマクロでrensujiコマンドを設定し直すことにします。
 
@@ -33,7 +33,8 @@ lastmod = "2017-11-17T21:20:03+09:00"
 
 #### スペースを入れていない場合
 　執筆中はスペースを入れないけれど、縦書きである以上組版結果では空きが入っていてほしいですよね。そのためOTFの自動グルー機能に頼ります。これは符号が行末に来た時、次の行頭に空きが入らないように自動で調整してくれます。後の心配をする必要はありません。  
-　ただし!?のような半角を2つ並べたものにはグルーが入りません。そこを手で入れてたら本末転倒なので、ある程度自動化してみようと思います。  
+　ただし!?のような半角を2つ並べたものにはグルーが入りません。そこを手で入れてたら本末転倒なので、ある程度自動化してみようと思います。
+
 　二重の符号は全て`\rensuji{!?}`で入れている時のケースです。以下のマクロを追加します。
 
 ```LaTeX
@@ -47,8 +48,10 @@ lastmod = "2017-11-17T21:20:03+09:00"
 \makeatother
 ```
 
-　`\makeatletter`というのはコマンド名として「＠」を使えるようにするという命令です。`\makeatother`で離脱します。これを書かないで＠入りのマクロを書くとエラーになります。以降もここの内側に書くマクロが出てくるでしょう。
-　こうした後に、!!・!?・?!・??を囲っているコマンドをrensujiから**renmark**に変更します。これで自動でグルーが入るようになりました。
+　`\makeatletter`というのはコマンド名として「＠」を使えるようにするという命令です。`\makeatother`で離脱します。これを書かないで＠入りのマクロを書くとエラーになります。以降もここの内側に書くマクロが出てくるでしょう。  
+　こうした後に、!!・!?・?!・??を囲っているコマンドをrensujiから**renmark**に変更します。これで自動でグルーが入るようになりました。一括置換は以下です。  
+
+　　検索する文字列：`\\rensuji\{([!?！？]{2,3})\}`　→　置換する文字列：`\\renmark{\1}`
 
 ##### よりみち
 　前項からかなりマクロが出てきてちょうどいいので、ここでさわりだけ解説しちゃいます。  
@@ -81,4 +84,5 @@ lastmod = "2017-11-17T21:20:03+09:00"
 
 #### 参考
 - [LaTeXによる小説誌制作のヒント ｜ 文藝部LaTeX研究会](https://qdaibungei.github.io/latex/2017/10/12/book-making-hints.html)
-- [macros - Understanding \@ifnextchar - TeX - LaTeX Stack Exchange](https://tex.stackexchange.com/questions/57788/understanding-ifnextchar)
+- [Understanding \@ifnextchar - TeX - LaTeX Stack Exchange](https://tex.stackexchange.com/questions/57788/understanding-ifnextchar)
+- [How to peek and test whether the next character is a digit? - TeX - LaTeX Stack Exchange](https://tex.stackexchange.com/questions/323311/how-to-peek-and-test-whether-the-next-character-is-a-digit)
