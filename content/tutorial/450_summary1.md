@@ -57,4 +57,6 @@ weight = 450
 \end{document}
 ```
 
+{{< figure src="/img/45summary1/summary.png" caption="" alt="まとめの組版結果" class="" >}}
+
 　これで基盤編は終了です。次からはよりダイナミックで楽しい、組版らしい組版作業に入っていきます。お疲れ様でした！

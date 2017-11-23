@@ -217,8 +217,16 @@
                             
                             <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/brackets/">カッコ類</a></li>
                             
+                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/dash/">ダッシュ</a></li>
+                            
+                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/parameter/">note：変数と長さの単位</a></li>
+                            
                         </ul>
                     </li>
+                    
+                
+                    
+                    <li><a class="drawer-dropdown-menu-item" href="https://hakuoku.github.io/agakuTeX/tutorial/summary1/">まとめ</a></li>
                     
                 
             </ul>
@@ -264,7 +272,7 @@
 </figure>
 
 
-<p>　ただ、<code>39度の一夜を</code>のようななところはどうすればいいでしょう？向きは縦にしておきたいけど、できれば3と9を縦にじゃなく横にくっつけて並べたいですよね。青空文庫なら<code>39［＃「39」は縦中横］</code>となっている部分です。<br />
+<p>　ただ、<code>39度の一夜を</code>のようなところはどうすればいいでしょう？向きは縦にしておきたいけど、できれば3と9を縦にじゃなく横にくっつけて並べたいですよね。青空文庫なら<code>39［＃「39」は縦中横］</code>となっている部分です。<br />
 　そんな時は<strong>rensuji</strong>コマンドを使います。半角文字を半角のまま、いわば「全角一文字分の高さのスペースにおける横書き」にしてくれます。<br />
 　実際に見た方が早いです。<code class="language-latex">一様に\rensuji{39}度の一夜を</code>のように書いてやるとこうなります。<sup class="footnote-ref" id="fnref:1"><a rel="footnote" href="#fn:1">1</a></sup></p>
 
@@ -287,11 +295,11 @@
 
 <p>　コマンドへの検索・置換は以下です。本文の部分だけを範囲選択後に、「選択範囲のみ」と「正規表現」にチェックを入れるのを忘れないでください。</p>
 
-<p>検索する文字列：<code>([!?！？]{2,3})</code>　→　置換後の文字列：<code>\\rensuji{\1}</code></p>
+<p>　　検索する文字列：<code>([!?！？]{2,3})</code>　→　置換後の文字列：<code>\\rensuji{\1}</code></p>
 
 <p>　記号でない英数字の置換はちょっと難しいです。横倒しにしたい長い欧文の部分を <em>除いて</em> 範囲選択→置換を、本文の終わりまで繰り返します。</p>
 
-<p>検索する文字列：<code>([0-9a-zA-Z０-９ａ-ｚＡ-Ｚ]{2,3})</code>　→　置換後の文字列：<code>\\rensuji{\1}</code></p>
+<p>　　検索する文字列：<code>([0-9a-zA-Z０-９ａ-ｚＡ-Ｚ]{2,3})</code>　→　置換後の文字列：<code>\\rensuji{\1}</code></p>
 
 <p>　<code>{2,3}</code>のところが文字数を表していて、この場合は2文字以上3文字以下（つまり2文字か3文字）の英数字がヒットします。4文字でも連数字にしたい時は<code>{2,4}</code>、一文字の英数も半角で入れて縦向きにしたいときは<code>{1,3}</code>というように、状況に合わせて文字数の部分を変えてください。<br />
 　それでもなおかなり文脈によるところが大きいので、「すべて置換」はせずに一回ずつ「次を検索」＆「置換」を押すか、置換はせずに検索だけを使って手で書き換えるのが安全です。</p>
