@@ -4,6 +4,7 @@ date = "2017-11-23T00:09:25+09:00"
 description = ""
 slug = "summary1"
 weight = 450
+lastmod = "2017-11-24T21:49:32+09:00"
 [menu.toc]
     parent = "edit"
 +++
@@ -20,8 +21,8 @@ weight = 450
 \usepackage[greek,russian,english,japanese]{babel}  %同上
 \usepackage{textcomp}
 \usepackage[utf8]{inputenc}
-\usepackage[prefernoncjk]{pxcjkcat}  %最低限だけCJKであとは全部欧文扱い
-\cjkcategory{sym18,sym19}{cjk}  %♡や■を和文扱い　‼やダッシュコマンドを使いたいならsym04を追加
+\usepackage[prefercjkvar]{pxcjkcat}  %英語・ギリシャ・キリル以外は全部和文扱い
+\cjkcategory{latn1,latnA}{noncjk}  %Latin-1 SupplementとExtended-Aを欧文扱い
 
 %%%
 
@@ -39,7 +40,7 @@ weight = 450
 %ダッシュの位置調整
 \AtBeginDocument{\tbaselineshift = 2.75pt}
 %もしくはダッシュコマンドを使う
-%\def\――{―\kern-.5zw―\kern-.5zw―}
+\def\――{―\kern-.5zw―\kern-.5zw―}
 
 \makeatletter  %＠が入るマクロはここの内側に書く
 %感嘆・疑問符用の連数字コマンド（自動でグルーが入る）
@@ -53,7 +54,7 @@ weight = 450
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 〝\foreignlanguage{russian}{Братья Карамазовы}\〟の第\rensuji{12}編を読みながらCrème brûléeを食べていた\foreignlanguage{greek}{Ἀριστοτέλης}が唐突に
-「――エスト！エスト\renmark{!!}エスト\renmark{!!!}」と叫んだ。
+「------エスト！エスト\renmark{!!}エスト\renmark{!!!}」と叫んだ。
 \end{document}
 ```
 
