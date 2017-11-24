@@ -316,7 +316,7 @@ html {
 }
 @media screen and (max-width: 40em) {
     .content {
-        padding: 0 0.4em;
+        padding: 0 .8em;
     }
 }
 
