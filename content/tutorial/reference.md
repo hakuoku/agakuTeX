@@ -1,5 +1,5 @@
 +++
-title = "主要参考文献"
+title = "主要参考文献（随時追加）"
 description = ""
 date = "2016-12-31T20:21:48+09:00"
 slug = "reference"

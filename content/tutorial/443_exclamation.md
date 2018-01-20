@@ -20,7 +20,7 @@ lastmod = "2017-11-19T09:07:48+09:00"
 \def\rensuji#1{\hskip\kanjiskip\hbox to 1zw{\yoko\hss\smash{#1}\hss\rule[-0.12zw]{0zw}{1zw}}\hskip\kanjiskip}
 ```
 
-　例によって意味は分からなくても大丈夫です。詳しくはブログの記事で説明しています。  
+　例によって意味は分からなくても大丈夫です。詳しくは[ブログの記事](http://hakuoku.hatenablog.com/entry/2017/11/23/152241)で説明しています。  
 　これで連数字の高さがきちんと他の字と揃いましたので、改めて感嘆符・疑問符についてです。
 
 　普段文章を書く時、！や？の後ろにスペースを入れていますか？筆者は全く入れていません。全角で単独の！の後にも、半角の!?の後にも入れず、次の字とびったりくっつけて書いています。  
@@ -44,7 +44,9 @@ lastmod = "2017-11-19T09:07:48+09:00"
 \@ifnextchar」{\rensuji{#1}}{%
 \@ifnextchar』{\rensuji{#1}}{%
 \@ifnextchar）{\rensuji{#1}}{%
-\rensuji{#1}\hspace{1zw}}}}}
+\@ifnextchar…{\rensuji{#1}}{%
+\@ifnextchar―{\rensuji{#1}}{%
+\rensuji{#1}\hspace{1zw}}}}}}}
 \makeatother
 ```
 
@@ -66,10 +68,10 @@ lastmod = "2017-11-19T09:07:48+09:00"
 
 ```LaTeX
 \makeatletter
-\def\‼{\@ifnextchar」{‼}{\@ifnextchar』{‼}{\@ifnextchar）{‼}{‼\hspace{1zw}}}}}
-\def\⁉{\@ifnextchar」{⁉}{\@ifnextchar』{⁉}{\@ifnextchar）{⁉}{⁉\hspace{1zw}}}}}
-\def\⁈{\@ifnextchar」{⁈}{\@ifnextchar』{⁈}{\@ifnextchar）{⁈}{⁈\hspace{1zw}}}}}
-\def\⁇{\@ifnextchar」{⁇}{\@ifnextchar』{⁇}{\@ifnextchar）{⁇}{⁇\hspace{1zw}}}}}
+\def\‼{\@ifnextchar」{‼}{\@ifnextchar』{‼}{\@ifnextchar）{‼}{\@ifnextchar…{‼}{\@ifnextchar―{‼}{‼\hspace{1zw}}}}}}}
+\def\⁉{\@ifnextchar」{⁉}{\@ifnextchar』{⁉}{\@ifnextchar）{⁉}{\@ifnextchar…{⁉}{\@ifnextchar―{⁉}{⁉\hspace{1zw}}}}}}}
+\def\⁈{\@ifnextchar」{⁈}{\@ifnextchar』{⁈}{\@ifnextchar）{⁈}{\@ifnextchar…{⁈}{\@ifnextchar―{⁈}{⁈\hspace{1zw}}}}}}}
+\def\⁇{\@ifnextchar」{⁇}{\@ifnextchar』{⁇}{\@ifnextchar）{⁇}{\@ifnextchar…{⁇}{\@ifnextchar―{⁇}{⁇\hspace{1zw}}}}}}}
 \makeatother
 ```
 
@@ -80,6 +82,9 @@ lastmod = "2017-11-19T09:07:48+09:00"
 （2017/11/17追記）  
 　ZRさんが解決策を教えて下さいました！上のコードも修正してあります。  
 　`\renmark`・`\‼`ともに、`\@ifnextchar`の後に入っている閉じカッコを変えれば対応カッコの種類を変えることができます。ネスト（入れ子構造）を追加すれば3種類以上にも増やせます。
+
+（2017/12/01追記）  
+　感嘆符類の後に続く句読点やリーダー類のことを考えていなかったのでさらに修正しました。
 
 
 #### 参考

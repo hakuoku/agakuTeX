@@ -51,7 +51,7 @@ lastmod = "2017-11-24T21:49:32+09:00"
 \def\⁈{\@ifnextchar」{⁈}{\@ifnextchar』{⁈}{\@ifnextchar）{⁈}{⁈\hspace{1zw}}}}}
 \def\⁇{\@ifnextchar」{⁇}{\@ifnextchar』{⁇}{\@ifnextchar）{⁇}{⁇\hspace{1zw}}}}}
 \makeatother
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%
 \begin{document}
 〝\foreignlanguage{russian}{Братья Карамазовы}\〟の第\rensuji{12}編を読みながらCrème brûléeを食べていた\foreignlanguage{greek}{Ἀριστοτέλης}が唐突に
 「------エスト！エスト\renmark{!!}エスト\renmark{!!!}」と叫んだ。
