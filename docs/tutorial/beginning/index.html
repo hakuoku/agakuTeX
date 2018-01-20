@@ -234,11 +234,28 @@
         
     
         
-        <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/replace/">青空文庫からの置換一覧</a></li>
+        <li class = "sub-menu drawer-dropdown">
+        <a class="drawer-menu-item" href="#" data-toggle="dropdown" role="button" aria-expanded="false">本文の編集 - 発展編 <span class="drawer-caret"></span></a>
+            <ul class = "sub drawer-dropdown-menu">
+                
+                    
+                    <li><a class="drawer-dropdown-menu-item" href="https://hakuoku.github.io/agakuTeX/tutorial/flush/">カスタム字下げ・地寄せ</a></li>
+                    
+                
+                    
+                    <li><a class="drawer-dropdown-menu-item" href="https://hakuoku.github.io/agakuTeX/tutorial/ruby/">ルビ</a></li>
+                    
+                
+            </ul>
+            </li>
         
     
         
-        <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/reference/">主要参考文献</a></li>
+        <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/replace/">青空文庫からの置換一覧（作成中）</a></li>
+        
+    
+        
+        <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/reference/">主要参考文献（随時追加）</a></li>
         
     
         
@@ -260,18 +277,18 @@
 　もうどれくらいワープロソフトを使ってないんだろう。だってイライラしませんか……重いしフォントパッと変えてくれないし変な改段とかツッコミ入れるし日本語の扱い方下手だし行間とかマージンとか全然思い通りにならないし……。<br />
 　いやわかってるんですよ、今日びそれでも随分改善されてきてて、プロでもない人間が文章を整形して刷るにはWordが一番早くて楽だってことぐらいは。<br />
 　特に今はPDFとして出力してくれる機能があるので、共同編集ナシで成果物だけを渡すとなると多分Word最強です。たとえ誰かと一緒に編集する時でも、今はGoogleドキュメントもWord OnlineもLibreOfficeもあるんだし。<br />
-　あるいはたとえWordに頼らないとしても、今はテキストから直にPDFが作れるエンジンが各印刷所や有志から公開されてるので、なにも要らん苦労をする必要はないわけです。（特に個人開発のフリーウェア・「<a href="http://tokimi.sylphid.jp/?FrontPage">威沙</a>」はすごいです。やりたいことがほぼ何でもできます。プレーンテキスト派の人はまずはここを使いましょう。）<br />
+　あるいはたとえWordに頼らないとしても、今はテキストから直にPDFが作れるエンジンが各印刷所や有志から公開されてるので、なにもいらん苦労をする必要はないわけです。（特に個人開発のフリーウェア・「<a href="http://tokimi.sylphid.jp/?FrontPage">威沙</a>」はすごいです。やりたいことがほぼ何でもできます。プレーンテキスト派の人はまずはここを使いましょう。）<br />
 　というわけでこれから多大な時間と労力を使いたくない方は、多少の使いづらさは諦めて他の道を模索してください。それぐらいTeXは古くてめんどくさいです。</p>
 
 <p>　ではなぜ数々の困難を圧してまでTeXを使うのか？　<strong>だって綺麗なんだもん。</strong><br />
-　綺麗というのはもちろん組版の仕上がりのこともですが、その前段階、原稿から印刷の指示まですべてシンプルなテキストファイルでできるということをも指しています。</p>
+　綺麗というのはもちろん組版の仕上がりのこともですが、その前段階の、原稿から印刷の指示まですべてシンプルなテキストファイルでできるということをも指しています。</p>
 
 <p>　テキストファイル（プレーンテキスト）というのは文字通り、「文字情報だけ」のファイルです。どんなマシンでも前準備なしで開けます。Windowsのメモ帳、Macのテキストエディットで開く質素なアレです。文章の中身だけで書体情報がないので、中央寄せとかしたくてもできないし、文字の大きさなんかも指定できません。<br />
 　ご存じの方も多いでしょうが、Wordをはじめとするいわゆるワープロソフトというのは、文章そのものにフォントとか色とか位置とかページサイズとか、いろんな情報をくっつけた上でファイルに仕立ててくれます。だから送ってもらったWordファイルを開けば、送り主の作った通りの文書がそのまま出てきます。<br />
 　ただしそれは、“送り主と同じバージョンのWordが入ったパソコンで開けば”の話です。バージョンが違うとデザインがガッタガタに崩れたりするし、そもそもWordがないマシンでは開けません。ちょっと前（2000年代初めくらい？）まではわりと全国「Wordが入ってない？どういうこと？」な状況だったような気がしますが、PCの買い方の多様化が進み、オフィスソフトを入れずに値段を抑えたマシンなどもポピュラーになりました。iPhoneの普及でMacユーザーも爆発的に増えました。いきなりWordファイルを送られても読めない端末が増えたということです。時代はクロスプラットフォームだぜ。</p>
 
 <p>　TeXや、その他のテキストファイルを軸とした体系を使う理由はこの、「どこにでも送れてどこででも読める」ということに尽きると思います。<br />
-　もちろんどんなワープロファイルも自分でソフトを入れれば普通に開けるようになるし、大学のレポートくらいなら私もそれで充分間に合わせてました。しかしやはり単純さという点ではプレーンテキストに優るものはありません。<br />
+　もちろんどんなワープロファイルも自分でソフトを入れれば普通に開けるようになるし、大学のレポートくらいなら私もそれで充分間に合わせていました。しかしやはり単純さという点ではプレーンテキストに優るものはありません。<br />
 　多分一番わかりやすいのが、ファイルを開くときの立ち上がりの軽さです。Wordを開くのってめちゃくちゃ重くないですか？スペック低いマシンだと10秒とかもっととかかかる。あとスマホで編集するのは無理がある。テキストファイルなら、好みのアプリからいつでも閲覧・編集できます。<br />
 　他にもプレーンテキストでできることはいろいろあって、筆者はそんなプレーンテキスト至上主義者であるがゆえにTeXに手を出しました。</p>
 
@@ -315,7 +332,7 @@
         </section>
     </main>
     <footer class="legal" role="contentinfo">
-    <p>&copy; 2017 Hakuoku Shobo Some Rights Reserved. Performed by <a href="//gohugo.io" title="Hugo :: A fast and modern static website engine">Hugo</a> .</p>
+    <p>&copy; 2018 Hakuoku Shobo Some Rights Reserved. Performed by <a href="//gohugo.io" title="Hugo :: A fast and modern static website engine">Hugo</a> .</p>
 
 
 </footer>

@@ -44,7 +44,7 @@
       <pubDate>Sat, 31 Dec 2016 20:04:25 +0900</pubDate>
       
       <guid>https://hakuoku.github.io/agakuTeX/tutorial/prepare/</guid>
-      <description>&amp;#x3000;ではさっそく使ってみようじゃないか、と思ったところでまずつまずきます。こことかこことか見ても、全然導入方法が分かんない。そも</description>
+      <description>&amp;#x3000;ではさっそく使ってみようじゃないか、と思ったところでまずつまずきます。こことかこことか見ても、全然導入方法がわかんない。そも</description>
     </item>
     
     <item>
@@ -246,7 +246,25 @@
     </item>
     
     <item>
-      <title>青空文庫からの置換一覧</title>
+      <title>カスタム字下げ・地寄せ</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/flush/</link>
+      <pubDate>Thu, 27 Apr 2017 07:52:54 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/flush/</guid>
+      <description>&amp;#x3000;ここまでで、日本語の文章に共通して出てくる要素はほぼ組めたと思います。これ以降は原稿に出てくる時にだけ使うオプショナルなコマ</description>
+    </item>
+    
+    <item>
+      <title>ルビ</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/ruby/</link>
+      <pubDate>Fri, 19 Jan 2018 16:56:10 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/ruby/</guid>
+      <description>&amp;#x3000;さあやってまいりました日本語の華、振り仮名（ルビ）。個人的にルビが好きで好きで好きすぎてTeXに足を突っ込んだのでこのパート</description>
+    </item>
+    
+    <item>
+      <title>青空文庫からの置換一覧（作成中）</title>
       <link>https://hakuoku.github.io/agakuTeX/tutorial/replace/</link>
       <pubDate>Sun, 07 May 2017 17:50:02 +0900</pubDate>
       
@@ -255,7 +273,7 @@
     </item>
     
     <item>
-      <title>主要参考文献</title>
+      <title>主要参考文献（随時追加）</title>
       <link>https://hakuoku.github.io/agakuTeX/tutorial/reference/</link>
       <pubDate>Sat, 31 Dec 2016 20:21:48 +0900</pubDate>
       

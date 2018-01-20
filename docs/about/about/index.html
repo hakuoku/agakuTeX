@@ -234,11 +234,28 @@
         
     
         
-        <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/replace/">青空文庫からの置換一覧</a></li>
+        <li class = "sub-menu drawer-dropdown">
+        <a class="drawer-menu-item" href="#" data-toggle="dropdown" role="button" aria-expanded="false">本文の編集 - 発展編 <span class="drawer-caret"></span></a>
+            <ul class = "sub drawer-dropdown-menu">
+                
+                    
+                    <li><a class="drawer-dropdown-menu-item" href="https://hakuoku.github.io/agakuTeX/tutorial/flush/">カスタム字下げ・地寄せ</a></li>
+                    
+                
+                    
+                    <li><a class="drawer-dropdown-menu-item" href="https://hakuoku.github.io/agakuTeX/tutorial/ruby/">ルビ</a></li>
+                    
+                
+            </ul>
+            </li>
         
     
         
-        <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/reference/">主要参考文献</a></li>
+        <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/replace/">青空文庫からの置換一覧（作成中）</a></li>
+        
+    
+        
+        <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/reference/">主要参考文献（随時追加）</a></li>
         
     
         
@@ -257,11 +274,20 @@
             <section class="post__content" itemprop="articleBody">
                 <p>&#x3000;DTP知識ゼロ・プログラミング経験ほぼなしの文系人間が、「それでも綺麗に<ruby>小説<rp>（</rp><rt>・・</rt><rp>）</rp></ruby>を組版したい！」と思いつめた末にTeXの魔道に落ち、悪戦苦闘しながらどうにか体裁を整えるところまでは来た過程を、テキトーな文章で記した実録風チュートリアルです。</p>
 
-<p>　自分の備忘録兼、日本語の文書を作る時、初心者が参考できるような場所が欲しいと思って書きました。<br />
-　とにかくTeXのての字も知らなかった人間が書いてるので、きちんとしたリファレンスや手順をお求めの方にはまったく役に立ちません。筆者と同じレベルの、本当に初歩の初歩の入門編を探している方向けです。「インストールすらうまくいかない」「文法の意味もわからない」という方は、これを読めば少しは前進できるかもしれません。<br />
-　また小説および縦組みの日本語を組版する、というのが大前提ですので、論文その他&rdquo;正しい&rdquo;TeXの使い方をお探しの方のお役にも立てないと思います。論文の組み方については熟練の使い手さんたちがネット上に充実したドキュメントを上げておられますので、どうぞそちらをご参照ください。</p>
+<p>　自分の備忘録兼、日本語の文書を作る時、初心者が参考できるような場所が欲しいと思って書きました。以下のような方々に捧げます。</p>
 
-<p>　こんなポンコツが書いてますがフィードバック、質問はいつでも大歓迎です。なにぶんポンコツなので私に訊いてもたぶん問題は解決しませんが、初歩的な「ここで詰まった」を一緒に考えていけるようなサイトにできればと思っております。逆にお詳しい方はお叱り、ご意見を頂ければ大変助かります。</p>
+<ul>
+<li>Wordを使わずに高品位な縦書きPDFを作ってみたい人</li>
+<li>PCとスマホ、執筆と組版でいちいちファイルを変えずに、シームレスな原稿執筆をしたい人</li>
+<li>DTP知識はあるけれどマークアップ制御式のTeXも学んでみたい人</li>
+<li>大学でTeXを使うよう言われたものの何がなんだかさっぱり分からない人</li>
+</ul>
+
+<p>　とにかくTeXのての字も知らなかった人間が書いてるので、きちんとしたリファレンスや手順にはなっていません。筆者と同じレベルの、本当に初歩の初歩の入門編を探している方向けです。「インストールすらうまくいかない」「文法の意味もわからない」という方は、これを読めば少しは前進できるかもしれません。</p>
+
+<p>　また小説および縦書きの日本語を組版する、というのが大前提ですので、論文その他の正しいTeXの使い方をお探しの方には合わない箇所が多々出てきます。論文の組み方については熟練の使い手さんたちがネット上に充実したドキュメントを上げておられますので、そちらをご参照の上、共通の部分の理解の助けになればと思います。</p>
+
+<p>　こんなポンコツが書いていますがフィードバック、質問はいつでも大歓迎です。なにぶんポンコツなので私に訊いてもたぶん問題は解決しませんが、初歩的な「ここで詰まった」を一緒に考えていけるようなサイトにできればと思っております。逆にお詳しい方はお叱り、ご意見を頂ければ大変助かります。</p>
 
 <p>　免責事項：あくまでド素人によるガイドですので、もし失敗して何か損害が発生しましても保証は致しかねます。心配な方はちゃんと紙の教科書を読んだほうが無難です。</p>
 
@@ -297,7 +323,7 @@
         </section>
     </main>
     <footer class="legal" role="contentinfo">
-    <p>&copy; 2017 Hakuoku Shobo Some Rights Reserved. Performed by <a href="//gohugo.io" title="Hugo :: A fast and modern static website engine">Hugo</a> .</p>
+    <p>&copy; 2018 Hakuoku Shobo Some Rights Reserved. Performed by <a href="//gohugo.io" title="Hugo :: A fast and modern static website engine">Hugo</a> .</p>
 
 
 </footer>

@@ -133,6 +133,16 @@
   </url>
   
   <url>
+    <loc>https://hakuoku.github.io/agakuTeX/tutorial/flush/</loc>
+    <lastmod>2018-01-19T15:25:09+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hakuoku.github.io/agakuTeX/tutorial/ruby/</loc>
+    <lastmod>2018-01-19T16:56:10+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://hakuoku.github.io/agakuTeX/tutorial/replace/</loc>
     <lastmod>2017-05-07T17:50:02+09:00</lastmod>
   </url>
@@ -144,12 +154,12 @@
   
   <url>
     <loc>https://hakuoku.github.io/agakuTeX/about/about/</loc>
-    <lastmod>2016-12-18T00:00:00+00:00</lastmod>
+    <lastmod>2018-01-09T11:17:39+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://hakuoku.github.io/agakuTeX/about/</loc>
-    <lastmod>2016-12-18T00:00:00+00:00</lastmod>
+    <lastmod>2018-01-09T11:17:39+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -171,6 +181,12 @@
   </url>
   
   <url>
+    <loc>https://hakuoku.github.io/agakuTeX/topics/hfill/</loc>
+    <lastmod>2018-01-19T15:25:09+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://hakuoku.github.io/agakuTeX/topics/kern/</loc>
     <lastmod>2017-11-24T21:32:55+09:00</lastmod>
     <priority>0</priority>
@@ -179,6 +195,12 @@
   <url>
     <loc>https://hakuoku.github.io/agakuTeX/topics/makeatletter/</loc>
     <lastmod>2017-11-19T09:07:48+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hakuoku.github.io/agakuTeX/topics/newenvironment/</loc>
+    <lastmod>2018-01-19T15:25:09+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -207,6 +229,12 @@
   </url>
   
   <url>
+    <loc>https://hakuoku.github.io/agakuTeX/topics/pxrubrica/</loc>
+    <lastmod>2018-01-19T16:56:10+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://hakuoku.github.io/agakuTeX/tags/</loc>
     <lastmod>2017-06-28T13:05:48+09:00</lastmod>
     <priority>0</priority>
@@ -215,6 +243,12 @@
   <url>
     <loc>https://hakuoku.github.io/agakuTeX/topics/tbaselineshift/</loc>
     <lastmod>2017-11-24T21:32:55+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hakuoku.github.io/agakuTeX/topics/tex-live%E3%81%AE%E3%82%A2%E3%83%83%E3%83%97%E3%83%87%E3%83%BC%E3%83%88/</loc>
+    <lastmod>2018-01-19T16:56:10+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -381,6 +415,12 @@
   </url>
   
   <url>
+    <loc>https://hakuoku.github.io/agakuTeX/topics/%E5%9E%82%E7%9B%B4%E6%96%B9%E5%90%91%E3%81%A8%E6%B0%B4%E5%B9%B3%E6%96%B9%E5%90%91/</loc>
+    <lastmod>2018-01-19T15:25:09+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://hakuoku.github.io/agakuTeX/topics/%E5%A4%96%E5%AD%97/</loc>
     <lastmod>2017-11-09T13:32:05+09:00</lastmod>
     <priority>0</priority>
@@ -407,6 +447,12 @@
   <url>
     <loc>https://hakuoku.github.io/agakuTeX/topics/%E7%92%B0%E5%A2%83/</loc>
     <lastmod>2017-04-26T23:07:39+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hakuoku.github.io/agakuTeX/topics/%E7%92%B0%E5%A2%83%E3%81%AE%E5%AE%9A%E7%BE%A9/</loc>
+    <lastmod>2018-01-19T15:25:09+09:00</lastmod>
     <priority>0</priority>
   </url>
   

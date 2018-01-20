@@ -2,11 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Newenvironment on あがきながら覚えるTeX</title>
-    <link>https://hakuoku.github.io/agakuTeX/topics/newenvironment/index.xml</link>
+    <link>https://hakuoku.github.io/agakuTeX/topics/newenvironment/</link>
     <description>Recent content in Newenvironment on あがきながら覚えるTeX</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <atom:link href="https://hakuoku.github.io/agakuTeX/topics/newenvironment/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 27 Apr 2017 07:52:54 +0900</lastBuildDate>
+    
+	<atom:link href="https://hakuoku.github.io/agakuTeX/topics/newenvironment/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>カスタム字下げ・地寄せ</title>
@@ -14,164 +17,7 @@
       <pubDate>Thu, 27 Apr 2017 07:52:54 +0900</pubDate>
       
       <guid>https://hakuoku.github.io/agakuTeX/tutorial/flush/</guid>
-      <description>
-
-&lt;p&gt;&amp;#x3000;ここまでで、日本語の縦書き小説に絶対必要な最低限の要素は組めたと思います。これ以降は原稿に出てくる時にだけ使うオプショナルなコマンドが主ですが、体系的に覚えたい人・エラーが連発する人は原稿の中身に関わらず順番に読んでいって下さい。&lt;/p&gt;
-
-&lt;p&gt;　さてデフォルトの1字下げはできましたが、文中にはあえてもっと字下げしてあるところや、下げるというかむしろページの一番下まで付けてある行なんかもあります。ノンシャラン道中記の手紙のパートは、青空形式ではこんな風に表されています。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;［＃ここから１字下げ、折り返して２字下げ］
-長男のジャック　――巴里大学の法科に入学させてくだされたく、行すえは弁護士。
-二女のジャックリイヌ　――伯爵の継嗣《あととり》にお嫁《かたづ》け下さい。
-三男のアンリ　――海軍士官学校へ。
-四女のイレーヌ　――オペラの技芸学校へ。
-五男のポオル　――マチスとか申す画描きのところに弟子入りさせて下さい。
-六女のマリイ　――この子に学問はいりません。
-七男のルイ　――安南のＰ・Ｍ・Ｄ木綿会社へ見習いにやって下さい。
-八女のソフィ　――実のところ、わたくしも、この子の処置についてはまだ考えてはおりません。しかし、大実業家、又は相当の家柄から養女に望まれましたらば、そこへお遣《つかわ》し下さる様。
-［＃ここで字下げ終わり］
-［＃地から１字上げ］信実なるＡ・ジェルメエヌ。
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;　字下げには&lt;code&gt;\leftskip&lt;/code&gt;コマンドを使います。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\leftskip = ○zw%
-本文
-\leftskip = 0zw%
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;　と囲ってやります。○のところには、下げたい字数を入れてください。この場合は1ですね。zwというのは長さの単位でzenkaku widthの略です。つまり1zwで日本語1文字分の幅のことになります。&lt;br /&gt;
-　上げ下げするんだから幅じゃなくて高さだろう、と思うかもしれませんが、基本的に横書きシステムであるTeXにおいて、縦書き文書の中では&lt;strong&gt;全てがタテヨコ反転します&lt;/strong&gt;。このコマンドも本来は横書きにおける行頭、つまり &lt;em&gt;左端&lt;/em&gt; の空きを制御するものです。それを90°回転させて縦書きに適用すると、天の方向にある行頭を制御できることになります。レイアウトの時特に注意が必要になるので覚えておいてください。&lt;/p&gt;
-
-&lt;p&gt;　［折り返して2字下げ］とは？という感じですが、例えば箇条書きや戯曲形式など、文がびっちり上まで入って欲しくない時に、折り返した行をある高さまで押し込むことがあります。これをぶら下げインデントといい、&lt;code&gt;\hangindent&lt;/code&gt;コマンドで対応します。&lt;/p&gt;
-
-
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://hakuoku.github.io/agakuTeX/img/43/play.png&#34; alt=&#34;戯曲の例&#34; /&gt;
-    
-    
-    &lt;figcaption&gt;
-        &lt;p&gt;
-        例（岡本綺堂『人狼』）
-        
-            
-        
-        &lt;/p&gt; 
-    &lt;/figcaption&gt;
-    
-&lt;/figure&gt;
-
-
-&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\hangindent = ●zw
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;　ぶら下げたい行頭の &lt;em&gt;全て&lt;/em&gt; にこれをつけます（コマンドと本文の間は半角スペースで空ける）。●には押し込みたい字数を入れますが、冒頭の例では1字下げと組み合わさっているので、2字からleftskipの1字分を引いた1が入ります。改行ごとにリセットされるコマンドなので&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;、範囲の行頭全てに入れてください。&lt;/p&gt;
-
-&lt;p&gt;　1、2行ならこれでいいですが、使いたい箇所が多かったり、台本など本文全体にハングインデントが入る場合はいちいち行頭に書かずに挟み込みで済ませたいですよね。そういう時には、自分で\begin{}～\end{}の環境を作ってしまいます。プリアンブルに以下を入れた後、&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\newenvironment{hangall}[1]{\hangindent = #1zw\everypar{\hangindent = #1zw}}{}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;ぶら下げしたい範囲を以下で囲います。●が押し込む字数になります。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\begin{hangall}{●}%
-本文
-\end{hangall}%
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;　環境の定義は覚えると大変便利なんですが、ここでは詳しくやりません。筆者もよく分かってないので、いつかマスターできたら解説記事を立てたいです。&lt;/p&gt;
-
-&lt;h4 id=&#34;地寄せ-地付き&#34;&gt;地寄せ・地付き&lt;/h4&gt;
-
-&lt;p&gt;　地寄せの方は一行か複数行かでコマンドが変わります。一行だけ、またはある行の中の一部分だけ寄せたい時は&lt;code&gt;\hfill&lt;/code&gt;、複数行の時は&lt;code&gt;\raggedleft&lt;/code&gt;で対応します。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;二人はそれぎり黙って風呂へはいった。{\hfill \rightskip = ☆zw （掲載誌不詳、『十番随筆』所収）\par}%
-
-{\raggedleft \rightskip = ☆zw%
-昭和十八年四月二十四日稿了
-　　同　　四月二十九日清書
-}%
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;　｛｝の中にコマンドと寄せたい箇所が入ります。☆は下端からの距離で、冒頭の例なら1ですね。完全な地付きの場合は\rightskipごと割愛してOKです。&lt;br /&gt;
-　hfillはhorizontal fillの略で、水平方向（＝文字送り方向。縦書きなので垂直方向）に伸縮するグルー（穴埋め余白）を入れてくれるコマンドです。そもそも&lt;code&gt;\hspace{長さ}&lt;/code&gt;という余白を出力するコマンドがあって、これは数値を手動で指定して入れるものですが、hfillはその自動伸び縮み版というイメージです。&lt;/p&gt;
-
-
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://hakuoku.github.io/agakuTeX/img/43/hfill.png&#34; alt=&#34;hfillの図示&#34; /&gt;
-    
-    
-    &lt;figcaption&gt;
-        &lt;p&gt;
-        これを90°回転させて考えます
-        
-            
-        
-        &lt;/p&gt; 
-    &lt;/figcaption&gt;
-    
-&lt;/figure&gt;
-
-
-&lt;p&gt;　raggedleftの方は横書きで言ったら右寄せに当たるのになんで「left」かとなりますが、［左側に揃えない、左側がガタガタの］って意味だからいいんだそうです。raggedrightというコマンドもあるので混同しないようにしてください。&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:2&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;p&gt;　これらを組み合わせることで、大概の字下げ地寄せには対応できると思います。最終的なソースと出力は以下のようになりました。&lt;br /&gt;
-　コマンドの後ろにいちいち%がついていますが、これは改行マクロの副作用を打ち消すためのおまじないなので&lt;strong&gt;消さないでください&lt;/strong&gt;。以降コマンドしかない行の最後には必ず%がつくことになります。&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:3&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:3&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;その後ろの日本語コメント部分は消しても大丈夫です。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\newenvironment{hangall}[1]{\hangindent = #1zw\everypar{\hangindent = #1zw}}{}
-%%%%%%%%%%%%%%%プリアンブルここまで%%%%%%%%%%%%%%%%%
-\begin{document}
-︙
-\leftskip = 1zw%  1字下げ
-\begin{hangall}{1}%  ぶら下げインデント
-長男のジャック　――巴里大学の法科に入学させてくだされたく、行すえは弁護士。
-二女のジャックリイヌ　――伯爵の継嗣《あととり》にお嫁《かたづ》け下さい。
-三男のアンリ　――海軍士官学校へ。
-四女のイレーヌ　――オペラの技芸学校へ。
-五男のポオル　――マチスとか申す画描きのところに弟子入りさせて下さい。
-六女のマリイ　――この子に学問はいりません。
-七男のルイ　――安南のＰ・Ｍ・Ｄ木綿会社へ見習いにやって下さい。
-八女のソフィ　――実のところ、わたくしも、この子の処置についてはまだ考えてはおりません。しかし、大実業家、又は相当の家柄から養女に望まれましたらば、そこへお遣《つかわ》し下さる様。
-\end{hangall}%
-\leftskip = 0zw%
-{\hfill \rightskip = 1zw 信実なるＡ・ジェルメエヌ。\par}%  地から1字上げ
-&lt;/code&gt;&lt;/pre&gt;
-
-
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://hakuoku.github.io/agakuTeX/img/43/hangindent.png&#34; alt=&#34;ぶら下げ・地寄せの実装&#34; /&gt;
-    
-    
-&lt;/figure&gt;
-
-
-&lt;p&gt;　出力は大分すっきりしてきましたがソースの方がごちゃごちゃしてきました。いろいろコマンドが出てきましたが、面倒だったらもう全部全角スペースを手で入れる方式でもいいと思います。紙の大きさが分かっていて変わる可能性がなく、かつ特殊字下げの量が少ないなら、ページレイアウトまで終わった時点でPDFの出力と見比べつつ手でポチポチ入れましょう。本来はやっちゃいけないけど通常字下げを全角スペースでやってる時点でもう怖いものなしです。&lt;/p&gt;
-
-&lt;h4 id=&#34;参考&#34;&gt;参考&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.aozora.gr.jp/annotation/layout_2.html#ototsu&#34;&gt;凹凸の複雑な字下げ&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://tex.stackexchange.com/questions/208898/how-to-align-text-to-right-without-adding-additional-vertical-spacing&#34;&gt;horizontal alignment - How to align text to right without adding additional vertical spacing? - TeX - LaTeX Stack Exchange&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://tex.stackexchange.com/questions/60613/set-hanging-indent-for-more-than-one-paragraph-at-a-time&#34;&gt;indentation - set hanging indent for more than one paragraph at a time - TeX - LaTeX Stack Exchange&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/length.html&#34;&gt;Length: LaTeX&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;footnotes&#34;&gt;
-
-&lt;hr /&gt;
-
-&lt;ol&gt;
-&lt;li id=&#34;fn:1&#34;&gt;正確には段落ごとにリセットされるものです。改行マクロのために「全ての行はことごとく段落に」なっています。
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li id=&#34;fn:2&#34;&gt;flushrightコマンドの方が直感的なんですが、出力してみると前後の段落との間に隙間が空いてしまうので、ここではraggedleftを使います。
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:2&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li id=&#34;fn:3&#34;&gt;こうすることで「改行文字をコメントアウト」しています。これをやらないとコマンドだけの行は「コマンド（組版結果には表示されない）＋改行一つ分」と解釈されるので、余計な行が空いてしまいます。逆に本文とコマンドが混在した行の最後に%をつけてしまうと次の行との間が改行されないことになります。ただし\parとの絡みもあってケースバイケースなので、出力がおかしくなる時は%のつけ方、改行のしかたをガン見してみてください。
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:3&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-</description>
+      <description>&amp;#x3000;ここまでで、日本語の文章に共通して出てくる要素はほぼ組めたと思います。これ以降は原稿に出てくる時にだけ使うオプショナルなコマ</description>
     </item>
     
   </channel>
