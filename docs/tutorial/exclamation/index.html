@@ -234,11 +234,28 @@
         
     
         
-        <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/replace/">青空文庫からの置換一覧</a></li>
+        <li class = "sub-menu drawer-dropdown">
+        <a class="drawer-menu-item" href="#" data-toggle="dropdown" role="button" aria-expanded="false">本文の編集 - 発展編 <span class="drawer-caret"></span></a>
+            <ul class = "sub drawer-dropdown-menu">
+                
+                    
+                    <li><a class="drawer-dropdown-menu-item" href="https://hakuoku.github.io/agakuTeX/tutorial/flush/">カスタム字下げ・地寄せ</a></li>
+                    
+                
+                    
+                    <li><a class="drawer-dropdown-menu-item" href="https://hakuoku.github.io/agakuTeX/tutorial/ruby/">ルビ</a></li>
+                    
+                
+            </ul>
+            </li>
         
     
         
-        <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/reference/">主要参考文献</a></li>
+        <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/replace/">青空文庫からの置換一覧（作成中）</a></li>
+        
+    
+        
+        <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/reference/">主要参考文献（随時追加）</a></li>
         
     
         
@@ -266,7 +283,7 @@
 <pre><code class="language-LaTeX">\def\rensuji#1{\hskip\kanjiskip\hbox to 1zw{\yoko\hss\smash{#1}\hss\rule[-0.12zw]{0zw}{1zw}}\hskip\kanjiskip}
 </code></pre>
 
-<p>　例によって意味は分からなくても大丈夫です。詳しくはブログの記事で説明しています。<br />
+<p>　例によって意味は分からなくても大丈夫です。詳しくは<a href="http://hakuoku.hatenablog.com/entry/2017/11/23/152241">ブログの記事</a>で説明しています。<br />
 　これで連数字の高さがきちんと他の字と揃いましたので、改めて感嘆符・疑問符についてです。</p>
 
 <p>　普段文章を書く時、！や？の後ろにスペースを入れていますか？筆者は全く入れていません。全角で単独の！の後にも、半角の!?の後にも入れず、次の字とびったりくっつけて書いています。<br />
@@ -291,7 +308,9 @@
 \@ifnextchar」{\rensuji{#1}}{%
 \@ifnextchar』{\rensuji{#1}}{%
 \@ifnextchar）{\rensuji{#1}}{%
-\rensuji{#1}\hspace{1zw}}}}}
+\@ifnextchar…{\rensuji{#1}}{%
+\@ifnextchar―{\rensuji{#1}}{%
+\rensuji{#1}\hspace{1zw}}}}}}}
 \makeatother
 </code></pre>
 
@@ -314,10 +333,10 @@
 <p><code>‼</code>（二重感嘆符記号そのもの）を使っている場合でもグルーを入れられます。以下のマクロを使います。</p>
 
 <pre><code class="language-LaTeX">\makeatletter
-\def\‼{\@ifnextchar」{‼}{\@ifnextchar』{‼}{\@ifnextchar）{‼}{‼\hspace{1zw}}}}}
-\def\⁉{\@ifnextchar」{⁉}{\@ifnextchar』{⁉}{\@ifnextchar）{⁉}{⁉\hspace{1zw}}}}}
-\def\⁈{\@ifnextchar」{⁈}{\@ifnextchar』{⁈}{\@ifnextchar）{⁈}{⁈\hspace{1zw}}}}}
-\def\⁇{\@ifnextchar」{⁇}{\@ifnextchar』{⁇}{\@ifnextchar）{⁇}{⁇\hspace{1zw}}}}}
+\def\‼{\@ifnextchar」{‼}{\@ifnextchar』{‼}{\@ifnextchar）{‼}{\@ifnextchar…{‼}{\@ifnextchar―{‼}{‼\hspace{1zw}}}}}}}
+\def\⁉{\@ifnextchar」{⁉}{\@ifnextchar』{⁉}{\@ifnextchar）{⁉}{\@ifnextchar…{⁉}{\@ifnextchar―{⁉}{⁉\hspace{1zw}}}}}}}
+\def\⁈{\@ifnextchar」{⁈}{\@ifnextchar』{⁈}{\@ifnextchar）{⁈}{\@ifnextchar…{⁈}{\@ifnextchar―{⁈}{⁈\hspace{1zw}}}}}}}
+\def\⁇{\@ifnextchar」{⁇}{\@ifnextchar』{⁇}{\@ifnextchar）{⁇}{\@ifnextchar…{⁇}{\@ifnextchar―{⁇}{⁇\hspace{1zw}}}}}}}
 \makeatother
 </code></pre>
 
@@ -328,6 +347,9 @@
 <p>（2017/11/17追記）<br />
 　ZRさんが解決策を教えて下さいました！上のコードも修正してあります。<br />
 　<code>\renmark</code>・<code>\‼</code>ともに、<code>\@ifnextchar</code>の後に入っている閉じカッコを変えれば対応カッコの種類を変えることができます。ネスト（入れ子構造）を追加すれば3種類以上にも増やせます。</p>
+
+<p>（2017/12/01追記）<br />
+　感嘆符類の後に続く句読点やリーダー類のことを考えていなかったのでさらに修正しました。</p>
 
 <h4 id="参考">参考</h4>
 
@@ -371,7 +393,7 @@
         </section>
     </main>
     <footer class="legal" role="contentinfo">
-    <p>&copy; 2017 Hakuoku Shobo Some Rights Reserved. Performed by <a href="//gohugo.io" title="Hugo :: A fast and modern static website engine">Hugo</a> .</p>
+    <p>&copy; 2018 Hakuoku Shobo Some Rights Reserved. Performed by <a href="//gohugo.io" title="Hugo :: A fast and modern static website engine">Hugo</a> .</p>
 
 
 </footer>

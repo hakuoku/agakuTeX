@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pxrubrica on あがきながら覚えるTeX</title>
+    <link>https://hakuoku.github.io/agakuTeX/topics/pxrubrica/</link>
+    <description>Recent content in Pxrubrica on あがきながら覚えるTeX</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Fri, 19 Jan 2018 16:56:10 +0900</lastBuildDate>
+    
+	<atom:link href="https://hakuoku.github.io/agakuTeX/topics/pxrubrica/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ルビ</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/ruby/</link>
+      <pubDate>Fri, 19 Jan 2018 16:56:10 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/ruby/</guid>
+      <description>&amp;#x3000;さあやってまいりました日本語の華、振り仮名（ルビ）。個人的にルビが好きで好きで好きすぎてTeXに足を突っ込んだのでこのパート</description>
+    </item>
+    
+  </channel>
+</rss>
