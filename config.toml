@@ -49,6 +49,10 @@ canonifyURLs = true
         identifier = "punctuation"
         weight = 440
         parent = "edit"
+[[menu.toc]]
+    name = "本文の編集 - 発展編"
+    identifier = "edit2"
+    weight = 500
 
 [[menu.toc]]
     name = "索引"

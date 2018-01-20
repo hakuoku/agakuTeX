@@ -518,9 +518,13 @@ h5 {
 .post__content {
     font-size: 0.8em;
 }
-.post__content p {
+.post__content p, .post__content ul {
     margin-bottom: 1.5em;
 }
+.index ul {
+    margin-bottom: auto;
+}
+
 .post__content rt {
     margin-bottom: -3px;
 }

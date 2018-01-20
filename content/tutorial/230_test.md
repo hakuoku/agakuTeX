@@ -52,7 +52,7 @@ Hello World!
 {{< figure src="/img/23test/konnichiwa_Ink_LI.jpg" caption="" alt="日本語組版成功" class="" >}}
 
 　できた!!　日本語スタイルOKなpLaTeXエンジンのおかげです。  
-　後者も試してみましょう。「pdfLaTeX」に戻して、本文のほうをいじります。{jsarticle}のjsを取って{article}に。
+　後者も試してみましょう。「pdfLaTeX」に戻して、本文のほうをいじります。{jsarticle}のjsを取って{article}にします。
 
 {{< figure src="/img/23test/latex_Ink_LI_Moment.jpg" caption="" alt="部分的に成功" class="" >}}
 

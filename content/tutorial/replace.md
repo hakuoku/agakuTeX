@@ -2,7 +2,7 @@
 date = "2017-05-07T17:50:02+09:00"
 slug = "replace"
 description = ""
-title = "青空文庫からの置換一覧"
+title = "青空文庫からの置換一覧（作成中）"
 weight = 810
 [menu.toc]
 
