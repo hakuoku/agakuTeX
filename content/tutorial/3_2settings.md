@@ -3,7 +3,7 @@ description = ""
 title = "設定"
 date = "2017-04-18T18:13:32+09:00"
 lastmod = "2017-04-19T12:44:26+09:00"
-slug = "settings"
+slug = "3_2settings"
 weight = 320
 topics = ["エンコード", "UTF-8", "シンタックスハイライト"]
 [menu.toc]

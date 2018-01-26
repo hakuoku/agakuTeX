@@ -3,7 +3,7 @@ description = ""
 date = "2017-04-19T13:03:39+09:00"
 title = "ファイル作成とエスケープ"
 topics = ["拡張子の設定", "エラー", "インラインコマンドの書き方", "検索・置換"]
-slug = "escape"
+slug = "3_3escape"
 weight = 330
 [menu.toc]
     parent = "generate"

@@ -1,5 +1,5 @@
 +++
-slug = "accent2"
+slug = "4_3_4accent2"
 description = ""
 date = "2017-07-20T10:38:56+09:00"
 title = "アクセントと特殊記号 (2)"

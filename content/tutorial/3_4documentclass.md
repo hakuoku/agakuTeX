@@ -3,7 +3,7 @@ date = "2017-04-19T21:37:32+09:00"
 lastmond = "2017-04-22T14:36:27+09:00"
 description = ""
 title = "ドキュメントクラスの設定"
-slug = "documentclass"
+slug = "3_4documentclass"
 weight = 340
 [menu.toc]
     parent = "generate"

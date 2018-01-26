@@ -2,7 +2,7 @@
 date = "2017-06-28T13:05:48+09:00"
 title = "note：検索・置換と正規表現"
 weight = 432
-slug = "regex"
+slug = "4_3_2regex"
 description = ""
 topics = ["テキストエディタ"]
 tags = ["note"]

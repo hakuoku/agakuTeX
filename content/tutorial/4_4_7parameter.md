@@ -2,7 +2,7 @@
 title = "note：変数と長さの単位"
 date = "2017-11-19T10:08:20+09:00"
 description = ""
-slug = "parameter"
+slug = "4_4_7parameter"
 weight = 447
 lastmod = "2017-11-20T14:43:11+09:00"
 topics = ["zw", "代入"]

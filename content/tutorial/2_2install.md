@@ -3,7 +3,7 @@ title = "インストール"
 description = ""
 date = "2017-01-03T14:25:46+09:00"
 lastmod = "2017-01-08"
-slug = "install"
+slug = "2_2install"
 weight = 220
 [menu.toc]
     parent = "setup"

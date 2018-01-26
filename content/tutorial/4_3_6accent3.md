@@ -2,7 +2,7 @@
 title = "アクセントと特殊記号 (3)"
 date = "2017-10-10T11:15:56+09:00"
 description = ""
-slug = "accent3"
+slug = "4_3_6accent3"
 weight = "436"
 topics = ["ギリシャ・キリル文字", "フォントエンコーディング", "Babel"]
 [menu.toc]

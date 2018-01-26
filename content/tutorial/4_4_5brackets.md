@@ -2,7 +2,7 @@
 title = "カッコ類"
 date = "2017-11-10T14:00:48+09:00"
 description = ""
-slug = "brackets"
+slug = "4_4_5brackets"
 weight = 445
 topics = ["verb", "等幅フォント", "ベースライン"]
 lastmod = "2017-11-18T22:58:34+09:00"

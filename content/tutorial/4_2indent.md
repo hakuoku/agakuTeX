@@ -1,7 +1,7 @@
 +++
 date = "2017-04-26T23:07:39+09:00"
 weight = 420
-slug = "indent"
+slug = "4_2indent"
 topics = ["verbatim", "環境"]
 description = ""
 title = "インデント（字下げ）・空白"

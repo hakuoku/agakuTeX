@@ -3,7 +3,7 @@ title = "準備"
 description = ""
 date = "2016-12-31T20:04:25+09:00"
 lastmod = "2017-01-02"
-slug = "prepare"
+slug = "2_1prepare"
 weight = 210
 [menu.toc]
     parent = "setup"

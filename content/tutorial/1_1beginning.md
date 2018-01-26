@@ -3,7 +3,7 @@ title = "発端"
 description = ""
 date = "2016-12-17T21:32:59+09:00"
 lastmod = "2016-12-18"
-slug = "beginning"
+slug = "1_1beginning"
 weight = 110
 [menu.toc]
     parent = "preface"

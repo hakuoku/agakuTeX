@@ -2,7 +2,7 @@
 title = "和文・欧文間のスペース"
 date = "2017-11-10T12:54:43+09:00"
 description = ""
-slug = "wordglue"
+slug = "4_4_4wordglue"
 weight = 444
 [menu.toc]
     parent = "punctuation"

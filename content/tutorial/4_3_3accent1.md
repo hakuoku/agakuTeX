@@ -2,7 +2,7 @@
 date = "2017-06-28T20:18:41+09:00"
 title = "アクセントと特殊記号 (1)"
 weight = 433
-slug = "accent1"
+slug = "4_3_3accent1"
 description = ""
 topics = ["パッケージ"]
 [menu.toc]

@@ -3,7 +3,7 @@ title = "TeXとは"
 description = ""
 date = "2016-12-19T00:02:26+09:00"
 lastmod = "2017-01-02"
-slug = "whatstex"
+slug = "1_2whatstex"
 weight = 120
 [menu.toc]
     parent = "preface"

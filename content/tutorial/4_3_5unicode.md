@@ -2,7 +2,7 @@
 title = "note：Unicodeで遊ぼう"
 date = "2017-07-20T23:05:21+09:00"
 description = ""
-slug = "Unicode"
+slug = "4_3_5Unicode"
 weight = 435
 lastmod = "2017-10-10T10:47:11+09:00"
 topics = ["Unicode", "UTF-8", "Uniview"]
@@ -40,7 +40,7 @@ topics = ["Unicode", "UTF-8", "Uniview"]
 {{< figure src="/img/43unicode/Hungarian.jpg" caption="" alt="「Hungarian」で検索" class="" >}}
 
 　こんなふうにUnicodeの意味を知ってUniViewを使いこなせるようになるといろいろ便利ですので、是非触ってみてください。  
-　ちなみにUnicodeの利点については既に[正規表現](/tutorial/regex/)のところでもちょろっと触れていて、あそこで言った新しい文法というのがこのUnicodeプロパティ[^1]に対応しているかどうかになります。対応していないと検索・置換が煩雑になるので、筆者は完全対応しているMeryをしつこく勧めていたのでした。
+　ちなみにUnicodeの利点については既に[正規表現](/tutorial/4_3_2regex/)のところでもちょろっと触れていて、あそこで言った新しい文法というのがこのUnicodeプロパティ[^1]に対応しているかどうかになります。対応していないと検索・置換が煩雑になるので、筆者は完全対応しているMeryをしつこく勧めていたのでした。
 
 [^1]:Unicodeプロパティとブロックとスクリプトの厳密な違いが分かってないです。どなたかご教授ください。
 

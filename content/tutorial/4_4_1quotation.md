@@ -2,7 +2,7 @@
 title = "引用符"
 date = "2017-11-09T13:32:05+09:00"
 description = ""
-slug = "quotation"
+slug = "4_4_1quotation"
 weight = 441
 topics = ["フォント", "otf"]
 [menu.toc]

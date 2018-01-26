@@ -3,7 +3,7 @@ title = "このサイトの使い方"
 description = ""
 date = "2017-04-02T09:43:23+09:00"
 lastmod = "2017-04-02T10:29:14+09:00"
-slug = "usage"
+slug = "1_3usage"
 weight = 130
 [menu.toc]
     parent = "preface"
