@@ -23,6 +23,7 @@ lastmod = "2017-11-24T21:49:32+09:00"
 \usepackage[utf8]{inputenc}
 \usepackage[prefercjkvar]{pxcjkcat}  %英語・ギリシャ・キリル以外は全部和文扱い
 \cjkcategory{latn1,latnA}{noncjk}  %Latin-1 SupplementとExtended-Aを欧文扱い
+\usepackage{zrjapunct1}  %.styファイルを同フォルダに入れた上で宣言　pxcjkcatより後に書くこと
 
 %%%
 
@@ -33,24 +34,10 @@ lastmod = "2017-11-24T21:49:32+09:00"
 \AtBeginDocument{\xobeylines}
 %自動インデント禁止
 \parindent = 0pt
-%連数字の高さを調整
-\def\rensuji#1{\hskip\kanjiskip\hbox to 1zw{\yoko\hss\smash{#1}\hss\rule[-0.12zw]{0zw}{1zw}}\hskip\kanjiskip}
-%IPAフォントでダブルミニュートを出す
+%IPAフォントでダブルミニュートを出す　もしくは‶ダブルプライム″を使うこと
 \newcommand{\〟}{\CID{7609}}
-%ダッシュの位置調整
+%欧文ダッシュ（ベースライン）の位置調整
 \AtBeginDocument{\tbaselineshift = 2.75pt}
-%もしくはダッシュコマンドを使う
-\def\――{―\kern-.5zw―\kern-.5zw―}
-
-\makeatletter  %＠が入るマクロはここの内側に書く
-%感嘆・疑問符用の連数字コマンド（自動でグルーが入る）
-\newcommand{\renmark}[1]{\@ifnextchar」{\rensuji{#1}}{\@ifnextchar』{\rensuji{#1}}{\@ifnextchar）{\rensuji{#1}}{\rensuji{#1}\hspace{1zw}}}}}
-%二重記号そのものを使う場合
-\def\‼{\@ifnextchar」{‼}{\@ifnextchar』{‼}{\@ifnextchar）{‼}{‼\hspace{1zw}}}}}
-\def\⁉{\@ifnextchar」{⁉}{\@ifnextchar』{⁉}{\@ifnextchar）{⁉}{⁉\hspace{1zw}}}}}
-\def\⁈{\@ifnextchar」{⁈}{\@ifnextchar』{⁈}{\@ifnextchar）{⁈}{⁈\hspace{1zw}}}}}
-\def\⁇{\@ifnextchar」{⁇}{\@ifnextchar』{⁇}{\@ifnextchar）{⁇}{⁇\hspace{1zw}}}}}
-\makeatother
 %%%%%%%%%%%%%%%%%%%
 \begin{document}
 〝\foreignlanguage{russian}{Братья Карамазовы}\〟の第\rensuji{12}編を読みながらCrème brûléeを食べていた\foreignlanguage{greek}{Ἀριστοτέλης}が唐突に

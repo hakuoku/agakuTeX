@@ -5,7 +5,7 @@ description = ""
 slug = "4_4_7parameter"
 weight = 447
 lastmod = "2017-11-20T14:43:11+09:00"
-topics = ["zw", "代入"]
+topics = ["zw", "パラメータ（変数）", "代入"]
 [menu.toc]
     parent = "punctuation"
 +++
