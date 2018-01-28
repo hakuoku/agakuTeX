@@ -13,11 +13,20 @@
     
     <item>
       <title>ルビ</title>
-      <link>https://hakuoku.github.io/agakuTeX/tutorial/ruby/</link>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/5_2ruby/</link>
       <pubDate>Fri, 19 Jan 2018 16:56:10 +0900</pubDate>
       
-      <guid>https://hakuoku.github.io/agakuTeX/tutorial/ruby/</guid>
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/5_2ruby/</guid>
       <description>&amp;#x3000;さあやってまいりました日本語の華、振り仮名（ルビ）。個人的にルビが好きで好きで好きすぎてTeXに足を突っ込んだのでこのパート</description>
+    </item>
+    
+    <item>
+      <title>傍点・傍線</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/5_3bouten/</link>
+      <pubDate>Tue, 23 Jan 2018 00:00:28 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/5_3bouten/</guid>
+      <description>&amp;#x3000;ルビが振れるなら傍点だって振れるだろう。はい。振れます。 傍点を振る方法は2種類あって、plextパッケージの\bouコマンド</description>
     </item>
     
   </channel>

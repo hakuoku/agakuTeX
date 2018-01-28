@@ -1,0 +1,511 @@
+<!doctype html>
+<html class="no-js" lang="ja" prefix="og: http://ogp.me/ns#">
+<head>
+    <meta charset="utf-8">
+    <title>ルビ | あがきながら覚えるTeX</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="白屋書房">
+<meta name="description" content="" />
+
+    
+<meta property="og:locale" content="ja">
+<meta property="og:title" content="ルビ" />
+<meta property="og:description" content="" />
+<meta property="og:site_name" content="あがきながら覚えるTeX" />
+<meta property="og:url" content="https://hakuoku.github.io/agakuTeX/tutorial/5_2ruby/" />
+
+
+
+
+<meta property="og:type" content="article" />
+<meta property="article:section" content="tutorial" />
+<meta property="article:published_time" content="2018-01-19" />
+<meta property="article:modified_time" content="2018-01-19" />
+
+    
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="ルビ" />
+<meta name="twitter:description" content="" />
+<meta name="twitter:url" content="https://hakuoku.github.io/agakuTeX/tutorial/5_2ruby/" />
+<meta name="twitter:image:src" content="https://hakuoku.github.io/agakuTeX//media/twitter-card.jpg">
+<meta name="twitter:domain" content="https://hakuoku.github.io/agakuTeX/">
+<meta name="twitter:site" content="@isaribi_saitoh" />
+<meta name="twitter:creator" content="@isaribi_saitoh" />
+
+    
+    <meta name="generator" content="Hugo 0.25.1" />
+    <link rel="canonical" href="https://hakuoku.github.io/agakuTeX/tutorial/5_2ruby/">
+    
+    
+    <link rel="stylesheet" href="https://hakuoku.github.io/agakuTeX/css/prism.css">
+
+    <link rel="stylesheet" href="https://hakuoku.github.io/agakuTeX/css/drawer.css">
+
+<link rel="stylesheet" href="https://hakuoku.github.io/agakuTeX/css/style.css">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://hakuoku.github.io/agakuTeX/img/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://hakuoku.github.io/agakuTeX/img/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://hakuoku.github.io/agakuTeX/img/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://hakuoku.github.io/agakuTeX/manifest.json">
+<link rel="mask-icon" href="https://hakuoku.github.io/agakuTeX/img/safari-pinned-tab.svg" color="#636363">
+<meta name="apple-mobile-web-app-title" content="あがきながら覚えるTeX">
+<meta name="application-name" content="あがきながら覚えるTeX">
+<meta name="theme-color" content="#333333">
+
+</head>
+
+
+<body class="template template--post drawer drawer--right">
+    <section class="header-wrapper">
+        <header class="headline" role="banner">
+    
+        <a class="headline__title" href="https://hakuoku.github.io/agakuTeX/"><img src="https://hakuoku.github.io/agakuTeX/img/logo.png" alt="Home"></a>
+    
+</header>
+
+        <nav class="menu" role="navigation" id="main-menu">
+    <ul class="menu__items">
+        
+        
+        <li class="blog">
+            <a href="http://hakuoku.hatenablog.com/" title="Blog"><img src="https://hakuoku.github.io/agakuTeX/img/hb.png" alt="Blog"></a>
+        </li>
+        
+        
+        <li class="twitter">
+            <a href="https://twitter.com/isaribi_saitoh" title="Follow me"><img src="https://hakuoku.github.io/agakuTeX/img/tw.png" alt="Follow me"></a>
+        </li>
+        
+        
+        <li class="github">
+            <a href="https://github.com/hakuoku" title="Fork me"><img src="https://hakuoku.github.io/agakuTeX/img/gh.png" alt="Fork me"></a>
+        </li>
+        
+        
+    </ul>
+</nav>
+
+        
+<gcse:searchbox-only></gcse:searchbox-only>
+
+<button type="button" class="drawer-toggle drawer-hamburger">
+  <span class="sr-only">toggle navigation</span>
+  <span class="drawer-hamburger-icon"><img src="https://hakuoku.github.io/agakuTeX/img/toc.png" alt="TOC"></span>
+</button>
+ 
+<nav id="side-menu" class="drawer-nav">
+  <ul class="drawer-menu">
+    
+    <li><a href="https://hakuoku.github.io/agakuTeX/">TOP</a></li>
+    
+    
+        
+        <li class = "sub-menu drawer-dropdown">
+        <a class="drawer-menu-item" href="#" data-toggle="dropdown" role="button" aria-expanded="false">前説 <span class="drawer-caret"></span></a>
+            <ul class = "sub drawer-dropdown-menu">
+                
+                    
+                    <li><a class="drawer-dropdown-menu-item" href="https://hakuoku.github.io/agakuTeX/tutorial/1_1beginning/">発端</a></li>
+                    
+                
+                    
+                    <li><a class="drawer-dropdown-menu-item" href="https://hakuoku.github.io/agakuTeX/tutorial/1_2whatstex/">TeXとは</a></li>
+                    
+                
+                    
+                    <li><a class="drawer-dropdown-menu-item" href="https://hakuoku.github.io/agakuTeX/tutorial/1_3usage/">このサイトの使い方</a></li>
+                    
+                
+            </ul>
+            </li>
+        
+    
+        
+        <li class = "sub-menu drawer-dropdown">
+        <a class="drawer-menu-item" href="#" data-toggle="dropdown" role="button" aria-expanded="false">導入 <span class="drawer-caret"></span></a>
+            <ul class = "sub drawer-dropdown-menu">
+                
+                    
+                    <li><a class="drawer-dropdown-menu-item" href="https://hakuoku.github.io/agakuTeX/tutorial/2_1prepare/">準備</a></li>
+                    
+                
+                    
+                    <li><a class="drawer-dropdown-menu-item" href="https://hakuoku.github.io/agakuTeX/tutorial/2_2install/">インストール</a></li>
+                    
+                
+                    
+                    <li><a class="drawer-dropdown-menu-item" href="https://hakuoku.github.io/agakuTeX/tutorial/2_3test/">テスト</a></li>
+                    
+                
+            </ul>
+            </li>
+        
+    
+        
+        <li class = "sub-menu drawer-dropdown">
+        <a class="drawer-menu-item" href="#" data-toggle="dropdown" role="button" aria-expanded="false">ファイル作成 <span class="drawer-caret"></span></a>
+            <ul class = "sub drawer-dropdown-menu">
+                
+                    
+                    <li><a class="drawer-dropdown-menu-item" href="https://hakuoku.github.io/agakuTeX/tutorial/3_1stuff/">いるもの</a></li>
+                    
+                
+                    
+                    <li><a class="drawer-dropdown-menu-item" href="https://hakuoku.github.io/agakuTeX/tutorial/3_2settings/">設定</a></li>
+                    
+                
+                    
+                    <li><a class="drawer-dropdown-menu-item" href="https://hakuoku.github.io/agakuTeX/tutorial/3_3escape/">ファイル作成とエスケープ</a></li>
+                    
+                
+                    
+                    <li><a class="drawer-dropdown-menu-item" href="https://hakuoku.github.io/agakuTeX/tutorial/3_4documentclass/">ドキュメントクラスの設定</a></li>
+                    
+                
+            </ul>
+            </li>
+        
+    
+        
+        <li class = "sub-menu drawer-dropdown">
+        <a class="drawer-menu-item" href="#" data-toggle="dropdown" role="button" aria-expanded="false">本文の編集 - 基盤編 <span class="drawer-caret"></span></a>
+            <ul class = "sub drawer-dropdown-menu">
+                
+                    
+                    <li><a class="drawer-dropdown-menu-item" href="https://hakuoku.github.io/agakuTeX/tutorial/4_1linebreak/">改行・段落</a></li>
+                    
+                
+                    
+                    <li><a class="drawer-dropdown-menu-item" href="https://hakuoku.github.io/agakuTeX/tutorial/4_2indent/">インデント（字下げ）・空白</a></li>
+                    
+                
+                    
+                    <li class = "drawer-dropdown-menu-item sub-menu">
+                    全角・半角 - 文字と記号の縦横
+                        <ul class = "sub">
+                            
+                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/4_3_1rensuji/">縦中横</a></li>
+                            
+                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/4_3_2regex/">note：検索・置換と正規表現</a></li>
+                            
+                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/4_3_3accent1/">アクセントと特殊記号 (1)</a></li>
+                            
+                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/4_3_4accent2/">アクセントと特殊記号 (2)</a></li>
+                            
+                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/4_3_5unicode/">note：Unicodeで遊ぼう</a></li>
+                            
+                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/4_3_6accent3/">アクセントと特殊記号 (3)</a></li>
+                            
+                        </ul>
+                    </li>
+                    
+                
+                    
+                    <li class = "drawer-dropdown-menu-item sub-menu">
+                    約物
+                        <ul class = "sub">
+                            
+                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/4_4_0punct/">はじめに</a></li>
+                            
+                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/4_4_1quotation/">引用符</a></li>
+                            
+                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/4_4_2otf/">OTFパッケージ</a></li>
+                            
+                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/4_4_3exclamation/">！と？ - 縦中横ふたたび</a></li>
+                            
+                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/4_4_4wordglue/">和文・欧文間のスペース</a></li>
+                            
+                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/4_4_5brackets/">カッコ類</a></li>
+                            
+                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/4_4_6dash/">ダッシュ</a></li>
+                            
+                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/4_4_7parameter/">note：変数と長さの単位</a></li>
+                            
+                        </ul>
+                    </li>
+                    
+                
+                    
+                    <li><a class="drawer-dropdown-menu-item" href="https://hakuoku.github.io/agakuTeX/tutorial/4_5summary1/">まとめ</a></li>
+                    
+                
+            </ul>
+            </li>
+        
+    
+        
+        <li class = "sub-menu active drawer-dropdown">
+        <a class="drawer-menu-item" href="#" data-toggle="dropdown" role="button" aria-expanded="false">本文の編集 - 発展編 <span class="drawer-caret"></span></a>
+            <ul class = "sub drawer-dropdown-menu">
+                
+                    
+                    <li><a class="drawer-dropdown-menu-item" href="https://hakuoku.github.io/agakuTeX/tutorial/5_1flush/">カスタム字下げ・地寄せ</a></li>
+                    
+                
+                    
+                    <li><a class="drawer-dropdown-menu-item" href="https://hakuoku.github.io/agakuTeX/tutorial/5_2ruby/">ルビ</a></li>
+                    
+                
+                    
+                    <li><a class="drawer-dropdown-menu-item" href="https://hakuoku.github.io/agakuTeX/tutorial/5_3bouten/">傍点・傍線</a></li>
+                    
+                
+            </ul>
+            </li>
+        
+    
+        
+        <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/replace/">青空文庫からの置換一覧（作成中）</a></li>
+        
+    
+        
+        <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/reference/">主要参考文献（随時追加）</a></li>
+        
+    
+        
+        <li><a href="https://hakuoku.github.io/agakuTeX/topics/">索引</a></li>
+        
+    
+  </ul>
+</nav>
+
+    </section>
+    <main class="content" role="main" id="main-content" itemscope itemtype="http://schema.org/Article">
+        <article class="post">
+            <header>
+                <h1 class="post__title" itemprop="name">ルビ</h1>
+            </header>
+            <section class="post__content" itemprop="articleBody">
+                
+
+<p>&#x3000;さあやってまいりました日本語の華、<ruby>振り仮名<rp>（</rp><rt>ルビ</rt><rp>）</rp></ruby>。個人的にルビが好きで好きで好きすぎてTeXに足を突っ込んだのでこのパートはめっちゃ興奮します。ただし十蘭並みの量になると同時にめっちゃ疲れます。</p>
+
+<p>　ともあれルビの付け方を学んでいきましょう。ここでもZRさん作の、素晴らしい<strong>PXrubrica</strong>パッケージを使います。TeX Live 2012以降なら標準で含まれているので、いちからダウンロードする必要はありませんが、最新の1.3版はTeX Live 2017にしか含まれていないので、2017年6月以前にTeX Liveをインストールした方は<a href="https://texwiki.texjp.org/?TeX%20Live%2FWindows#a6223106">こちら</a>を参考にアップデートをしておいてください。</p>
+
+<p>　まずは普通にusepackageで読み込みます。</p>
+
+<pre><code class="language-latex">\usepackage{pxrubrica}
+</code></pre>
+
+<p>　使い方は「<a href="https://qiita.com/zr_tex8r/items/42466cbcbeb670a3a2dc">LaTeX 文書で“美しい日本の”ルビを使う ～pxrubrica パッケージ～ - Qiita</a>」に分かりやすくまとめられています。まずはこの記事を熟読してください。以下では膨大にあるノンシャラン道中記のルビを振ってみます。</p>
+
+<p>　基本的な記法は、<code>\ruby{字}{じ}</code>のように、第一引数にルビを振りたい親文字を、第二引数にルビを入れて使います。親文字が漢字複数の時は、<code>\ruby{親文字}{おや|も|じ}</code>のように、対応する区切り部分に半角縦棒を入れてやります（親漢字の数と棒の数が合っていないとエラーになる）。<br />
+　熟語ルビ・モノルビに関しては、ここでは熟語ルビに統一することとします。モノルビにしたい方はそのつど読み替えてください。</p>
+
+<p>　雲雀《ひばり》のような熟字訓や、英国《イギリス》のように区切りもへったくれもないケースに関しては、グループルビ機能が用意されています。オプションgを指定してこう書きます：<code>\ruby[g]{振り仮名}{ルビ}</code><br />
+　よってノンシャラン道中記の一節はこんなふうになります。</p>
+
+<pre><code class="language-LaTeX">　そもそも、災難の\ruby{濫觴}{らん|しょう}とも、起源ともいうべきその宿とは、先年、鰯をとるといって沖へ出たまま、一向\ruby{報}{たよ}りをよこさぬという七歳を\ruby{頭}{かしら}に八人の子供を持つ、\ruby{呑気}{のん|き}な漁師の妻君の\ruby{家}{うち}の二階の一室で、\ruby[g]{寄席}{キャヴァレ}の\ruby[g]{口上役}{コムメエル}のような、うっとりするほど派手な着物を着たこの家の若後家が、敷布と水瓶を持って、二人の前に\ruby{罷}{まか}り出た時の仁義によれば、
+</code></pre>
+
+<p>　この時点でだいぶ目がチカチカしてきますが、それは選んだ作品のせいなので自業自得です。</p>
+
+<p>　ここで少し簡略化ができます。1.3版の新機能、<strong>自動切替熟語ルビ</strong>モードを使って、いちいちグループルビのオプション指定を入れなくてもいいようにできるんです。<br />
+　このモードは「普段は熟語ルビとして扱うが、ルビ文字列のグループが一つの場合はグループルビとして扱う」というもので、要するに縦棒のあるなしでパッケージ側が自動で普通の熟語ルビかグループルビかを判断してくれるというものです。全てのルビにオプションJを指定してやることでこれが実現できます。</p>
+
+<p>　一括設定をするには、既定値を変更する<code>\rubysetup</code>命令をプリアンブルに書き込みます。</p>
+
+<pre><code class="language-latex">\usepackage{pxrubrica}
+\rubysetup{J}
+</code></pre>
+
+<p>　これで、本文中では全て<code>[J]</code>がつくのと同じことになるので、<code>[g]</code>を省いてもよくなりました。</p>
+
+
+<figure >
+    
+        <img src="https://hakuoku.github.io/agakuTeX/img/52ruby/auto.jpg" alt="[g]オプションの省略" />
+    
+    
+</figure>
+
+
+<p>　pxrubricaには他にもたくさんの機能があるので、以降もこのプリセットにオプションを付け加えていくことになります。<br />
+　それから欧文にルビを振る場合は<code>\ruby</code>ではなく<code>\aruby</code>命令を使います。書き方は和文と同じです。</p>
+
+<h3 id="一括置換">一括置換</h3>
+
+<p>　フォーマットが定まったところで、小説投稿サイトなどのルビ記法を使っている場合は一括置換がかけられます。青空文庫・カクヨム・小説家になろうの形式からは、以下を上から順に置換してください。</p>
+
+<p>　可能な限り揺れを考慮したつもりですが、それでも「すべて置換」してしまうと思わぬ変換結果になる箇所が出る危険があります。面倒でもできるだけ一つ一つ検索＆「次を置換」していってください。<br />
+　また拾いきれないパターンもあります。Meryならひと通り置換が終わった後でAozora編集モードに切り替えると、《二重山括弧》式のルビがハイライトされるのでこぼれた箇所が分かりやすいです。<br />
+　おかしな結果が出た際は是非フィードバックをお願いします。特にアクセント付きアルファベットあたりが鬼門。詳しくは<a href="http://hakuoku.hatenablog.com/entry/2018/01/25/221125">ブログ</a>で解説しています。</p>
+
+<p>①範囲指定された欧文につけるルビ<br />
+　検索する文字列： <code>[｜\|]([\w\p{P}\s]+)[《（\(](.+?)[\)）》]</code>　→　置換後の文字列： <code>\\aruby{\1}{\2}</code><br />
+　※英語以外のアルファベットを使っている人はこれの後に<code>[｜\|]([\p{Latin}\p{P}\d\s]+)[《（\(](.+?)[\)）》]</code>で検索をかけてチェック</p>
+
+<p>②範囲指定のない空白区切りの欧文につけるルビ（青空文庫のみ）<br />
+　検索する文字列： <code>([\w\p{P}]+)《(.+?)》</code>　→　置換後の文字列： <code>\\aruby{\1}{\2}</code><br />
+　※同上、<code>([\p{Latin}\p{P}\d]+)《(.+?)》</code>で</p>
+
+<p>③範囲指定された和文につけるルビ<br />
+　検索する文字列： <code>[｜\|](.+?)[《（\(](.+?)[\)）》]</code>　→　置換後の文字列： <code>\\ruby{\1}{\2}</code></p>
+
+<p>④範囲指定のない漢字のみにつけるルビ<br />
+　検索する文字列： <code>(\p{Han}+)《(.+?)》</code>　→　置換後の文字列： <code>\\ruby{\1}{\2}</code></p>
+
+<p>⑤丸括弧で指定するひらがなとカタカナのみのルビ（小説家になろうのみ）<br />
+　検索する文字列： <code>([\p{Han}]+)[（\(]([ぁ-んァ-ヶー]+)[）\)]</code>　→　置換後の文字列： <code>\\ruby{\1}{\2}</code></p>
+
+<p>⑥そのまま表示したい括弧類の補正用（小説家になろうのみ）<br />
+　検索する文字列： <code>[｜\|]([《（\(])(.+?)([\)）》])</code>　→　置換後の文字列： <code>\1\2\3</code></p>
+
+<p><br>
+（目が滑る……）<br />
+　pixiv形式は以下。</p>
+
+<p>①欧文につけるルビ
+　検索する文字列： <code>\[\[rb:([\w\p{P}\s]+) &gt; (.+?)\]\]</code>　→　置換後の文字列： <code>\\aruby{\1}{\2}</code><br />
+　※同上、<code>\[\[rb:([\p{Latin}\p{P}\d\s]+) &gt; (.+?)\]\]</code></p>
+
+<p>②和文につけるルビ
+　検索する文字列： <code>\[\[rb:(.+?) &gt; (.+?)\]\]</code>　→　置換後の文字列： <code>\\ruby{\1}{\2}</code></p>
+
+<p>　なお、一括置換では熟語ルビの区切りを示す半角縦棒が一切入りません。機械にはどれが熟字訓ではない熟語ルビで、どこに縦棒を入れたらいいか判別がつかないためです。全部グループルビ扱いでいい人は何もしなくていいですが、より本格的にルビを振りたい人は<code>\ruby{濫觴}{らん|しょう}</code>のように、置換後に目視で棒を書きこんでいってください。</p>
+
+<h3 id="スタイルの調整">スタイルの調整</h3>
+
+<p>　さて、ルビの表示は意図通りになったでしょうか？なんとなく違和感を感じる箇所もあるかもしれません。ルビの位置などのデザイン要素は人によって好みが分かれると思うので、以下よく読むレーベルのスタイルを参考にするなどして、適切なオプションを選んでください。</p>
+
+<h4 id="肩付き-中付き">肩付き・中付き</h4>
+
+<p>　まずは真っ先に気になったここから。pxrubricaの規定では、ルビ文字は親文字の中央に揃うようになっています（中付き）。しかし商業出版されている本を見ると、親文字の上端に揃えている（肩付き）出版社が意外と多いです。ちなみに手持ちの文庫をざっと見てみたところ、文春と光文社が中付き、新潮・角川・講談社・ハヤカワ等が肩付きでした。<br />
+　後者をマネしたくなったので、肩付き指定にしてみます。プリアンブルでのセットアップの引数に、肩付きオプションhを追加します：<code>\rubysetup{hJ}</code></p>
+
+<figure>
+<img src = "https://hakuoku.github.io/agakuTeX/img/52ruby/nakatsuki.jpg" alt ="中付きルビ"><img src = "https://hakuoku.github.io/agakuTeX/img/52ruby/katatsuki.jpg"alt ="肩付きルビ">
+<figcaption>左が[J]（中付きルビは規定）、右が[hJ]</figcaption>
+</figure>
+
+<h4 id="突出指定">突出指定</h4>
+
+<p>　炉《ろ》のところは肩付きになりましたが、法《フラン》のところはそのままです。現段階だとルビが親文字より長い場合にはルビがことごとく上下に突き出していて、真の肩付きになっていません。<br />
+　これを回避するにはルビ文字を親文字の外にはみ出させないようにする＝突出の抑制を指定してやります。この場合は上端の突出禁止なので、モードオプションの左側に指定します：<code>\rubysetup{||hJ}</code></p>
+
+
+<figure >
+    
+        <img src="https://hakuoku.github.io/agakuTeX/img/52ruby/nostick.jpg" alt="肩付きになった法《ふらん》" />
+    
+    
+</figure>
+
+
+<h4 id="進入指定">進入指定</h4>
+
+<p>　肩付きにはなったものの、後のテキストとの間が思いっきり空いてしまいました。これはデフォルトでルビが親文字より長い場合は前後のボディテキストへの進入を行わず、はみ出るルビの分きっちり隙間を空けるようになっているからです。中付きの場合も、例えば漢字1文字に対してルビ4文字だとよく分かります。</p>
+
+
+<figure >
+    
+        <img src="https://hakuoku.github.io/agakuTeX/img/52ruby/space.jpg" alt="前後の間が空いている某《それがし》" />
+    
+    
+</figure>
+
+
+<p>　この進入指定はルビ半角分まで前後のテキストにかける進入小<code>[(-)]</code>と、全角分までかける進入大<code>[&lt;-&gt;]</code>に変更できます。変更してみた例がこちら。</p>
+
+
+<figure >
+    
+        <img src="https://hakuoku.github.io/agakuTeX/img/52ruby/enter.jpg" alt="肩付き・中付きと進入量の大小" />
+    
+    
+    <figcaption>
+        <p>
+        左から中付き小・中付き大・肩付き小・肩付き大
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+
+
+<p>　筆者は進入大にすることにしました。なのでプリアンブルでのセットアップは<code>\rubysetup{||hJ&gt;}</code>になります。中付きの場合は<code>\rubysetup{(J)}</code>や<code>\rubysetup{&lt;J&gt;}</code>になるでしょう。左右違う指定もできます。</p>
+
+<h4 id="あとは個別に">あとは個別に</h4>
+
+<p>　肩付きだと、某《それがし》は進入を大にしても足りませんね。実は一般の肩付きの本でも、漢字1文字に対してルビ4文字のケースは中付きにしているところがほとんどです。<br />
+　その他、普段は全角分の進入にしていても、前や後にくるボディテキストが漢字の場合は進入を行わない、中付きの組み方であっても行頭では肩付きにする、など、商業品質の出版物においては非常に細かいルールが存在します。</p>
+
+<p>　どこまで追求するかはもはや個人の趣味です。これまで設定してきたのは既定値なので、そこから外れるルビを振りたい場合は、<code>エピナック\ruby[(cJ)]{某}{それがし}が</code>のように、文中のルビ命令に対して直接オプションを指定して上書きしてください。</p>
+
+<p>　役に立ちそうな検索パターンを載せておきます。</p>
+
+<p>・1文字に4文字以上のルビ<br />
+　<code>\\ruby\{.\}\{.{4,7}\}</code></p>
+
+<p>・カタカナルビ<br />
+　<code>\{[\p{Katakana}\p{P}ー]+?\}</code></p>
+
+<p>・行頭のルビ（ただし組版結果としての行頭にくる箇所は拾えません）<br />
+　全角スペースで1字下げしている場合：<code>^　\\ruby</code>　していない場合：<code>^\\ruby</code></p>
+
+<p>　原稿と首っ引きで、是非とも理想のルビを目指しましょう。</p>
+
+<h4 id="参考">参考</h4>
+
+<ul>
+<li><a href="http://d.hatena.ne.jp/zrbabbler/20170429/1493475774">pxrubrica のもっと新しいやつ（v1.3） - マクロツイーター</a></li>
+<li><a href="https://qiita.com/8amjp/items/d7c46d9dee0da4d530ef">各種小説投稿サイトのルビ記法をJavaScriptで実現する - Qiita</a></li>
+</ul>
+
+            </section>
+            <nav class = "pager" >
+    <ul class = "pager-list">
+        
+            <li class = "pager-prev"><a href = "https://hakuoku.github.io/agakuTeX/tutorial/5_1flush/">←カスタム字下げ・地寄せ</a></li>
+        
+        
+            <li class = "pager-next"><a href = "https://hakuoku.github.io/agakuTeX/tutorial/5_3bouten/">傍点・傍線→</a></li>
+        
+    </ul>
+</nav>
+
+        </article>
+        <section class="post__comment">
+            <div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'hakuoku';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </section>
+    </main>
+    <footer class="legal" role="contentinfo">
+    <p>&copy; 2018 Hakuoku Shobo Some Rights Reserved. Performed by <a href="//gohugo.io" title="Hugo :: A fast and modern static website engine">Hugo</a> .</p>
+
+
+</footer>
+
+    
+<script type="text/javascript" src="https://hakuoku.github.io/agakuTeX/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="https://hakuoku.github.io/agakuTeX/js/prism.js"></script>
+<script type="text/javascript" src="https://hakuoku.github.io/agakuTeX/js/iscroll.js"></script>
+<script type="text/javascript" src="https://hakuoku.github.io/agakuTeX/js/drawer.min.js"></script>
+<script type="text/javascript" src="https://hakuoku.github.io/agakuTeX/js/dropdown.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+      $(".drawer").drawer();
+    });
+</script>
+
+</body>
+</html>

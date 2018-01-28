@@ -13,11 +13,20 @@
     
     <item>
       <title>カスタム字下げ・地寄せ</title>
-      <link>https://hakuoku.github.io/agakuTeX/tutorial/flush/</link>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/5_1flush/</link>
       <pubDate>Thu, 27 Apr 2017 07:52:54 +0900</pubDate>
       
-      <guid>https://hakuoku.github.io/agakuTeX/tutorial/flush/</guid>
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/5_1flush/</guid>
       <description>&amp;#x3000;ここまでで、日本語の文章に共通して出てくる要素はほぼ組めたと思います。これ以降は原稿に出てくる時にだけ使うオプショナルなコマ</description>
+    </item>
+    
+    <item>
+      <title>傍点・傍線</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/5_3bouten/</link>
+      <pubDate>Tue, 23 Jan 2018 00:00:28 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/5_3bouten/</guid>
+      <description>&amp;#x3000;ルビが振れるなら傍点だって振れるだろう。はい。振れます。 傍点を振る方法は2種類あって、plextパッケージの\bouコマンド</description>
     </item>
     
   </channel>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Catcode on あがきながら覚えるTeX</title>
+    <link>https://hakuoku.github.io/agakuTeX/topics/catcode/</link>
+    <description>Recent content in Catcode on あがきながら覚えるTeX</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Mon, 22 Jan 2018 23:58:56 +0900</lastBuildDate>
+    
+	<atom:link href="https://hakuoku.github.io/agakuTeX/topics/catcode/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>もっと楽にエスケープ</title>
+      <link>https://hakuoku.github.io/agakuTeX/tips/xescape/</link>
+      <pubDate>Mon, 22 Jan 2018 23:58:56 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tips/xescape/</guid>
+      <description>&amp;#x3000;エスケープの項では基本を大事にという観点から、特殊記号にバックスラッシュをつける初歩的な方法を紹介しました。 ですが実はもっと</description>
+    </item>
+    
+  </channel>
+</rss>

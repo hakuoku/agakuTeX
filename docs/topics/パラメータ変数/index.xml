@@ -13,11 +13,20 @@
     
     <item>
       <title>ダッシュ</title>
-      <link>https://hakuoku.github.io/agakuTeX/tutorial/dash/</link>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/4_4_6dash/</link>
       <pubDate>Fri, 10 Nov 2017 14:03:29 +0900</pubDate>
       
-      <guid>https://hakuoku.github.io/agakuTeX/tutorial/dash/</guid>
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/4_4_6dash/</guid>
       <description>&amp;#x3000;ダッシュ（ダーシ、倍角ダッシュ）――は好きですか？私は大好きです。めちゃめちゃ使います。ところがTeXにおいて倍角ダッシュは</description>
+    </item>
+    
+    <item>
+      <title>note：変数と長さの単位</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/4_4_7parameter/</link>
+      <pubDate>Sun, 19 Nov 2017 10:08:20 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/4_4_7parameter/</guid>
+      <description>&amp;#x3000;ちょこっとだけプログラミングっぽい話します。先ほど出てきた\tbaselineshiftや字下げの項で使った\parinde</description>
     </item>
     
   </channel>
