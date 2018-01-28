@@ -23,6 +23,7 @@ canonifyURLs = true
     category = "categories"
     topic = "topics"
 
+
 [[menu.toc]]
     name = "前説"
     identifier = "preface"

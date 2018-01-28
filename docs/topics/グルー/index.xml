@@ -13,11 +13,20 @@
     
     <item>
       <title>OTFパッケージ</title>
-      <link>https://hakuoku.github.io/agakuTeX/tutorial/otf/</link>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/4_4_2otf/</link>
       <pubDate>Thu, 09 Nov 2017 13:32:05 +0900</pubDate>
       
-      <guid>https://hakuoku.github.io/agakuTeX/tutorial/otf/</guid>
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/4_4_2otf/</guid>
       <description>&amp;#x3000;OTFパッケージとは、もともとはOpenTypeフォントを扱うためのパッケージだそうですが、日本語あるいはCJKの文字を美し</description>
+    </item>
+    
+    <item>
+      <title>！と？ - 縦中横ふたたび</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/4_4_3exclamation/</link>
+      <pubDate>Thu, 09 Nov 2017 23:13:02 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/4_4_3exclamation/</guid>
+      <description>&amp;#x3000;自動でグルーが入ってしまう感嘆符と疑問符の制御に入るんですが、その前に縦中横のところでちらっと触れた、rensujiの問題を</description>
     </item>
     
   </channel>

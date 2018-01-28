@@ -13,11 +13,20 @@
     
     <item>
       <title>！と？ - 縦中横ふたたび</title>
-      <link>https://hakuoku.github.io/agakuTeX/tutorial/exclamation/</link>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/4_4_3exclamation/</link>
       <pubDate>Thu, 09 Nov 2017 23:13:02 +0900</pubDate>
       
-      <guid>https://hakuoku.github.io/agakuTeX/tutorial/exclamation/</guid>
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/4_4_3exclamation/</guid>
       <description>&amp;#x3000;自動でグルーが入ってしまう感嘆符と疑問符の制御に入るんですが、その前に縦中横のところでちらっと触れた、rensujiの問題を</description>
+    </item>
+    
+    <item>
+      <title>傍点・傍線</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/5_3bouten/</link>
+      <pubDate>Tue, 23 Jan 2018 00:00:28 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/5_3bouten/</guid>
+      <description>&amp;#x3000;ルビが振れるなら傍点だって振れるだろう。はい。振れます。 傍点を振る方法は2種類あって、plextパッケージの\bouコマンド</description>
     </item>
     
   </channel>

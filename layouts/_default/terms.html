@@ -10,7 +10,7 @@
 
         {{ $data := .Data }}
         <ul class="taxonomy__lists">
-        {{ range $key,$value := .Data.Terms.ByCount }}
+        {{ range $key,$value := .Data.Terms.Alphabetical }}
             <li>{{ $value.Name }}
                 <ul class="taxonomy__contents">
                 {{ range $value.Pages.ByDate }}

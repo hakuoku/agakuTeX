@@ -13,20 +13,20 @@
     
     <item>
       <title>改行・段落</title>
-      <link>https://hakuoku.github.io/agakuTeX/tutorial/linebreak/</link>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/4_1linebreak/</link>
       <pubDate>Sat, 22 Apr 2017 19:24:51 +0900</pubDate>
       
-      <guid>https://hakuoku.github.io/agakuTeX/tutorial/linebreak/</guid>
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/4_1linebreak/</guid>
       <description>&amp;#x3000;それにしても読みづらいですね。改行が全然なくて一面に字が植えてある。面倒なことにTeXは、いわゆる普通の改行を感知しません。</description>
     </item>
     
     <item>
-      <title>！と？ - 縦中横ふたたび</title>
-      <link>https://hakuoku.github.io/agakuTeX/tutorial/exclamation/</link>
-      <pubDate>Thu, 09 Nov 2017 23:13:02 +0900</pubDate>
+      <title>OTFパッケージ</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/4_4_2otf/</link>
+      <pubDate>Thu, 09 Nov 2017 13:32:05 +0900</pubDate>
       
-      <guid>https://hakuoku.github.io/agakuTeX/tutorial/exclamation/</guid>
-      <description>&amp;#x3000;自動でグルーが入ってしまう感嘆符と疑問符の制御に入るんですが、その前に縦中横のところでちらっと触れた、rensujiの問題を</description>
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/4_4_2otf/</guid>
+      <description>&amp;#x3000;OTFパッケージとは、もともとはOpenTypeフォントを扱うためのパッケージだそうですが、日本語あるいはCJKの文字を美し</description>
     </item>
     
   </channel>

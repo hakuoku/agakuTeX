@@ -13,20 +13,11 @@
     
     <item>
       <title>縦中横</title>
-      <link>https://hakuoku.github.io/agakuTeX/tutorial/rensuji/</link>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/4_3_1rensuji/</link>
       <pubDate>Tue, 27 Jun 2017 11:19:16 +0900</pubDate>
       
-      <guid>https://hakuoku.github.io/agakuTeX/tutorial/rensuji/</guid>
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/4_3_1rensuji/</guid>
       <description>&amp;#x3000;ここからしばらくめんどくさい記号の制御が続きます。ちまちましてる上変化が分かりにくくてアレなんですが、今後も使う主要な概念が</description>
-    </item>
-    
-    <item>
-      <title>ダッシュ</title>
-      <link>https://hakuoku.github.io/agakuTeX/tutorial/dash/</link>
-      <pubDate>Fri, 10 Nov 2017 14:03:29 +0900</pubDate>
-      
-      <guid>https://hakuoku.github.io/agakuTeX/tutorial/dash/</guid>
-      <description>&amp;#x3000;ダッシュ（ダーシ、倍角ダッシュ）――は好きですか？私は大好きです。めちゃめちゃ使います。ところがTeXにおいて倍角ダッシュは</description>
     </item>
     
   </channel>
