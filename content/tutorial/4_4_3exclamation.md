@@ -4,8 +4,8 @@ date = "2017-11-09T23:13:02+09:00"
 description = ""
 slug = "4_4_3exclamation"
 weight = 443
-topics = ["連数字", "plext"]
-lastmod = "2017-11-19T09:07:48+09:00"
+topics = ["連数字", "plext", "グルー"]
+lastmod = "2018-01-27T15:46:49+09:00"
 [menu.toc]
     parent = "punctuation"
 +++
@@ -18,7 +18,7 @@ lastmod = "2017-11-19T09:07:48+09:00"
 \def\rensuji#1{\hskip\kanjiskip\hbox to 1zw{\yoko\hss\smash{#1}\hss\rule[-0.12zw]{0zw}{1zw}}\hskip\kanjiskip}
 ```
 
-　例によって意味は分からなくても大丈夫です。詳しくは[ブログの記事](http://hakuoku.hatenablog.com/entry/2017/11/23/152241)で説明しています。  
+　例によって意味は分からなくても大丈夫。詳しくは[ブログの記事](http://hakuoku.hatenablog.com/entry/2017/11/23/152241)で説明しています。  
 　これで連数字の高さがきちんと他の字と揃いましたので、改めて感嘆符・疑問符についてです。
 
 　普段文章を書く時、！や？の後ろにスペースを入れていますか？筆者は全く入れていません。全角で単独の！の後にも、半角の!?の後にも入れず、次の字とびったりくっつけて書いています。  

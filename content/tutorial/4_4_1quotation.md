@@ -4,6 +4,7 @@ date = "2017-11-09T13:32:05+09:00"
 description = ""
 slug = "4_4_1quotation"
 weight = 441
+lastmod = "2018-01-27T15:47:48+09:00"
 topics = ["フォント", "otf", "IPAフォント"]
 [menu.toc]
     parent = "punctuation"
