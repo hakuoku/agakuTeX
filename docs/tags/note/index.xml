@@ -13,10 +13,10 @@
     
     <item>
       <title>note：検索・置換と正規表現</title>
-      <link>https://hakuoku.github.io/agakuTeX/tutorial/regex/</link>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/4_3_2regex/</link>
       <pubDate>Wed, 28 Jun 2017 13:05:48 +0900</pubDate>
       
-      <guid>https://hakuoku.github.io/agakuTeX/tutorial/regex/</guid>
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/4_3_2regex/</guid>
       <description>&amp;#x3000;これまで検索・置換する時に出てきた謎の記号たちは正規表現［regular expression］といい、簡単に言うと「表記ゆれ</description>
     </item>
     

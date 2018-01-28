@@ -13,10 +13,10 @@
     
     <item>
       <title>インデント（字下げ）・空白</title>
-      <link>https://hakuoku.github.io/agakuTeX/tutorial/indent/</link>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/4_2indent/</link>
       <pubDate>Wed, 26 Apr 2017 23:07:39 +0900</pubDate>
       
-      <guid>https://hakuoku.github.io/agakuTeX/tutorial/indent/</guid>
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/4_2indent/</guid>
       <description>&amp;#x3000;改行はできたものの、行頭の字下げがなんかおかしい。まるまる2字分空いてますね。 これは青空文庫の本文行頭にもともとあった全角ス</description>
     </item>
     

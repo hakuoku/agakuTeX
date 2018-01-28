@@ -13,19 +13,19 @@
     
     <item>
       <title>いるもの</title>
-      <link>https://hakuoku.github.io/agakuTeX/tutorial/stuff/</link>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/3_1stuff/</link>
       <pubDate>Sun, 02 Apr 2017 14:41:40 +0900</pubDate>
       
-      <guid>https://hakuoku.github.io/agakuTeX/tutorial/stuff/</guid>
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/3_1stuff/</guid>
       <description>&amp;#x3000;満を持して本番の組版に入りたいところですが、まずは必要なものを用意します。 テキスト 組版したい文章そのものです。この入門では青</description>
     </item>
     
     <item>
       <title>note：検索・置換と正規表現</title>
-      <link>https://hakuoku.github.io/agakuTeX/tutorial/regex/</link>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/4_3_2regex/</link>
       <pubDate>Wed, 28 Jun 2017 13:05:48 +0900</pubDate>
       
-      <guid>https://hakuoku.github.io/agakuTeX/tutorial/regex/</guid>
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/4_3_2regex/</guid>
       <description>&amp;#x3000;これまで検索・置換する時に出てきた謎の記号たちは正規表現［regular expression］といい、簡単に言うと「表記ゆれ</description>
     </item>
     

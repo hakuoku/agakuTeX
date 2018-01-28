@@ -21,11 +21,29 @@
     </item>
     
     <item>
+      <title>Breakfbox</title>
+      <link>https://hakuoku.github.io/agakuTeX/topics/breakfbox/</link>
+      <pubDate>Tue, 23 Jan 2018 00:00:28 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/topics/breakfbox/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>CID</title>
       <link>https://hakuoku.github.io/agakuTeX/topics/cid/</link>
       <pubDate>Thu, 09 Nov 2017 13:32:05 +0900</pubDate>
       
       <guid>https://hakuoku.github.io/agakuTeX/topics/cid/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Catcode</title>
+      <link>https://hakuoku.github.io/agakuTeX/topics/catcode/</link>
+      <pubDate>Mon, 22 Jan 2018 23:58:56 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/topics/catcode/</guid>
       <description></description>
     </item>
     
@@ -39,20 +57,20 @@
     </item>
     
     <item>
+      <title>IPAフォント</title>
+      <link>https://hakuoku.github.io/agakuTeX/topics/ipa%E3%83%95%E3%82%A9%E3%83%B3%E3%83%88/</link>
+      <pubDate>Thu, 09 Nov 2017 13:32:05 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/topics/ipa%E3%83%95%E3%82%A9%E3%83%B3%E3%83%88/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Kern</title>
       <link>https://hakuoku.github.io/agakuTeX/topics/kern/</link>
       <pubDate>Fri, 10 Nov 2017 14:03:29 +0900</pubDate>
       
       <guid>https://hakuoku.github.io/agakuTeX/topics/kern/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Makeatletter</title>
-      <link>https://hakuoku.github.io/agakuTeX/topics/makeatletter/</link>
-      <pubDate>Thu, 09 Nov 2017 23:13:02 +0900</pubDate>
-      
-      <guid>https://hakuoku.github.io/agakuTeX/topics/makeatletter/</guid>
       <description></description>
     </item>
     
@@ -80,15 +98,6 @@
       <pubDate>Thu, 09 Nov 2017 23:13:02 +0900</pubDate>
       
       <guid>https://hakuoku.github.io/agakuTeX/topics/plext/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Pxcjkcat</title>
-      <link>https://hakuoku.github.io/agakuTeX/topics/pxcjkcat/</link>
-      <pubDate>Fri, 10 Nov 2017 14:03:29 +0900</pubDate>
-      
-      <guid>https://hakuoku.github.io/agakuTeX/topics/pxcjkcat/</guid>
       <description></description>
     </item>
     
@@ -125,6 +134,15 @@
       <pubDate>Tue, 18 Apr 2017 18:13:32 +0900</pubDate>
       
       <guid>https://hakuoku.github.io/agakuTeX/topics/utf-8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Uline--</title>
+      <link>https://hakuoku.github.io/agakuTeX/topics/uline--/</link>
+      <pubDate>Tue, 23 Jan 2018 00:00:28 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/topics/uline--/</guid>
       <description></description>
     </item>
     
@@ -305,15 +323,6 @@
       <pubDate>Sat, 22 Apr 2017 19:24:51 +0900</pubDate>
       
       <guid>https://hakuoku.github.io/agakuTeX/topics/%E3%83%9E%E3%82%AF%E3%83%AD/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>三点リーダー</title>
-      <link>https://hakuoku.github.io/agakuTeX/topics/%E4%B8%89%E7%82%B9%E3%83%AA%E3%83%BC%E3%83%80%E3%83%BC/</link>
-      <pubDate>Fri, 10 Nov 2017 14:03:29 +0900</pubDate>
-      
-      <guid>https://hakuoku.github.io/agakuTeX/topics/%E4%B8%89%E7%82%B9%E3%83%AA%E3%83%BC%E3%83%80%E3%83%BC/</guid>
       <description></description>
     </item>
     
