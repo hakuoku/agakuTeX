@@ -60,3 +60,13 @@ canonifyURLs = true
     URL = "/topics/"
     identifier = "topics"
     weight = 1000
+
+[[menu.toc]]
+    name = ""
+    weight = 1500
+
+[[menu.toc]]
+    name = "TeX Tips"
+    URL = "/tips/"
+    identifier = "tips"
+    weight = 2000
