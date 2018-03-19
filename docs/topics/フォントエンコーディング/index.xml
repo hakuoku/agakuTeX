@@ -20,5 +20,14 @@
       <description>&amp;#x3000;さて話を戻して、pxcjkcatパッケージの使い方の続きです。 横倒ししたい字が死ぬほど出てくるとき いちいち部分指定なんかして</description>
     </item>
     
+    <item>
+      <title>ちょっと楽なエスケープ</title>
+      <link>https://hakuoku.github.io/agakuTeX/tips/xescape/</link>
+      <pubDate>Mon, 22 Jan 2018 23:58:56 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tips/xescape/</guid>
+      <description>&amp;#x3000;エスケープの項では基本を大事にという観点から、特殊記号にバックスラッシュをつける初歩的な方法を紹介しました。 ですが実はもう少</description>
+    </item>
+    
   </channel>
 </rss>

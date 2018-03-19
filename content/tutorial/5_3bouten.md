@@ -68,7 +68,8 @@ topics = ["plext", "pxrubrica", "uline--", "breakfbox", "垂直方向と水平�
 {{< figure src="/img/53bouten/bousen.png" caption="幸田露伴の「あやしやな」だって組める" alt="傍線" class="" >}}
 
 #### uline--パッケージ
-　複雑な傍線には、吉永徹美さんの**uline--**パッケージを使います。TeX Liveには含まれておらず、残念ながらご本人のサイトも2017年に閉鎖されてしまったのですが、[インターネットアーカイブ](https://web.archive.org/web/20161004154816/http://www.h4.dion.ne.jp/~latexcat/)が残っています。また[doraTeX](https://twitter.com/doraTeX)（寺田侑祐）さんが、これを拡張した上でuline--パッケージも同梱した**breakfbox**パッケージを公開していらっしゃいますので、そちらを入手することにしましょう（breakfbox本体も後で使います）。  
+　複雑な傍線には、吉永徹美さんの**uline--**パッケージを使います。TeX Liveには含まれておらず、残念ながらご本人のサイトも2017年に閉鎖されてしまったのですが、[インターネットアーカイブ](https://web.archive.org/web/20161004154816/http://www.h4.dion.ne.jp/~latexcat/)が残っています。また[doraTeX](https://twitter.com/doraTeX)（寺田侑祐）さんが、これを拡張した上でuline--パッケージも同梱した**breakfbox**パッケージを公開していらっしゃいますので、そちらを入手することにしましょう（breakfbox本体も後で使います）。
+
 　[約物](/tutorial/4_4_0punct/)のところで落としたGistと同様、[GitHubのページ](https://github.com/doraTeX/breakfbox)の右上の「Clone or Download」ボタンを押し、「Download ZIP」を選んでダウンロードして下さい。中身のuline--.styとbreakfbox.styを作業フォルダに移し、`\usepackage{uline--}`で宣言して準備完了です。
 
 コマンドは以下。

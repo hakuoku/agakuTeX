@@ -35,7 +35,7 @@
 <meta name="twitter:creator" content="@isaribi_saitoh" />
 
     
-    <meta name="generator" content="Hugo 0.25.1" />
+    <meta name="generator" content="Hugo 0.36.1" />
     <link rel="canonical" href="https://hakuoku.github.io/agakuTeX/tutorial/3_3escape/">
     
     
@@ -252,6 +252,18 @@
                     <li><a class="drawer-dropdown-menu-item" href="https://hakuoku.github.io/agakuTeX/tutorial/5_3bouten/">傍点・傍線</a></li>
                     
                 
+                    
+                    <li><a class="drawer-dropdown-menu-item" href="https://hakuoku.github.io/agakuTeX/tutorial/5_4emph/">太字・斜体</a></li>
+                    
+                
+                    
+                    <li><a class="drawer-dropdown-menu-item" href="https://hakuoku.github.io/agakuTeX/tutorial/5_5fontsize/">文字サイズ</a></li>
+                    
+                
+                    
+                    <li><a class="drawer-dropdown-menu-item" href="https://hakuoku.github.io/agakuTeX/tutorial/5_6framed/">罫囲み（枠をつける）</a></li>
+                    
+                
             </ul>
             </li>
         
@@ -266,6 +278,14 @@
     
         
         <li><a href="https://hakuoku.github.io/agakuTeX/topics/">索引</a></li>
+        
+    
+        
+        <li><a href=""></a></li>
+        
+    
+        
+        <li><a href="https://hakuoku.github.io/agakuTeX/tips/">TeX Tips</a></li>
         
     
   </ul>
@@ -306,7 +326,7 @@ l.89 ...なので、五番目のポオルは fa#
 
 <p>　どういうことかというと、「ノンシャラン道中記」の本文に、TeXで使っちゃいけない#の字が入っているんですね。ちなみにオルガンごっこをするというシーンで、ファのシャープです。<br />
 　こういう「TeX側がコマンドとして使うから人間は使っちゃいけない記号」はけっこうあって、選んだテキストによっては文字は違えどこれと同じエラーが出るかもしれません。そのため<strong>エスケープ</strong>というものをして、特殊文字が表示されるようにします。<br />
-　使い方は簡単で、特殊文字の前にバックスラッシュをつけるだけです。その方式じゃない字もありますが、その場合は以下の表を参考に正しいコマンドに置き換えます。ちなみに全て半角です。全角文字は全て字として描画されるので、違和感がなければただ全角に置き換えるのでもいいと思います。</p>
+　使い方は簡単で、特殊文字の前にバックスラッシュをつけるだけです。その方式じゃない字もありますが、その場合は以下の表を参考に正しいコマンドに置き換えます<sup class="footnote-ref" id="fnref:1"><a rel="footnote" href="#fn:1">1</a></sup>。ちなみに全て半角です。全角文字は全て字として描画されるので、違和感がなければただ全角に置き換えるのでもいいと思います。</p>
 
 <table>
 <thead>
@@ -454,7 +474,7 @@ l.89 ...なので、五番目のポオルは fa#
 </figure>
 
 
-<p>　無事に組版できました<sup class="footnote-ref" id="fnref:1"><a rel="footnote" href="#fn:1">1</a></sup>。だいぶごちゃごちゃしてますが、これからちゃんとした本になっていきますよ。</p>
+<p>　無事に組版できました<sup class="footnote-ref" id="fnref:2"><a rel="footnote" href="#fn:2">2</a></sup>。だいぶごちゃごちゃしてますが、これからちゃんとした本になっていきますよ。</p>
 
 <h4 id="参考">参考</h4>
 
@@ -469,8 +489,10 @@ l.89 ...なので、五番目のポオルは fa#
 <hr />
 
 <ol>
-<li id="fn:1">この時フォルダ内にPDFとともに.logだの.auxだのいうファイルが生まれますが、補助ファイルなので邪魔だったら削除してもOKです。タイプセットボタンを押すごとにPDFと補助ファイル群が生成され、前のものに上書きされます。
+<li id="fn:1">もっと楽な方法もありますが、初心者向けではないのでTipsとして<a href="https://hakuoku.github.io/agakuTeX/tips/xescape/">こちら</a>で紹介しています。
  <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
+<li id="fn:2">この時フォルダ内にPDFとともに.logだの.auxだのいうファイルが生まれますが、補助ファイルなので邪魔だったら削除してもOKです。タイプセットボタンを押すごとにPDFと補助ファイル群が生成され、前のものに上書きされます。
+ <a class="footnote-return" href="#fnref:2"><sup>[return]</sup></a></li>
 </ol>
 </div>
 
@@ -498,7 +520,7 @@ l.89 ...なので、五番目のポオルは fa#
         return;
 
     var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-    var disqus_shortname = 'hakuoku';
+    var disqus_shortname = '';
     dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
 })();

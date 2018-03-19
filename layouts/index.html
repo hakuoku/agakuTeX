@@ -26,14 +26,24 @@
                 </footer>
             </article>
         {{ end }}
+        <article class="index">
+            <header>
+                <h3 class="post__title" itemprop="name">もくじ</h3>
+            </header>
+            <section class="post__content" itemprop="articleBody">
+                {{ partial "toc" . }}
+            </section>
+        </article>
+        {{ range where .Data.Pages "Section" "index" }}
             <article class="index">
                 <header>
-                    <h3 class="post__title" itemprop="name">もくじ</h3>
+                    <h3 class="post__title" itemprop="name">{{ .Title }}</h3>
                 </header>
                 <section class="post__content" itemprop="articleBody">
-                    {{ partial "toc" . }}
+                    {{ .Content }}
                 </section>
             </article>
+        {{ end }}
 
 <!--
         {{ $paginator := .Paginate (where .Data.Pages.ByDate.Reverse "Section" "tutorial") 3 }}

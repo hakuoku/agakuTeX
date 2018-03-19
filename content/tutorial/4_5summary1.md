@@ -17,7 +17,7 @@ lastmod = "2018-01-27T15:46:18+09:00"
 %%%%%%%%%%%%%%%%
 %パッケージ使用はここでまとめて宣言
 \usepackage{otf}  %pxcjkcatより前に書くこと　！と？の後の自動グルーを許可しない場合はnoreplaceオプションを入れる
-\usepackage[LGR,T2A,T1]{fontenc}  %前2つがギリシャ・キリル文字のために必要
+\usepackage[LGR,T2A,T1]{fontenc}  %前2つがギリシャ・キリル文字のために必要　T1は常に必須
 \usepackage[greek,russian,english,japanese]{babel}  %同上
 \usepackage{textcomp}
 \usepackage[utf8]{inputenc}

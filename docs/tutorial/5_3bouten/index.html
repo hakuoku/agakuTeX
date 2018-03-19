@@ -35,7 +35,7 @@
 <meta name="twitter:creator" content="@isaribi_saitoh" />
 
     
-    <meta name="generator" content="Hugo 0.25.1" />
+    <meta name="generator" content="Hugo 0.36.1" />
     <link rel="canonical" href="https://hakuoku.github.io/agakuTeX/tutorial/5_3bouten/">
     
     
@@ -252,6 +252,18 @@
                     <li><a class="drawer-dropdown-menu-item" href="https://hakuoku.github.io/agakuTeX/tutorial/5_3bouten/">傍点・傍線</a></li>
                     
                 
+                    
+                    <li><a class="drawer-dropdown-menu-item" href="https://hakuoku.github.io/agakuTeX/tutorial/5_4emph/">太字・斜体</a></li>
+                    
+                
+                    
+                    <li><a class="drawer-dropdown-menu-item" href="https://hakuoku.github.io/agakuTeX/tutorial/5_5fontsize/">文字サイズ</a></li>
+                    
+                
+                    
+                    <li><a class="drawer-dropdown-menu-item" href="https://hakuoku.github.io/agakuTeX/tutorial/5_6framed/">罫囲み（枠をつける）</a></li>
+                    
+                
             </ul>
             </li>
         
@@ -266,6 +278,14 @@
     
         
         <li><a href="https://hakuoku.github.io/agakuTeX/topics/">索引</a></li>
+        
+    
+        
+        <li><a href=""></a></li>
+        
+    
+        
+        <li><a href="https://hakuoku.github.io/agakuTeX/tips/">TeX Tips</a></li>
         
     
   </ul>
@@ -447,8 +467,9 @@
 
 <h4 id="uline-パッケージ">uline&ndash;パッケージ</h4>
 
-<p>　複雑な傍線には、吉永徹美さんの<strong>uline&ndash;</strong>パッケージを使います。TeX Liveには含まれておらず、残念ながらご本人のサイトも2017年に閉鎖されてしまったのですが、<a href="https://web.archive.org/web/20161004154816/http://www.h4.dion.ne.jp/~latexcat/">インターネットアーカイブ</a>が残っています。また<a href="https://twitter.com/doraTeX">doraTeX</a>（寺田侑祐）さんが、これを拡張した上でuline&ndash;パッケージも同梱した<strong>breakfbox</strong>パッケージを公開していらっしゃいますので、そちらを入手することにしましょう（breakfbox本体も後で使います）。<br />
-　<a href="https://hakuoku.github.io/agakuTeX/tutorial/4_4_0punct/">約物</a>のところで落としたGistと同様、<a href="https://github.com/doraTeX/breakfbox">GitHubのページ</a>の右上の「Clone or Download」ボタンを押し、「Download ZIP」を選んでダウンロードして下さい。中身のuline&ndash;.styとbreakfbox.styを作業フォルダに移し、<code>\usepackage{uline--}</code>で宣言して準備完了です。</p>
+<p>　複雑な傍線には、吉永徹美さんの<strong>uline&ndash;</strong>パッケージを使います。TeX Liveには含まれておらず、残念ながらご本人のサイトも2017年に閉鎖されてしまったのですが、<a href="https://web.archive.org/web/20161004154816/http://www.h4.dion.ne.jp/~latexcat/">インターネットアーカイブ</a>が残っています。また<a href="https://twitter.com/doraTeX">doraTeX</a>（寺田侑祐）さんが、これを拡張した上でuline&ndash;パッケージも同梱した<strong>breakfbox</strong>パッケージを公開していらっしゃいますので、そちらを入手することにしましょう（breakfbox本体も後で使います）。</p>
+
+<p>　<a href="https://hakuoku.github.io/agakuTeX/tutorial/4_4_0punct/">約物</a>のところで落としたGistと同様、<a href="https://github.com/doraTeX/breakfbox">GitHubのページ</a>の右上の「Clone or Download」ボタンを押し、「Download ZIP」を選んでダウンロードして下さい。中身のuline&ndash;.styとbreakfbox.styを作業フォルダに移し、<code>\usepackage{uline--}</code>で宣言して準備完了です。</p>
 
 <p>コマンドは以下。</p>
 
@@ -509,7 +530,7 @@
             <li class = "pager-prev"><a href = "https://hakuoku.github.io/agakuTeX/tutorial/5_2ruby/">←ルビ</a></li>
         
         
-            <li class = "pager-next"><a href = "https://hakuoku.github.io/agakuTeX/tutorial/replace/">青空文庫からの置換一覧（作成中）→</a></li>
+            <li class = "pager-next"><a href = "https://hakuoku.github.io/agakuTeX/tutorial/5_4emph/">太字・斜体→</a></li>
         
     </ul>
 </nav>
@@ -526,7 +547,7 @@
         return;
 
     var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-    var disqus_shortname = 'hakuoku';
+    var disqus_shortname = '';
     dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
 })();
