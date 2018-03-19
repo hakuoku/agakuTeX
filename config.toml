@@ -1,4 +1,4 @@
-baseurl = "https://hakuoku.github.io/agakuTeX/"
+baseurl = "http://replace-this-with-your-hugo-site.com/"
 title = "あがきながら覚えるTeX"
 theme = "hugo-frais"
 languageCode = "ja"
@@ -54,9 +54,19 @@ canonifyURLs = true
     name = "本文の編集 - 発展編"
     identifier = "edit2"
     weight = 500
-
 [[menu.toc]]
     name = "索引"
     URL = "/topics/"
     identifier = "topics"
     weight = 1000
+[[menu.toc]]
+    name = ""
+    weight = 1500
+[[menu.toc]]
+    name = "TeX Tips"
+    pre = "<span class='index__item--another'>"
+    post = "</span>"
+    URL = "/tips/"
+    identifier = "tips"
+    weight = 2000
+

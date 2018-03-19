@@ -1,8 +1,9 @@
 {{ partial "head" . }}
-<body class="template template--list">
+<body class="template template--list drawer drawer--right">
     <section class="header-wrapper">
         {{ partial "header" . }}
         {{ partial "navigation" . }}
+         {{ partial "side" . }}
     </section>
     <main class="content" role="main" id="main-content">
         <h1>{{ .Title }}</h1>
