@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Minipage on あがきながら覚えるTeX</title>
+    <link>https://hakuoku.github.io/agakuTeX/topics/minipage/</link>
+    <description>Recent content in Minipage on あがきながら覚えるTeX</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sun, 18 Mar 2018 23:34:27 +0900</lastBuildDate>
+    
+	<atom:link href="https://hakuoku.github.io/agakuTeX/topics/minipage/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>罫囲み（枠をつける）</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/5_6framed/</link>
+      <pubDate>Sun, 18 Mar 2018 23:34:27 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/5_6framed/</guid>
+      <description>&amp;#x3000;ノンシャラン道中記には名刺や看板の記述など、文が枠で囲まれた箇所がけっこう出てきます。青空文庫では［＃罫囲み］となっていると</description>
+    </item>
+    
+  </channel>
+</rss>

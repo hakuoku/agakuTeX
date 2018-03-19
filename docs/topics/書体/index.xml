@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>書体 on あがきながら覚えるTeX</title>
+    <link>https://hakuoku.github.io/agakuTeX/topics/%E6%9B%B8%E4%BD%93/</link>
+    <description>Recent content in 書体 on あがきながら覚えるTeX</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Mon, 29 Jan 2018 23:04:32 +0900</lastBuildDate>
+    
+	<atom:link href="https://hakuoku.github.io/agakuTeX/topics/%E6%9B%B8%E4%BD%93/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>太字・斜体</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/5_4emph/</link>
+      <pubDate>Mon, 29 Jan 2018 23:04:32 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/5_4emph/</guid>
+      <description>&amp;#x3000;先に説明してしまうと、字を一般的なゴシック体の太字にするには\textgt{}、明朝体のまま太字にするには\textbf{}</description>
+    </item>
+    
+  </channel>
+</rss>

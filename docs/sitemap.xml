@@ -153,6 +153,21 @@
   </url>
   
   <url>
+    <loc>https://hakuoku.github.io/agakuTeX/tutorial/5_4emph/</loc>
+    <lastmod>2018-02-15T10:10:10+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hakuoku.github.io/agakuTeX/tutorial/5_5fontsize/</loc>
+    <lastmod>2018-03-19T14:01:58+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hakuoku.github.io/agakuTeX/tutorial/5_6framed/</loc>
+    <lastmod>2018-03-18T23:34:27+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://hakuoku.github.io/agakuTeX/tutorial/replace/</loc>
     <lastmod>2017-05-07T17:50:02+09:00</lastmod>
   </url>
@@ -164,7 +179,7 @@
   
   <url>
     <loc>https://hakuoku.github.io/agakuTeX/tips/xescape/</loc>
-    <lastmod>2018-01-22T23:58:56+09:00</lastmod>
+    <lastmod>2018-02-15T10:37:24+09:00</lastmod>
   </url>
   
   <url>
@@ -198,12 +213,30 @@
   
   <url>
     <loc>https://hakuoku.github.io/agakuTeX/topics/catcode/</loc>
-    <lastmod>2018-01-22T23:58:56+09:00</lastmod>
+    <lastmod>2018-02-15T10:37:24+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://hakuoku.github.io/agakuTeX/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hakuoku.github.io/agakuTeX/topics/emph/</loc>
+    <lastmod>2018-02-15T10:10:10+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hakuoku.github.io/agakuTeX/topics/environ/</loc>
+    <lastmod>2018-03-18T23:34:27+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hakuoku.github.io/agakuTeX/topics/framed/</loc>
+    <lastmod>2018-03-18T23:34:27+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -222,6 +255,12 @@
   <url>
     <loc>https://hakuoku.github.io/agakuTeX/topics/kern/</loc>
     <lastmod>2018-01-27T15:46:29+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hakuoku.github.io/agakuTeX/topics/minipage/</loc>
+    <lastmod>2018-03-18T23:34:27+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -275,7 +314,7 @@
   
   <url>
     <loc>https://hakuoku.github.io/agakuTeX/tips/</loc>
-    <lastmod>2018-01-22T23:58:56+09:00</lastmod>
+    <lastmod>2018-02-15T10:37:24+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -316,6 +355,12 @@
   </url>
   
   <url>
+    <loc>https://hakuoku.github.io/agakuTeX/topics/varwidth/</loc>
+    <lastmod>2018-03-18T23:34:27+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://hakuoku.github.io/agakuTeX/topics/verb/</loc>
     <lastmod>2017-11-18T22:58:34+09:00</lastmod>
     <priority>0</priority>
@@ -324,6 +369,12 @@
   <url>
     <loc>https://hakuoku.github.io/agakuTeX/topics/verbatim/</loc>
     <lastmod>2017-04-26T23:07:39+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hakuoku.github.io/agakuTeX/topics/vspace/</loc>
+    <lastmod>2018-03-19T14:01:58+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -354,6 +405,12 @@
   <url>
     <loc>https://hakuoku.github.io/agakuTeX/topics/%E3%82%A8%E3%83%B3%E3%82%B3%E3%83%BC%E3%83%89/</loc>
     <lastmod>2017-04-19T12:44:26+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hakuoku.github.io/agakuTeX/topics/%E3%82%AB%E3%83%86%E3%82%B4%E3%83%AA%E3%83%BC%E3%82%B3%E3%83%BC%E3%83%89/</loc>
+    <lastmod>2018-02-15T10:37:24+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -466,6 +523,12 @@
   </url>
   
   <url>
+    <loc>https://hakuoku.github.io/agakuTeX/topics/%E6%9B%B8%E4%BD%93/</loc>
+    <lastmod>2018-02-15T10:10:10+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://hakuoku.github.io/agakuTeX/topics/%E6%A4%9C%E7%B4%A2%E7%BD%AE%E6%8F%9B/</loc>
     <lastmod>2017-04-19T13:03:39+09:00</lastmod>
     <priority>0</priority>
@@ -486,6 +549,12 @@
   <url>
     <loc>https://hakuoku.github.io/agakuTeX/topics/%E7%AD%89%E5%B9%85%E3%83%95%E3%82%A9%E3%83%B3%E3%83%88/</loc>
     <lastmod>2017-11-18T22:58:34+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hakuoku.github.io/agakuTeX/topics/%E8%A1%8C%E9%96%93/</loc>
+    <lastmod>2018-03-19T14:01:58+09:00</lastmod>
     <priority>0</priority>
   </url>
   

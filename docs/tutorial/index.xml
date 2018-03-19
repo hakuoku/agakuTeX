@@ -282,6 +282,33 @@
     </item>
     
     <item>
+      <title>太字・斜体</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/5_4emph/</link>
+      <pubDate>Mon, 29 Jan 2018 23:04:32 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/5_4emph/</guid>
+      <description>&amp;#x3000;先に説明してしまうと、字を一般的なゴシック体の太字にするには\textgt{}、明朝体のまま太字にするには\textbf{}</description>
+    </item>
+    
+    <item>
+      <title>文字サイズ</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/5_5fontsize/</link>
+      <pubDate>Sat, 03 Mar 2018 20:39:22 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/5_5fontsize/</guid>
+      <description>&amp;#x3000;文字の大きさも変えられます。以下の10種のコマンドが使えます。 {\tiny ５ポイント} {\scriptsize ７ポイント} {\footnotesize ８ポイント} {\small ９ポイント} {\normalsize \r</description>
+    </item>
+    
+    <item>
+      <title>罫囲み（枠をつける）</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/5_6framed/</link>
+      <pubDate>Sun, 18 Mar 2018 23:34:27 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/5_6framed/</guid>
+      <description>&amp;#x3000;ノンシャラン道中記には名刺や看板の記述など、文が枠で囲まれた箇所がけっこう出てきます。青空文庫では［＃罫囲み］となっていると</description>
+    </item>
+    
+    <item>
       <title>青空文庫からの置換一覧（作成中）</title>
       <link>https://hakuoku.github.io/agakuTeX/tutorial/replace/</link>
       <pubDate>Sun, 07 May 2017 17:50:02 +0900</pubDate>

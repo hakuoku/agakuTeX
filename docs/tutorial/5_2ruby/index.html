@@ -35,7 +35,7 @@
 <meta name="twitter:creator" content="@isaribi_saitoh" />
 
     
-    <meta name="generator" content="Hugo 0.25.1" />
+    <meta name="generator" content="Hugo 0.36.1" />
     <link rel="canonical" href="https://hakuoku.github.io/agakuTeX/tutorial/5_2ruby/">
     
     
@@ -252,6 +252,18 @@
                     <li><a class="drawer-dropdown-menu-item" href="https://hakuoku.github.io/agakuTeX/tutorial/5_3bouten/">傍点・傍線</a></li>
                     
                 
+                    
+                    <li><a class="drawer-dropdown-menu-item" href="https://hakuoku.github.io/agakuTeX/tutorial/5_4emph/">太字・斜体</a></li>
+                    
+                
+                    
+                    <li><a class="drawer-dropdown-menu-item" href="https://hakuoku.github.io/agakuTeX/tutorial/5_5fontsize/">文字サイズ</a></li>
+                    
+                
+                    
+                    <li><a class="drawer-dropdown-menu-item" href="https://hakuoku.github.io/agakuTeX/tutorial/5_6framed/">罫囲み（枠をつける）</a></li>
+                    
+                
             </ul>
             </li>
         
@@ -266,6 +278,14 @@
     
         
         <li><a href="https://hakuoku.github.io/agakuTeX/topics/">索引</a></li>
+        
+    
+        
+        <li><a href=""></a></li>
+        
+    
+        
+        <li><a href="https://hakuoku.github.io/agakuTeX/tips/">TeX Tips</a></li>
         
     
   </ul>
@@ -331,24 +351,24 @@
 
 <p>　可能な限り揺れを考慮したつもりですが、それでも「すべて置換」してしまうと思わぬ変換結果になる箇所が出る危険があります。面倒でもできるだけ一つ一つ検索＆「次を置換」していってください。<br />
 　また拾いきれないパターンもあります。Meryならひと通り置換が終わった後でAozora編集モードに切り替えると、《二重山括弧》式のルビがハイライトされるのでこぼれた箇所が分かりやすいです。<br />
-　おかしな結果が出た際は是非フィードバックをお願いします。特にアクセント付きアルファベットあたりが鬼門。詳しくは<a href="http://hakuoku.hatenablog.com/entry/2018/01/25/221125">ブログ</a>で解説しています。</p>
+　おかしな結果が出た際は是非フィードバックをお願いします。特に特殊アルファベットあたりが鬼門。詳しくは<a href="http://hakuoku.hatenablog.com/entry/2018/01/25/221125">ブログ</a>で解説しています。</p>
 
 <p>①範囲指定された欧文につけるルビ<br />
-　検索する文字列： <code>[｜\|]([\w\p{P}\s]+)[《（\(](.+?)[\)）》]</code>　→　置換後の文字列： <code>\\aruby{\1}{\2}</code><br />
-　※英語以外のアルファベットを使っている人はこれの後に<code>[｜\|]([\p{Latin}\p{P}\d\s]+)[《（\(](.+?)[\)）》]</code>で検索をかけてチェック</p>
+　検索する文字列： <code>[｜\|]([\u0020-\u024F]+)[《（\(](.+?)[\)）》]</code>　→　置換後の文字列： <code>\\aruby{\1}{\2}</code><br />
+　※ギリシャ、キリル文字を使っている人はこれの後に<code>[｜\|]([\u0370-\u03FF\u1F00-\u1FFF\u0400-\u052F\s\d\p{P}]+)[《（\(](.+?)[\)）》]</code>で検索</p>
 
 <p>②範囲指定のない空白区切りの欧文につけるルビ（青空文庫のみ）<br />
-　検索する文字列： <code>([\w\p{P}]+)《(.+?)》</code>　→　置換後の文字列： <code>\\aruby{\1}{\2}</code><br />
-　※同上、<code>([\p{Latin}\p{P}\d]+)《(.+?)》</code>で</p>
+　検索する文字列： <code>([\u0021-\u024F]+)《(.+?)》</code>　→　置換後の文字列： <code>\\aruby{\1}{\2}</code><br />
+　※同上、<code>([\u0370-\u03FF\u1F00-\u1FFF\u0400-\u052F\d\p{P}]+)《(.+?)》</code>で</p>
 
 <p>③範囲指定された和文につけるルビ<br />
 　検索する文字列： <code>[｜\|](.+?)[《（\(](.+?)[\)）》]</code>　→　置換後の文字列： <code>\\ruby{\1}{\2}</code></p>
 
 <p>④範囲指定のない漢字のみにつけるルビ<br />
-　検索する文字列： <code>(\p{Han}+)《(.+?)》</code>　→　置換後の文字列： <code>\\ruby{\1}{\2}</code></p>
+　検索する文字列： <code>([\p{Han}〆ヶ]+)《(.+?)》</code>　→　置換後の文字列： <code>\\ruby{\1}{\2}</code></p>
 
 <p>⑤丸括弧で指定するひらがなとカタカナのみのルビ（小説家になろうのみ）<br />
-　検索する文字列： <code>([\p{Han}]+)[（\(]([ぁ-んァ-ヶー]+)[）\)]</code>　→　置換後の文字列： <code>\\ruby{\1}{\2}</code></p>
+　検索する文字列： <code>([\p{Han}〆ヶ]+)[（\(]([\p{Hiragana}\p{Katakana}\p{P}ー]+)[）\)]</code>　→　置換後の文字列： <code>\\ruby{\1}{\2}</code></p>
 
 <p>⑥そのまま表示したい括弧類の補正用（小説家になろうのみ）<br />
 　検索する文字列： <code>[｜\|]([《（\(])(.+?)([\)）》])</code>　→　置換後の文字列： <code>\1\2\3</code></p>
@@ -358,8 +378,8 @@
 　pixiv形式は以下。</p>
 
 <p>①欧文につけるルビ
-　検索する文字列： <code>\[\[rb:([\w\p{P}\s]+) &gt; (.+?)\]\]</code>　→　置換後の文字列： <code>\\aruby{\1}{\2}</code><br />
-　※同上、<code>\[\[rb:([\p{Latin}\p{P}\d\s]+) &gt; (.+?)\]\]</code></p>
+　検索する文字列： <code>\[\[rb:([\u0020-\u024F]+) &gt; (.+?)\]\]</code>　→　置換後の文字列： <code>\\aruby{\1}{\2}</code><br />
+　※同上、<code>\[\[rb:([\u0370-\u03FF\u1F00-\u1FFF\u0400-\u052F\s\d\p{P}]+) &gt; (.+?)\]\]</code></p>
 
 <p>②和文につけるルビ
 　検索する文字列： <code>\[\[rb:(.+?) &gt; (.+?)\]\]</code>　→　置換後の文字列： <code>\\ruby{\1}{\2}</code></p>
@@ -480,7 +500,7 @@
         return;
 
     var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-    var disqus_shortname = 'hakuoku';
+    var disqus_shortname = '';
     dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
 })();
