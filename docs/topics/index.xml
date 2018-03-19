@@ -48,6 +48,33 @@
     </item>
     
     <item>
+      <title>Emph</title>
+      <link>https://hakuoku.github.io/agakuTeX/topics/emph/</link>
+      <pubDate>Mon, 29 Jan 2018 23:04:32 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/topics/emph/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Environ</title>
+      <link>https://hakuoku.github.io/agakuTeX/topics/environ/</link>
+      <pubDate>Sun, 18 Mar 2018 23:34:27 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/topics/environ/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Framed</title>
+      <link>https://hakuoku.github.io/agakuTeX/topics/framed/</link>
+      <pubDate>Sun, 18 Mar 2018 23:34:27 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/topics/framed/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Hfill</title>
       <link>https://hakuoku.github.io/agakuTeX/topics/hfill/</link>
       <pubDate>Thu, 27 Apr 2017 07:52:54 +0900</pubDate>
@@ -71,6 +98,15 @@
       <pubDate>Fri, 10 Nov 2017 14:03:29 +0900</pubDate>
       
       <guid>https://hakuoku.github.io/agakuTeX/topics/kern/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Minipage</title>
+      <link>https://hakuoku.github.io/agakuTeX/topics/minipage/</link>
+      <pubDate>Sun, 18 Mar 2018 23:34:27 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/topics/minipage/</guid>
       <description></description>
     </item>
     
@@ -165,6 +201,15 @@
     </item>
     
     <item>
+      <title>Varwidth</title>
+      <link>https://hakuoku.github.io/agakuTeX/topics/varwidth/</link>
+      <pubDate>Sun, 18 Mar 2018 23:34:27 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/topics/varwidth/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Verb</title>
       <link>https://hakuoku.github.io/agakuTeX/topics/verb/</link>
       <pubDate>Fri, 10 Nov 2017 14:00:48 +0900</pubDate>
@@ -179,6 +224,15 @@
       <pubDate>Wed, 26 Apr 2017 23:07:39 +0900</pubDate>
       
       <guid>https://hakuoku.github.io/agakuTeX/topics/verbatim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vspace</title>
+      <link>https://hakuoku.github.io/agakuTeX/topics/vspace/</link>
+      <pubDate>Sat, 03 Mar 2018 20:39:22 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/topics/vspace/</guid>
       <description></description>
     </item>
     
@@ -215,6 +269,15 @@
       <pubDate>Tue, 18 Apr 2017 18:13:32 +0900</pubDate>
       
       <guid>https://hakuoku.github.io/agakuTeX/topics/%E3%82%A8%E3%83%B3%E3%82%B3%E3%83%BC%E3%83%89/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>カテゴリーコード</title>
+      <link>https://hakuoku.github.io/agakuTeX/topics/%E3%82%AB%E3%83%86%E3%82%B4%E3%83%AA%E3%83%BC%E3%82%B3%E3%83%BC%E3%83%89/</link>
+      <pubDate>Mon, 22 Jan 2018 23:58:56 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/topics/%E3%82%AB%E3%83%86%E3%82%B4%E3%83%AA%E3%83%BC%E3%82%B3%E3%83%BC%E3%83%89/</guid>
       <description></description>
     </item>
     
@@ -381,6 +444,15 @@
     </item>
     
     <item>
+      <title>書体</title>
+      <link>https://hakuoku.github.io/agakuTeX/topics/%E6%9B%B8%E4%BD%93/</link>
+      <pubDate>Mon, 29 Jan 2018 23:04:32 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/topics/%E6%9B%B8%E4%BD%93/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>検索・置換</title>
       <link>https://hakuoku.github.io/agakuTeX/topics/%E6%A4%9C%E7%B4%A2%E7%BD%AE%E6%8F%9B/</link>
       <pubDate>Wed, 19 Apr 2017 13:03:39 +0900</pubDate>
@@ -413,6 +485,15 @@
       <pubDate>Fri, 10 Nov 2017 14:00:48 +0900</pubDate>
       
       <guid>https://hakuoku.github.io/agakuTeX/topics/%E7%AD%89%E5%B9%85%E3%83%95%E3%82%A9%E3%83%B3%E3%83%88/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>行間</title>
+      <link>https://hakuoku.github.io/agakuTeX/topics/%E8%A1%8C%E9%96%93/</link>
+      <pubDate>Sat, 03 Mar 2018 20:39:22 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/topics/%E8%A1%8C%E9%96%93/</guid>
       <description></description>
     </item>
     

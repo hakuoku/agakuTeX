@@ -20,5 +20,14 @@
       <description>&amp;#x3000;ルビが振れるなら傍点だって振れるだろう。はい。振れます。 傍点を振る方法は2種類あって、plextパッケージの\bouコマンド</description>
     </item>
     
+    <item>
+      <title>罫囲み（枠をつける）</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/5_6framed/</link>
+      <pubDate>Sun, 18 Mar 2018 23:34:27 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/5_6framed/</guid>
+      <description>&amp;#x3000;ノンシャラン道中記には名刺や看板の記述など、文が枠で囲まれた箇所がけっこう出てきます。青空文庫では［＃罫囲み］となっていると</description>
+    </item>
+    
   </channel>
 </rss>

@@ -2,7 +2,7 @@
 <html class="no-js" lang="ja" prefix="og: http://ogp.me/ns#">
 <head>
     <meta charset="utf-8">
-    <title>もっと楽にエスケープ | あがきながら覚えるTeX</title>
+    <title>ちょっと楽なエスケープ | あがきながら覚えるTeX</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="author" content="白屋書房">
@@ -10,7 +10,7 @@
 
     
 <meta property="og:locale" content="ja">
-<meta property="og:title" content="もっと楽にエスケープ" />
+<meta property="og:title" content="ちょっと楽なエスケープ" />
 <meta property="og:description" content="" />
 <meta property="og:site_name" content="あがきながら覚えるTeX" />
 <meta property="og:url" content="https://hakuoku.github.io/agakuTeX/tips/xescape/" />
@@ -26,7 +26,7 @@
     
 
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="もっと楽にエスケープ" />
+<meta name="twitter:title" content="ちょっと楽なエスケープ" />
 <meta name="twitter:description" content="" />
 <meta name="twitter:url" content="https://hakuoku.github.io/agakuTeX/tips/xescape/" />
 <meta name="twitter:image:src" content="https://hakuoku.github.io/agakuTeX//media/twitter-card.jpg">
@@ -35,7 +35,7 @@
 <meta name="twitter:creator" content="@isaribi_saitoh" />
 
     
-    <meta name="generator" content="Hugo 0.25.1" />
+    <meta name="generator" content="Hugo 0.36.1" />
     <link rel="canonical" href="https://hakuoku.github.io/agakuTeX/tips/xescape/">
     
     
@@ -252,6 +252,18 @@
                     <li><a class="drawer-dropdown-menu-item" href="https://hakuoku.github.io/agakuTeX/tutorial/5_3bouten/">傍点・傍線</a></li>
                     
                 
+                    
+                    <li><a class="drawer-dropdown-menu-item" href="https://hakuoku.github.io/agakuTeX/tutorial/5_4emph/">太字・斜体</a></li>
+                    
+                
+                    
+                    <li><a class="drawer-dropdown-menu-item" href="https://hakuoku.github.io/agakuTeX/tutorial/5_5fontsize/">文字サイズ</a></li>
+                    
+                
+                    
+                    <li><a class="drawer-dropdown-menu-item" href="https://hakuoku.github.io/agakuTeX/tutorial/5_6framed/">罫囲み（枠をつける）</a></li>
+                    
+                
             </ul>
             </li>
         
@@ -268,6 +280,14 @@
         <li><a href="https://hakuoku.github.io/agakuTeX/topics/">索引</a></li>
         
     
+        
+        <li><a href=""></a></li>
+        
+    
+        
+        <li><a href="https://hakuoku.github.io/agakuTeX/tips/">TeX Tips</a></li>
+        
+    
   </ul>
 </nav>
 
@@ -275,11 +295,250 @@
     <main class="content" role="main" id="main-content" itemscope itemtype="http://schema.org/Article">
         <article class="post">
             <header>
-                <h1 class="post__title" itemprop="name">もっと楽にエスケープ</h1>
+                <h1 class="post__title" itemprop="name">ちょっと楽なエスケープ</h1>
             </header>
             <section class="post__content" itemprop="articleBody">
-                <p>&#x3000;<a href="https://hakuoku.github.io/agakuTeX/tutorial/escape/">エスケープ</a>の項では基本を大事にという観点から、特殊記号にバックスラッシュをつける初歩的な方法を紹介しました。
-　ですが実はもっと楽にエスケープする方法があります。特殊記号の属するカテゴリーコードを書き換えてしまうという力技です。</p>
+                
+
+<p>&#x3000;<a href="https://hakuoku.github.io/agakuTeX/tutorial/3_3escape/">エスケープ</a>の項では基本を大事にという観点から、特殊記号にバックスラッシュをつける初歩的な方法を紹介しました。<br />
+　ですが実はもう少し楽にエスケープする方法があります。特殊記号の属するカテゴリーコードを書き換えてしまうという力技です。</p>
+
+<p>　おさらいをすると、TeXにおいては以下の記号たちは特別な役割を持っているため、文中にはそのまま書けないんでした。</p>
+
+<table>
+<thead>
+<tr>
+<th align="center">記号</th>
+<th align="left">TeXにとっての働き</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">#</td>
+<td align="left">命令や環境の引数</td>
+</tr>
+
+<tr>
+<td align="center">$</td>
+<td align="left">数式モードへ移行</td>
+</tr>
+
+<tr>
+<td align="center">%</td>
+<td align="left">以降をコメントアウト</td>
+</tr>
+
+<tr>
+<td align="center">&amp;</td>
+<td align="left">表のセルの区切り</td>
+</tr>
+
+<tr>
+<td align="center">_</td>
+<td align="left">下付きの添字</td>
+</tr>
+
+<tr>
+<td align="center">{</td>
+<td align="left">グループ化の開始</td>
+</tr>
+
+<tr>
+<td align="center">}</td>
+<td align="left">グループ化の終了</td>
+</tr>
+
+<tr>
+<td align="center">\</td>
+<td align="left">コマンドのためのエスケープ文字</td>
+</tr>
+
+<tr>
+<td align="center">|</td>
+<td align="left">表の縦の罫線</td>
+</tr>
+
+<tr>
+<td align="center">^</td>
+<td align="left">上付きの添字</td>
+</tr>
+
+<tr>
+<td align="center">~</td>
+<td align="left">改行を抑制して単語間の空白を空ける</td>
+</tr>
+</tbody>
+</table>
+
+<p>　しかし今我々が組んでいるのは縦書きの小説です。表とか数式モードとか、使わなくないですか？<br />
+　少なくとも筆者は使いません。表組みも正直他のソフトで作って画像として貼った方が早いです。上付き下付きの数字も、多分小説中では一生使わないと思います。それよりはアンダーバーやチルダを含むURLとかを直書きできた方が嬉しい。</p>
+
+<p>　というわけで、これらの記号から特別な役割を剥奪して、ただの記号に戻してやればいいんです。そのために使うのが<strong>カテゴリーコード</strong>です。</p>
+
+<p>　カテゴリーコードとは、詳しくは<a href="https://texwiki.texjp.org/?TeX%E5%85%A5%E9%96%80%2F%E3%83%9E%E3%82%AF%E3%83%AD%E3%81%AE%E4%BD%9C%E6%88%90#mef7a198">こちら</a>で説明されていますが、読んで字の如く文字・記号の属するカテゴリーの番号のことです。具体的には以下のようになっています（和文のことは忘れてください）。</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">カテゴリーコード</th>
+<th align="left">分類</th>
+<th align="left">通常この分類に属する文字</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">0</td>
+<td align="left">エスケープ文字</td>
+<td align="left">\</td>
+</tr>
+
+<tr>
+<td align="left">1</td>
+<td align="left">グループ開始文字</td>
+<td align="left">{</td>
+</tr>
+
+<tr>
+<td align="left">2</td>
+<td align="left">グループ終了文字</td>
+<td align="left">}</td>
+</tr>
+
+<tr>
+<td align="left">3</td>
+<td align="left">数式モードへの移行文字</td>
+<td align="left">$</td>
+</tr>
+
+<tr>
+<td align="left">4</td>
+<td align="left">アラインメントタブ</td>
+<td align="left">&amp;</td>
+</tr>
+
+<tr>
+<td align="left">5</td>
+<td align="left">行の終了文字</td>
+<td align="left">文字コード13の文字</td>
+</tr>
+
+<tr>
+<td align="left">6</td>
+<td align="left">パラメータ文字</td>
+<td align="left">#</td>
+</tr>
+
+<tr>
+<td align="left">7</td>
+<td align="left">上付き文字</td>
+<td align="left">^</td>
+</tr>
+
+<tr>
+<td align="left">8</td>
+<td align="left">下付き文字</td>
+<td align="left">_</td>
+</tr>
+
+<tr>
+<td align="left">9</td>
+<td align="left">無視する文字</td>
+<td align="left">文字コード0の文字</td>
+</tr>
+
+<tr>
+<td align="left">10</td>
+<td align="left">空白文字</td>
+<td align="left">文字コード32の文字</td>
+</tr>
+
+<tr>
+<td align="left">11</td>
+<td align="left">英文字</td>
+<td align="left">AからZまでおよびaからzまで</td>
+</tr>
+
+<tr>
+<td align="left">12</td>
+<td align="left">その他の文字</td>
+<td align="left">!&ldquo;&lsquo;()*+,-./0123456789:;&lt;=&gt;?@[]`他1文字</td>
+</tr>
+
+<tr>
+<td align="left">13</td>
+<td align="left">アクティブ文字</td>
+<td align="left">˜</td>
+</tr>
+
+<tr>
+<td align="left">14</td>
+<td align="left">コメント文字</td>
+<td align="left">%</td>
+</tr>
+
+<tr>
+<td align="left">15</td>
+<td align="left">無効文字</td>
+<td align="left">文字コード127の文字</td>
+</tr>
+</tbody>
+</table>
+
+<p>　特殊記号にはそれぞれ独立したカテゴリーコードが割り振られているのが分かりますね。これらをその他の記号を含むカテゴリーコード12に変更してやりたいと思います。</p>
+
+<p>　使うのは<code>\catcode</code>コマンド。<code>\catcode`\&lt;文字&gt;=&lt;カテゴリーコード&gt;</code>という書式で、任意の文字のカテゴリーコードを自由に変えることができます。プリアンブルの <em>一番下</em> に以下のように書き込みます。</p>
+
+<pre><code class="language-LaTeX">\catcode`\$=12
+\catcode`\&amp;=12
+\catcode`\_=12
+\catcode`\|=12
+\catcode`\^=12
+</code></pre>
+
+<p>　さすがにコマンドを指示するバックスラッシュと波括弧やコメント文字をただの記号にすることはできませんが、それ以外はこれで特殊な役割をなくし、ベタ書きできるようになりました。<br />
+　どれを普通の記号にしてどれをしないかはご自分の文体に合わせて決めてください。上付きの数字を使いたければ最後の行を抜けばいいし、チルダをベタ書きしたかったら<code>\catcode`\~=12</code>を追加すればいいです。</p>
+
+<p>　あとは通常通り、以下の表に従ってバックスラッシュ、波括弧、パーセントなど、ただの記号にできない記号をエスケープします。これらの記号が本文に出てこない、と断言できるかたは飛ばして結構です。断言までいかなくてもそんなに大量に出てこないという場合は、一括置換はせずにタイプセットした時に引っかかったところにバックスラッシュをつけていく、という形でもいいかと思います。</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">検索する文字列</th>
+<th align="left">置換後の文字列</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><code>&#092;&#092;</code></td>
+<td align="center"><code>{&#092;&#092;textbackslash}</code></td>
+</tr>
+<tr>
+<td align="center"><code>([#%&amp;{}])</code></td>
+<td align="center"><code>&#092;&#092;$1</code></td>
+</tr>
+<tr>
+<td align="center"><code>~</code></td>
+<td align="center"><code>{&#092;&#092;textasciitilde}</code></td>
+</tr>
+<tr>
+<td align="center"><code>&#092;&#092;{&#092;&#092;textbackslash&#092;&#092;}</code></td>
+<td align="center"><code>{&#092;&#092;textbackslash}</code></td>
+</tr>
+</tbody>
+</table>
+
+<p>　ちなみにこの方法には、<a href="https://hakuoku.github.io/agakuTeX/tutorial/4_3_3accent1/">アクセントと特殊記号 (1)</a>のところでパッケージの練習として読み込んだ<code>\usepackage[T1]{fontenc}</code>が必須です。（無いと_や|などがおかしくなる）</p>
+
+<h4 id="参考">参考</h4>
+
+<ul>
+<li><a href="https://en.wikibooks.org/wiki/TeX/catcode">TeX/catcode - Wikibooks</a></li>
+<li><a href="https://texwiki.texjp.org/?TeX%E5%85%A5%E9%96%80%2F%E3%83%9E%E3%82%AF%E3%83%AD%E3%81%AE%E4%BD%9C%E6%88%90#mef7a198">TeX入門/マクロの作成 - TeX Wiki</a></li>
+<li><a href="https://blog.wtsnjp.com/2016/12/21/obfuscate-tex/">TeX の難読化 | ラング・ラグー</a></li>
+<li><a href="https://blog.wtsnjp.com/2017/03/31/tex-by-topic2/">TeX by Topic ゼミ (2) カテゴリーコードの研究 | ラング・ラグー</a></li>
+</ul>
 
             </section>
             <nav class = "pager" >
@@ -301,7 +560,7 @@
         return;
 
     var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-    var disqus_shortname = 'hakuoku';
+    var disqus_shortname = '';
     dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
 })();

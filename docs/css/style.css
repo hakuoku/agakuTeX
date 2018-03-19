@@ -525,6 +525,11 @@ h5 {
 .index ul {
     margin-bottom: auto;
 }
+.index__item--another {
+    list-style-type: none;
+    font-family:"Palatino Linotype",Palatino,Palladio,"URW Palladio L","Book Antiqua",Baskerville,"Bookman Old Style","Bitstream Charter","Nimbus Roman No9 L",Garamond,"Apple Garamond","ITC Garamond Narrow","New Century Schoolbook","Century Schoolbook","Century Schoolbook L", "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN", "HiraKakuProN-W3", "Meiryo", "ＭＳ Ｐゴシック",Georgia,serif;
+    font-size: 1.25em;
+}
 
 .post__content rt {
     margin-bottom: -3px;
