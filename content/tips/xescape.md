@@ -2,7 +2,7 @@
 title = "ちょっと楽なエスケープ"
 date = 2018-01-22T23:58:56+09:00
 description = ""
-topics = ["catcode", "カテゴリーコード"]
+topics = ["catcode", "カテゴリーコード", "フォントエンコーディング"]
 slug = "xescape"
 lastmod = 2018-02-15T10:37:24+09:00
 +++
@@ -95,6 +95,8 @@ lastmod = 2018-02-15T10:37:24+09:00
 </tr>
 </tbody>
 </table>
+
+　ちなみにこの方法には、[アクセントと特殊記号 (1)](/tutorial/4_3_3accent1/)のところでパッケージの練習として読み込んだ`\usepackage[T1]{fontenc}`が必須です。（無いと_や|などがおかしくなる）
 
 #### 参考
 - [TeX/catcode - Wikibooks](https://en.wikibooks.org/wiki/TeX/catcode)
