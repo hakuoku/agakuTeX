@@ -17,7 +17,8 @@
             {{ partial "pager" . }}
         </article>
         <section class="post__comment">
-            {{ partial "disqus.html" . }}
+            {{ template "_internal/disqus.html" . }}
+            <!-- {{ partial "disqus.html" . }} -->
         </section>
     </main>
     {{ partial "footer" . }}
