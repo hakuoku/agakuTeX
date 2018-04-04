@@ -5,7 +5,7 @@ description = ""
 slug = "5_5fontsize"
 weight = 550
 lastmod = "2018-03-19T14:01:58+09:00"
-topics = ["行間", "vspace"]
+topics = ["行間", "vspace", "baselineskip"]
 [menu.toc]
     parent = "edit2"
 +++
