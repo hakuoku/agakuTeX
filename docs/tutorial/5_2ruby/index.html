@@ -264,6 +264,21 @@
                     <li><a class="drawer-dropdown-menu-item" href="https://hakuoku.github.io/agakuTeX/tutorial/5_6framed/">罫囲み（枠をつける）</a></li>
                     
                 
+                    
+                    <li class = "drawer-dropdown-menu-item sub-menu">
+                    注
+                        <ul class = "sub">
+                            
+                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/5_7_1footnote/">脚注</a></li>
+                            
+                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/5_7_2endnote/">後注</a></li>
+                            
+                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/5_7_3warichu/">割り注</a></li>
+                            
+                        </ul>
+                    </li>
+                    
+                
             </ul>
             </li>
         
@@ -354,11 +369,11 @@
 　おかしな結果が出た際は是非フィードバックをお願いします。特に特殊アルファベットあたりが鬼門。詳しくは<a href="http://hakuoku.hatenablog.com/entry/2018/01/25/221125">ブログ</a>で解説しています。</p>
 
 <p>①範囲指定された欧文につけるルビ<br />
-　検索する文字列： <code>[｜\|]([\u0020-\u024F]+)[《（\(](.+?)[\)）》]</code>　→　置換後の文字列： <code>\\aruby{\1}{\2}</code><br />
+　検索する文字列： <code>[｜\|]([\u0020-\u024F\s\d\p{P}]+)[《（\(](.+?)[\)）》]</code>　→　置換後の文字列： <code>\\aruby{\1}{\2}</code><br />
 　※ギリシャ、キリル文字を使っている人はこれの後に<code>[｜\|]([\u0370-\u03FF\u1F00-\u1FFF\u0400-\u052F\s\d\p{P}]+)[《（\(](.+?)[\)）》]</code>で検索</p>
 
 <p>②範囲指定のない空白区切りの欧文につけるルビ（青空文庫のみ）<br />
-　検索する文字列： <code>([\u0021-\u024F]+)《(.+?)》</code>　→　置換後の文字列： <code>\\aruby{\1}{\2}</code><br />
+　検索する文字列： <code>([\u0021-\u024F\d\p{P}]+)《(.+?)》</code>　→　置換後の文字列： <code>\\aruby{\1}{\2}</code><br />
 　※同上、<code>([\u0370-\u03FF\u1F00-\u1FFF\u0400-\u052F\d\p{P}]+)《(.+?)》</code>で</p>
 
 <p>③範囲指定された和文につけるルビ<br />
@@ -476,6 +491,15 @@
 <li><a href="https://qiita.com/8amjp/items/d7c46d9dee0da4d530ef">各種小説投稿サイトのルビ記法をJavaScriptで実現する - Qiita</a></li>
 </ul>
 
+            <footer class="post__meta">
+                <ul class="post__meta__infos">
+    <li class="post__meta__date"><time datetime="2018-01-19" itemprop="datePublished">(2018.1.19)</time></li>
+</ul>
+<meta itemprop="url" content="https://hakuoku.github.io/agakuTeX/tutorial/5_2ruby/">
+<meta itemprop="wordCount" content="4218" />
+<meta itemprop="timeRequired" content="9 Min" />
+
+            </footer>
             </section>
             <nav class = "pager" >
     <ul class = "pager-list">

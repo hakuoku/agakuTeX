@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>あがきながら覚えるTeX</title>
+    <link>https://hakuoku.github.io/agakuTeX/</link>
+    <description>Recent content on あがきながら覚えるTeX</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 17 Dec 2016 21:32:59 +0900</lastBuildDate>
+    
+	<atom:link href="https://hakuoku.github.io/agakuTeX/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>発端</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/1_1beginning/</link>
+      <pubDate>Sat, 17 Dec 2016 21:32:59 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/1_1beginning/</guid>
+      <description>&amp;#x3000;私はWordが苦手です。私はWordが苦手です。 というところが筆者がTeXに手を出した理由です。 もうどれくらいワープロソフト</description>
+    </item>
+    
+    <item>
+      <title>TeXとは</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/1_2whatstex/</link>
+      <pubDate>Mon, 19 Dec 2016 00:02:26 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/1_2whatstex/</guid>
+      <description>TeX（TeX; テック、テフ）はアメリカの数学者・計算機科学者であるドナルド・クヌース (Donald E. Knuth) により開発されている組版処理システムである。 ……</description>
+    </item>
+    
+    <item>
+      <title>このサイトの使い方</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/1_3usage/</link>
+      <pubDate>Sun, 02 Apr 2017 09:43:23 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/1_3usage/</guid>
+      <description>&amp;#x3000;このサイトはチュートリアル形式でゼロから一冊の本を組みながら、その場その場で必要になった知識を解説していくという泥縄式になり</description>
+    </item>
+    
+    <item>
+      <title>準備</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/2_1prepare/</link>
+      <pubDate>Sat, 31 Dec 2016 20:04:25 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/2_1prepare/</guid>
+      <description>&amp;#x3000;ではさっそく使ってみようじゃないか、と思ったところでまずつまずきます。こことかこことか見ても、全然導入方法がわかんない。そも</description>
+    </item>
+    
+    <item>
+      <title>インストール</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/2_2install/</link>
+      <pubDate>Tue, 03 Jan 2017 14:25:46 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/2_2install/</guid>
+      <description>&amp;#x3000;いよいよインストールにかかります。 まず念のためウイルスチェックソフトを切っておきます。起きてると障害になることがあるらしいの</description>
+    </item>
+    
+    <item>
+      <title>テスト</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/2_3test/</link>
+      <pubDate>Sun, 08 Jan 2017 23:02:45 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/2_3test/</guid>
+      <description>&amp;#x3000;無事にインストールできたかテストしてみます。 Windowsのスタートメニューから潜って、「TeXWorks Editor」を起</description>
+    </item>
+    
+    <item>
+      <title>いるもの</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/3_1stuff/</link>
+      <pubDate>Sun, 02 Apr 2017 14:41:40 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/3_1stuff/</guid>
+      <description>&amp;#x3000;満を持して本番の組版に入りたいところですが、まずは必要なものを用意します。 テキスト 組版したい文章そのものです。この入門では青</description>
+    </item>
+    
+    <item>
+      <title>設定</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/3_2settings/</link>
+      <pubDate>Tue, 18 Apr 2017 18:13:32 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/3_2settings/</guid>
+      <description>&amp;#x3000;ここが最初の泣きどころです。テストの時にもあったように、TeXは設定を間違えると動きません。エラーメッセージもなんか暗号みた</description>
+    </item>
+    
+    <item>
+      <title>ファイル作成とエスケープ</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/3_3escape/</link>
+      <pubDate>Wed, 19 Apr 2017 13:03:39 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/3_3escape/</guid>
+      <description>&amp;#x3000;いよいよ本チャンの原稿作りに入ります。TeX文法と機能を一つずつ組んで一喜一憂しながら解説します。 まずは新しくファイルを作り</description>
+    </item>
+    
+    <item>
+      <title>ドキュメントクラスの設定</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/3_4documentclass/</link>
+      <pubDate>Wed, 19 Apr 2017 21:37:32 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/3_4documentclass/</guid>
+      <description>&amp;#x3000;組めたはいいけど横書きだし余白めっちゃあるし何なん？って感じですね。これは一番最初の文である\documentclass{a</description>
+    </item>
+    
+    <item>
+      <title>改行・段落</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/4_1linebreak/</link>
+      <pubDate>Sat, 22 Apr 2017 19:24:51 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/4_1linebreak/</guid>
+      <description>&amp;#x3000;それにしても読みづらいですね。改行が全然なくて一面に字が植えてある。面倒なことにTeXは、いわゆる普通の改行を感知しません。</description>
+    </item>
+    
+    <item>
+      <title>インデント（字下げ）・空白</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/4_2indent/</link>
+      <pubDate>Wed, 26 Apr 2017 23:07:39 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/4_2indent/</guid>
+      <description>&amp;#x3000;改行はできたものの、行頭の字下げがなんかおかしい。まるまる2字分空いてますね。 これは青空文庫の本文行頭にもともとあった全角ス</description>
+    </item>
+    
+    <item>
+      <title>縦中横</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/4_3_1rensuji/</link>
+      <pubDate>Tue, 27 Jun 2017 11:19:16 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/4_3_1rensuji/</guid>
+      <description>&amp;#x3000;ここからしばらくめんどくさい記号の制御が続きます。ちまちましてる上変化が分かりにくくてアレなんですが、今後も使う主要な概念が</description>
+    </item>
+    
+    <item>
+      <title>note：検索・置換と正規表現</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/4_3_2regex/</link>
+      <pubDate>Wed, 28 Jun 2017 13:05:48 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/4_3_2regex/</guid>
+      <description>&amp;#x3000;これまで検索・置換する時に出てきた謎の記号たちは正規表現［regular expression］といい、簡単に言うと「表記ゆれ</description>
+    </item>
+    
+    <item>
+      <title>アクセントと特殊記号 (1)</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/4_3_3accent1/</link>
+      <pubDate>Wed, 28 Jun 2017 20:18:41 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/4_3_3accent1/</guid>
+      <description>&amp;#x3000;縦向きにしたい英数字の処理はできました。横倒しにしたい欧文は普通に半角で書いておけばいいんですが、ここに英語以外の外国語使い</description>
+    </item>
+    
+    <item>
+      <title>アクセントと特殊記号 (2)</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/4_3_4accent2/</link>
+      <pubDate>Thu, 20 Jul 2017 10:38:56 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/4_3_4accent2/</guid>
+      <description>&amp;#x3000;コマンドで入力できることは分かったんですが、十蘭のフランス語だのポーの暗号だのをいちいちコマンドで入れてたらイライラしてきま</description>
+    </item>
+    
+    <item>
+      <title>note：Unicodeで遊ぼう</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/4_3_5unicode/</link>
+      <pubDate>Thu, 20 Jul 2017 23:05:21 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/4_3_5unicode/</guid>
+      <description>&amp;#x3000;そもそもUnicodeとは何なのかといいますと、ものすごくざっくり言えば「地球上のありとあらゆる文字を集め（ることを目標とし</description>
+    </item>
+    
+    <item>
+      <title>アクセントと特殊記号 (3)</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/4_3_6accent3/</link>
+      <pubDate>Tue, 10 Oct 2017 11:15:56 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/4_3_6accent3/</guid>
+      <description>&amp;#x3000;さて話を戻して、pxcjkcatパッケージの使い方の続きです。 横倒ししたい字が死ぬほど出てくるとき いちいち部分指定なんかして</description>
+    </item>
+    
+    <item>
+      <title>はじめに</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/4_4_0punct/</link>
+      <pubDate>Fri, 19 Jan 2018 14:28:23 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/4_4_0punct/</guid>
+      <description>&amp;#x3000;英数字・記号まわりの制御が終わりましたので、今度は日本語・縦書きならではの約物（Wikipedia）の処理に入ります。現時点</description>
+    </item>
+    
+    <item>
+      <title>引用符</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/4_4_1quotation/</link>
+      <pubDate>Thu, 09 Nov 2017 13:32:05 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/4_4_1quotation/</guid>
+      <description>&amp;#x3000;まずは引用符（クオーテーションマーク）です。 みなさんは引用符をつける時はどう入力していますか？筆者は日本語を囲う時は“左右組</description>
+    </item>
+    
+    <item>
+      <title>OTFパッケージ</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/4_4_2otf/</link>
+      <pubDate>Thu, 09 Nov 2017 13:32:05 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/4_4_2otf/</guid>
+      <description>&amp;#x3000;OTFパッケージとは、もともとはOpenTypeフォントを扱うためのパッケージだそうですが、日本語あるいはCJKの文字を美し</description>
+    </item>
+    
+    <item>
+      <title>！と？ - 縦中横ふたたび</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/4_4_3exclamation/</link>
+      <pubDate>Thu, 09 Nov 2017 23:13:02 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/4_4_3exclamation/</guid>
+      <description>&amp;#x3000;自動でグルーが入ってしまう感嘆符と疑問符の制御に入るんですが、その前に縦中横のところでちらっと触れた、rensujiの問題を</description>
+    </item>
+    
+    <item>
+      <title>和文・欧文間のスペース</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/4_4_4wordglue/</link>
+      <pubDate>Fri, 10 Nov 2017 12:54:43 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/4_4_4wordglue/</guid>
+      <description>&amp;#x3000;約物ではありませんが、グルーの話が出たのでここでやってしまいます。和文と欧文の間のアキについてです。 青空文庫では、かなや漢字</description>
+    </item>
+    
+    <item>
+      <title>カッコ類</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/4_4_5brackets/</link>
+      <pubDate>Fri, 10 Nov 2017 14:00:48 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/4_4_5brackets/</guid>
+      <description>&amp;#x3000;これまで「カギ括弧」や（丸括弧）は何の問題もなく組めたので、それしか使わないという人は流し読みして構いません。それ以外のカッ</description>
+    </item>
+    
+    <item>
+      <title>ダッシュ</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/4_4_6dash/</link>
+      <pubDate>Fri, 10 Nov 2017 14:03:29 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/4_4_6dash/</guid>
+      <description>&amp;#x3000;ダッシュ（ダーシ、倍角ダッシュ）――は好きですか？私は大好きです。めちゃめちゃ使います。ところがTeXにおいて倍角ダッシュは</description>
+    </item>
+    
+    <item>
+      <title>note：変数と長さの単位</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/4_4_7parameter/</link>
+      <pubDate>Sun, 19 Nov 2017 10:08:20 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/4_4_7parameter/</guid>
+      <description>&amp;#x3000;ちょこっとだけプログラミングっぽい話します。先ほど出てきた\tbaselineshiftや字下げの項で使った\parinde</description>
+    </item>
+    
+    <item>
+      <title>まとめ</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/4_5summary1/</link>
+      <pubDate>Thu, 23 Nov 2017 00:09:25 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/4_5summary1/</guid>
+      <description>&amp;#x3000;ここまでのまとめとして、現時点でのソースの様子を載せておきます。 この例はパッケージや自動処理を最大限使った場合のものになって</description>
+    </item>
+    
+    <item>
+      <title>カスタム字下げ・地寄せ</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/5_1flush/</link>
+      <pubDate>Thu, 27 Apr 2017 07:52:54 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/5_1flush/</guid>
+      <description>&amp;#x3000;ここまでで、日本語の文章に共通して出てくる要素はほぼ組めたと思います。これ以降は原稿に出てくる時にだけ使うオプショナルなコマ</description>
+    </item>
+    
+    <item>
+      <title>ルビ</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/5_2ruby/</link>
+      <pubDate>Fri, 19 Jan 2018 16:56:10 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/5_2ruby/</guid>
+      <description>&amp;#x3000;さあやってまいりました日本語の華、振り仮名（ルビ）。個人的にルビが好きで好きで好きすぎてTeXに足を突っ込んだのでこのパート</description>
+    </item>
+    
+    <item>
+      <title>傍点・傍線</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/5_3bouten/</link>
+      <pubDate>Tue, 23 Jan 2018 00:00:28 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/5_3bouten/</guid>
+      <description>&amp;#x3000;ルビが振れるなら傍点だって振れるだろう。はい。振れます。 傍点を振る方法は2種類あって、plextパッケージの\bouコマンド</description>
+    </item>
+    
+    <item>
+      <title>太字・斜体</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/5_4emph/</link>
+      <pubDate>Mon, 29 Jan 2018 23:04:32 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/5_4emph/</guid>
+      <description>&amp;#x3000;先に説明してしまうと、字を一般的なゴシック体の太字にするには\textgt{}、明朝体のまま太字にするには\textbf{}</description>
+    </item>
+    
+    <item>
+      <title>文字サイズ</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/5_5fontsize/</link>
+      <pubDate>Sat, 03 Mar 2018 20:39:22 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/5_5fontsize/</guid>
+      <description>&amp;#x3000;文字の大きさも変えられます。以下の10種のコマンドが使えます。 {\tiny ５ポイント} {\scriptsize ７ポイント} {\footnotesize ８ポイント} {\small ９ポイント} {\normalsize \r</description>
+    </item>
+    
+    <item>
+      <title>罫囲み（枠をつける）</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/5_6framed/</link>
+      <pubDate>Sun, 18 Mar 2018 23:34:27 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/5_6framed/</guid>
+      <description>&amp;#x3000;ノンシャラン道中記には名刺や看板の記述など、文が枠で囲まれた箇所がけっこう出てきます。青空文庫では［＃罫囲み］となっていると</description>
+    </item>
+    
+    <item>
+      <title>脚注</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/5_7_1footnote/</link>
+      <pubDate>Mon, 26 Mar 2018 12:07:18 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/5_7_1footnote/</guid>
+      <description>&amp;#x3000;註のつけ方です。まずは一番シンプルな、\footnoteコマンドを使ってみます。 注をつけたい箇所に、\footnoteで囲ん</description>
+    </item>
+    
+    <item>
+      <title>後注</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/5_7_2endnote/</link>
+      <pubDate>Wed, 04 Apr 2018 11:06:51 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/5_7_2endnote/</guid>
+      <description>後注（尾注） 小説だといちいちページごとに脚注を入れるのではなく、話が終わった後でまとめて注を出したい、と思う場合が多いでしょう。その場合はe</description>
+    </item>
+    
+    <item>
+      <title>割り注</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/5_7_3warichu/</link>
+      <pubDate>Mon, 02 Apr 2018 15:16:59 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/5_7_3warichu/</guid>
+      <description>&amp;#x3000;註にはもう一つ、本文の1行の中に小書きで2行の注釈を埋め込んだ割り注があります。これを実現するには藤田眞作さん作のwaric</description>
+    </item>
+    
+    <item>
+      <title>青空文庫からの置換一覧（作成中）</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/replace/</link>
+      <pubDate>Sun, 07 May 2017 17:50:02 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/replace/</guid>
+      <description>&amp;#x3000;以下は筆者の覚え書きを兼ねた青空文庫形式からの検索・置換正規表現一覧です。エディタで一つずつ置換する時用のリファレンスです。</description>
+    </item>
+    
+    <item>
+      <title>主要参考文献（随時追加）</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/reference/</link>
+      <pubDate>Sat, 31 Dec 2016 20:21:48 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/reference/</guid>
+      <description>はじめての方へ - TeX Wiki LaTeX入門 - TeX Wiki 日本語公式ドキュメントとも言うべき、「TeX Wiki」の入門記事 TeX/LaTeX入門 - Wikibooks 文系のマカ</description>
+    </item>
+    
+    <item>
+      <title>ちょっと楽なエスケープ</title>
+      <link>https://hakuoku.github.io/agakuTeX/tips/xescape/</link>
+      <pubDate>Mon, 22 Jan 2018 23:58:56 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tips/xescape/</guid>
+      <description>&amp;#x3000;エスケープの項では基本を大事にという観点から、特殊記号にバックスラッシュをつける初歩的な方法を紹介しました。 ですが実はもう少</description>
+    </item>
+    
+    <item>
+      <title>あがきながら覚えるTeX</title>
+      <link>https://hakuoku.github.io/agakuTeX/about/about/</link>
+      <pubDate>Fri, 16 Dec 2016 23:45:42 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/about/about/</guid>
+      <description>&amp;#x3000;DTP知識ゼロ・プログラミング経験ほぼなしの文系人間が、「それでも綺麗に小説（・・）を組版したい！」と思いつめた末にTeXの</description>
+    </item>
+    
+  </channel>
+</rss>

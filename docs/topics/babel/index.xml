@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Babel on あがきながら覚えるTeX</title>
+    <link>https://hakuoku.github.io/agakuTeX/topics/babel/</link>
+    <description>Recent content in Babel on あがきながら覚えるTeX</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Tue, 10 Oct 2017 11:15:56 +0900</lastBuildDate>
+    
+	<atom:link href="https://hakuoku.github.io/agakuTeX/topics/babel/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>アクセントと特殊記号 (3)</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/4_3_6accent3/</link>
+      <pubDate>Tue, 10 Oct 2017 11:15:56 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/4_3_6accent3/</guid>
+      <description>&amp;#x3000;さて話を戻して、pxcjkcatパッケージの使い方の続きです。 横倒ししたい字が死ぬほど出てくるとき いちいち部分指定なんかして</description>
+    </item>
+    
+  </channel>
+</rss>

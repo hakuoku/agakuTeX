@@ -1,0 +1,583 @@
+<!doctype html>
+<html class="no-js" lang="ja" prefix="og: http://ogp.me/ns#">
+<head>
+    <meta charset="utf-8">
+    <title>脚注 | あがきながら覚えるTeX</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="白屋書房">
+<meta name="description" content="" />
+
+    
+<meta property="og:locale" content="ja">
+<meta property="og:title" content="脚注" />
+<meta property="og:description" content="" />
+<meta property="og:site_name" content="あがきながら覚えるTeX" />
+<meta property="og:url" content="https://hakuoku.github.io/agakuTeX/tutorial/5_7_1footnote/" />
+
+
+
+
+<meta property="og:type" content="article" />
+<meta property="article:section" content="tutorial" />
+<meta property="article:published_time" content="2018-03-26" />
+<meta property="article:modified_time" content="2018-03-26" />
+
+    
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="脚注" />
+<meta name="twitter:description" content="" />
+<meta name="twitter:url" content="https://hakuoku.github.io/agakuTeX/tutorial/5_7_1footnote/" />
+<meta name="twitter:image:src" content="https://hakuoku.github.io/agakuTeX//img/57footnote/kaburi.png">
+<meta name="twitter:domain" content="https://hakuoku.github.io/agakuTeX/">
+<meta name="twitter:site" content="@isaribi_saitoh" />
+<meta name="twitter:creator" content="@isaribi_saitoh" />
+
+    
+    <meta name="generator" content="Hugo 0.34" />
+    <link rel="canonical" href="https://hakuoku.github.io/agakuTeX/tutorial/5_7_1footnote/">
+    
+    
+    <link rel="stylesheet" href="https://hakuoku.github.io/agakuTeX/css/prism.css">
+
+    <link rel="stylesheet" href="https://hakuoku.github.io/agakuTeX/css/drawer.css">
+
+<link rel="stylesheet" href="https://hakuoku.github.io/agakuTeX/css/style.css">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://hakuoku.github.io/agakuTeX/img/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://hakuoku.github.io/agakuTeX/img/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://hakuoku.github.io/agakuTeX/img/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://hakuoku.github.io/agakuTeX/manifest.json">
+<link rel="mask-icon" href="https://hakuoku.github.io/agakuTeX/img/safari-pinned-tab.svg" color="#636363">
+<meta name="apple-mobile-web-app-title" content="あがきながら覚えるTeX">
+<meta name="application-name" content="あがきながら覚えるTeX">
+<meta name="theme-color" content="#333333">
+
+</head>
+
+
+<body class="template template--post drawer drawer--right">
+    <section class="header-wrapper">
+        <header class="headline" role="banner">
+    
+        <a class="headline__title" href="https://hakuoku.github.io/agakuTeX/"><img src="https://hakuoku.github.io/agakuTeX/img/logo.png" alt="Home"></a>
+    
+</header>
+
+        <nav class="menu" role="navigation" id="main-menu">
+    <ul class="menu__items">
+        
+        
+        <li class="blog">
+            <a href="http://hakuoku.hatenablog.com/" title="Blog"><img src="https://hakuoku.github.io/agakuTeX/img/hb.png" alt="Blog"></a>
+        </li>
+        
+        
+        <li class="twitter">
+            <a href="https://twitter.com/isaribi_saitoh" title="Follow me"><img src="https://hakuoku.github.io/agakuTeX/img/tw.png" alt="Follow me"></a>
+        </li>
+        
+        
+        <li class="github">
+            <a href="https://github.com/hakuoku" title="Fork me"><img src="https://hakuoku.github.io/agakuTeX/img/gh.png" alt="Fork me"></a>
+        </li>
+        
+        
+    </ul>
+</nav>
+
+        
+<gcse:searchbox-only></gcse:searchbox-only>
+
+<button type="button" class="drawer-toggle drawer-hamburger">
+  <span class="sr-only">toggle navigation</span>
+  <span class="drawer-hamburger-icon"><img src="https://hakuoku.github.io/agakuTeX/img/toc.png" alt="TOC"></span>
+</button>
+ 
+<nav id="side-menu" class="drawer-nav">
+  <ul class="drawer-menu">
+    
+    <li><a href="https://hakuoku.github.io/agakuTeX/">TOP</a></li>
+    
+    
+        
+        <li class = "sub-menu drawer-dropdown">
+        <a class="drawer-menu-item" href="#" data-toggle="dropdown" role="button" aria-expanded="false">前説 <span class="drawer-caret"></span></a>
+            <ul class = "sub drawer-dropdown-menu">
+                
+                    
+                    <li><a class="drawer-dropdown-menu-item" href="https://hakuoku.github.io/agakuTeX/tutorial/1_1beginning/">発端</a></li>
+                    
+                
+                    
+                    <li><a class="drawer-dropdown-menu-item" href="https://hakuoku.github.io/agakuTeX/tutorial/1_2whatstex/">TeXとは</a></li>
+                    
+                
+                    
+                    <li><a class="drawer-dropdown-menu-item" href="https://hakuoku.github.io/agakuTeX/tutorial/1_3usage/">このサイトの使い方</a></li>
+                    
+                
+            </ul>
+            </li>
+        
+    
+        
+        <li class = "sub-menu drawer-dropdown">
+        <a class="drawer-menu-item" href="#" data-toggle="dropdown" role="button" aria-expanded="false">導入 <span class="drawer-caret"></span></a>
+            <ul class = "sub drawer-dropdown-menu">
+                
+                    
+                    <li><a class="drawer-dropdown-menu-item" href="https://hakuoku.github.io/agakuTeX/tutorial/2_1prepare/">準備</a></li>
+                    
+                
+                    
+                    <li><a class="drawer-dropdown-menu-item" href="https://hakuoku.github.io/agakuTeX/tutorial/2_2install/">インストール</a></li>
+                    
+                
+                    
+                    <li><a class="drawer-dropdown-menu-item" href="https://hakuoku.github.io/agakuTeX/tutorial/2_3test/">テスト</a></li>
+                    
+                
+            </ul>
+            </li>
+        
+    
+        
+        <li class = "sub-menu drawer-dropdown">
+        <a class="drawer-menu-item" href="#" data-toggle="dropdown" role="button" aria-expanded="false">ファイル作成 <span class="drawer-caret"></span></a>
+            <ul class = "sub drawer-dropdown-menu">
+                
+                    
+                    <li><a class="drawer-dropdown-menu-item" href="https://hakuoku.github.io/agakuTeX/tutorial/3_1stuff/">いるもの</a></li>
+                    
+                
+                    
+                    <li><a class="drawer-dropdown-menu-item" href="https://hakuoku.github.io/agakuTeX/tutorial/3_2settings/">設定</a></li>
+                    
+                
+                    
+                    <li><a class="drawer-dropdown-menu-item" href="https://hakuoku.github.io/agakuTeX/tutorial/3_3escape/">ファイル作成とエスケープ</a></li>
+                    
+                
+                    
+                    <li><a class="drawer-dropdown-menu-item" href="https://hakuoku.github.io/agakuTeX/tutorial/3_4documentclass/">ドキュメントクラスの設定</a></li>
+                    
+                
+            </ul>
+            </li>
+        
+    
+        
+        <li class = "sub-menu drawer-dropdown">
+        <a class="drawer-menu-item" href="#" data-toggle="dropdown" role="button" aria-expanded="false">本文の編集 - 基盤編 <span class="drawer-caret"></span></a>
+            <ul class = "sub drawer-dropdown-menu">
+                
+                    
+                    <li><a class="drawer-dropdown-menu-item" href="https://hakuoku.github.io/agakuTeX/tutorial/4_1linebreak/">改行・段落</a></li>
+                    
+                
+                    
+                    <li><a class="drawer-dropdown-menu-item" href="https://hakuoku.github.io/agakuTeX/tutorial/4_2indent/">インデント（字下げ）・空白</a></li>
+                    
+                
+                    
+                    <li class = "drawer-dropdown-menu-item sub-menu">
+                    全角・半角 - 文字と記号の縦横
+                        <ul class = "sub">
+                            
+                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/4_3_1rensuji/">縦中横</a></li>
+                            
+                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/4_3_2regex/">note：検索・置換と正規表現</a></li>
+                            
+                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/4_3_3accent1/">アクセントと特殊記号 (1)</a></li>
+                            
+                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/4_3_4accent2/">アクセントと特殊記号 (2)</a></li>
+                            
+                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/4_3_5unicode/">note：Unicodeで遊ぼう</a></li>
+                            
+                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/4_3_6accent3/">アクセントと特殊記号 (3)</a></li>
+                            
+                        </ul>
+                    </li>
+                    
+                
+                    
+                    <li class = "drawer-dropdown-menu-item sub-menu">
+                    約物
+                        <ul class = "sub">
+                            
+                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/4_4_0punct/">はじめに</a></li>
+                            
+                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/4_4_1quotation/">引用符</a></li>
+                            
+                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/4_4_2otf/">OTFパッケージ</a></li>
+                            
+                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/4_4_3exclamation/">！と？ - 縦中横ふたたび</a></li>
+                            
+                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/4_4_4wordglue/">和文・欧文間のスペース</a></li>
+                            
+                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/4_4_5brackets/">カッコ類</a></li>
+                            
+                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/4_4_6dash/">ダッシュ</a></li>
+                            
+                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/4_4_7parameter/">note：変数と長さの単位</a></li>
+                            
+                        </ul>
+                    </li>
+                    
+                
+                    
+                    <li><a class="drawer-dropdown-menu-item" href="https://hakuoku.github.io/agakuTeX/tutorial/4_5summary1/">まとめ</a></li>
+                    
+                
+            </ul>
+            </li>
+        
+    
+        
+        <li class = "sub-menu active drawer-dropdown">
+        <a class="drawer-menu-item" href="#" data-toggle="dropdown" role="button" aria-expanded="false">本文の編集 - 発展編 <span class="drawer-caret"></span></a>
+            <ul class = "sub drawer-dropdown-menu">
+                
+                    
+                    <li><a class="drawer-dropdown-menu-item" href="https://hakuoku.github.io/agakuTeX/tutorial/5_1flush/">カスタム字下げ・地寄せ</a></li>
+                    
+                
+                    
+                    <li><a class="drawer-dropdown-menu-item" href="https://hakuoku.github.io/agakuTeX/tutorial/5_2ruby/">ルビ</a></li>
+                    
+                
+                    
+                    <li><a class="drawer-dropdown-menu-item" href="https://hakuoku.github.io/agakuTeX/tutorial/5_3bouten/">傍点・傍線</a></li>
+                    
+                
+                    
+                    <li><a class="drawer-dropdown-menu-item" href="https://hakuoku.github.io/agakuTeX/tutorial/5_4emph/">太字・斜体</a></li>
+                    
+                
+                    
+                    <li><a class="drawer-dropdown-menu-item" href="https://hakuoku.github.io/agakuTeX/tutorial/5_5fontsize/">文字サイズ</a></li>
+                    
+                
+                    
+                    <li><a class="drawer-dropdown-menu-item" href="https://hakuoku.github.io/agakuTeX/tutorial/5_6framed/">罫囲み（枠をつける）</a></li>
+                    
+                
+                    
+                    <li class = "drawer-dropdown-menu-item sub-menu active">
+                    注
+                        <ul class = "sub">
+                            
+                            <li class="active"><a href="https://hakuoku.github.io/agakuTeX/tutorial/5_7_1footnote/">脚注</a></li>
+                            
+                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/5_7_2endnote/">後注</a></li>
+                            
+                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/5_7_3warichu/">割り注</a></li>
+                            
+                        </ul>
+                    </li>
+                    
+                
+            </ul>
+            </li>
+        
+    
+        
+        <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/replace/">青空文庫からの置換一覧（作成中）</a></li>
+        
+    
+        
+        <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/reference/">主要参考文献（随時追加）</a></li>
+        
+    
+        
+        <li><a href="https://hakuoku.github.io/agakuTeX/topics/">索引</a></li>
+        
+    
+        
+        <li><a href=""></a></li>
+        
+    
+        
+        <li><a href="https://hakuoku.github.io/agakuTeX/tips/">TeX Tips</a></li>
+        
+    
+  </ul>
+</nav>
+
+    </section>
+    <main class="content" role="main" id="main-content" itemscope itemtype="http://schema.org/Article">
+        <article class="post">
+            <header>
+                <h1 class="post__title" itemprop="name">脚注</h1>
+            </header>
+            <section class="post__content" itemprop="articleBody">
+                
+
+<p>&#x3000;註のつけ方です。まずは一番シンプルな、<strong><code>\footnote</code></strong>コマンドを使ってみます。<br />
+　注をつけたい箇所に、<code>\footnote</code>で囲んで脚注の文章を入れます。</p>
+
+<pre><code class="language-LaTeX">いささが\footnote{「いささが」は原文ママ}空腹の模様でもある、
+</code></pre>
+
+<p>　するとこんなふうに、</p>
+
+
+<figure >
+    
+        <img src="https://hakuoku.github.io/agakuTeX/img/57footnote/footnote.png" alt="ページ末尾に脚注" />
+    
+    
+</figure>
+
+
+<p>　本文には脚注番号がつき、ページの最後に脚注が表示されます。</p>
+
+<p>　脚注記号のスタイルを変更するには、以下のコマンドをプリアンブルに書き込んでやります。<code>\renewcommand</code>というのもマクロ命令で、読んで字の如く既存の命令を新しく書き換えるコマンドになります。この場合は<code>\thefootnote</code>という既に規定されている（どこでかは知らん）記号の定義を第二引数の中身で書き換えています。</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">コマンド</th>
+<th align="center">スタイル</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left"><code>\renewcommand{\thefootnote}{\arabic{footnote}}</code></td>
+<td align="center">1 2 3 …</td>
+</tr>
+
+<tr>
+<td align="left"><code>\renewcommand{\thefootnote}{*\arabic{footnote}}</code></td>
+<td align="center">*1 *2 *3 …</td>
+</tr>
+
+<tr>
+<td align="left"><code>\renewcommand{\thefootnote}{\arabic{footnote})}</code></td>
+<td align="center">1) 2) 3) …</td>
+</tr>
+
+<tr>
+<td align="left"><code>\renewcommand{\thefootnote}{\alph{footnote}}</code></td>
+<td align="center">a b c …</td>
+</tr>
+
+<tr>
+<td align="left"><code>\renewcommand{\thefootnote}{\Alph{footnote}}</code></td>
+<td align="center">A B C …</td>
+</tr>
+
+<tr>
+<td align="left"><code>\renewcommand{\thefootnote}{\roman{footnote}}</code></td>
+<td align="center">ⅰ ⅱ ⅲ …</td>
+</tr>
+
+<tr>
+<td align="left"><code>\renewcommand{\thefootnote}{\Roman{footnote}}</code></td>
+<td align="center">Ⅰ Ⅱ Ⅲ…</td>
+</tr>
+
+<tr>
+<td align="left"><code>\renewcommand{\thefootnote}{\fnsymbol{footnote}}</code></td>
+<td align="center">*†‡§¶…</td>
+</tr>
+</tbody>
+</table>
+
+<p>　<code>{*\arabic{footnote}}</code>や<code>{\arabic{footnote})}</code>を見れば分かるように、第二引数はある程度自由に変更できます。<code>{(\roman{footnote})}</code>とすれば(ⅰ) (ⅱ) (ⅲ)…のような記号を振れたり。</p>
+
+<h3 id="脚注記号の調整">脚注記号の調整</h3>
+
+<p>　ところがですね、ルビの振ってある箇所に脚注をつけようとすると、以下のように記号とルビがかぶってしまいます。</p>
+
+
+<figure >
+    
+        <img src="https://hakuoku.github.io/agakuTeX/img/57footnote/kaburi.png" alt="ルビと脚注記号が重なる" />
+    
+    
+    <figcaption>
+        <p>
+        ちきしょう
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+
+
+<p>　これを直すには上の、脚注記号を変更するというテクニックに頼ります。<br />
+　使うのは<strong><code>\rule</code></strong>コマンド。これは真っ黒い長方形を描画することのできるコマンドです。<code>\rule[深さ]{幅}{高さ}</code>の形で使います。<br />
+　深さって何？と思われるでしょうが、これは英語ならではの概念です。<a href="https://hakuoku.github.io/agakuTeX/tutorial/4_4_5brackets">カッコ類</a>のところでやったベースラインから、gやyの字の先端が達する一番の下端までの距離のことです。<br />
+　深さを把握できると箱を自由自在に操れるようになる（らしい）んですが、今は特に使わないので、とりあえずそういうオプションがあるということだけ知っておいてください。筆者も未だに苦手です。</p>
+
+<p>　この長方形はいろいろな使いでがありますが、ここでは幅をゼロにして「見えない支柱」にして<code>\thefootnote</code>の定義に入れてやるという使い方をします。</p>
+
+<p>　そもそも脚注記号<code>\thefootnote</code>は、こんな感じの箱として領域が確保されています。</p>
+
+
+<figure >
+    
+        <img src="https://hakuoku.github.io/agakuTeX/img/57footnote/box.png" alt="脚注記号を囲む箱" />
+    
+    
+</figure>
+
+
+<p>　だだかぶりですね。なのでこの枠の中に高いruleの支柱を立て強制的に枠自体を大きくし、それによって「2」がもっと下の方に描画されるようにしたいと思います。</p>
+
+<p>　具体的にやってみましょう。まずは幅を持たせたまま、ruleを描画してみます。</p>
+
+<pre><code class="language-LaTeX">\renewcommand{\thefootnote}{\rule{10pt}{10pt}\arabic{footnote}}
+</code></pre>
+
+
+<figure >
+    
+        <img src="https://hakuoku.github.io/agakuTeX/img/57footnote/rule.png" alt="2の前に1zw×1zwの黒い箱" />
+    
+    
+</figure>
+
+
+<p>　2の前に10pt×10ptの黒い箱が描かれました。これでruleのイメージはなんとなく掴んで頂けたかと思います。<br />
+（ちなみに本当はzwを使いたいんですが諦めました。相対的な単位だと、後でやる作業と干渉しあって思わぬ副作用が出る場合があります）<br />
+　そこでruleの幅をゼロにして見えなくします。（ついでに便宜上つけていた枠も取っ払います。実際はxcolorというパッケージを使っていました）</p>
+
+<pre><code class="language-LaTeX">\renewcommand{\thefootnote}{\rule{0pt}{10pt}\arabic{footnote}}
+</code></pre>
+
+
+<figure >
+    
+        <img src="https://hakuoku.github.io/agakuTeX/img/57footnote/rule0.png" />
+    
+    
+</figure>
+
+
+<p>　ちょっと遠いですかね。あとは結果を見ながら微調整していくしかなさそうです。ここでは最終的に8ptの高さにしました。</p>
+
+<p>　さてこうなると今度は、ルビと比べて少しボディテキストから横に離れすぎてるような気がしてきました。<br />
+　これはさっきのような<code>\thefootnote</code>への追記では直せません。仕方がないので力技に頼ります。こんな記述をつかいます。</p>
+
+<pre><code class="language-LaTeX">    \def\@makefnmark{\hbox{\ifydir $\m@th^{\@thefnmark}$
+      \else\hbox{\yoko$\m@th^{\@thefnmark}$}\fi}}%
+</code></pre>
+
+<p>　この恐ろしげな呪文は我々が使っているutbookクラスのファイルから持ってきたものです。脚注記号はこの部分が規定しているので、これを少しいじって文書ファイル側にペーストすることで上書きしてやる、ということになります。<br />
+　以降もこういう、クラスファイルの断片をコピペするというアレなやり方がけっこう出てきます。本当はクラス自体をカスタマイズできればいいんでしょうが、それはかなり高度な領域の話になるのでここではあくまでちまちましたやり方で通します。</p>
+
+<p>　上の記述をこんなふうに改変して、プリアンブルに入れてやります。</p>
+
+<pre><code class="language-LaTeX">\makeatletter
+\renewcommand\@makefnmark{\hbox{\ifydir $\m@th^{\@thefnmark}$
+    \else\hbox{\yoko$\hspace{-1pt}\m@th^{\@thefnmark}$}\fi}}% \hspace{-1pt}が入った
+\makeatother
+</code></pre>
+
+<p>　普通のTeX文書中では<code>@</code>を含んだコマンド名は使えません。なので<strong><code>\makeatletter</code>と<code>\makeatother</code></strong>で挟んでやる必要があります。以降もアットマークが出てきたら、基本的に<code>\makeatletter</code>の中に入れるんだと思ってください。<br />
+　内側が本題になります。<code>\hspace{}</code>とは、文字サイズや罫囲みのところで使った<code>\vspace{}</code>の水平方向＝文字送り方向版です。カッコの中に入れた数値の分だけスペースを入れてくれます。<br />
+　縦書きの中においてはタテヨコ反転するんだがらhorizontal spaceは下方向へのそれじゃないのか、と思うかもしれませんが、今は直前の<code>\yoko</code>という命令が一時的に組方向を横にしています。なので、ruleが脚注記号の上ではなく前に入ったように、脚注の箱の中は横書きです。</p>
+
+<p>　マイナス数値を入れることで横方向に箱を詰め、数字とボディテキストを近づけることができました。</p>
+
+
+<figure >
+    
+        <img src="https://hakuoku.github.io/agakuTeX/img/57footnote/hspace.png" alt="横の距離を調節" />
+    
+    
+</figure>
+
+
+<p>　以上のテクニックを組み合わせるといろんな脚注記号のカスタマイズができます。例えば縦書き書籍でよく見るこういう<img src="https://hakuoku.github.io/agakuTeX/img/57footnote/tate.png" alt="縦書きのカッコと数字" />記号にしたい時は、プリアンブルに以下を入れることで可能になります。本文のフォントやフォントサイズを変えると齟齬が出てくると思いますので、その時はコメントにある数値を変えることで微調整してください。</p>
+
+<pre><code class="language-LaTeX">\renewcommand\thefootnote{\scriptsize(\rensuji{\arabic{footnote}})}% \scriptsizeで大きさを調整
+\renewcommand\@makefnmark{\hbox{\ifydir $\m@th^{\@thefnmark}$
+    \else\lower 2.5pt \hbox{\hspace{2pt}$\m@th^{\@thefnmark}$}\fi}}% \lower 2.5ptで横の距離を、\hspace{2pt}で縦の距離を調整
+\long\def\@makefntext#1{\parindent 1zw\noindent
+    \raise 1.5pt \hb@xt@ 2zw{\hss\@makefnmark}#1}% \raise 1.5ptで脚注本体の方の記号のズレを修正
+</code></pre>
+
+<h4 id="参考">参考</h4>
+
+<ul>
+<li><a href="http://www.latex-cmd.com/struct/footnote.html">LaTeXコマンド集 - 脚注</a></li>
+<li><a href="https://medemanabu.net/latex/footnote-label/">LaTeXコマンド - 脚注の番号・ラベルを変更</a></li>
+<li><a href="https://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1783">QA: 和文文字と脚注番号の間のアキ</a></li>
+<li><a href="https://tex.stackexchange.com/questions/26693/change-the-color-of-footnote-marker-in-latex?rq=1">Change the color of footnote marker in LaTeX - TeX - LaTeX Stack Exchange</a></li>
+<li><a href="https://en.wikibooks.org/wiki/LaTeX/Boxes">LaTeX/Boxes - Wikibooks, open books for an open world</a></li>
+</ul>
+
+            <footer class="post__meta">
+                <ul class="post__meta__infos">
+    <li class="post__meta__date"><time datetime="2018-03-26" itemprop="datePublished">(2018.3.26)</time></li>
+</ul>
+<meta itemprop="url" content="https://hakuoku.github.io/agakuTeX/tutorial/5_7_1footnote/">
+<meta itemprop="wordCount" content="2387" />
+<meta itemprop="timeRequired" content="5 Min" />
+
+            </footer>
+            </section>
+            <nav class = "pager" >
+    <ul class = "pager-list">
+        
+            <li class = "pager-prev"><a href = "https://hakuoku.github.io/agakuTeX/tutorial/5_6framed/">←罫囲み（枠をつける）</a></li>
+        
+        
+            <li class = "pager-next"><a href = "https://hakuoku.github.io/agakuTeX/tutorial/5_7_2endnote/">後注→</a></li>
+        
+    </ul>
+</nav>
+
+        </article>
+        <section class="post__comment">
+            <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "hakuoku" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+            
+        </section>
+    </main>
+    <footer class="legal" role="contentinfo">
+    <p>&copy; 2018 Hakuoku Shobo Some Rights Reserved. Performed by <a href="//gohugo.io" title="Hugo :: A fast and modern static website engine">Hugo</a> .</p>
+
+
+</footer>
+
+    
+<script type="text/javascript" src="https://hakuoku.github.io/agakuTeX/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="https://hakuoku.github.io/agakuTeX/js/prism.js"></script>
+<script type="text/javascript" src="https://hakuoku.github.io/agakuTeX/js/iscroll.js"></script>
+<script type="text/javascript" src="https://hakuoku.github.io/agakuTeX/js/drawer.min.js"></script>
+<script type="text/javascript" src="https://hakuoku.github.io/agakuTeX/js/dropdown.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+      $(".drawer").drawer();
+    });
+</script>
+
+</body>
+</html>

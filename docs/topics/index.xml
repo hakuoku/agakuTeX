@@ -6,10 +6,19 @@
     <description>Recent content in Topics on あがきながら覚えるTeX</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Tue, 10 Oct 2017 11:15:56 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 26 Mar 2018 12:07:18 +0900</lastBuildDate>
     
 	<atom:link href="https://hakuoku.github.io/agakuTeX/topics/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>@</title>
+      <link>https://hakuoku.github.io/agakuTeX/topics//</link>
+      <pubDate>Mon, 26 Mar 2018 12:07:18 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/topics//</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Babel</title>
@@ -17,6 +26,15 @@
       <pubDate>Tue, 10 Oct 2017 11:15:56 +0900</pubDate>
       
       <guid>https://hakuoku.github.io/agakuTeX/topics/babel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Baselineskip</title>
+      <link>https://hakuoku.github.io/agakuTeX/topics/baselineskip/</link>
+      <pubDate>Sat, 03 Mar 2018 20:39:22 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/topics/baselineskip/</guid>
       <description></description>
     </item>
     
@@ -48,6 +66,15 @@
     </item>
     
     <item>
+      <title>Disobeylines</title>
+      <link>https://hakuoku.github.io/agakuTeX/topics/disobeylines/</link>
+      <pubDate>Wed, 04 Apr 2018 11:06:51 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/topics/disobeylines/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Emph</title>
       <link>https://hakuoku.github.io/agakuTeX/topics/emph/</link>
       <pubDate>Mon, 29 Jan 2018 23:04:32 +0900</pubDate>
@@ -57,11 +84,38 @@
     </item>
     
     <item>
+      <title>Endnote</title>
+      <link>https://hakuoku.github.io/agakuTeX/topics/endnote/</link>
+      <pubDate>Wed, 04 Apr 2018 11:06:51 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/topics/endnote/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Environ</title>
       <link>https://hakuoku.github.io/agakuTeX/topics/environ/</link>
       <pubDate>Sun, 18 Mar 2018 23:34:27 +0900</pubDate>
       
       <guid>https://hakuoku.github.io/agakuTeX/topics/environ/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Etoolbox</title>
+      <link>https://hakuoku.github.io/agakuTeX/topics/etoolbox/</link>
+      <pubDate>Wed, 04 Apr 2018 11:06:51 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/topics/etoolbox/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Footnote</title>
+      <link>https://hakuoku.github.io/agakuTeX/topics/footnote/</link>
+      <pubDate>Mon, 26 Mar 2018 12:07:18 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/topics/footnote/</guid>
       <description></description>
     </item>
     
@@ -84,6 +138,15 @@
     </item>
     
     <item>
+      <title>Hspace</title>
+      <link>https://hakuoku.github.io/agakuTeX/topics/hspace/</link>
+      <pubDate>Mon, 26 Mar 2018 12:07:18 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/topics/hspace/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>IPAフォント</title>
       <link>https://hakuoku.github.io/agakuTeX/topics/ipa%E3%83%95%E3%82%A9%E3%83%B3%E3%83%88/</link>
       <pubDate>Thu, 09 Nov 2017 13:32:05 +0900</pubDate>
@@ -102,6 +165,24 @@
     </item>
     
     <item>
+      <title>Makeatletter</title>
+      <link>https://hakuoku.github.io/agakuTeX/topics/makeatletter/</link>
+      <pubDate>Mon, 26 Mar 2018 12:07:18 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/topics/makeatletter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Makeatother</title>
+      <link>https://hakuoku.github.io/agakuTeX/topics/makeatother/</link>
+      <pubDate>Mon, 26 Mar 2018 12:07:18 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/topics/makeatother/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Minipage</title>
       <link>https://hakuoku.github.io/agakuTeX/topics/minipage/</link>
       <pubDate>Sun, 18 Mar 2018 23:34:27 +0900</pubDate>
@@ -116,6 +197,15 @@
       <pubDate>Thu, 27 Apr 2017 07:52:54 +0900</pubDate>
       
       <guid>https://hakuoku.github.io/agakuTeX/topics/newenvironment/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Obeylines</title>
+      <link>https://hakuoku.github.io/agakuTeX/topics/obeylines/</link>
+      <pubDate>Sat, 22 Apr 2017 19:24:51 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/topics/obeylines/</guid>
       <description></description>
     </item>
     
@@ -143,6 +233,15 @@
       <pubDate>Fri, 19 Jan 2018 16:56:10 +0900</pubDate>
       
       <guid>https://hakuoku.github.io/agakuTeX/topics/pxrubrica/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rule</title>
+      <link>https://hakuoku.github.io/agakuTeX/topics/rule/</link>
+      <pubDate>Mon, 26 Mar 2018 12:07:18 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/topics/rule/</guid>
       <description></description>
     </item>
     
@@ -233,6 +332,24 @@
       <pubDate>Sat, 03 Mar 2018 20:39:22 +0900</pubDate>
       
       <guid>https://hakuoku.github.io/agakuTeX/topics/vspace/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Warichu</title>
+      <link>https://hakuoku.github.io/agakuTeX/topics/warichu/</link>
+      <pubDate>Mon, 02 Apr 2018 15:16:59 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/topics/warichu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Xobeylines</title>
+      <link>https://hakuoku.github.io/agakuTeX/topics/xobeylines/</link>
+      <pubDate>Sat, 22 Apr 2017 19:24:51 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/topics/xobeylines/</guid>
       <description></description>
     </item>
     

@@ -61,11 +61,11 @@ canonifyURLs = true
         identifier = "footnote"
         weight = 570
         parent = "edit2"
-    [[menu.toc]]
-        name = "グラフィック"
-        identifier = "graphics"
-        weight = 580
-        parent = "edit2"
+    # [[menu.toc]]
+    #     name = "グラフィック"
+    #     identifier = "graphics"
+    #     weight = 580
+    #     parent = "edit2"
 [[menu.toc]]
     name = "索引"
     URL = "/topics/"

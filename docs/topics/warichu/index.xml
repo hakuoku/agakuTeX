@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Warichu on あがきながら覚えるTeX</title>
+    <link>https://hakuoku.github.io/agakuTeX/topics/warichu/</link>
+    <description>Recent content in Warichu on あがきながら覚えるTeX</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Mon, 02 Apr 2018 15:16:59 +0900</lastBuildDate>
+    
+	<atom:link href="https://hakuoku.github.io/agakuTeX/topics/warichu/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>割り注</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/5_7_3warichu/</link>
+      <pubDate>Mon, 02 Apr 2018 15:16:59 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/5_7_3warichu/</guid>
+      <description>&amp;#x3000;註にはもう一つ、本文の1行の中に小書きで2行の注釈を埋め込んだ割り注があります。これを実現するには藤田眞作さん作のwaric</description>
+    </item>
+    
+  </channel>
+</rss>
