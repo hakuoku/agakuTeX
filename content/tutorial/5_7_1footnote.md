@@ -5,7 +5,7 @@ description = ""
 slug = "5_7_1footnote"
 weight = 571
 eyecatch = "/img/57footnote/kaburi.png"
-topics = ["footnote", "rule", "hspace", "makeatletter","makeatother"]
+topics = ["footnote", "rule", "hspace", "makeatletter","makeatother", "@"]
 [menu.toc]
     parent = "footnote"
 +++

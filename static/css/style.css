@@ -335,7 +335,6 @@ html {
 }
 .post__meta {
     color: #52616D;
-    font-style: italic;
 }
 .post__meta a {
     color: #52616D;
@@ -381,13 +380,14 @@ html {
         display: table-cell;
         vertical-align: middle;
     }
-    .post__meta .post__meta__infos {
-        text-align: left;
-    }
     .post__meta .post__meta__taxonomies {
         text-align: right;
     }
 }
+    .post__meta .post__meta__infos {
+        text-align: right;
+        text-align: -moz-right;
+    }
 .pagination {
     color: #52616D;
     margin-top: 1.5em;
@@ -540,6 +540,7 @@ section.post__comment {
 }
 .about .post__meta__infos {
     text-align: right;
+    font-style: italic;
 }
 @media screen and (max-width: 40em) {
     .about .post__meta__infos {

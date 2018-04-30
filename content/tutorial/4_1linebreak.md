@@ -2,7 +2,7 @@
 title = "改行・段落"
 date = "2017-04-22T19:24:51+09:00"
 description = ""
-topics = ["プリアンブル", "マクロ", "コメント"]
+topics = ["プリアンブル", "マクロ", "コメント", "obeylines", "xobeylines"]
 slug = "4_1linebreak"
 weight = 410
 [menu.toc]

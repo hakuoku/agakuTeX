@@ -13,6 +13,9 @@
             </header>
             <section class="post__content" itemprop="articleBody">
                 {{ .Content }}
+            <footer class="post__meta">
+                {{ partial "post-meta" . }}
+            </footer>
             </section>
             {{ partial "pager" . }}
         </article>
