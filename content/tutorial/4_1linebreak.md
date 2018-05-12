@@ -5,6 +5,7 @@ description = ""
 topics = ["プリアンブル", "マクロ", "コメント", "obeylines", "xobeylines"]
 slug = "4_1linebreak"
 weight = 410
+lastmod = "2018-05-11T17:31:44+09:00"
 [menu.toc]
     parent = "edit"
 +++
@@ -52,6 +53,10 @@ weight = 410
 　これで、本文通りの改行になりました。
 
 {{< figure src="/img/41linebreak/exobeylines.png" caption="" alt="exobeylines適用後" class="" >}}
+
+　とここまで説明してきましたが、実はこの改行方法は**裏技**です。やってはいけないわけではないんですが、厳密に言えば本来はTeX上級者にのみ許された抜け道と言わねばなりません。  
+　どういうことかというと、この改行マクロ（命令の名前は`\xobeylines`です）を使うと、後々紹介するTeXの機能を拡張してくれる種々の命令群（パッケージ）とかち合って予期せぬ結果を引き起こすことがあるんです。  
+　このチュートリアルに書かれていることだけをやっている間はいいですが、後々自分でいろいろなパッケージを追加したくなった時に問題が起こる場合があります。煩わしいと思った方は、上記の“正しい”空行方式で改行していくことをおすすめします。詳しくは[改行マクロの副作用](/tutorial/5_7_3xobeylines)の項で取扱いますので、まずはそこまで順番に読んでいってください。
 
 [^1]: [Should the markdown renderer treat a single line break as br? - Meta Stack Exchange](https://meta.stackexchange.com/questions/26011/should-the-markdown-renderer-treat-a-single-line-break-as-br)<br>また[でんでんマークダウン](http://conv.denshochan.com/markdown)では、デフォルトでこの問題をクリアしています。
 

@@ -2,8 +2,8 @@
 title = "割り注"
 date = 2018-04-02T15:16:59+09:00
 description = ""
-slug = "5_7_3warichu"
-weight = 573
+slug = "5_7_4warichu"
+weight = 574
 topics = ["warichu"]
 [menu.toc]
     parent = "footnote"
