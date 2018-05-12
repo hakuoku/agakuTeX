@@ -54,7 +54,7 @@
   
   <url>
     <loc>https://hakuoku.github.io/agakuTeX/tutorial/4_1linebreak/</loc>
-    <lastmod>2017-04-22T19:24:51+09:00</lastmod>
+    <lastmod>2018-05-11T17:31:44+09:00</lastmod>
   </url>
   
   <url>
@@ -178,7 +178,12 @@
   </url>
   
   <url>
-    <loc>https://hakuoku.github.io/agakuTeX/tutorial/5_7_3warichu/</loc>
+    <loc>https://hakuoku.github.io/agakuTeX/tutorial/5_7_3xobeylines/</loc>
+    <lastmod>2018-05-11T17:48:54+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hakuoku.github.io/agakuTeX/tutorial/5_7_4warichu/</loc>
     <lastmod>2018-04-02T15:16:59+09:00</lastmod>
   </url>
   
@@ -347,7 +352,7 @@
   
   <url>
     <loc>https://hakuoku.github.io/agakuTeX/topics/obeylines/</loc>
-    <lastmod>2017-04-22T19:24:51+09:00</lastmod>
+    <lastmod>2018-05-11T17:31:44+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -467,7 +472,7 @@
   
   <url>
     <loc>https://hakuoku.github.io/agakuTeX/topics/xobeylines/</loc>
-    <lastmod>2017-04-22T19:24:51+09:00</lastmod>
+    <lastmod>2018-05-11T17:31:44+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -521,7 +526,7 @@
   
   <url>
     <loc>https://hakuoku.github.io/agakuTeX/topics/%E3%82%B3%E3%83%A1%E3%83%B3%E3%83%88/</loc>
-    <lastmod>2017-04-22T19:24:51+09:00</lastmod>
+    <lastmod>2018-05-11T17:31:44+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -563,7 +568,7 @@
   
   <url>
     <loc>https://hakuoku.github.io/agakuTeX/topics/%E3%83%97%E3%83%AA%E3%82%A2%E3%83%B3%E3%83%96%E3%83%AB/</loc>
-    <lastmod>2017-04-22T19:24:51+09:00</lastmod>
+    <lastmod>2018-05-11T17:31:44+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -575,7 +580,7 @@
   
   <url>
     <loc>https://hakuoku.github.io/agakuTeX/topics/%E3%83%9E%E3%82%AF%E3%83%AD/</loc>
-    <lastmod>2017-04-22T19:24:51+09:00</lastmod>
+    <lastmod>2018-05-11T17:31:44+09:00</lastmod>
     <priority>0</priority>
   </url>
   

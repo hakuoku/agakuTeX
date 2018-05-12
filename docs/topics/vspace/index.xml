@@ -20,5 +20,14 @@
       <description>&amp;#x3000;文字の大きさも変えられます。以下の10種のコマンドが使えます。 {\tiny ５ポイント} {\scriptsize ７ポイント} {\footnotesize ８ポイント} {\small ９ポイント} {\normalsize \r</description>
     </item>
     
+    <item>
+      <title>note：改行マクロの副作用</title>
+      <link>https://hakuoku.github.io/agakuTeX/tutorial/5_7_3xobeylines/</link>
+      <pubDate>Fri, 11 May 2018 17:48:54 +0900</pubDate>
+      
+      <guid>https://hakuoku.github.io/agakuTeX/tutorial/5_7_3xobeylines/</guid>
+      <description>&amp;#x3000;ここまでで大体分かったように、改行マクロxobeylinesには重大な陥穽があります。前項のルビがむちゃくちゃになった後注の</description>
+    </item>
+    
   </channel>
 </rss>

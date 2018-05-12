@@ -273,7 +273,9 @@
                             
                             <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/5_7_2endnote/">後注</a></li>
                             
-                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/5_7_3warichu/">割り注</a></li>
+                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/5_7_3xobeylines/">note：改行マクロの副作用</a></li>
+                            
+                            <li><a href="https://hakuoku.github.io/agakuTeX/tutorial/5_7_4warichu/">割り注</a></li>
                             
                         </ul>
                     </li>
@@ -393,7 +395,7 @@
 　pixiv形式は以下。</p>
 
 <p>①欧文につけるルビ
-　検索する文字列： <code>\[\[rb:([\u0020-\u024F]+) &gt; (.+?)\]\]</code>　→　置換後の文字列： <code>\\aruby{\1}{\2}</code><br />
+　検索する文字列： <code>\[\[rb:([\u0020-\u024F\s\d\p{P}]+) &gt; (.+?)\]\]</code>　→　置換後の文字列： <code>\\aruby{\1}{\2}</code><br />
 　※同上、<code>\[\[rb:([\u0370-\u03FF\u1F00-\u1FFF\u0400-\u052F\s\d\p{P}]+) &gt; (.+?)\]\]</code></p>
 
 <p>②和文につけるルビ
