@@ -465,6 +465,9 @@ html {
     .menu .menu__items {
         margin: 0 10%;
     }
+    .headline, .menu {
+        line-height: 1.9;
+    }
 }
 
 html {
@@ -580,10 +583,10 @@ ul.taxonomy__contents {
 }
 
 .search {
-    width: 10em;
+    /* width: 10em; */
     position: absolute;
     right: 40px;
-    top: 30px;
+    top: 45px;
 }
 .search table {
     margin: 0;
@@ -612,6 +615,7 @@ ul.taxonomy__contents {
 }
 .gsc-input {
     padding-right: 0 !important;
+    display: none;
 }
 @media screen and (min-width: 60em) {
     .search {
@@ -622,6 +626,9 @@ ul.taxonomy__contents {
     }
     .gsc-search-box {
         line-height: 1.4;
+    }
+    .gsc-input {
+        display: table-cell;
     }
 }
 /*# sourceMappingURL=style.css.map */
