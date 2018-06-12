@@ -353,18 +353,18 @@ html {
     padding-left: 0;
     list-style-type: none;
 }
-.post__meta [class^=post__meta__] > * {
+/* .post__meta [class^=post__meta__] > * {
     display: inline-block;
-}
+} */
 .post__meta [class^=post__meta__] li+li {
     margin-left: 0.25em;
 }
-.post__meta [class^=post__meta__] li+li::before {
+/* .post__meta [class^=post__meta__] li+li::before {
     color: #52616D;
     content: "•";
     display: inline-block;
     margin-right: 0.5em;
-}
+} */
 .post__meta [class^=post__meta__] .tags+.categories::before {
     color: #E5E1D1;
     content: "|";
@@ -377,7 +377,7 @@ html {
         width: 100%;
     }
     .post__meta [class^=post__meta__] {
-        display: table-cell;
+        /* display: table-cell; */
         vertical-align: middle;
     }
     .post__meta .post__meta__taxonomies {

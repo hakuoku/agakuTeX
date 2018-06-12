@@ -4,7 +4,6 @@ date = 2018-03-18T23:34:27+09:00
 description = ""
 slug = "5_6framed"
 weight = 560
-lastmod = ""
 topics = ["uline--", "breakfbox", "framed", "varwidth", "minipage", "environ"]
 [menu.toc]
     parent = "edit2"
