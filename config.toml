@@ -8,6 +8,7 @@ hasCJKLanguage = true
 preserveTaxonomyNames = true
 publishDir = "docs"
 canonifyURLs = true
+disqusShortname = "hakuoku"
 
 [params]
     author = "白屋書房"
@@ -24,7 +25,6 @@ canonifyURLs = true
     tag = "tags"
     category = "categories"
     topic = "topics"
-
 
 [[menu.toc]]
     name = "前説"
@@ -61,11 +61,11 @@ canonifyURLs = true
         identifier = "footnote"
         weight = 570
         parent = "edit2"
-    # [[menu.toc]]
-    #     name = "グラフィック"
-    #     identifier = "graphics"
-    #     weight = 580
-    #     parent = "edit2"
+    [[menu.toc]]
+        name = "グラフィック"
+        identifier = "graphics"
+        weight = 580
+        parent = "edit2"
 [[menu.toc]]
     name = "索引"
     URL = "/topics/"
