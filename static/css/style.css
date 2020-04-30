@@ -353,18 +353,18 @@ html {
     padding-left: 0;
     list-style-type: none;
 }
-.post__meta [class^=post__meta__] > * {
+/* .post__meta [class^=post__meta__] > * {
     display: inline-block;
-}
+} */
 .post__meta [class^=post__meta__] li+li {
     margin-left: 0.25em;
 }
-.post__meta [class^=post__meta__] li+li::before {
+/* .post__meta [class^=post__meta__] li+li::before {
     color: #52616D;
     content: "•";
     display: inline-block;
     margin-right: 0.5em;
-}
+} */
 .post__meta [class^=post__meta__] .tags+.categories::before {
     color: #E5E1D1;
     content: "|";
@@ -377,7 +377,7 @@ html {
         width: 100%;
     }
     .post__meta [class^=post__meta__] {
-        display: table-cell;
+        /* display: table-cell; */
         vertical-align: middle;
     }
     .post__meta .post__meta__taxonomies {
@@ -464,6 +464,9 @@ html {
     }
     .menu .menu__items {
         margin: 0 10%;
+    }
+    .headline, .menu {
+        line-height: 1.9;
     }
 }
 
@@ -579,4 +582,53 @@ ul.taxonomy__contents {
     list-style-position: inside;
 }
 
+.search {
+    /* width: 10em; */
+    position: absolute;
+    right: 40px;
+    top: 45px;
+}
+.search table {
+    margin: 0;
+}
+.search table th,
+.search table td {
+    border: none;
+    padding: 0;
+}
+.gsc-input-box {
+    border-radius: 15px;
+    padding: 2px 10px;
+}
+.gsc-search-box {
+    line-height: 1;
+}
+#gsc-i-id1 {
+    border-radius: 15px;
+}
+.gsc-search-button-v2 {
+    padding: 5px !important;
+}
+.gsc-search-button {
+    margin-left: -10px;
+    line-height: 1.2;
+}
+.gsc-input {
+    padding-right: 0 !important;
+    display: none;
+}
+@media screen and (min-width: 60em) {
+    .search {
+        width: 12em;
+        position: absolute;
+        right: 60px;
+        top: 40px;
+    }
+    .gsc-search-box {
+        line-height: 1.4;
+    }
+    .gsc-input {
+        display: table-cell;
+    }
+}
 /*# sourceMappingURL=style.css.map */
