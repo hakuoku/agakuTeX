@@ -35,7 +35,7 @@
 <meta name="twitter:creator" content="@isaribi_saitoh" />
 
     
-    <meta name="generator" content="Hugo 0.34" />
+    <meta name="generator" content="Hugo 0.44-DEV" />
     <link rel="canonical" href="https://hakuoku.github.io/agakuTeX/tutorial/5_1flush/">
     
     
@@ -84,12 +84,15 @@
         </li>
         
         
+        <li class="search">
+            <script async src="https://cse.google.com/cse.js?cx=015571841863644017950:0rlgllbny7i"></script>
+            <div class="gcse-searchbox-only"></div>
+        </li>
     </ul>
+    
 </nav>
 
         
-<gcse:searchbox-only></gcse:searchbox-only>
-
 <button type="button" class="drawer-toggle drawer-hamburger">
   <span class="sr-only">toggle navigation</span>
   <span class="drawer-hamburger-icon"><img src="https://hakuoku.github.io/agakuTeX/img/toc.png" alt="TOC"></span>
@@ -347,7 +350,7 @@
 <p>　［折り返して2字下げ］とは？という感じですが、例えば箇条書きや戯曲形式など、文がびっちり上まで入って欲しくない時に、折り返した行をある高さまで押し込むことがあります。これをぶら下げ（ハング）インデントといい、<code>\hangindent</code>コマンドで対応します。</p>
 
 
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/51flush/play.png" alt="戯曲の例" />
     
@@ -367,7 +370,7 @@
 <pre><code class="language-latex">\hangindent = ●zw
 </code></pre>
 
-<p>　ぶら下げたい行頭の <em>全て</em> にこれをつけます（コマンドと本文の間は半角スペースで空ける）。●には押し込みたい字数を入れますが、十蘭の例では1字下げと組み合わさっているので、2字からleftskipの1字分を引いた1が入ります。改行ごとにリセットされるコマンドなので<sup class="footnote-ref" id="fnref:1"><a rel="footnote" href="#fn:1">1</a></sup>、範囲の行頭全てに入れてください。</p>
+<p>　ぶら下げたい行頭の <em>全て</em> にこれをつけます（コマンドと本文の間は半角スペースで空ける）。●には押し込みたい字数を入れますが、十蘭の例では1字下げと組み合わさっているので、2字からleftskipの1字分を引いた1が入ります。改行ごとにリセットされるコマンドなので<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup>、範囲の行頭全てに入れてください。</p>
 
 <p>　1、2行ならこれでいいですが、使いたい箇所が多かったり、台本など本文全体にハングインデントが入る場合はいちいち行頭に書かずに挟み込みで済ませたいですよね。そういう時には、自分で\begin{}～\end{}の環境を作ってしまいます。プリアンブルに以下の環境定義を入れた後、</p>
 
@@ -399,7 +402,7 @@
 　hfillはhorizontal fillの略で、水平方向（＝文字送り方向。縦書きなので垂直方向）に伸縮するグルーを入れてくれるコマンドです。そもそも<code>\hspace{長さ}</code>という余白を出力するコマンドがあって、これは数値を手動で指定して入れるものですが、hfillはその自動伸び縮み版というイメージです。</p>
 
 
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/51flush/hfill.png" alt="hfillの図示" />
     
@@ -416,10 +419,10 @@
 </figure>
 
 
-<p>　raggedleftの方は横書きで言ったら右寄せに当たるのになんで「left」かとなりますが、［左側に揃えない、左側がガタガタの］って意味だからいいんだそうです。raggedrightというコマンドもあるので混同しないようにしてください。<sup class="footnote-ref" id="fnref:2"><a rel="footnote" href="#fn:2">2</a></sup></p>
+<p>　raggedleftの方は横書きで言ったら右寄せに当たるのになんで「left」かとなりますが、［左側に揃えない、左側がガタガタの］って意味だからいいんだそうです。raggedrightというコマンドもあるので混同しないようにしてください。<sup class="footnote-ref" id="fnref:2"><a href="#fn:2">2</a></sup></p>
 
 <p>　これらを組み合わせることで、大概の字下げ地寄せには対応できると思います。コマンドを組み合わせて入れ子にする時は、入れ子構造が崩れないように書いていくことに気をつけてください（最初に書いたコマンドを最後に閉じることになる）。最終的なソースと出力は以下のようになりました。<br />
-　コマンドの後ろにいちいち%がついていますが、これは改行マクロの副作用を打ち消すためのおまじないなので<strong>消さないでください</strong>。以降コマンドしかない行の最後には必ず%がつくことになります。<sup class="footnote-ref" id="fnref:3"><a rel="footnote" href="#fn:3">3</a></sup>その後ろの日本語コメント部分は消しても大丈夫です。</p>
+　コマンドの後ろにいちいち%がついていますが、これは改行マクロの副作用を打ち消すためのおまじないなので<strong>消さないでください</strong>。以降コマンドしかない行の最後には必ず%がつくことになります。<sup class="footnote-ref" id="fnref:3"><a href="#fn:3">3</a></sup>その後ろの日本語コメント部分は消しても大丈夫です。</p>
 
 <pre><code class="language-latex">\newenvironment{hangall}[1]{\hangindent = #1zw\everypar{\hangindent = #1zw}}{}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -442,7 +445,7 @@
 </code></pre>
 
 
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/51flush/hangindent.png" alt="ぶら下げ・地寄せの実装" />
     
@@ -478,10 +481,13 @@
 
             <footer class="post__meta">
                 <ul class="post__meta__infos">
-    <li class="post__meta__date"><time datetime="2017-04-27" itemprop="datePublished">(2018.1.19)</time></li>
+    <li class="post__meta__date"><time datetime="2017-04-27" itemprop="datePublished">(2017.4.27)</time></li>
+    
+    <li class="post__meta__date"><time datetime=" 2017-04-27 " itemprop="dateChanged">(2018.1.19改訂)</time></li>
+    
 </ul>
 <meta itemprop="url" content="https://hakuoku.github.io/agakuTeX/tutorial/5_1flush/">
-<meta itemprop="wordCount" content="3132" />
+<meta itemprop="wordCount" content="3183" />
 <meta itemprop="timeRequired" content="7 Min" />
 
             </footer>
@@ -537,6 +543,14 @@
 <script type="text/javascript">
     $(document).ready(function() {
       $(".drawer").drawer();
+      let windowWidth = window.innerWidth;
+      if (windowWidth < 400) {
+        setTimeout(function(){
+          $("td.gsc-search-button").on("click", function() { 
+            $(".gsc-input").toggle();
+          });
+        }, 3000);
+      }
     });
 </script>
 

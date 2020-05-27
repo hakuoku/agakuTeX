@@ -35,7 +35,7 @@
 <meta name="twitter:creator" content="@isaribi_saitoh" />
 
     
-    <meta name="generator" content="Hugo 0.34" />
+    <meta name="generator" content="Hugo 0.44-DEV" />
     <link rel="canonical" href="https://hakuoku.github.io/agakuTeX/tutorial/3_2settings/">
     
     
@@ -84,12 +84,15 @@
         </li>
         
         
+        <li class="search">
+            <script async src="https://cse.google.com/cse.js?cx=015571841863644017950:0rlgllbny7i"></script>
+            <div class="gcse-searchbox-only"></div>
+        </li>
     </ul>
+    
 </nav>
 
         
-<gcse:searchbox-only></gcse:searchbox-only>
-
 <button type="button" class="drawer-toggle drawer-hamburger">
   <span class="sr-only">toggle navigation</span>
   <span class="drawer-hamburger-icon"><img src="https://hakuoku.github.io/agakuTeX/img/toc.png" alt="TOC"></span>
@@ -364,7 +367,7 @@
 　日常的に青空形式を使わない場合は、関連付けは飛ばしてください。使いたい時だけ「表示 &gt; 編集モード」か、下のステータスバーの言語名のところから「Aozora」を選ぶようにします。</p>
 
 
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/32settings/mery.png" alt="Meryの言語モード拡張" />
     
@@ -376,10 +379,13 @@
 
             <footer class="post__meta">
                 <ul class="post__meta__infos">
-    <li class="post__meta__date"><time datetime="2017-04-18" itemprop="datePublished">(2017.4.19)</time></li>
+    <li class="post__meta__date"><time datetime="2017-04-18" itemprop="datePublished">(2017.4.18)</time></li>
+    
+    <li class="post__meta__date"><time datetime=" 2017-04-18 " itemprop="dateChanged">(2017.4.19改訂)</time></li>
+    
 </ul>
 <meta itemprop="url" content="https://hakuoku.github.io/agakuTeX/tutorial/3_2settings/">
-<meta itemprop="wordCount" content="2304" />
+<meta itemprop="wordCount" content="2343" />
 <meta itemprop="timeRequired" content="5 Min" />
 
             </footer>
@@ -435,6 +441,14 @@
 <script type="text/javascript">
     $(document).ready(function() {
       $(".drawer").drawer();
+      let windowWidth = window.innerWidth;
+      if (windowWidth < 400) {
+        setTimeout(function(){
+          $("td.gsc-search-button").on("click", function() { 
+            $(".gsc-input").toggle();
+          });
+        }, 3000);
+      }
     });
 </script>
 

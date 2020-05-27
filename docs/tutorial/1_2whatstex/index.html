@@ -35,7 +35,7 @@
 <meta name="twitter:creator" content="@isaribi_saitoh" />
 
     
-    <meta name="generator" content="Hugo 0.34" />
+    <meta name="generator" content="Hugo 0.44-DEV" />
     <link rel="canonical" href="https://hakuoku.github.io/agakuTeX/tutorial/1_2whatstex/">
     
     
@@ -84,12 +84,15 @@
         </li>
         
         
+        <li class="search">
+            <script async src="https://cse.google.com/cse.js?cx=015571841863644017950:0rlgllbny7i"></script>
+            <div class="gcse-searchbox-only"></div>
+        </li>
     </ul>
+    
 </nav>
 
         
-<gcse:searchbox-only></gcse:searchbox-only>
-
 <button type="button" class="drawer-toggle drawer-hamburger">
   <span class="sr-only">toggle navigation</span>
   <span class="drawer-hamburger-icon"><img src="https://hakuoku.github.io/agakuTeX/img/toc.png" alt="TOC"></span>
@@ -335,7 +338,7 @@
 　要するにHTMLとかMarkdownとか青空文庫形式みたいなものです。(マークアップ言語といいます。伊藤計劃の『ハーモニー』に出てきたアレです） 小説本文の間あいだに、特殊な記法で「ここで改ページ」とか「これは見出しだよ」とか「太字で」とか指示を書き込んでやると、TeXエンジンが読み取ってその通りPDFにしてくれるんですね。あとは自分で公開するなり印刷所に入稿するなり好きにしやがれというシステムです。</p>
 
 
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/12whatstex/rare.png" alt="TeXで原稿をマークアップしたところ" />
     
@@ -357,7 +360,7 @@
 　しかしですね、あまたの困難を乗り越えて組みあがった文書は、ユーザーの誰もが言うように本当に美しいです。初めて理想の文書を印刷できたときは思わず「おお……」と唸りました。向いていないはずの処理を素人がやってもここまで綺麗にできるというのがTeXの底力だと思います。</p>
 
 
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/12whatstex/rarepolished.png" alt="組版結果" />
     
@@ -376,10 +379,13 @@
 
             <footer class="post__meta">
                 <ul class="post__meta__infos">
-    <li class="post__meta__date"><time datetime="2016-12-19" itemprop="datePublished">(2017.1.02)</time></li>
+    <li class="post__meta__date"><time datetime="2016-12-19" itemprop="datePublished">(2016.12.19)</time></li>
+    
+    <li class="post__meta__date"><time datetime=" 2016-12-19 " itemprop="dateChanged">(2017.1.02改訂)</time></li>
+    
 </ul>
 <meta itemprop="url" content="https://hakuoku.github.io/agakuTeX/tutorial/1_2whatstex/">
-<meta itemprop="wordCount" content="1914" />
+<meta itemprop="wordCount" content="1935" />
 <meta itemprop="timeRequired" content="4 Min" />
 
             </footer>
@@ -435,6 +441,14 @@
 <script type="text/javascript">
     $(document).ready(function() {
       $(".drawer").drawer();
+      let windowWidth = window.innerWidth;
+      if (windowWidth < 400) {
+        setTimeout(function(){
+          $("td.gsc-search-button").on("click", function() { 
+            $(".gsc-input").toggle();
+          });
+        }, 3000);
+      }
     });
 </script>
 

@@ -35,7 +35,7 @@
 <meta name="twitter:creator" content="@isaribi_saitoh" />
 
     
-    <meta name="generator" content="Hugo 0.34" />
+    <meta name="generator" content="Hugo 0.44-DEV" />
     <link rel="canonical" href="https://hakuoku.github.io/agakuTeX/tutorial/4_3_5unicode/">
     
     
@@ -84,12 +84,15 @@
         </li>
         
         
+        <li class="search">
+            <script async src="https://cse.google.com/cse.js?cx=015571841863644017950:0rlgllbny7i"></script>
+            <div class="gcse-searchbox-only"></div>
+        </li>
     </ul>
+    
 </nav>
 
         
-<gcse:searchbox-only></gcse:searchbox-only>
-
 <button type="button" class="drawer-toggle drawer-hamburger">
   <span class="sr-only">toggle navigation</span>
   <span class="drawer-hamburger-icon"><img src="https://hakuoku.github.io/agakuTeX/img/toc.png" alt="TOC"></span>
@@ -325,7 +328,7 @@
 　使い方は簡単で、右上のボックスに調べたい字を入力して↓を押すだけです。左下に出た字をクリックすると右側に詳細な情報が表示されます。</p>
 
 
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/43unicode/aiueo.jpg" />
     
@@ -336,7 +339,7 @@
 <p>　また☃のようにどう入力したらいいのか分からない字は、左上の「Find」のフィールドに読みや意味（ただし英語で）を入力し、「text」を選択することで探すことができます。今はsnowmanと入力したので、三種のゆきだるまが出てきました。</p>
 
 
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/43unicode/snowman.jpg" alt="「snowman」で検索" />
     
@@ -351,7 +354,7 @@
 <p>　前項で欧文扱いにしたかった主要なアクセントつき文字はEuropean Scriptの中の「Latin-1 Supplement」に入っています。左上のドロップダウンリストだと「Latin, Basic &amp; Latin-1 Supplement」として普通のアルファベットと一緒に表示されちゃうんですが、右側に出た情報からリンクを辿ればSupplementだけが出てきます。</p>
 
 
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/43unicode/latin1.jpg" alt="Latin-1 Supplementを表示" />
     
@@ -366,7 +369,7 @@
 　ő（U+0151）をクリックしてみるとデータが現れて、Unicode blockのところで「Latin Extended-A」に属していることがわかります。As Text:としてグレーになっているところがコピペ用で、ここからコピーすればそのまま他のエディタなどに正確にペーストできます（エディタ自体がUnicodeに対応していれば）。</p>
 
 
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/43unicode/Hungarian.jpg" alt="「Hungarian」で検索" />
     
@@ -375,7 +378,7 @@
 
 
 <p>　こんなふうにUnicodeの意味を知ってUniViewを使いこなせるようになるといろいろ便利ですので、是非触ってみてください。<br />
-　ちなみにUnicodeの利点については既に<a href="https://hakuoku.github.io/agakuTeX/tutorial/4_3_2regex/">正規表現</a>のところでもちょろっと触れていて、あそこで言った新しい文法というのがこのUnicodeプロパティ<sup class="footnote-ref" id="fnref:1"><a rel="footnote" href="#fn:1">1</a></sup>に対応しているかどうかになります。対応していないと検索・置換が煩雑になるので、筆者は完全対応しているMeryをしつこく勧めていたのでした。</p>
+　ちなみにUnicodeの利点については既に<a href="https://hakuoku.github.io/agakuTeX/tutorial/4_3_2regex/">正規表現</a>のところでもちょろっと触れていて、あそこで言った新しい文法というのがこのUnicodeプロパティ<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup>に対応しているかどうかになります。対応していないと検索・置換が煩雑になるので、筆者は完全対応しているMeryをしつこく勧めていたのでした。</p>
 
 <h4 id="参考">参考</h4>
 
@@ -395,10 +398,13 @@
 
             <footer class="post__meta">
                 <ul class="post__meta__infos">
-    <li class="post__meta__date"><time datetime="2017-07-20" itemprop="datePublished">(2017.10.10)</time></li>
+    <li class="post__meta__date"><time datetime="2017-07-20" itemprop="datePublished">(2017.7.20)</time></li>
+    
+    <li class="post__meta__date"><time datetime=" 2017-07-20 " itemprop="dateChanged">(2017.10.10改訂)</time></li>
+    
 </ul>
 <meta itemprop="url" content="https://hakuoku.github.io/agakuTeX/tutorial/4_3_5unicode/">
-<meta itemprop="wordCount" content="1760" />
+<meta itemprop="wordCount" content="1853" />
 <meta itemprop="timeRequired" content="4 Min" />
 
             </footer>
@@ -454,6 +460,14 @@
 <script type="text/javascript">
     $(document).ready(function() {
       $(".drawer").drawer();
+      let windowWidth = window.innerWidth;
+      if (windowWidth < 400) {
+        setTimeout(function(){
+          $("td.gsc-search-button").on("click", function() { 
+            $(".gsc-input").toggle();
+          });
+        }, 3000);
+      }
     });
 </script>
 

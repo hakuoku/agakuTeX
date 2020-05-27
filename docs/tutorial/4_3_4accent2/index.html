@@ -35,7 +35,7 @@
 <meta name="twitter:creator" content="@isaribi_saitoh" />
 
     
-    <meta name="generator" content="Hugo 0.34" />
+    <meta name="generator" content="Hugo 0.44-DEV" />
     <link rel="canonical" href="https://hakuoku.github.io/agakuTeX/tutorial/4_3_4accent2/">
     
     
@@ -84,12 +84,15 @@
         </li>
         
         
+        <li class="search">
+            <script async src="https://cse.google.com/cse.js?cx=015571841863644017950:0rlgllbny7i"></script>
+            <div class="gcse-searchbox-only"></div>
+        </li>
     </ul>
+    
 </nav>
 
         
-<gcse:searchbox-only></gcse:searchbox-only>
-
 <button type="button" class="drawer-toggle drawer-hamburger">
   <span class="sr-only">toggle navigation</span>
   <span class="drawer-hamburger-icon"><img src="https://hakuoku.github.io/agakuTeX/img/toc.png" alt="TOC"></span>
@@ -370,7 +373,7 @@
 <p>　これで見事にアクサンテギュeは他のアルファベット同様横向きにできましたが、筆者はこんな副作用が出ました。</p>
 
 
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/43accent2/kakeru.jpg" alt="×だけが半角に" />
     
@@ -395,7 +398,7 @@ Quand nous étions deux《おまえとふたりでいたときにゃ》 とい�
 </code></pre>
 
 
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/43accent2/kakezan.jpg" alt="算術記号を統一" />
     
@@ -436,10 +439,13 @@ Quand nous étions deux《おまえとふたりでいたときにゃ》 とい�
 
             <footer class="post__meta">
                 <ul class="post__meta__infos">
-    <li class="post__meta__date"><time datetime="2017-07-20" itemprop="datePublished">(2017.10.10)</time></li>
+    <li class="post__meta__date"><time datetime="2017-07-20" itemprop="datePublished">(2017.7.20)</time></li>
+    
+    <li class="post__meta__date"><time datetime=" 2017-07-20 " itemprop="dateChanged">(2017.10.10改訂)</time></li>
+    
 </ul>
 <meta itemprop="url" content="https://hakuoku.github.io/agakuTeX/tutorial/4_3_4accent2/">
-<meta itemprop="wordCount" content="2732" />
+<meta itemprop="wordCount" content="2743" />
 <meta itemprop="timeRequired" content="6 Min" />
 
             </footer>
@@ -495,6 +501,14 @@ Quand nous étions deux《おまえとふたりでいたときにゃ》 とい�
 <script type="text/javascript">
     $(document).ready(function() {
       $(".drawer").drawer();
+      let windowWidth = window.innerWidth;
+      if (windowWidth < 400) {
+        setTimeout(function(){
+          $("td.gsc-search-button").on("click", function() { 
+            $(".gsc-input").toggle();
+          });
+        }, 3000);
+      }
     });
 </script>
 

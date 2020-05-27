@@ -35,7 +35,7 @@
 <meta name="twitter:creator" content="@isaribi_saitoh" />
 
     
-    <meta name="generator" content="Hugo 0.34" />
+    <meta name="generator" content="Hugo 0.44-DEV" />
     <link rel="canonical" href="https://hakuoku.github.io/agakuTeX/tutorial/5_7_2endnote/">
     
     
@@ -84,12 +84,15 @@
         </li>
         
         
+        <li class="search">
+            <script async src="https://cse.google.com/cse.js?cx=015571841863644017950:0rlgllbny7i"></script>
+            <div class="gcse-searchbox-only"></div>
+        </li>
     </ul>
+    
 </nav>
 
         
-<gcse:searchbox-only></gcse:searchbox-only>
-
 <button type="button" class="drawer-toggle drawer-hamburger">
   <span class="sr-only">toggle navigation</span>
   <span class="drawer-hamburger-icon"><img src="https://hakuoku.github.io/agakuTeX/img/toc.png" alt="TOC"></span>
@@ -331,7 +334,7 @@
 <p>　と、ここで終わりたいところなんですがいくつか問題が。endnotesパッケージはこれまでカスタマイズしてきた脚注記号のスタイルを無にした上、縦書きにそぐわない体裁にしてくれやがります。</p>
 
 
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/57endnote/endnotes.jpg" alt="横倒しになった脚注記号" />
     
@@ -354,7 +357,7 @@
 <h4 id="体裁の変更">体裁の変更</h4>
 
 
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/57endnote/ruby.png" alt="ルビと親文字が逆転している" />
     
@@ -377,7 +380,7 @@
 </code></pre>
 
 
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/57endnote/rubykai.png" alt="正常なルビ" />
     
@@ -403,7 +406,7 @@
 <p>　正直この方法で正しいのか筆者も分かってないんですが……とりあえず体裁は変更できるということで。こんな感じです。</p>
 
 
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/57endnote/changed.png" alt="体裁を変更した後注" />
     
@@ -423,10 +426,13 @@
 
             <footer class="post__meta">
                 <ul class="post__meta__infos">
-    <li class="post__meta__date"><time datetime="2018-04-04" itemprop="datePublished">(2018.4.30)</time></li>
+    <li class="post__meta__date"><time datetime="2018-04-04" itemprop="datePublished">(2018.4.04)</time></li>
+    
+    <li class="post__meta__date"><time datetime=" 2018-04-04 " itemprop="dateChanged">(2018.4.30改訂)</time></li>
+    
 </ul>
 <meta itemprop="url" content="https://hakuoku.github.io/agakuTeX/tutorial/5_7_2endnote/">
-<meta itemprop="wordCount" content="1625" />
+<meta itemprop="wordCount" content="1643" />
 <meta itemprop="timeRequired" content="4 Min" />
 
             </footer>
@@ -482,6 +488,14 @@
 <script type="text/javascript">
     $(document).ready(function() {
       $(".drawer").drawer();
+      let windowWidth = window.innerWidth;
+      if (windowWidth < 400) {
+        setTimeout(function(){
+          $("td.gsc-search-button").on("click", function() { 
+            $(".gsc-input").toggle();
+          });
+        }, 3000);
+      }
     });
 </script>
 

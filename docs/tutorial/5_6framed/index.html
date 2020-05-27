@@ -35,7 +35,7 @@
 <meta name="twitter:creator" content="@isaribi_saitoh" />
 
     
-    <meta name="generator" content="Hugo 0.34" />
+    <meta name="generator" content="Hugo 0.44-DEV" />
     <link rel="canonical" href="https://hakuoku.github.io/agakuTeX/tutorial/5_6framed/">
     
     
@@ -84,12 +84,15 @@
         </li>
         
         
+        <li class="search">
+            <script async src="https://cse.google.com/cse.js?cx=015571841863644017950:0rlgllbny7i"></script>
+            <div class="gcse-searchbox-only"></div>
+        </li>
     </ul>
+    
 </nav>
 
         
-<gcse:searchbox-only></gcse:searchbox-only>
-
 <button type="button" class="drawer-toggle drawer-hamburger">
   <span class="sr-only">toggle navigation</span>
   <span class="drawer-hamburger-icon"><img src="https://hakuoku.github.io/agakuTeX/img/toc.png" alt="TOC"></span>
@@ -329,7 +332,7 @@
 <p>　これで準備完了です。枠線をつけるには、<code>\breakfbox{}</code>で囲みます。</p>
 
 
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/56framed/fbox.png" alt="breakfboxによるインラインの枠" />
     
@@ -345,7 +348,7 @@
 </code></pre>
 
 
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/56framed/fboxsep.png" />
     
@@ -375,7 +378,7 @@
 </code></pre>
 
 
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/56framed/framed.png" alt="framedによる枠" />
     
@@ -386,7 +389,7 @@
 <p>　ただし、長いブロックだとブロックの途中で次のページや段に行ってしまうことがあります。そんな時framed環境だと、画像のように枠がページや段の境目で閉じてしまい、別々の枠囲みのようになってしまいます。</p>
 
 
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/56framed/closed.png" alt="閉じた枠" />
     
@@ -397,7 +400,7 @@
 <p>　これを開いて連続した枠に変えるにはframedの代わりに<strong>oframed</strong>環境を使ってください。</p>
 
 
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/56framed/oframed.png" alt="開いた枠" />
     
@@ -425,7 +428,7 @@
 </code></pre>
 
 
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/56framed/plain.png" alt="デフォルトの状態" />
     
@@ -445,7 +448,7 @@
 </code></pre>
 
 
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/56framed/minipage.png" alt="minipageに入れた状態" />
     
@@ -465,7 +468,7 @@
 </code></pre>
 
 
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/56framed/fboxedpage.png" alt="fboxで枠がついた状態" />
     
@@ -493,7 +496,7 @@
 <p>　<code>%</code>と<code>leftskip</code>を書く位置が変わっていることに気をつけてください。どうしてかは筆者も分からないんですが、綺麗に入れ子になっていないはずのこの順番で書かないとleftskipが効きませんでした。（改行マクロによって発行される見えない<code>\par</code>が効く範囲とか、そういう絡みだと思われる）</p>
 
 
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/56framed/vspaced.png" alt="vspaceで調整した状態" />
     
@@ -539,9 +542,10 @@
             <footer class="post__meta">
                 <ul class="post__meta__infos">
     <li class="post__meta__date"><time datetime="2018-03-18" itemprop="datePublished">(2018.3.18)</time></li>
+    
 </ul>
 <meta itemprop="url" content="https://hakuoku.github.io/agakuTeX/tutorial/5_6framed/">
-<meta itemprop="wordCount" content="3215" />
+<meta itemprop="wordCount" content="3221" />
 <meta itemprop="timeRequired" content="7 Min" />
 
             </footer>
@@ -597,6 +601,14 @@
 <script type="text/javascript">
     $(document).ready(function() {
       $(".drawer").drawer();
+      let windowWidth = window.innerWidth;
+      if (windowWidth < 400) {
+        setTimeout(function(){
+          $("td.gsc-search-button").on("click", function() { 
+            $(".gsc-input").toggle();
+          });
+        }, 3000);
+      }
     });
 </script>
 

@@ -35,7 +35,7 @@
 <meta name="twitter:creator" content="@isaribi_saitoh" />
 
     
-    <meta name="generator" content="Hugo 0.34" />
+    <meta name="generator" content="Hugo 0.44-DEV" />
     <link rel="canonical" href="https://hakuoku.github.io/agakuTeX/tutorial/3_1stuff/">
     
     
@@ -84,12 +84,15 @@
         </li>
         
         
+        <li class="search">
+            <script async src="https://cse.google.com/cse.js?cx=015571841863644017950:0rlgllbny7i"></script>
+            <div class="gcse-searchbox-only"></div>
+        </li>
     </ul>
+    
 </nav>
 
         
-<gcse:searchbox-only></gcse:searchbox-only>
-
 <button type="button" class="drawer-toggle drawer-hamburger">
   <span class="sr-only">toggle navigation</span>
   <span class="drawer-hamburger-icon"><img src="https://hakuoku.github.io/agakuTeX/img/toc.png" alt="TOC"></span>
@@ -337,7 +340,7 @@
 　どうしんどいかはまあこれを見てくれ。</p>
 
 
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/31stuff/juran.png" alt="久生十蘭サンプル" />
     
@@ -350,7 +353,7 @@
 <p>　ごちゃごちゃ具合にびびりつつ、まずは青空文庫の作品ページからzipを落としてきます。展開して中の.txtファイルを開いてみると、中はこんな感じです。</p>
 
 
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/31stuff/aozora.png" alt="青空文庫テキストサンプル" />
     
@@ -402,10 +405,13 @@
 
             <footer class="post__meta">
                 <ul class="post__meta__infos">
-    <li class="post__meta__date"><time datetime="2017-04-02" itemprop="datePublished">(2017.4.18)</time></li>
+    <li class="post__meta__date"><time datetime="2017-04-02" itemprop="datePublished">(2017.4.02)</time></li>
+    
+    <li class="post__meta__date"><time datetime=" 2017-04-02 " itemprop="dateChanged">(2017.4.18改訂)</time></li>
+    
 </ul>
 <meta itemprop="url" content="https://hakuoku.github.io/agakuTeX/tutorial/3_1stuff/">
-<meta itemprop="wordCount" content="2558" />
+<meta itemprop="wordCount" content="2570" />
 <meta itemprop="timeRequired" content="6 Min" />
 
             </footer>
@@ -461,6 +467,14 @@
 <script type="text/javascript">
     $(document).ready(function() {
       $(".drawer").drawer();
+      let windowWidth = window.innerWidth;
+      if (windowWidth < 400) {
+        setTimeout(function(){
+          $("td.gsc-search-button").on("click", function() { 
+            $(".gsc-input").toggle();
+          });
+        }, 3000);
+      }
     });
 </script>
 

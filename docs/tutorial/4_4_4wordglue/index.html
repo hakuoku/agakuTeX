@@ -35,7 +35,7 @@
 <meta name="twitter:creator" content="@isaribi_saitoh" />
 
     
-    <meta name="generator" content="Hugo 0.34" />
+    <meta name="generator" content="Hugo 0.44-DEV" />
     <link rel="canonical" href="https://hakuoku.github.io/agakuTeX/tutorial/4_4_4wordglue/">
     
     
@@ -84,12 +84,15 @@
         </li>
         
         
+        <li class="search">
+            <script async src="https://cse.google.com/cse.js?cx=015571841863644017950:0rlgllbny7i"></script>
+            <div class="gcse-searchbox-only"></div>
+        </li>
     </ul>
+    
 </nav>
 
         
-<gcse:searchbox-only></gcse:searchbox-only>
-
 <button type="button" class="drawer-toggle drawer-hamburger">
   <span class="sr-only">toggle navigation</span>
   <span class="drawer-hamburger-icon"><img src="https://hakuoku.github.io/agakuTeX/img/toc.png" alt="TOC"></span>
@@ -323,7 +326,7 @@
 </code></pre>
 
 
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/44wordglue/withspace.jpg" alt="半角スペース入りの組版結果" />
     
@@ -337,7 +340,7 @@
 　印刷業界では伝統的にこの空間を四分アキ、つまり全角の4分の1の長さと定めていて、TeXでもそれが踏襲されています。（具体的には<code>\xkanjiskip</code>という値で定義されているらしい）</p>
 
 
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/44wordglue/preparespace.jpg" alt="両者の比較" />
     
@@ -361,9 +364,10 @@
             <footer class="post__meta">
                 <ul class="post__meta__infos">
     <li class="post__meta__date"><time datetime="2017-11-10" itemprop="datePublished">(2017.11.10)</time></li>
+    
 </ul>
 <meta itemprop="url" content="https://hakuoku.github.io/agakuTeX/tutorial/4_4_4wordglue/">
-<meta itemprop="wordCount" content="673" />
+<meta itemprop="wordCount" content="749" />
 <meta itemprop="timeRequired" content="2 Min" />
 
             </footer>
@@ -419,6 +423,14 @@
 <script type="text/javascript">
     $(document).ready(function() {
       $(".drawer").drawer();
+      let windowWidth = window.innerWidth;
+      if (windowWidth < 400) {
+        setTimeout(function(){
+          $("td.gsc-search-button").on("click", function() { 
+            $(".gsc-input").toggle();
+          });
+        }, 3000);
+      }
     });
 </script>
 

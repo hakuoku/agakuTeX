@@ -35,7 +35,7 @@
 <meta name="twitter:creator" content="@isaribi_saitoh" />
 
     
-    <meta name="generator" content="Hugo 0.34" />
+    <meta name="generator" content="Hugo 0.44-DEV" />
     <link rel="canonical" href="https://hakuoku.github.io/agakuTeX/tutorial/5_3bouten/">
     
     
@@ -84,12 +84,15 @@
         </li>
         
         
+        <li class="search">
+            <script async src="https://cse.google.com/cse.js?cx=015571841863644017950:0rlgllbny7i"></script>
+            <div class="gcse-searchbox-only"></div>
+        </li>
     </ul>
+    
 </nav>
 
         
-<gcse:searchbox-only></gcse:searchbox-only>
-
 <button type="button" class="drawer-toggle drawer-hamburger">
   <span class="sr-only">toggle navigation</span>
   <span class="drawer-hamburger-icon"><img src="https://hakuoku.github.io/agakuTeX/img/toc.png" alt="TOC"></span>
@@ -325,7 +328,7 @@
 <p>　使い方は簡単で、単に傍点をつけたい文字を<code>\bou{}</code>で囲うだけです。いわゆる普通の黒ゴマ傍点がつきます。</p>
 
 
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/53bouten/bouten.png" alt="傍点" />
     
@@ -347,7 +350,7 @@
 </code></pre>
 
 
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/53bouten/subbouten.png" alt="副傍点を使ったところ" />
     
@@ -355,7 +358,7 @@
 </figure>
 
 
-<p>　デフォルトから記号を変更するには、主が<code>\kentenmarkintate{マーク}</code>、副が<code>\kentensubmarkintate{マーク}</code>コマンドを使います<sup class="footnote-ref" id="fnref:1"><a rel="footnote" href="#fn:1">1</a></sup>。{マーク}のところには、下の表で定義されている記号の名前を書くか、でなければ記号を直に書いちゃうこともできます。後者のやり方ならどんな記号でも指定できるので、トンデモ傍点を振ることも可能です。（ただしもちろんフォントが持っている字形のみ）</p>
+<p>　デフォルトから記号を変更するには、主が<code>\kentenmarkintate{マーク}</code>、副が<code>\kentensubmarkintate{マーク}</code>コマンドを使います<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup>。{マーク}のところには、下の表で定義されている記号の名前を書くか、でなければ記号を直に書いちゃうこともできます。後者のやり方ならどんな記号でも指定できるので、トンデモ傍点を振ることも可能です。（ただしもちろんフォントが持っている字形のみ）</p>
 
 <table>
 <thead>
@@ -450,7 +453,7 @@
 </code></pre>
 
 
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/53bouten/custom.png" alt="傍点のカスタマイズ" />
     
@@ -465,7 +468,7 @@
 <p>　もちろん傍線だって引けます。plextパッケージの<code>\kasen{}</code>コマンドで囲います。</p>
 
 
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/53bouten/bousen.png" alt="傍線" />
     
@@ -497,7 +500,7 @@
 </code></pre>
 
 
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/53bouten/uline.png" alt="uline--による各種傍線" />
     
@@ -512,7 +515,7 @@
 <p>　二重線にはlinesオプションを使い、<code>\oline[lines=2]{}</code>のように書きます。数字のところを変えることで三重以上の傍線も引くことができます。</p>
 
 
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/53bouten/lines.png" alt="linesによる多重線" />
     
@@ -543,9 +546,10 @@
             <footer class="post__meta">
                 <ul class="post__meta__infos">
     <li class="post__meta__date"><time datetime="2018-01-23" itemprop="datePublished">(2018.1.23)</time></li>
+    
 </ul>
 <meta itemprop="url" content="https://hakuoku.github.io/agakuTeX/tutorial/5_3bouten/">
-<meta itemprop="wordCount" content="2031" />
+<meta itemprop="wordCount" content="2076" />
 <meta itemprop="timeRequired" content="5 Min" />
 
             </footer>
@@ -601,6 +605,14 @@
 <script type="text/javascript">
     $(document).ready(function() {
       $(".drawer").drawer();
+      let windowWidth = window.innerWidth;
+      if (windowWidth < 400) {
+        setTimeout(function(){
+          $("td.gsc-search-button").on("click", function() { 
+            $(".gsc-input").toggle();
+          });
+        }, 3000);
+      }
     });
 </script>
 

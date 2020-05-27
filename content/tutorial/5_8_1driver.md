@@ -6,6 +6,7 @@ slug = "5_8_1driver"
 weight = 581
 eyecatch = "/img/58driver/ptex2pdf.png"
 topics = ["graphicx", "dvipdfmx"]
+draft = true
 [menu.toc]
     parent = "graphics"
 +++

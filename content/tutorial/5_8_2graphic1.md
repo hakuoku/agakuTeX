@@ -6,6 +6,7 @@ slug = "5_8_2graphic1"
 weight = 582
 eyecatch = ""
 topics = ["dvipdfmx", "graphicx"]
+draft = true
 [menu.toc]
     parent = ""
 +++

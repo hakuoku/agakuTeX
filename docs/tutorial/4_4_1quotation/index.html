@@ -35,7 +35,7 @@
 <meta name="twitter:creator" content="@isaribi_saitoh" />
 
     
-    <meta name="generator" content="Hugo 0.34" />
+    <meta name="generator" content="Hugo 0.44-DEV" />
     <link rel="canonical" href="https://hakuoku.github.io/agakuTeX/tutorial/4_4_1quotation/">
     
     
@@ -84,12 +84,15 @@
         </li>
         
         
+        <li class="search">
+            <script async src="https://cse.google.com/cse.js?cx=015571841863644017950:0rlgllbny7i"></script>
+            <div class="gcse-searchbox-only"></div>
+        </li>
     </ul>
+    
 </nav>
 
         
-<gcse:searchbox-only></gcse:searchbox-only>
-
 <button type="button" class="drawer-toggle drawer-hamburger">
   <span class="sr-only">toggle navigation</span>
   <span class="drawer-hamburger-icon"><img src="https://hakuoku.github.io/agakuTeX/img/toc.png" alt="TOC"></span>
@@ -330,7 +333,7 @@
 </code></pre>
 
 
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/44quotation/quotes.jpg" alt="クォートの組版結果" />
     
@@ -344,7 +347,7 @@
 <p>　というわけでパッケージ読み込みの後改めて組んでみると、結果はこうなります。</p>
 
 
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/44quotation/quotesdone.png" alt="補正後のクォート" />
     
@@ -359,7 +362,7 @@
 　半角シングルクォートを使いたい時も同様に、アポストロフィとバッククォートを一つずつ書けば向きが整います。横組みの時に使うものなので、こっちの方が楽という人もいるでしょう。</p>
 
 
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/44quotation/peugeotdone.png" alt="結果は同じ半角と全角" />
     
@@ -379,7 +382,7 @@
 <p>　では縦向きの引用符を入れたい時はどうすればいいでしょう？たいていの書籍ではこうなっていると思います。</p>
 
 
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/44quotation/minute.jpg" alt="縦書き時の引用符" />
     
@@ -391,7 +394,7 @@
 　これをそのまま原稿中に直書きすれば普通のカッコやカギカッコ同様に、ちゃんと正しい向きで組んでくれます。ただしこの時点ではある恐ろしい陥穽がひそんでおり、筆者の環境ではこう表示されています。</p>
 
 
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/44quotation/ipa.jpg" alt="下のダブルミニュートだけ文字化け" />
     
@@ -428,11 +431,14 @@
 
             <footer class="post__meta">
                 <ul class="post__meta__infos">
-    <li class="post__meta__date"><time datetime="2017-11-09" itemprop="datePublished">(2018.1.27)</time></li>
+    <li class="post__meta__date"><time datetime="2017-11-09" itemprop="datePublished">(2017.11.09)</time></li>
+    
+    <li class="post__meta__date"><time datetime=" 2017-11-09 " itemprop="dateChanged">(2018.1.27改訂)</time></li>
+    
 </ul>
 <meta itemprop="url" content="https://hakuoku.github.io/agakuTeX/tutorial/4_4_1quotation/">
-<meta itemprop="wordCount" content="1860" />
-<meta itemprop="timeRequired" content="4 Min" />
+<meta itemprop="wordCount" content="2012" />
+<meta itemprop="timeRequired" content="5 Min" />
 
             </footer>
             </section>
@@ -487,6 +493,14 @@
 <script type="text/javascript">
     $(document).ready(function() {
       $(".drawer").drawer();
+      let windowWidth = window.innerWidth;
+      if (windowWidth < 400) {
+        setTimeout(function(){
+          $("td.gsc-search-button").on("click", function() { 
+            $(".gsc-input").toggle();
+          });
+        }, 3000);
+      }
     });
 </script>
 

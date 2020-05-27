@@ -35,7 +35,7 @@
 <meta name="twitter:creator" content="@isaribi_saitoh" />
 
     
-    <meta name="generator" content="Hugo 0.34" />
+    <meta name="generator" content="Hugo 0.44-DEV" />
     <link rel="canonical" href="https://hakuoku.github.io/agakuTeX/tutorial/2_1prepare/">
     
     
@@ -84,12 +84,15 @@
         </li>
         
         
+        <li class="search">
+            <script async src="https://cse.google.com/cse.js?cx=015571841863644017950:0rlgllbny7i"></script>
+            <div class="gcse-searchbox-only"></div>
+        </li>
     </ul>
+    
 </nav>
 
         
-<gcse:searchbox-only></gcse:searchbox-only>
-
 <button type="button" class="drawer-toggle drawer-hamburger">
   <span class="sr-only">toggle navigation</span>
   <span class="drawer-hamburger-icon"><img src="https://hakuoku.github.io/agakuTeX/img/toc.png" alt="TOC"></span>
@@ -323,7 +326,7 @@
 　いや、正確には発端で書いた通り、e-upTeXのことを指すんでしょうが、これはあくまで組版エンジン単体であって、これだけでは使えないんです。いえ使えますが、素人には魔界の扉みたいに見えるコマンドプロンプトを使わないと動かせないんです。</p>
 
 
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/21prepare/command.png" alt="CUI" />
     
@@ -374,10 +377,13 @@ install-tl: Writing log in current directory: /home/daleif/tmp/install-tl-201605
 
             <footer class="post__meta">
                 <ul class="post__meta__infos">
-    <li class="post__meta__date"><time datetime="2016-12-31" itemprop="datePublished">(2017.1.02)</time></li>
+    <li class="post__meta__date"><time datetime="2016-12-31" itemprop="datePublished">(2016.12.31)</time></li>
+    
+    <li class="post__meta__date"><time datetime=" 2016-12-31 " itemprop="dateChanged">(2017.1.02改訂)</time></li>
+    
 </ul>
 <meta itemprop="url" content="https://hakuoku.github.io/agakuTeX/tutorial/2_1prepare/">
-<meta itemprop="wordCount" content="1586" />
+<meta itemprop="wordCount" content="1661" />
 <meta itemprop="timeRequired" content="4 Min" />
 
             </footer>
@@ -433,6 +439,14 @@ install-tl: Writing log in current directory: /home/daleif/tmp/install-tl-201605
 <script type="text/javascript">
     $(document).ready(function() {
       $(".drawer").drawer();
+      let windowWidth = window.innerWidth;
+      if (windowWidth < 400) {
+        setTimeout(function(){
+          $("td.gsc-search-button").on("click", function() { 
+            $(".gsc-input").toggle();
+          });
+        }, 3000);
+      }
     });
 </script>
 

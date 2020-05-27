@@ -35,7 +35,7 @@
 <meta name="twitter:creator" content="@isaribi_saitoh" />
 
     
-    <meta name="generator" content="Hugo 0.34" />
+    <meta name="generator" content="Hugo 0.44-DEV" />
     <link rel="canonical" href="https://hakuoku.github.io/agakuTeX/tutorial/4_4_5brackets/">
     
     
@@ -84,12 +84,15 @@
         </li>
         
         
+        <li class="search">
+            <script async src="https://cse.google.com/cse.js?cx=015571841863644017950:0rlgllbny7i"></script>
+            <div class="gcse-searchbox-only"></div>
+        </li>
     </ul>
+    
 </nav>
 
         
-<gcse:searchbox-only></gcse:searchbox-only>
-
 <button type="button" class="drawer-toggle drawer-hamburger">
   <span class="sr-only">toggle navigation</span>
   <span class="drawer-hamburger-icon"><img src="https://hakuoku.github.io/agakuTeX/img/toc.png" alt="TOC"></span>
@@ -320,7 +323,7 @@
 <p>&#x3000;これまで「カギ括弧」や（丸括弧）は何の問題もなく組めたので、それしか使わないという人は流し読みして構いません。それ以外のカッコ類では注意が必要なものもあり、実際に見た方が早いのでガーッと並べてみました。</p>
 
 
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/44brackets/brackets.jpg" alt="括弧類の組版結果" />
     
@@ -336,7 +339,7 @@
 　プログラミング周りで「文字通り」という時には等幅フォントが使われます。全角文字が常に半角の2倍の幅で表示されるようになっていて違いが分かりやすい、いわゆるタイプライタ体のことです。（今この状態だと使われているのはデフォルトのComputer Modern Typewriter Typeだと思う）</p>
 
 
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/44brackets/halfwidth.jpg" alt="ずれる半角山括弧" />
     
@@ -358,11 +361,14 @@
 
             <footer class="post__meta">
                 <ul class="post__meta__infos">
-    <li class="post__meta__date"><time datetime="2017-11-10" itemprop="datePublished">(2017.11.18)</time></li>
+    <li class="post__meta__date"><time datetime="2017-11-10" itemprop="datePublished">(2017.11.10)</time></li>
+    
+    <li class="post__meta__date"><time datetime=" 2017-11-10 " itemprop="dateChanged">(2017.11.18改訂)</time></li>
+    
 </ul>
 <meta itemprop="url" content="https://hakuoku.github.io/agakuTeX/tutorial/4_4_5brackets/">
-<meta itemprop="wordCount" content="982" />
-<meta itemprop="timeRequired" content="2 Min" />
+<meta itemprop="wordCount" content="1021" />
+<meta itemprop="timeRequired" content="3 Min" />
 
             </footer>
             </section>
@@ -417,6 +423,14 @@
 <script type="text/javascript">
     $(document).ready(function() {
       $(".drawer").drawer();
+      let windowWidth = window.innerWidth;
+      if (windowWidth < 400) {
+        setTimeout(function(){
+          $("td.gsc-search-button").on("click", function() { 
+            $(".gsc-input").toggle();
+          });
+        }, 3000);
+      }
     });
 </script>
 

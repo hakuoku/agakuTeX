@@ -35,7 +35,7 @@
 <meta name="twitter:creator" content="@isaribi_saitoh" />
 
     
-    <meta name="generator" content="Hugo 0.34" />
+    <meta name="generator" content="Hugo 0.44-DEV" />
     <link rel="canonical" href="https://hakuoku.github.io/agakuTeX/tutorial/4_3_1rensuji/">
     
     
@@ -84,12 +84,15 @@
         </li>
         
         
+        <li class="search">
+            <script async src="https://cse.google.com/cse.js?cx=015571841863644017950:0rlgllbny7i"></script>
+            <div class="gcse-searchbox-only"></div>
+        </li>
     </ul>
+    
 </nav>
 
         
-<gcse:searchbox-only></gcse:searchbox-only>
-
 <button type="button" class="drawer-toggle drawer-hamburger">
   <span class="sr-only">toggle navigation</span>
   <span class="drawer-hamburger-icon"><img src="https://hakuoku.github.io/agakuTeX/img/toc.png" alt="TOC"></span>
@@ -324,7 +327,7 @@
 　TeXでもこれは全く同じです。なので縦向きで組みたい英数字は全角にしておきます。</p>
 
 
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/43rensuji/zenkaku.jpg" alt="全角で縦向き" />
     
@@ -334,10 +337,10 @@
 
 <p>　ただ、<code>39度の一夜を</code>のようなところはどうすればいいでしょう？向きは縦にしておきたいけど、できれば3と9を縦にじゃなく横にくっつけて並べたいですよね。青空文庫なら<code>39［＃「39」は縦中横］</code>となっている部分です。<br />
 　そんな時は<strong>rensuji</strong>コマンドを使います。半角文字を半角のまま、いわば「全角一文字分の高さのスペースにおける横書き」にしてくれます。<br />
-　実際に見た方が早いです。<code class="language-latex">一様に\rensuji{39}度の一夜を</code>のように書いてやるとこうなります。<sup class="footnote-ref" id="fnref:1"><a rel="footnote" href="#fn:1">1</a></sup></p>
+　実際に見た方が早いです。<code class="language-latex">一様に\rensuji{39}度の一夜を</code>のように書いてやるとこうなります。<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup></p>
 
 
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/43rensuji/rensuji.jpg" alt="連数字" />
     
@@ -378,9 +381,10 @@
             <footer class="post__meta">
                 <ul class="post__meta__infos">
     <li class="post__meta__date"><time datetime="2017-06-27" itemprop="datePublished">(2017.6.27)</time></li>
+    
 </ul>
 <meta itemprop="url" content="https://hakuoku.github.io/agakuTeX/tutorial/4_3_1rensuji/">
-<meta itemprop="wordCount" content="1580" />
+<meta itemprop="wordCount" content="1590" />
 <meta itemprop="timeRequired" content="4 Min" />
 
             </footer>
@@ -436,6 +440,14 @@
 <script type="text/javascript">
     $(document).ready(function() {
       $(".drawer").drawer();
+      let windowWidth = window.innerWidth;
+      if (windowWidth < 400) {
+        setTimeout(function(){
+          $("td.gsc-search-button").on("click", function() { 
+            $(".gsc-input").toggle();
+          });
+        }, 3000);
+      }
     });
 </script>
 

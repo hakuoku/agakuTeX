@@ -35,7 +35,7 @@
 <meta name="twitter:creator" content="@isaribi_saitoh" />
 
     
-    <meta name="generator" content="Hugo 0.34" />
+    <meta name="generator" content="Hugo 0.44-DEV" />
     <link rel="canonical" href="https://hakuoku.github.io/agakuTeX/tutorial/3_3escape/">
     
     
@@ -84,12 +84,15 @@
         </li>
         
         
+        <li class="search">
+            <script async src="https://cse.google.com/cse.js?cx=015571841863644017950:0rlgllbny7i"></script>
+            <div class="gcse-searchbox-only"></div>
+        </li>
     </ul>
+    
 </nav>
 
         
-<gcse:searchbox-only></gcse:searchbox-only>
-
 <button type="button" class="drawer-toggle drawer-hamburger">
   <span class="sr-only">toggle navigation</span>
   <span class="drawer-hamburger-icon"><img src="https://hakuoku.github.io/agakuTeX/img/toc.png" alt="TOC"></span>
@@ -343,7 +346,7 @@ l.89 ...なので、五番目のポオルは fa#
 
 <p>　どういうことかというと、「ノンシャラン道中記」の本文に、TeXで使っちゃいけない#の字が入っているんですね。ちなみにオルガンごっこをするというシーンで、ファのシャープです。<br />
 　こういう「TeX側がコマンドとして使うから人間は使っちゃいけない記号」はけっこうあって、選んだテキストによっては文字は違えどこれと同じエラーが出るかもしれません。そのため<strong>エスケープ</strong>というものをして、特殊文字が表示されるようにします。<br />
-　使い方は簡単で、特殊文字の前にバックスラッシュをつけるだけです。その方式じゃない字もありますが、その場合は以下の表を参考に正しいコマンドに置き換えます<sup class="footnote-ref" id="fnref:1"><a rel="footnote" href="#fn:1">1</a></sup>。ちなみに全て半角です。全角文字は全て字として描画されるので、違和感がなければただ全角に置き換えるのでもいいと思います。</p>
+　使い方は簡単で、特殊文字の前にバックスラッシュをつけるだけです。その方式じゃない字もありますが、その場合は以下の表を参考に正しいコマンドに置き換えます<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup>。ちなみに全て半角です。全角文字は全て字として描画されるので、違和感がなければただ全角に置き換えるのでもいいと思います。</p>
 
 <table>
 <thead>
@@ -433,7 +436,7 @@ l.89 ...なので、五番目のポオルは fa#
 　修正しても組版結果が思ったようなデザインにならないかもしれませんが、こうした記号の細かい出力制御は後ほど行います。今はひとまずエラーが出ないところまで置き換えればOKとしておきましょう。</p>
 
 
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/33makefile/errortab.png" alt="エラータブ" />
     
@@ -483,7 +486,7 @@ l.89 ...なので、五番目のポオルは fa#
 <p>　さて#を<code>\#</code>にしてやって、TeXWorksで開いてボタンを押すと、</p>
 
 
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/33makefile/first.png" alt="最初の組版結果" />
     
@@ -491,7 +494,7 @@ l.89 ...なので、五番目のポオルは fa#
 </figure>
 
 
-<p>　無事に組版できました<sup class="footnote-ref" id="fnref:2"><a rel="footnote" href="#fn:2">2</a></sup>。だいぶごちゃごちゃしてますが、これからちゃんとした本になっていきますよ。</p>
+<p>　無事に組版できました<sup class="footnote-ref" id="fnref:2"><a href="#fn:2">2</a></sup>。だいぶごちゃごちゃしてますが、これからちゃんとした本になっていきますよ。</p>
 
 <h4 id="参考">参考</h4>
 
@@ -516,9 +519,10 @@ l.89 ...なので、五番目のポオルは fa#
             <footer class="post__meta">
                 <ul class="post__meta__infos">
     <li class="post__meta__date"><time datetime="2017-04-19" itemprop="datePublished">(2017.4.19)</time></li>
+    
 </ul>
 <meta itemprop="url" content="https://hakuoku.github.io/agakuTeX/tutorial/3_3escape/">
-<meta itemprop="wordCount" content="2299" />
+<meta itemprop="wordCount" content="2400" />
 <meta itemprop="timeRequired" content="5 Min" />
 
             </footer>
@@ -574,6 +578,14 @@ l.89 ...なので、五番目のポオルは fa#
 <script type="text/javascript">
     $(document).ready(function() {
       $(".drawer").drawer();
+      let windowWidth = window.innerWidth;
+      if (windowWidth < 400) {
+        setTimeout(function(){
+          $("td.gsc-search-button").on("click", function() { 
+            $(".gsc-input").toggle();
+          });
+        }, 3000);
+      }
     });
 </script>
 

@@ -35,7 +35,7 @@
 <meta name="twitter:creator" content="@isaribi_saitoh" />
 
     
-    <meta name="generator" content="Hugo 0.34" />
+    <meta name="generator" content="Hugo 0.44-DEV" />
     <link rel="canonical" href="https://hakuoku.github.io/agakuTeX/tutorial/5_5fontsize/">
     
     
@@ -84,12 +84,15 @@
         </li>
         
         
+        <li class="search">
+            <script async src="https://cse.google.com/cse.js?cx=015571841863644017950:0rlgllbny7i"></script>
+            <div class="gcse-searchbox-only"></div>
+        </li>
     </ul>
+    
 </nav>
 
         
-<gcse:searchbox-only></gcse:searchbox-only>
-
 <button type="button" class="drawer-toggle drawer-hamburger">
   <span class="sr-only">toggle navigation</span>
   <span class="drawer-hamburger-icon"><img src="https://hakuoku.github.io/agakuTeX/img/toc.png" alt="TOC"></span>
@@ -332,7 +335,7 @@
 </code></pre>
 
 
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/55fontsize/sizes.png" alt="各サイズの組版結果" />
     
@@ -366,7 +369,7 @@
 <p>　上の画像を見て気づいたかもしれませんが、1行の文でフォントサイズを変更しても、行送りはnormalsizeのそれのままで変わりません。<code>{\Large われ等はコルシカ人を尊敬す \par}</code>のように、カッコが終わる前にparを入れてやると一応調整されるんですが、これだとサイズを変えた文字列の <em>前の</em> 行間しか変わりません（後の行間は次の行に属するのである意味当たり前）。</p>
 
 
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/55fontsize/par.png" alt="前の行間だけ調整された例" />
     
@@ -416,7 +419,7 @@
 </code></pre>
 
 
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/55fontsize/vspace.png" alt="行間の調整完了" />
     
@@ -433,10 +436,13 @@
 
             <footer class="post__meta">
                 <ul class="post__meta__infos">
-    <li class="post__meta__date"><time datetime="2018-03-03" itemprop="datePublished">(2018.3.19)</time></li>
+    <li class="post__meta__date"><time datetime="2018-03-03" itemprop="datePublished">(2018.3.03)</time></li>
+    
+    <li class="post__meta__date"><time datetime=" 2018-03-03 " itemprop="dateChanged">(2018.3.19改訂)</time></li>
+    
 </ul>
 <meta itemprop="url" content="https://hakuoku.github.io/agakuTeX/tutorial/5_5fontsize/">
-<meta itemprop="wordCount" content="2061" />
+<meta itemprop="wordCount" content="2083" />
 <meta itemprop="timeRequired" content="5 Min" />
 
             </footer>
@@ -492,6 +498,14 @@
 <script type="text/javascript">
     $(document).ready(function() {
       $(".drawer").drawer();
+      let windowWidth = window.innerWidth;
+      if (windowWidth < 400) {
+        setTimeout(function(){
+          $("td.gsc-search-button").on("click", function() { 
+            $(".gsc-input").toggle();
+          });
+        }, 3000);
+      }
     });
 </script>
 

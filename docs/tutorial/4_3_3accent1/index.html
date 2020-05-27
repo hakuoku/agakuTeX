@@ -35,7 +35,7 @@
 <meta name="twitter:creator" content="@isaribi_saitoh" />
 
     
-    <meta name="generator" content="Hugo 0.34" />
+    <meta name="generator" content="Hugo 0.44-DEV" />
     <link rel="canonical" href="https://hakuoku.github.io/agakuTeX/tutorial/4_3_3accent1/">
     
     
@@ -84,12 +84,15 @@
         </li>
         
         
+        <li class="search">
+            <script async src="https://cse.google.com/cse.js?cx=015571841863644017950:0rlgllbny7i"></script>
+            <div class="gcse-searchbox-only"></div>
+        </li>
     </ul>
+    
 </nav>
 
         
-<gcse:searchbox-only></gcse:searchbox-only>
-
 <button type="button" class="drawer-toggle drawer-hamburger">
   <span class="sr-only">toggle navigation</span>
   <span class="drawer-hamburger-icon"><img src="https://hakuoku.github.io/agakuTeX/img/toc.png" alt="TOC"></span>
@@ -320,7 +323,7 @@
 <p>&#x3000;縦向きにしたい英数字の処理はできました。横倒しにしたい欧文は普通に半角で書いておけばいいんですが、ここに英語以外の外国語使いにとっての罠があります。本文中にé（アキュートアクセントつきe。よく出る）などが含まれていると、結果はこういうことになります。</p>
 
 
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/43accent1/accent.jpg" alt="eだけが縦書きになった仏文" />
     
@@ -341,7 +344,7 @@
 　フランス語とか使わないし、という人でも要注意です。£や†といった、一見普通の半角っぽい記号でも同じ現象が起こります。記号がミソの暗号ミステリ、『黄金虫』なんかでやってみるとひどいことになります。</p>
 
 
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/43accent1/GoldBug.jpg" alt="記号の一部だけが縦組みになっている" />
     
@@ -450,7 +453,7 @@ intel{\textregistered} inside.　%コマンドの登録商標マーク
 </code></pre>
 
 
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/43accent1/marks.png" alt="同じ記号の組方向による使い分け" />
     
@@ -463,9 +466,10 @@ intel{\textregistered} inside.　%コマンドの登録商標マーク
             <footer class="post__meta">
                 <ul class="post__meta__infos">
     <li class="post__meta__date"><time datetime="2017-06-28" itemprop="datePublished">(2017.6.28)</time></li>
+    
 </ul>
 <meta itemprop="url" content="https://hakuoku.github.io/agakuTeX/tutorial/4_3_3accent1/">
-<meta itemprop="wordCount" content="1731" />
+<meta itemprop="wordCount" content="1794" />
 <meta itemprop="timeRequired" content="4 Min" />
 
             </footer>
@@ -521,6 +525,14 @@ intel{\textregistered} inside.　%コマンドの登録商標マーク
 <script type="text/javascript">
     $(document).ready(function() {
       $(".drawer").drawer();
+      let windowWidth = window.innerWidth;
+      if (windowWidth < 400) {
+        setTimeout(function(){
+          $("td.gsc-search-button").on("click", function() { 
+            $(".gsc-input").toggle();
+          });
+        }, 3000);
+      }
     });
 </script>
 

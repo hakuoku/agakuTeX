@@ -35,7 +35,7 @@
 <meta name="twitter:creator" content="@isaribi_saitoh" />
 
     
-    <meta name="generator" content="Hugo 0.34" />
+    <meta name="generator" content="Hugo 0.44-DEV" />
     <link rel="canonical" href="https://hakuoku.github.io/agakuTeX/tutorial/2_3test/">
     
     
@@ -84,12 +84,15 @@
         </li>
         
         
+        <li class="search">
+            <script async src="https://cse.google.com/cse.js?cx=015571841863644017950:0rlgllbny7i"></script>
+            <div class="gcse-searchbox-only"></div>
+        </li>
     </ul>
+    
 </nav>
 
         
-<gcse:searchbox-only></gcse:searchbox-only>
-
 <button type="button" class="drawer-toggle drawer-hamburger">
   <span class="sr-only">toggle navigation</span>
   <span class="drawer-hamburger-icon"><img src="https://hakuoku.github.io/agakuTeX/img/toc.png" alt="TOC"></span>
@@ -321,7 +324,7 @@
 　Windowsのスタートメニューから潜って、「TeXWorks Editor」を起動させます。</p>
 
 <p>
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/23test/start.png" alt="スタートメニュー" />
     
@@ -329,7 +332,7 @@
 </figure>
 
 
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/23test/works.png" alt="TeXWorks開始画面" />
     
@@ -349,7 +352,7 @@ Hello World!
 <p>　「名前をつけて保存」で適当なタイトルをつけて保存し、その後左上の再生ボタン（タイプセットもしくは組版ボタン）を押します。わけの分からん文字列がバーっと出てきても気にせず待ちます。すると、</p>
 
 
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/23test/pdf.png" alt="最初の組版成功" />
     
@@ -367,7 +370,7 @@ Hello World!
 </code></pre>
 
 
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/23test/error.png" alt="エラー" />
     
@@ -384,7 +387,7 @@ Hello World!
 <p>　前者をやってみます。「pdfLaTeX」を押して、下の方の「pLaTeX」に切り替えます。そしてボタンを押して実行。</p>
 
 
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/23test/konnichiwa_Ink_LI.jpg" alt="日本語組版成功" />
     
@@ -396,7 +399,7 @@ Hello World!
 　後者も試してみましょう。「pdfLaTeX」に戻して、本文のほうをいじります。{jsarticle}のjsを取って{article}にします。</p>
 
 
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/23test/latex_Ink_LI_Moment.jpg" alt="部分的に成功" />
     
@@ -415,9 +418,12 @@ Hello World!
             <footer class="post__meta">
                 <ul class="post__meta__infos">
     <li class="post__meta__date"><time datetime="2017-01-08" itemprop="datePublished">(2017.1.08)</time></li>
+    
+    <li class="post__meta__date"><time datetime=" 2017-01-08 " itemprop="dateChanged">(2017.1.08改訂)</time></li>
+    
 </ul>
 <meta itemprop="url" content="https://hakuoku.github.io/agakuTeX/tutorial/2_3test/">
-<meta itemprop="wordCount" content="1042" />
+<meta itemprop="wordCount" content="1048" />
 <meta itemprop="timeRequired" content="3 Min" />
 
             </footer>
@@ -473,6 +479,14 @@ Hello World!
 <script type="text/javascript">
     $(document).ready(function() {
       $(".drawer").drawer();
+      let windowWidth = window.innerWidth;
+      if (windowWidth < 400) {
+        setTimeout(function(){
+          $("td.gsc-search-button").on("click", function() { 
+            $(".gsc-input").toggle();
+          });
+        }, 3000);
+      }
     });
 </script>
 

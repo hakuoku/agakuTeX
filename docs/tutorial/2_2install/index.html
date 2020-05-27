@@ -35,7 +35,7 @@
 <meta name="twitter:creator" content="@isaribi_saitoh" />
 
     
-    <meta name="generator" content="Hugo 0.34" />
+    <meta name="generator" content="Hugo 0.44-DEV" />
     <link rel="canonical" href="https://hakuoku.github.io/agakuTeX/tutorial/2_2install/">
     
     
@@ -84,12 +84,15 @@
         </li>
         
         
+        <li class="search">
+            <script async src="https://cse.google.com/cse.js?cx=015571841863644017950:0rlgllbny7i"></script>
+            <div class="gcse-searchbox-only"></div>
+        </li>
     </ul>
+    
 </nav>
 
         
-<gcse:searchbox-only></gcse:searchbox-only>
-
 <button type="button" class="drawer-toggle drawer-hamburger">
   <span class="sr-only">toggle navigation</span>
   <span class="drawer-hamburger-icon"><img src="https://hakuoku.github.io/agakuTeX/img/toc.png" alt="TOC"></span>
@@ -320,7 +323,7 @@
 　<a href="http://www.tug.org/texlive/acquire-iso.html">Acquiring TeX Live as an ISO image </a>のページにアクセスして、・download from a nearby CTAN mirrorというリンクをクリックします。たくさんサーバがある中で、自動的に一番近いところまで飛ばしてくれます。筆者はこんな画面が出ました。</p>
 
 
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/22install/ctan.png" alt="最寄りのctan" />
     
@@ -331,7 +334,7 @@
 <p>　どこのページに飛んでも、その中の<strong>texlive2016.iso</strong>をクリックします。ポップアップが出るので、「ファイルに保存する」を選びます。</p>
 
 
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/22install/download_Ink_LI.jpg" alt="ダウンロード／ファイルに保存" />
     
@@ -347,7 +350,7 @@
 　Windows8以降の場合、標準でisoを取り扱えますので、右クリックして「マウント」を選びます。DVDドライブとして展開されるかと思います。</p>
 
 <p>
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/22install/isomini.png" alt="isoを仮想ドライブとしてマウント" />
     
@@ -364,7 +367,7 @@
 </figure>
 
 
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/22install/mountedmini.png" alt="マウント結果" />
     
@@ -380,7 +383,7 @@
 <p>　青いperlの六角形が入ったら、マウントしたDVDドライブに戻って中のinstall-tl-windows.batをダブルクリックします。</p>
 
 
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/22install/perl.png" alt="batをダブルクリック" />
     
@@ -391,7 +394,7 @@
 <p>　魔界の門ことコマンドプロンプトが出てきますが大丈夫。しばらくすると、こんなウィンドウが出てきます。</p>
 
 
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/22install/live.png" alt="TeX Live wizard" />
     
@@ -404,7 +407,7 @@
 　最終的に、「TeX Liveへようこそ！」という文があればインストール完了です。お疲れ様でした！</p>
 
 
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/22install/welcome.png" alt="TeX Liveへようこそ！" />
     
@@ -414,10 +417,13 @@
 
             <footer class="post__meta">
                 <ul class="post__meta__infos">
-    <li class="post__meta__date"><time datetime="2017-01-03" itemprop="datePublished">(2017.1.08)</time></li>
+    <li class="post__meta__date"><time datetime="2017-01-03" itemprop="datePublished">(2017.1.03)</time></li>
+    
+    <li class="post__meta__date"><time datetime=" 2017-01-03 " itemprop="dateChanged">(2017.1.08改訂)</time></li>
+    
 </ul>
 <meta itemprop="url" content="https://hakuoku.github.io/agakuTeX/tutorial/2_2install/">
-<meta itemprop="wordCount" content="1139" />
+<meta itemprop="wordCount" content="1214" />
 <meta itemprop="timeRequired" content="3 Min" />
 
             </footer>
@@ -473,6 +479,14 @@
 <script type="text/javascript">
     $(document).ready(function() {
       $(".drawer").drawer();
+      let windowWidth = window.innerWidth;
+      if (windowWidth < 400) {
+        setTimeout(function(){
+          $("td.gsc-search-button").on("click", function() { 
+            $(".gsc-input").toggle();
+          });
+        }, 3000);
+      }
     });
 </script>
 

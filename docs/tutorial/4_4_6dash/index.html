@@ -35,7 +35,7 @@
 <meta name="twitter:creator" content="@isaribi_saitoh" />
 
     
-    <meta name="generator" content="Hugo 0.34" />
+    <meta name="generator" content="Hugo 0.44-DEV" />
     <link rel="canonical" href="https://hakuoku.github.io/agakuTeX/tutorial/4_4_6dash/">
     
     
@@ -84,12 +84,15 @@
         </li>
         
         
+        <li class="search">
+            <script async src="https://cse.google.com/cse.js?cx=015571841863644017950:0rlgllbny7i"></script>
+            <div class="gcse-searchbox-only"></div>
+        </li>
     </ul>
+    
 </nav>
 
         
-<gcse:searchbox-only></gcse:searchbox-only>
-
 <button type="button" class="drawer-toggle drawer-hamburger">
   <span class="sr-only">toggle navigation</span>
   <span class="drawer-hamburger-icon"><img src="https://hakuoku.github.io/agakuTeX/img/toc.png" alt="TOC"></span>
@@ -324,7 +327,7 @@
 　筆者はキーボードの0の隣、伸ばし棒（長音記号）のキーから長音記号<code>ー</code>を入れて、これを変換して出てくる「全角ダッシュ」を2つ並べたものを辞書登録して使っています。これをUniViewで見てみると、U+2015の「HORIZONTAL BAR」だと分かりました。</p>
 
 
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/44dash/unidashes.jpg" alt="UniViewにおける各種ダッシュ" />
     
@@ -336,7 +339,7 @@
 　これらをコピーして2つ並べてタイプセットすると、結果はこうなりました。</p>
 
 
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/44dash/tatedashes.jpg" alt="縦組みのダッシュたち" />
     
@@ -356,7 +359,7 @@
 　このマクロでどうして間が繋がるのかというと、これはつまり「―を1つ出力したらその上に半文字分上にずり上げた―を重ねて出力、もうひとつ―を半文字分重ねて出力」という命令だからです。kernというのは「<a href="https://ja.wikipedia.org/wiki/%E3%82%AB%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0">カーニング</a>」という言葉があるように、「字詰め」のことです。図解するとこうなります。</p>
 
 
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/44dash/kern.jpg" alt="カーニングの図解" />
     
@@ -381,7 +384,7 @@
 　試しにこれを縦書きで組んでみましょう。</p>
 
 
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/44dash/threehyphens.jpg" alt="ハイフン2つと3つのダッシュ" />
     
@@ -393,7 +396,7 @@
 　倍角ダッシュにしたいので、ハイフンを6つ続けて入れてみます。（もちろん欧文に対しては倍角にせずにそのままエヌダッシュかエムダッシュで使えます）</p>
 
 
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/44dash/sixhyphens.jpg" alt="ハイフン6つの間が繋がったダッシュ" />
     
@@ -404,7 +407,7 @@
 <p>　やった！繋がった！けどちょっとバランスが変です。左に寄っていますね。</p>
 
 <p>　これは前項で説明したベースラインのせいです。半角のカッコやダッシュは欧文のベースラインに合った位置に配置されていて、かつそのベースラインは全角文字の正方形の左辺に合わせてあるのでどうしても左にズレてしまうんでした。<br />
-　そして最後でちらっと触れたように、これを調節する方法は実はあります。<code>\tbaselineshift</code>です。<sup class="footnote-ref" id="fnref:1"><a rel="footnote" href="#fn:1">1</a></sup><br />
+　そして最後でちらっと触れたように、これを調節する方法は実はあります。<code>\tbaselineshift</code>です。<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup><br />
 　文字通りベースラインのシフト（移動）量を決めるパラメータ（変数）で、値を設定してやることで和文に対する欧文の相対的な位置を決めることができます。<br />
 　パラメータとは何ぞやということは次項でやりますので、とりあえず位置を変えられるんだということだけ覚えておいてください。</p>
 
@@ -416,7 +419,7 @@
 </code></pre>
 
 
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/44dash/shift0.jpg" alt="欧文和文のベースラインが中央で一致" />
     
@@ -428,7 +431,7 @@
 　何も指定していない時のデフォルトが具体的にどういう値になっているのかは分からないんですが、とにかく少し左にズレていたデフォルトと、大幅に右にズレる0ポイントの間で調節を行います。数値を増やすほど左に行きます。こんな感じになりました。</p>
 
 
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/44dash/shifts.jpg" alt="2～3.25ptのシフト" />
     
@@ -439,7 +442,7 @@
 <p>　うーんどれがいいだろう……実際に使いそうなのは2.5～3ポイントあたりでしょうか。<br />
 　ベースラインをずらしているので、当然ですがすべての欧文文字が一緒についてきます。そんなに半角英数を入れていない場合は目立たないかもしれませんが、十蘭のようにちょいちょいアルファベットが入ってくる文体の人は、和文に対する欧文文字のバランスも見ながら最適な数値を選んでください。</p>
 
-<p>　この指定は上の例のように本文に書き込むと効力を発揮しますが、同じようにプリアンブルに書き込んでも効き目がありません。プリアンブルには次の形にしたものをコピペしてください。<sup class="footnote-ref" id="fnref:2"><a rel="footnote" href="#fn:2">2</a></sup></p>
+<p>　この指定は上の例のように本文に書き込むと効力を発揮しますが、同じようにプリアンブルに書き込んでも効き目がありません。プリアンブルには次の形にしたものをコピペしてください。<sup class="footnote-ref" id="fnref:2"><a href="#fn:2">2</a></sup></p>
 
 <pre><code class="language-LaTeX">\AtBeginDocument{\tbaselineshift = 2.75pt}
 </code></pre>
@@ -469,7 +472,7 @@
 　ZRさんにご指摘頂きました。基本的にこの方法はイバラの道だと思ってください。「General Punctuation」全体が欧文扱いになっているせいで起こる不具合がたくさんあります。<code>‼・⁉・⁈・⁇</code>という一文字の二重感嘆符・疑問符記号が原稿に入っているとエラーが出ますし、何より<strong>三点リーダーが欧文扱いでベースライン上（左端）に組まれてしまう</strong>という恐ろしい副作用が起こります。</p>
 
 
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/44dash/leader.jpg" alt="行の左端に寄った三点リーダー" />
     
@@ -480,7 +483,7 @@
 <p>　回避する手は一応、本当に一応あります。普通の三点リーダー<code>…</code>（U+2026「HORIZONTAL ELLIPSIS」）を、全てタテの三点リーダー<code>︙</code>（U+FE19「PRESENTATION FORM FOR VERTICAL HORIZONTAL ELLIPSIS」）に置き換えることです。つまりこういうことです。</p>
 
 
-<figure >
+<figure>
     
         <img src="https://hakuoku.github.io/agakuTeX/img/44dash/vleader.jpg" alt="タテ向きを2つ並べた三点リーダー" />
     
@@ -525,10 +528,13 @@
 
             <footer class="post__meta">
                 <ul class="post__meta__infos">
-    <li class="post__meta__date"><time datetime="2017-11-10" itemprop="datePublished">(2018.1.27)</time></li>
+    <li class="post__meta__date"><time datetime="2017-11-10" itemprop="datePublished">(2017.11.10)</time></li>
+    
+    <li class="post__meta__date"><time datetime=" 2017-11-10 " itemprop="dateChanged">(2018.1.27改訂)</time></li>
+    
 </ul>
 <meta itemprop="url" content="https://hakuoku.github.io/agakuTeX/tutorial/4_4_6dash/">
-<meta itemprop="wordCount" content="3893" />
+<meta itemprop="wordCount" content="3952" />
 <meta itemprop="timeRequired" content="8 Min" />
 
             </footer>
@@ -584,6 +590,14 @@
 <script type="text/javascript">
     $(document).ready(function() {
       $(".drawer").drawer();
+      let windowWidth = window.innerWidth;
+      if (windowWidth < 400) {
+        setTimeout(function(){
+          $("td.gsc-search-button").on("click", function() { 
+            $(".gsc-input").toggle();
+          });
+        }, 3000);
+      }
     });
 </script>
 
